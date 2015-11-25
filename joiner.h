@@ -1,5 +1,5 @@
 #ifndef _JOINER_H_
-#define _JOINER_H
+#define _JOINER_H_
 
 using namespace std;
 
