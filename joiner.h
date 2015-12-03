@@ -10,22 +10,23 @@ class Joiner {
   void join();
   void setVerbose(bool value);
  private:
-  void updateDistance();
   bool verbose;
   // Number of protein sequences
   int numSeq;
   // Score matrix
-  double** score;
+  double **score;
   // Name of proteins
   vector<string> proteinNames;
   // Distance matrix
   double **dist;
-  // Sum distance matrix sumDist[i][j] = sum_k(dist[i][k] + dist[k][j]) for k != i, j
-  double **sumDist;
+  // Sum distance matrix sumDist[i] = sum_k(dist[i][k]) for k != i
+  double *sumDist;
   // Join score matrix
   double **joinScore;
-  // Parent of each node 
+  // Parent of each node
   int* parent;
+  // Has the node been merged?
+  bool* isMerged;
 };
 
 #endif

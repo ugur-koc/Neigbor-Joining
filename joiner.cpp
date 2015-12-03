@@ -20,15 +20,16 @@ Joiner::Joiner(int _numSeq, double** _score, const vector<string> & _proteinName
   }
   proteinNames = _proteinNames;
   dist = new double*[numSeq];
-  sumDist = new double*[numSeq];
+  sumDist = new double[numSeq];
   joinScore = new double*[numSeq];
+  isMerged = new bool[numSeq];
   for (int i = 0; i < numSeq; i++) {
     dist[i] = new double[numSeq];
-    sumDist[i] = new double[numSeq];
     joinScore[i] = new double[numSeq];
+    isMerged[i] = false;
   }
   if (verbose) {
-    printf("Number of sequences %d\n", numSeq);
+    printf("Number of sequences: %d\n", numSeq);
     printf("Protein names: ");
     for (int i = 0; i < numSeq; i++) {
       printf("%s ", proteinNames[i].c_str());
@@ -48,7 +49,6 @@ Joiner::~Joiner() {
   for (int i = 0; i < numSeq; i++) {
       delete[] score[i];
       delete[] dist[i];
-      delete[] sumDist[i];
       delete[] joinScore[i];
     }
   delete[] score;
@@ -61,22 +61,36 @@ void Joiner::join() {
   if (verbose) {
     printf("Start joining...\n");
   } 
-  unique_ptr<bool[]> isMerged(new bool[numSeq]);
   for (int i = 0; i < numSeq; i++) {
     isMerged[i] = false;
   }
   for (int t = 0; t < numSeq - 1; t++) {
-    updateDistance();
+    for (int i = 0; i < numSeq; i++) {
+      for (int j = 0; j < numSeq; j++) {
+        dist[i][j] = score[i][j];
+      }
+    }
+    for (int i = 0; i < numSeq; i++) {
+      sumDist[i] = 0;
+      for (int k = 0; k < numSeq; k++) {
+        if (!isMerged[k] && k != i) {
+          sumDist[i] += dist[i][k];
+        }
+      }
+    }
     if (verbose) {
       printf("\nDistance matrix \n");
       for (int i = 0; i < numSeq; i++) {
+        if (isMerged[i]) {
+          continue;
+        }
         for (int j = 0; j < numSeq; j++) {
-          if (isMerged[i] || isMerged[j]) {
+          if (isMerged[j]) {
             continue;
           }
-          printf("%.1lf ", dist[i][j]);
+          printf("(%d,%d)=%.1lf ", i, j, dist[i][j]);
         }
-        printf("\n");
+        printf("Sum=%.1lf\n", sumDist[i]);
       }
     }
     double bestScore = 1e9;
@@ -86,8 +100,7 @@ void Joiner::join() {
       if (!isMerged[i]) {
         for (int j = i + 1; j < numSeq; j++) {
           if (!isMerged[j]) {
-            double curScore = (numSeq - 2) * dist[i][j] - sumDist[i][j];
-            cout << i << ' ' << j << ' ' << curScore << endl;
+            double curScore = (numSeq - 2 - t) * dist[i][j] - sumDist[i] - sumDist[j];
             if (curScore < bestScore) {
               bestScore = curScore;
               bestI = i;
@@ -103,39 +116,16 @@ void Joiner::join() {
     }
     isMerged[bestJ] = true;
     parent[bestJ] = bestI;
-    double sumI = 0;
-    double sumJ = 0;
-    for (int k = 0; k < numSeq; k++) {
-      if (k == bestI || k == bestJ) {
-        continue;
-      }
-      sumI += dist[bestI][k];
-      sumJ += dist[bestJ][k];
-    }
     for (int k = 0; k < numSeq; k++) {
       if (isMerged[k]) {
         continue;
       }
       if (k == bestI) {
-        score[bestI][k] = (dist[bestI][bestJ] + 1.0 / (numSeq - 2) * (sumI - sumJ)) / 2;
+        score[bestI][k] = (dist[bestI][bestJ] + 1.0 / (numSeq - 2 - t) * (sumDist[bestI] - sumDist[bestJ])) / 2;
       } else if (k == bestJ) {
-        score[bestI][k] = score[k][bestI] = (dist[bestI][bestJ] + 1.0 / (numSeq - 2) * (sumJ - sumI)) / 2;
+        score[bestI][k] = score[k][bestI] = (dist[bestI][bestJ] + 1.0 / (numSeq - 2 - t) * (sumDist[bestI] - sumDist[bestJ])) / 2;
       } else {
         score[bestI][k] = score[k][bestI] = (dist[bestI][k] + dist[bestJ][k] - dist[bestI][bestJ]) / 2;
-      }
-    }
-  }
-}
-
-void Joiner::updateDistance() {
-  for (int i = 0; i < numSeq; i++) {
-    for (int j = 0; j < numSeq; j++) {
-      dist[i][j] = score[i][j];
-      sumDist[i][j] = 0;
-      for (int k = 0; k < numSeq; k++) {
-        if (k != i && k != j) {
-          sumDist[i][j] += score[i][k] + score[k][j];
-        }
       }
     }
   }
