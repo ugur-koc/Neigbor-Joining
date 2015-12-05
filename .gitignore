@@ -1,2 +1,16 @@
 
 outfile
+
+*.aux
+
+*.log
+
+*.out
+
+.texpadtmp/report.synctex.gz
+
+main
+
+*.pdf
+
+main
