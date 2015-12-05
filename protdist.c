@@ -1465,10 +1465,16 @@ void makedists()
       for (i = 0; i < spp; i++) {
          for (j = 0; j < nmlngth; j++)
             putc(nayme[i][j], outfile);
+		 //putc(' ', outfile);
+	  }
+	  putc('\n', outfile);
+      for (i = 0; i < spp; i++) {
+      //   for (j = 0; j < nmlngth; j++)
+        //    putc(nayme[i][j], outfile);
          k = spp;
          for (j = 1; j <= k; j++) {
             if (d[i][j-1] < 100.0)
-               fprintf(outfile, "%10.6f", d[i][j-1]);
+               fprintf(outfile, "%.8f ", d[i][j-1]);
             else if (d[i][j-1] < 1000.0)
                fprintf(outfile, " %10.6f", d[i][j-1]);
             else 
