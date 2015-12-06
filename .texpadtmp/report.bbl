@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}
+
+\bibitem{jones1992rapid}
+David~T Jones, William~R Taylor, and Janet~M Thornton.
+\newblock The rapid generation of mutation data matrices from protein
+  sequences.
+\newblock {\em Computer applications in the biosciences: CABIOS},
+  8(3):275--282, 1992.
+
+\bibitem{jukes1969evolution}
+Thomas~H Jukes and Charles~R Cantor.
+\newblock Evolution of protein molecules.
+\newblock {\em Mammalian protein metabolism}, 3:21--132, 1969.
+
+\bibitem{khafif2014identification}
+Mehdi Khafif, Ludovic Cottret, Claudine Balagu{\'e}, and Sylvain Raffaele.
+\newblock Identification and phylogenetic analyses of vast, an uncharacterized
+  protein domain associated with lipid-binding domains in eukaryotes.
+\newblock {\em BMC bioinformatics}, 15(1):222, 2014.
+
+\bibitem{kimura1980simple}
+Motoo Kimura.
+\newblock A simple method for estimating evolutionary rates of base
+  substitutions through comparative studies of nucleotide sequences.
+\newblock {\em Journal of molecular evolution}, 16(2):111--120, 1980.
+
+\bibitem{kimura1983rare}
+Motoo Kimura.
+\newblock Rare variant alleles in the light of the neutral theory.
+\newblock {\em Molecular Biology and Evolution}, 1(1):84--93, 1983.
+
+\bibitem{kosiol2005different}
+Carolin Kosiol and Nick Goldman.
+\newblock Different versions of the dayhoff rate matrix.
+\newblock {\em Molecular biology and evolution}, 22(2):193--199, 2005.
+
+\bibitem{plotree1989phylip}
+DOTREE Plotree and DOTGRAM Plotgram.
+\newblock Phylip-phylogeny inference package (version 3.2).
+\newblock {\em cladistics}, 5:163--166, 1989.
+
+\bibitem{rice2000emboss}
+Peter Rice, Ian Longden, Alan Bleasby, et~al.
+\newblock Emboss: the european molecular biology open software suite.
+\newblock {\em Trends in genetics}, 16(6):276--277, 2000.
+
+\bibitem{saitou1987neighbor}
+Naruya Saitou and Masatoshi Nei.
+\newblock The neighbor-joining method: a new method for reconstructing
+  phylogenetic trees.
+\newblock {\em Molecular biology and evolution}, 4(4):406--425, 1987.
+
+\bibitem{veerassamy2003transition}
+Shalini Veerassamy, Andrew Smith, and Elisabeth~RM Tillier.
+\newblock A transition probability model for amino acid substitutions from
+  blocks.
+\newblock {\em Journal of Computational Biology}, 10(6):997--1010, 2003.
+
+\end{thebibliography}

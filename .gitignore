@@ -14,3 +14,7 @@ main
 *.pdf
 
 main
+
+.texpadtmp/report.blg
+
+output.txt
