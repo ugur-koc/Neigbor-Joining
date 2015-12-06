@@ -7,10 +7,10 @@ use Math::BigFloat;
 
 my $workDir = "/Users/ugurmeryem/Dropbox/701CMSC/Neigbor-Joining/data/"; #$ARGV[0];
 my $data = "$workDir/85VASTdomains.aln";
-my $distmatOut = "$workDir/tmp";
+my $distmatOut = "$workDir/tmp.txt";
 my $outfile = '$workDir/$data.dm';
 
-`distmat -sequence $data -protmethod 2 -outfile $distmatOut`;
+`distmat -sequence $data -protmethod 1 -outfile $distmatOut`;
 
 my %myMap = ();
 open FILE,"<$distmatOut" or die $!;
