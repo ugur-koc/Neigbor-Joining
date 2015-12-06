@@ -1,15 +1,17 @@
 #include <iostream>
+#include <fstream>
 #include <cstdio>
 #include <vector>
 #include <memory>
 #include <cstring>
+#include <string>
 
 #include "joiner.h"
 
 using namespace std;
 
 Joiner::Joiner(int _numSeq, double** _score, const vector<string> & _proteinNames) {
-  verbose = true;
+  verbose = false;
   numSeq = _numSeq;
   score = new double*[numSeq];
   for (int i = 0; i < numSeq; i++) {
@@ -18,14 +20,14 @@ Joiner::Joiner(int _numSeq, double** _score, const vector<string> & _proteinName
       score[i][j] = _score[i][j];
     }
   }
+  numNewNodes = 0;
+
   proteinNames = _proteinNames;
   dist = new double*[numSeq];
   sumDist = new double[numSeq];
-  joinScore = new double*[numSeq];
   isMerged = new bool[numSeq];
   for (int i = 0; i < numSeq; i++) {
     dist[i] = new double[numSeq];
-    joinScore[i] = new double[numSeq];
     isMerged[i] = false;
   }
   if (verbose) {
@@ -49,22 +51,22 @@ Joiner::~Joiner() {
   for (int i = 0; i < numSeq; i++) {
       delete[] score[i];
       delete[] dist[i];
-      delete[] joinScore[i];
     }
   delete[] score;
   delete[] dist;
   delete[] sumDist;
-  delete[] joinScore;
 }
 
 void Joiner::join() {
   if (verbose) {
-    printf("Start joining...\n");
+    cout << endl;
+    cout << "Start joining...\n" << endl;
   } 
   for (int i = 0; i < numSeq; i++) {
     isMerged[i] = false;
   }
-  for (int t = 0; t < numSeq - 1; t++) {
+  int newNodeIndex = -1;
+  for (int t = 0; t < numSeq - 2; t++) {
     for (int i = 0; i < numSeq; i++) {
       for (int j = 0; j < numSeq; j++) {
         dist[i][j] = score[i][j];
@@ -79,7 +81,7 @@ void Joiner::join() {
       }
     }
     if (verbose) {
-      printf("\nDistance matrix \n");
+      cout << "Distance matrix:" << endl;
       for (int i = 0; i < numSeq; i++) {
         if (isMerged[i]) {
           continue;
@@ -88,14 +90,17 @@ void Joiner::join() {
           if (isMerged[j]) {
             continue;
           }
-          printf("(%d,%d)=%.1lf ", i, j, dist[i][j]);
+          cout << "(" << i << "," << j << ")=" << dist[i][j] << "  ";
         }
-        printf("Sum=%.1lf\n", sumDist[i]);
+        cout << "Sum = " << sumDist[i] << endl;
       }
     }
     double bestScore = 1e9;
     int bestI = -1;
     int bestJ = -1;
+    if (verbose) {
+      cout << "Join score matrix:" << endl;
+    }
     for (int i = 0; i < numSeq; i++) {
       if (!isMerged[i]) {
         for (int j = i + 1; j < numSeq; j++) {
@@ -106,16 +111,23 @@ void Joiner::join() {
               bestI = i;
               bestJ = j;
             }
+            if (verbose) {
+              cout << "(" << i << "," << j << ")=" << curScore << "  ";
+            }
           }
+        }
+        if (verbose) {
+          cout << endl;
         }
       }
     }
+    string newNode = makeNewName();
+    newNodeIndex = bestI;
     if (verbose) {
-      printf("BestScore = %.1lf\n", bestScore);
-      printf("Merge %s into %s\n", proteinNames[bestJ].c_str(), proteinNames[bestI].c_str());
+      cout << "Best score = " << bestScore << endl;
+      cout << "Merge " << proteinNames[bestI] << " and " << proteinNames[bestJ] << " into " << newNode << endl;
+      cout << endl;
     }
-    isMerged[bestJ] = true;
-    parent[bestJ] = bestI;
     for (int k = 0; k < numSeq; k++) {
       if (isMerged[k]) {
         continue;
@@ -123,14 +135,45 @@ void Joiner::join() {
       if (k == bestI) {
         score[bestI][k] = (dist[bestI][bestJ] + 1.0 / (numSeq - 2 - t) * (sumDist[bestI] - sumDist[bestJ])) / 2;
       } else if (k == bestJ) {
-        score[bestI][k] = score[k][bestI] = (dist[bestI][bestJ] + 1.0 / (numSeq - 2 - t) * (sumDist[bestI] - sumDist[bestJ])) / 2;
+        score[bestI][k] = score[k][bestI] = dist[bestI][bestJ] - score[bestI][bestI];
       } else {
         score[bestI][k] = score[k][bestI] = (dist[bestI][k] + dist[bestJ][k] - dist[bestI][bestJ]) / 2;
       }
+    }
+    // add edges (bestI, newNode) and (bestJ, newNode) 
+    addEdge(proteinNames[bestI], newNode, score[bestI][bestI]);
+    addEdge(proteinNames[bestJ], newNode, score[bestI][bestJ]);
+    proteinNames[bestI] = newNode;
+    // mark bestJ as having been merged
+    isMerged[bestJ] = true;
+    // set distance from the new node to itself to be 0
+    score[bestI][bestI] = 0;
+  }
+  // merge the last node with new node
+  for (int i = 0; i < numSeq; i++) {
+    if (!isMerged[i] && proteinNames[i] != proteinNames[newNodeIndex]) {
+      addEdge(proteinNames[i], proteinNames[newNodeIndex], score[newNodeIndex][i]);
+      break;
     }
   }
 }
 
 void Joiner::setVerbose(bool value) {
   verbose = value;
+}
+
+string Joiner::makeNewName() {
+  return "New_" + to_string(numNewNodes++); 
+}
+
+void Joiner::addEdge(string x, string y, double score) {
+  edges.push_back(make_pair(make_pair(x, y), score));
+}
+
+void Joiner::saveTree(ofstream &stream) {
+  stream << edges.size() << endl;
+  stream << "New_" << to_string(numNewNodes - 1) << endl;
+  for (auto e : edges) {
+    stream << e.first.first << ' ' << e.first.second << ' ' << e.second << endl;
+  }
 }
