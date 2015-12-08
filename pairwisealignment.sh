@@ -1,5 +1,12 @@
 #/bin/sh
 
+# This script creates pair alignments
+# one may need to modify directries and run it in the same directory with main file
+# input: none (just check the directorys used in the forr loops)
+# output: it will creat an alinment file for each pair of sequences
+# @auhtor Ugur Koc
+# @date Dec.8.2015
+
 counter1=0;
 for i in data/fastas/85VASTdomains-*.fasta; 
 do 
