@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:44
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-64.fasta
+#    [-bsequence] data/fastas/85VASTdomains-45.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: F8WJ74_MOUSE_365496
+# 2: J3KR86_HUMAN_127303
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 177
+# Identity:     126/177 (71.2%)
+# Similarity:   127/177 (71.8%)
+# Gaps:          45/177 (25.4%)
+# Score: 653.0
+# 
+#
+#=======================================
+
+F8WJ74_MOUSE_      1 --LPDLSGRLLINSVFHMGAERLQQMLFSDSPFLQGFLQQRKFTDVTLSP     48
+                       |||||||||||||||:||||||||||||||||||||||.|||||||||
+J3KR86_HUMAN_      1 ALLPDLSGRLLINSVFHVGAERLQQMLFSDSPFLQGFLQQCKFTDVTLSP     50
+
+F8WJ74_MOUSE_     49 WSSDSKCHQRRVLTYTIPISNQLGPKSASVVETQTLFRRGPQAGGCVVDS     98
+                     ||.||||||||||||||||||.||||||||||||||||||||||||||||
+J3KR86_HUMAN_     51 WSGDSKCHQRRVLTYTIPISNPLGPKSASVVETQTLFRRGPQAGGCVVDS    100
+
+F8WJ74_MOUSE_     99 EVLTQGIPYQDYFYTAHRYCILGLARNKARLRNR----------------    132
+                     ||||||||||||||||||||||||||||||||..                
+J3KR86_HUMAN_    101 EVLTQGIPYQDYFYTAHRYCILGLARNKARLRVSSEIRYRKQPWSLVKSL    150
+
+F8WJ74_MOUSE_    132 ---------------------------    132
+                                                
+J3KR86_HUMAN_    151 IEKNSWSGIEDYFHHLERELAKAEKLS    177
+
+
+#---------------------------------------
+#---------------------------------------

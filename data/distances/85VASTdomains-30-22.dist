@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:56
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-36.fasta
+#    [-bsequence] data/fastas/85VASTdomains-29.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: GRM1B_MOUSE_321502
+# 2: A9RSX7_PHYPA_807992
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 291
+# Identity:      22/291 ( 7.6%)
+# Similarity:    37/291 (12.7%)
+# Gaps:         214/291 (73.5%)
+# Score: 40.0
+# 
+#
+#=======================================
+
+GRM1B_MOUSE_3      1 EGEVQAFYEDLSGRQYVNEVFNFSVDKLYDLLFTNSPFLRDFMEQRRFSD     50
+                                                                       
+A9RSX7_PHYPA_      0 --------------------------------------------------      0
+
+GRM1B_MOUSE_3     51 IIFHPWKKEENGNQSRVILYTITLTNPLAPKTATVRETQTMYKASQESEC    100
+                                                              .:.:.:|:.
+A9RSX7_PHYPA_      1 -----------------------------------------ERQADDSQP      9
+
+GRM1B_MOUSE_3    101 YV-----IDAEVLTHDVPYHDYFYTINRYTLTRVARNKSRLRVSTEL---    142
+                     ::     |..|||..::|      ......|..|...|..|.:|.:|   
+A9RSX7_PHYPA_     10 FLGFEQTIMPEVLVIEIP------ITAESVLAAVNNTKVDLSISEKLGLA     53
+
+GRM1B_MOUSE_3    143 RYRKQPWGFVKTFIEKNFWSGLEDYFRHLETELTKTESTY----------    182
+                     .||..||..|:..|..        :.|.|..:|.:..|.:          
+A9RSX7_PHYPA_     54 EYRATPWDHVEETIGA--------HQRELSYKLNRQISQFGSRVSCNQQQ     95
+
+GRM1B_MOUSE_3    182 --------------------------------------------------    182
+                                                                       
+A9RSX7_PHYPA_     96 VVTDDLKKLVIKEVLRYHDMPFGDHFEVHVKRELETLSTNPVNTQVKAFV    145
+
+GRM1B_MOUSE_3    182 -----------------------------------------    182
+                                                              
+A9RSX7_PHYPA_    146 GVVWHKSTEAQKKITKNIYEHMAWQIQELIDITVAEVFERS    186
+
+
+#---------------------------------------
+#---------------------------------------

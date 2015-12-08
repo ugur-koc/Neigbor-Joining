@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:17
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-48.fasta
+#    [-bsequence] data/fastas/85VASTdomains-25.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4M0I0_ENTHI_201371
+# 2: Q7XKT6_ORYSJ_8591033
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 303
+# Identity:       9/303 ( 3.0%)
+# Similarity:    20/303 ( 6.6%)
+# Gaps:         260/303 (85.8%)
+# Score: 16.5
+# 
+#
+#=======================================
+
+C4M0I0_ENTHI_      0 --------------------------------------------------      0
+                                                                       
+Q7XKT6_ORYSJ_      1 DVPLSKEYTLELPIDADLLMGVFDGGPLEAKAMSRAGCLDYAATPWQDAR     50
+
+C4M0I0_ENTHI_      0 --------------------------------------------------      0
+                                                                       
+Q7XKT6_ORYSJ_     51 PGVLERHASYKFNRYMSIFGGEVVSTQLRLPSDDGDGWTVYDVITLRNVP    100
+
+C4M0I0_ENTHI_      1 ------------------TEFQPGGETDLDCSV---------KEFYEKFV     23
+                                       ...:....:...|.:         .:|.::..
+Q7XKT6_ORYSJ_    101 FGDFFRLHLRHNIWSVEAASSEAAASSGSRCEILVGIEWVKRSKFQKRIA    150
+
+C4M0I0_ENTHI_     24 RN---EAKEKFKEIL--AEKELTNINVSDWEVSEQFGFVRSQDFIVPLKG     68
+                     ||   :...:.||:|  |.:|:...                         
+Q7XKT6_ORYSJ_    151 RNICEKLAHRAKEVLEAAAREIAPA-------------------------    175
+
+C4M0I0_ENTHI_     69 IPIGPSSAHAIVNEIYYFEGDNLIICSTNQTPDVPYGDSFKLEFKTTISP    118
+                                                                       
+Q7XKT6_ORYSJ_    175 --------------------------------------------------    175
+
+C4M0I0_ENTHI_    119 KGEKQCHFVEDFAVVFLKKVMLKGTIESQGVNNAKKDIDVMIKKYIEKIS    168
+                                                                       
+Q7XKT6_ORYSJ_    175 --------------------------------------------------    175
+
+C4M0I0_ENTHI_    169 GKP    171
+                        
+Q7XKT6_ORYSJ_    175 ---    175
+
+
+#---------------------------------------
+#---------------------------------------

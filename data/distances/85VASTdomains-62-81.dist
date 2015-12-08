@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:46
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-65.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q86AF6_DICDI_540708
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 268
+# Identity:      44/268 (16.4%)
+# Similarity:    82/268 (30.6%)
+# Gaps:         119/268 (44.4%)
+# Score: 63.5
+# 
+#
+#=======================================
+
+Q86AF6_DICDI_      1 -------------------PWSTEKYQISISEFYQLI--------CRTDF     23
+                                        |.|      |:|||.:::        |:.:.
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGS------SVSEFLEMVTPRSTRLKCKMER     44
+
+Q86AF6_DICDI_     24 --------WGSVNTTHSYTEQN----LTEWKQTNNCCIHRNMDFRTAISF     61
+                             .||.:::.|..|::    |.:|..      |.......|:|:
+D0NHH4_PHYIT_     45 AKLATSAPVGSASSSASTGEKDSDDVLRDWHS------HPRFGLVRALSY     88
+
+Q86AF6_DICDI_     62 --------KIGP-------------KSTRVYQTQRCKLKNKS--------     82
+                             .:|.             |:..:.|...|.:::.|        
+D0NHH4_PHYIT_     89 HPDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGD    138
+
+Q86AF6_DICDI_     83 -----EFILQSTSVSKDVPYGDAFSVENLLVVQAI-----------DNSS    116
+                          ...|:|...:..:||.:.||:|.::.|:.|           |.||
+D0NHH4_PHYIT_    139 QKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSS    188
+
+Q86AF6_DICDI_    117 CLTKLSSKIKFTKSVWG----------LSSMIQKTALQGNKE-----FFV    151
+                     ...|.|.|:......|.          |.:.:::.||:|.:.     ..:
+D0NHH4_PHYIT_    189 SFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKL    238
+
+Q86AF6_DICDI_    152 LWNTMVRNQIETYVYNKM    169
+                     |.:...|:|.        
+D0NHH4_PHYIT_    239 LRDANTRHQF--------    248
+
+
+#---------------------------------------
+#---------------------------------------

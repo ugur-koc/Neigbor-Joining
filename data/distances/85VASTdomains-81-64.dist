@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-67.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: D0NJ57_PHYIT_385538
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 268
+# Identity:      37/268 (13.8%)
+# Similarity:    61/268 (22.8%)
+# Gaps:         134/268 (50.0%)
+# Score: 49.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 --TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLA     48
+                       ...:..|:..||:::....| .||..|:::.               ..
+D0NJ57_PHYIT_      1 SDVDTIAPKDISMTQILEEVFP-VSVDTFMKLF---------------YL     34
+
+D0NHH4_PHYIT_     49 TSAPVGSASSSASTGEKDSDDVLRDW----HSHPRFGLVRALSYH-PDAA     93
+                     ..||.|....:..||  .::..:..|    .....||:.|:|.:. |..|
+D0NJ57_PHYIT_     35 DKAPFGLDKFNEQTG--STEMTINPWTTPLEDEESFGMTRSLQFRVPVDA     82
+
+D0NHH4_PHYIT_     94 TIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPH    143
+                     .|....|...     .|..:|    |..|...:.:.|..           
+D0NJ57_PHYIT_     83 PIGPKSSQVD-----VLQCLK----ENEHGVRVVESSTR-----------    112
+
+D0NHH4_PHYIT_    144 RASLRSKIYTLSIPYSNCFSIE---VIVDVEDIP----------VREDSD    180
+                              .:.|||.:.||:|   .||.....|          ||.:.:
+D0NJ57_PHYIT_    113 ---------LVDIPYGDYFSVEDRWTIVPRSSDPNACKVFIELKVRLEQE    153
+
+D0NHH4_PHYIT_    181 MNTEDKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRS    230
+                     :                                                 
+D0NJ57_PHYIT_    154 L-------------------------------------------------    154
+
+D0NHH4_PHYIT_    231 TCTTLLKLLRDANTRHQF    248
+                                       
+D0NJ57_PHYIT_    154 ------------------    154
+
+
+#---------------------------------------
+#---------------------------------------

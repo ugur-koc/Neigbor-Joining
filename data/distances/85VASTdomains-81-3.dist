@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:11
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-11.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: B9G1J5_ORYSJ_8981071
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 259
+# Identity:      41/259 (15.8%)
+# Similarity:    80/259 (30.9%)
+# Gaps:          96/259 (37.1%)
+# Score: 58.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                        .:.|...|.|:.:::| .::::..:|:....|..:|...:       
+B9G1J5_ORYSJ_      1 ---EDAKNLQMNEVFSSSI-SANMASLMEVFGGGSFEMKIMNK-------     39
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                       ||..:.||:..|.|..|   ::.....:...|.||        |..|.
+B9G1J5_ORYSJ_     40 --VGCLNYSATQWESDKPD---EYQRQIHYKFSRKLS--------PIGGE     76
+
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSK    150
+                     ..||.:...:.:.....||:..           ||||             
+B9G1J5_ORYSJ_     77 VTGTQQKSPMPNKAGWIIEEVM-----------ELQG-------------    102
+
+D0NHH4_PHYIT_    151 IYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSMKLTGL    200
+                          |.:.:.|:|.:...:||:                    :.|....
+B9G1J5_ORYSJ_    103 -----ILFGDFFTIHIRYQIEDL--------------------APKQRAC    127
+
+D0NHH4_PHYIT_    201 HIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLLRDANTRHQF--    248
+                     .::...|:.:|:.|..:.::|:..|.|            ..|..:..|  
+B9G1J5_ORYSJ_    128 SVQVFLGIEWSKTTRHRKRIEKSVLSG------------SSARLKEMFIL    165
+
+D0NHH4_PHYIT_    248 ---------    248
+                              
+B9G1J5_ORYSJ_    166 ASKQLPHAR    174
+
+
+#---------------------------------------
+#---------------------------------------

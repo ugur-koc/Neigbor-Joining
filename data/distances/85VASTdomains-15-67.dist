@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:34
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-22.fasta
+#    [-bsequence] data/fastas/85VASTdomains-7.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9TQF1_PHYPA_224401
+# 2: Q22US2_TETTS_9321154
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 258
+# Identity:      37/258 (14.3%)
+# Similarity:    64/258 (24.8%)
+# Gaps:         115/258 (44.6%)
+# Score: 49.5
+# 
+#
+#=======================================
+
+A9TQF1_PHYPA_      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_      1 ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTNTVYDNFFYYYIE     50
+
+A9TQF1_PHYPA_      1 ---------VDDFPPPLASGVVLDQRYGTSAKSLSALICKAGSPFIQELL     41
+                              ::.:.|| .......|.|                ||.:|  
+Q22US2_TETTS_     51 NVMKCWNIQIEKWSPP-PPQYFQQQNY----------------PFSEE--     81
+
+A9TQF1_PHYPA_     42 TCLKTTEYSEE---PWKRANNGCIERVVSYMKAATK-----IIKAVKASE     83
+                          .|..:|   .|...:    :|.|:|.|....     :.|..|.||
+Q22US2_TETTS_     82 -----NEKKKEKVQDWIEIS----QRQVTYDKTIPLSGMPFLPKFCKVSE    122
+
+A9TQF1_PHYPA_     84 SHTCRRLDDRGFILDISCSTPDVPYGSNF--MVKLQFCILAGQDLPSQEK    131
+                     ......:.....|.::...:...|....|  .::..|..|.       ..
+Q22US2_TETTS_    123 KQKIIFISPDELIFELEAYSSGAPMTDTFYHFIRNTFVQLT-------PD    165
+
+A9TQF1_PHYPA_    132 TCRLQVSWTLHFLHSTMMKGMIEN-GARAGIKETYELYR---EVLSRYAK    177
+                     |...:|...:.||.|....|.|:: ..:.|:|.|.|:|:   |.|:::.:
+Q22US2_TETTS_    166 TVSYKVQMDVRFLKSNWFSGTIDSQSQKEGVKSTQEIYKSFQERLTQFLQ    215
+
+A9TQF1_PHYPA_    178 P-------    178
+                     .       
+Q22US2_TETTS_    216 DKNEKRRN    223
+
+
+#---------------------------------------
+#---------------------------------------

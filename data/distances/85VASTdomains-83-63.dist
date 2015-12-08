@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:15
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-84.fasta
+#    [-bsequence] data/fastas/85VASTdomains-66.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8LDM5_THAPS_9291109
+# 2: B8CDL4_THAPS_224415
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 328
+# Identity:      16/328 ( 4.9%)
+# Similarity:    23/328 ( 7.0%)
+# Gaps:         283/328 (86.3%)
+# Score: 19.5
+# 
+#
+#=======================================
+
+B8LDM5_THAPS_      0 --------------------------------------------------      0
+                                                                       
+B8CDL4_THAPS_      1 MPAEPKLQQMTIIGKQKIKGISINDYYEVAWSEGENCNKKQIYAPFLTSC     50
+
+B8LDM5_THAPS_      0 --------------------------------------------------      0
+                                                                       
+B8CDL4_THAPS_     51 GKNDVKVTPWEMGGEIVGDWCGEKYTQQRYVTFNFMKQTIGQTLVEVKHT    100
+
+B8LDM5_THAPS_      1 -----------------------------------------------VGL      3
+                                                                    :|:
+B8CDL4_THAPS_    101 QRCRRLGNDRCIVQMTLEMKGFPYSDCFVVEVRHVASRVGESDIIVEIGM    150
+
+B8LDM5_THAPS_      4 EVDLPVGFKRLRWALLHSDSKFLKDAFFGPVMNYADITMGSWSKNNNDIG     53
+                     .|                  :|||...|.             .|...:.|
+B8CDL4_THAPS_    151 SV------------------RFLKSCLFE-------------GKIKTNTG    169
+
+B8LDM5_THAPS_     54 LPTTPEAVNEEDFLNATLEFSYLMPKSAFVKANMCYATHEIIYYDDYSLV    103
+                     ..||...:   :.|..|:|..     ..|||                   
+B8CDL4_THAPS_    170 AETTKAQL---ELLRQTVEAC-----KPFVK-------------------    192
+
+B8LDM5_THAPS_    104 IKEKTLTPEVPYGNSFIAWTQYNLVSTGKNNCRMVCSVEAEFPNGPPMVA    153
+                                                                       
+B8CDL4_THAPS_    192 --------------------------------------------------    192
+
+B8LDM5_THAPS_    154 RQIKSGMRSGTAEKFVLLGETICRYADA    181
+                                                 
+B8CDL4_THAPS_    192 ----------------------------    192
+
+
+#---------------------------------------
+#---------------------------------------

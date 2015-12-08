@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:50
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-68.fasta
+#    [-bsequence] data/fastas/85VASTdomains-73.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YL072_YEAST_390578
+# 2: Q8VZF8_ARATH_257370
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 198
+# Identity:      27/198 (13.6%)
+# Similarity:    52/198 (26.3%)
+# Gaps:          93/198 (47.0%)
+# Score: 46.5
+# 
+#
+#=======================================
+
+YL072_YEAST_3      1 QETMDFPYKPE------ANNEYV-LLERQFSVPPGLLFIMMFNEDNPVFE     43
+                          |.:|||      .::::. :.|.:||:|....|.:.|::....|.
+Q8VZF8_ARATH_      1 -----FNWKPEDTDAPKLSSDFTKVAEAKFSIPVEEFFRLFFSDGAVSFV     45
+
+YL072_YEAST_3     44 LSFLKTQDSSNISHIGTFEKVNKDGQHYR--EFQYTKQLHFPVGPKSTNC     91
+                     .||.|....... ...:::...|.| |.|  .||:..:::|  |.|...|
+Q8VZF8_ARATH_     46 ESFHKNCGDKEF-RCTSWQPHEKLG-HTRNVSFQHPIKIYF--GAKFGGC     91
+
+YL072_YEAST_3     92 EVAEILLHCDWERYINVLSITRTPNVPSGTSFSTRTRYMFRWDDQGQGCI    141
+                     :.::     .:..|.|...:..|.:..:                      
+Q8VZF8_ARATH_     92 QESQ-----KFRMYRNSHLVIETSHRSA----------------------    114
+
+YL072_YEAST_3    142 LKISFWVDWNASSWIKPMVESNCKNGQISATKDLVKLVEEFVEKYVEL    189
+                                                                     
+Q8VZF8_ARATH_    114 ------------------------------------------------    114
+
+
+#---------------------------------------
+#---------------------------------------

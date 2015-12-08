@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-61.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: V5IMN0_NEUCR_493676
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 322
+# Identity:      41/322 (12.7%)
+# Similarity:    57/322 (17.7%)
+# Gaps:         212/322 (65.8%)
+# Score: 27.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+V5IMN0_NEUCR_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                                                                       
+V5IMN0_NEUCR_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLE--DELQGDQKLPHRASLR    148
+                                             |...|:..  |.:.||..:|  |.| 
+V5IMN0_NEUCR_      1 ------------------------TECGDAATHYDRVIGDDVVP--APL-     23
+
+D0NHH4_PHYIT_    149 SKIYTL--SIPYS-----------NCFSIEVIVDVEDIPVREDSDMNTED    185
+                     .|:|.|  ..|.|           .||         :|.:.:...:|.|.
+V5IMN0_NEUCR_     24 GKVYNLLFGAPSSAWMTKWLLNDQKCF---------EINMDDKKGLNNEQ     64
+
+D0NHH4_PHYIT_    186 KSSSFDKNSMK------------------LTGLHIRWRAGVTFSRD----    213
+                     |:.:|  |.:|                  |..|.......||.|..    
+V5IMN0_NEUCR_     65 KTRTF--NYIKPLNASIGPKQTKCMVTEQLDNLDFEKAVNVTVSTQNPDV    112
+
+D0NHH4_PHYIT_    214 ----------------------------TI-------LKTQLERGALEGV    228
+                                                 ||       ||..:||||.||.
+V5IMN0_NEUCR_    113 PNGNIFVVKTKYCLSWAENNATRVQINCTIEWSGKSWLKGAIERGANEGQ    162
+
+D0NHH4_PHYIT_    229 RSTCTTLLKLLRDA-NTRHQF-    248
+                     ......|...|:.| ::|.:. 
+V5IMN0_NEUCR_    163 AQYAKDLFVALKAAVSSRPRSN    184
+
+
+#---------------------------------------
+#---------------------------------------

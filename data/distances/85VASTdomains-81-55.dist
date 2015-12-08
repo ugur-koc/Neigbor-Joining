@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-59.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: B9F0Z0_ORYSJ_387537
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 310
+# Identity:      28/310 ( 9.0%)
+# Similarity:    49/310 (15.8%)
+# Gaps:         221/310 (71.3%)
+# Score: 42.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+B9F0Z0_ORYSJ_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                                                                       
+B9F0Z0_ORYSJ_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSK    150
+                                                                      |
+B9F0Z0_ORYSJ_      1 -------------------------------------------------K      1
+
+D0NHH4_PHYIT_    151 IYTLSIPYSNCFSIEVIVDVEDI------------------------PVR    176
+                     .:.   |:.|   ..|:||...:                        |:.
+B9F0Z0_ORYSJ_      2 AFQ---PFIN---EHVLVDATSLSKWYPSDEYGGKIREVMFRSLCHSPLC     45
+
+D0NHH4_PHYIT_    177 EDSDMNTEDKSSSFDKNSMKLT----------------GLHIRW------    204
+                     ......||.:.:||.||...|.                .:|.||      
+B9F0Z0_ORYSJ_     46 PPDTAVTEWQRASFSKNKTNLIYETKHQAHDVPFGSYFEIHCRWHLRTTS     95
+
+D0NHH4_PHYIT_    205 --------RAGVTFSRDTILKTQLERGALEGVR--------STCTTLLKL    238
+                             :.||...:..||:::::.||.:..|        :.|..:|| 
+B9F0Z0_ORYSJ_     96 SSTCQVDIKIGVNMKKWCILQSKIKSGATDEYRREVCKILEAACDYVLK-    144
+
+D0NHH4_PHYIT_    239 LRDANTRHQF    248
+                      .::|.:.  
+B9F0Z0_ORYSJ_    145 -EESNNQA--    151
+
+
+#---------------------------------------
+#---------------------------------------

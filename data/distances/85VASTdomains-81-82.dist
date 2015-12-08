@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:13
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-83.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: Q6K8R7_ORYSJ_365458
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 279
+# Identity:      18/279 ( 6.5%)
+# Similarity:    30/279 (10.8%)
+# Gaps:         216/279 (77.4%)
+# Score: 14.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 ---------------TSFLEMKEQD-----MTELMTATI-------PGSS     23
+                                    ||..:....|     :.|:|..::       |.::
+Q6K8R7_ORYSJ_      1 KAFQPFINEHVLVDATSLSKWYPSDEYGGKIREVMFRSLCHSPLCPPDTA     50
+
+D0NHH4_PHYIT_     24 VSEFLEMVTPRSTRLKCK----MERAKLATSAPVGSASSSASTGEKDSDD     69
+                     |:|:     .|::..|.|    .|....|...|.||....||......: 
+Q6K8R7_ORYSJ_     51 VTEW-----QRASFSKNKTNLIYETKHQAHDVPFGSYFEVASKNNLQFN-     94
+
+D0NHH4_PHYIT_     70 VLRDWHSHPRFGLVRALSYHPDAATIPTMGSSRGTGKNVTLNSMKAVTIE    119
+                                                                       
+Q6K8R7_ORYSJ_     94 --------------------------------------------------     94
+
+D0NHH4_PHYIT_    120 QYHSCTIEDDSLEDELQGDQKLPHRASLRSKIYTLSIPYSNCFSIEVIVD    169
+                                                                       
+Q6K8R7_ORYSJ_     94 --------------------------------------------------     94
+
+D0NHH4_PHYIT_    170 VEDIPVREDSDMNTEDKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQ    219
+                                                                       
+Q6K8R7_ORYSJ_     94 --------------------------------------------------     94
+
+D0NHH4_PHYIT_    220 LERGALEGVRSTCTTLLKLLRDANTRHQF    248
+                                                  
+Q6K8R7_ORYSJ_     94 -----------------------------     94
+
+
+#---------------------------------------
+#---------------------------------------

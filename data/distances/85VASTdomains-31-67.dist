@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:58
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-37.fasta
+#    [-bsequence] data/fastas/85VASTdomains-7.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: GRM1C_HUMAN_107289
+# 2: Q22US2_TETTS_9321154
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 270
+# Identity:      33/270 (12.2%)
+# Similarity:    64/270 (23.7%)
+# Gaps:         134/270 (49.6%)
+# Score: 57.5
+# 
+#
+#=======================================
+
+GRM1C_HUMAN_1      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_      1 ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTNTVYDNFFYYYIE     50
+
+GRM1C_HUMAN_1      1 ------------------------SDSVDEENVPEKDLHGRLFINRIFHI     26
+                                             :....|||..:|:             
+Q22US2_TETTS_     51 NVMKCWNIQIEKWSPPPPQYFQQQNYPFSEENEKKKE-------------     87
+
+GRM1C_HUMAN_1     27 SADRMFELLFTSSRFMQKFASSRNIIDVVSTPWTAELGGDQLRTMTY--T     74
+                                         ..::.|::            ..|.:||  |
+Q22US2_TETTS_     88 --------------------KVQDWIEI------------SQRQVTYDKT    105
+
+GRM1C_HUMAN_1     75 IVLNS-PLTGKCTAATEKQTLYKESREARFYLVDSEVLTHDVPYHDYFYT    123
+                     |.|:. |...|....:|||.:...|.:...:  :.|..:...|..|.||.
+Q22US2_TETTS_    106 IPLSGMPFLPKFCKVSEKQKIIFISPDELIF--ELEAYSSGAPMTDTFYH    153
+
+GRM1C_HUMAN_1    124 VNRYCIIRSSKQKCRLRVSTDLKYRKQPW--GLVKSLIEKNSWSSLEDYF    171
+                     ..|...::.:......:|..|:::.|..|  |.:.|..:|....|.::.:
+Q22US2_TETTS_    154 FIRNTFVQLTPDTVSYKVQMDVRFLKSNWFSGTIDSQSQKEGVKSTQEIY    203
+
+GRM1C_HUMAN_1    172 KQLESDL--LIEES------    183
+                     |..:..|  .:::.      
+Q22US2_TETTS_    204 KSFQERLTQFLQDKNEKRRN    223
+
+
+#---------------------------------------
+#---------------------------------------

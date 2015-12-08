@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:31
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-56.fasta
+#    [-bsequence] data/fastas/85VASTdomains-75.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8C8I7_THAPS_81294
+# 2: C4LUM2_ENTHI_46249
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 264
+# Identity:      33/264 (12.5%)
+# Similarity:    74/264 (28.0%)
+# Gaps:         110/264 (41.7%)
+# Score: 53.0
+# 
+#
+#=======================================
+
+B8C8I7_THAPS_      1 ----------------------------------------------HCVI      4
+                                                                   |...
+C4LUM2_ENTHI_      1 WRRSIIFSEKLKQITKRQKNETIDKNSNDEGILKEEPKHVVTIHRFHKSA     50
+
+B8C8I7_THAPS_      5 NQVQLQGLHTAEFFRVFFADDAIYSMRDFQKRRGDVDVVYGKWRSVENSA     54
+                     |.:         |..||..::.:..:.|   ..|..:|....|::..|  
+C4LUM2_ENTHI_     51 NDL---------FMLVFSNNETVKQLFD---NIGQKEVKTEGWQNEAN--     86
+
+B8C8I7_THAPS_     55 GCCTSFKGGKSTLLPLPANLTKERTLHFNTLTHSYFG--PAYAKATKVQR    102
+                            |||...|                   ||.|  ......|:::.
+C4LUM2_ENTHI_     87 -------GGKILYL-------------------SYKGVSSVIGMETRIEE    110
+
+B8C8I7_THAPS_    103 --ATQLSNRLLVIENETQLAEIPFADRFRVVERWCVEAVRNEMSGGASDG    150
+                       ..:::...::|.....:.:||::..|:      :|::......|  :.
+C4LUM2_ENTHI_    111 KWEMRMNENGIMIAMVVSVFDIPYSSYFK------IESLMKMKDEG--EY    152
+
+B8C8I7_THAPS_    151 CAFSQDMALYTSKLTVHAEVIMLRSCTWENQIRKRASETFTEMNNDWVRT    200
+                     |           .:.|...|..::|..|:|:|.:...:.:.....:|::.
+C4LUM2_ENTHI_    153 C-----------DIVVKLNVKFMKSTIWKNRIEQTTMKEYKNKYEEWMKL    191
+
+B8C8I7_THAPS_    201 AVKALRATEHQKQK    214
+                     ..|.:..::.::. 
+C4LUM2_ENTHI_    192 IGKMIGDSQFEET-    204
+
+
+#---------------------------------------
+#---------------------------------------

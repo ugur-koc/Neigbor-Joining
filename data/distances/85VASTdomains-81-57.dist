@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-60.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: B8BQ30_THAPS_365549
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 272
+# Identity:      49/272 (18.0%)
+# Similarity:    78/272 (28.7%)
+# Gaps:         111/272 (40.8%)
+# Score: 31.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 -TSFLEMKEQDMTELMTATIPGSS----VSEFLEMVTPRSTRLKCKMERA     45
+                      .:|...|:|:  :.....|.|.|    |.||..:|      ||.....:
+B8BQ30_THAPS_      1 WEAFCSEKKQN--KFSEVAIHGISLPLTVDEFHNLV------LKDNAHHS     42
+
+D0NHH4_PHYIT_     46 KLATSAPVGSASSSASTGEKDSDDVLRDWHSHPRFG-----LVRALSY-H     89
+                     .......:|           |.|.....|  .|..|     ..|.:.| |
+B8BQ30_THAPS_     43 IGKFMTMIG-----------DFDVETTPW--EPPAGAKGQPATRTIHYSH     79
+
+D0NHH4_PHYIT_     90 PDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQ    139
+                     |  ..:|....:....|...||...:..: ...||||.:|          
+B8BQ30_THAPS_     80 P--VNVPMAPPTAKAFKKQYLNKFGSTGL-CLESCTIVED----------    116
+
+D0NHH4_PHYIT_    140 KLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSS    189
+                                     :|.::||    :|| :.:.|.:|.|         
+B8BQ30_THAPS_    117 ----------------VPMTDCF----VVD-DRLWVSKDPD---------    136
+
+D0NHH4_PHYIT_    190 FDKNSMKLTGL--HIRWRAGVTFSR--DTILKTQLER---------GALE    226
+                        |...:.|:  .||:..|..|.|  :...:.:.::         .:||
+B8BQ30_THAPS_    137 ---NCGCIVGVSFQIRFVKGTMFRRIIENAARGEFQKWWGEFGNMVSSLE    183
+
+D0NHH4_PHYIT_    227 GVRSTCTTLLKLLRDANTRHQF    248
+                     |.                    
+B8BQ30_THAPS_    184 GS--------------------    185
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-3.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: Q5Z6I4_ORYSJ_261445
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 307
+# Identity:      40/307 (13.0%)
+# Similarity:    69/307 (22.5%)
+# Gaps:         181/307 (59.0%)
+# Score: 71.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+Q5Z6I4_ORYSJ_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                                                                       
+Q5Z6I4_ORYSJ_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIED----------DSLED--ELQG-    137
+                       ..|..:..|....|.|:|.::....|          |.|:.  |:|| 
+Q5Z6I4_ORYSJ_      1 --HEGNEIPENLSGGVLIDQVYAVAPSDLNGLLFSPSSDFLQSLAEMQGT     48
+
+D0NHH4_PHYIT_    138 ------------DQKLPHRASLRSK-----------------------IY    152
+                                 |.::..|....:|                       ||
+Q5Z6I4_ORYSJ_     49 TGLEIQQWRLENDGEVLKRVVSYTKAPTALVKAVKATEDVSYLKADGDIY     98
+
+D0NHH4_PHYIT_    153 -------TLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSM    195
+                            |..:|:.|.|.:||:..:...|...|:     :|||.      
+Q5Z6I4_ORYSJ_     99 ATLADVSTPDVPFGNSFRVEVLTCIMPGPELPDN-----EKSSR------    137
+
+D0NHH4_PHYIT_    196 KLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLL----RD    241
+                         |.:.||  :.|.:.|::|..:|.||.:|::.......:||    |.
+Q5Z6I4_ORYSJ_    138 ----LVVSWR--LNFIQSTMMKGMIENGAKQGLKDNYIQFSELLARNIRP    181
+
+D0NHH4_PHYIT_    242 ANTRHQF    248
+                     .:::   
+Q5Z6I4_ORYSJ_    182 VDSK---    185
+
+
+#---------------------------------------
+#---------------------------------------

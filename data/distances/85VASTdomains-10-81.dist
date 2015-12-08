@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:27
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-18.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B9F3V9_ORYSJ_332515
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 265
+# Identity:      45/265 (17.0%)
+# Similarity:    85/265 (32.1%)
+# Gaps:          98/265 (37.0%)
+# Score: 61.0
+# 
+#
+#=======================================
+
+B9F3V9_ORYSJ_      1 ------ESKDKGSEMPENLRGGILVDQSYVLQP--TEMNSMLFSAHSDFW     42
+                           :.:|....|...:.|..:.:...::.|  |.:...:..|..   
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKL---     47
+
+B9F3V9_ORYSJ_     43 PAVAEVQGLSGFQTDPWKLVSNDCLK-----------RTLSYTKAASKL-     80
+                      |.:...|.:.......:..|:|.|:           |.|||...|:.: 
+D0NHH4_PHYIT_     48 -ATSAPVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIP     96
+
+B9F3V9_ORYSJ_     81 ----------------VKAVKI------TEEQTYL-------KAAGNSFA    101
+                                     :|||.|      |.|...|       :...:..:
+D0NHH4_PHYIT_     97 TMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRAS    146
+
+B9F3V9_ORYSJ_    102 VLSSVSSPEVPCGNCFKVEILYCITPGPQLPSKEQT--------------    137
+                     :.|.:.:..:|..|||.:|::..:   ..:|.:|.:              
+D0NHH4_PHYIT_    147 LRSKIYTLSIPYSNCFSIEVIVDV---EDIPVREDSDMNTEDKSSSFDKN    193
+
+B9F3V9_ORYSJ_    138 ----SHLTISWR--LNFVQSTMLKGMIESGTKQGLREGYAQFTEVLSQKT    181
+                         :.|.|.||  :.|.:.|:||..:|.|..:|:|          |..|
+D0NHH4_PHYIT_    194 SMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVR----------STCT    233
+
+B9F3V9_ORYSJ_    182 KVI------------    184
+                     .::            
+D0NHH4_PHYIT_    234 TLLKLLRDANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

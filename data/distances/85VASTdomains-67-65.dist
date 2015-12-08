@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:53
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-7.fasta
+#    [-bsequence] data/fastas/85VASTdomains-68.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_9321154
+# 2: YL072_YEAST_390578
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 265
+# Identity:      44/265 (16.6%)
+# Similarity:    78/265 (29.4%)
+# Gaps:         118/265 (44.5%)
+# Score: 57.0
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTNTVYDNFFYYYIE     50
+                                            |..: ||.|: |..|..|         
+YL072_YEAST_3      1 -----------------------QETM-DFPYK-PEANNEY---------     16
+
+Q22US2_TETTS_     51 NVMKCWNIQIEK-WSPPPPQYFQQQNYPFSEEN---EKKKEKVQDWIEIS     96
+                            :.:|: :|.||...|...   |:|:|   |....|.||...||
+YL072_YEAST_3     17 -------VLLERQFSVPPGLLFIMM---FNEDNPVFELSFLKTQDSSNIS     56
+
+Q22US2_TETTS_     97 Q--------------RQVTYDKTIPLSGMPFLPKF--CKVSEKQKIIFIS    130
+                     .              |:..|.|.:   ..|..||.  |:|:|    |.:.
+YL072_YEAST_3     57 HIGTFEKVNKDGQHYREFQYTKQL---HFPVGPKSTNCEVAE----ILLH     99
+
+Q22US2_TETTS_    131 PDELIFELEAYSSGAPMTDTFYHFIRNTFVQLTPDTVS------------    168
+                     .|                  :..:|....:..||:..|            
+YL072_YEAST_3    100 CD------------------WERYINVLSITRTPNVPSGTSFSTRTRYMF    131
+
+Q22US2_TETTS_    169 ----------YKVQMDVRFLKSNWFSGTIDSQSQKEGVKSTQEIYKSFQE    208
+                               .|:...|.:..|:|....::|..:...:.:|:::.|..:|
+YL072_YEAST_3    132 RWDDQGQGCILKISFWVDWNASSWIKPMVESNCKNGQISATKDLVKLVEE    181
+
+Q22US2_TETTS_    209 RLTQFLQDKNEKRRN    223
+                     .:.::::.       
+YL072_YEAST_3    182 FVEKYVEL-------    189
+
+
+#---------------------------------------
+#---------------------------------------

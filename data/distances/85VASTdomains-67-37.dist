@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:52
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-7.fasta
+#    [-bsequence] data/fastas/85VASTdomains-42.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_9321154
+# 2: I7M7X5_TETTS_10131226
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 247
+# Identity:      58/247 (23.5%)
+# Similarity:    96/247 (38.9%)
+# Gaps:          57/247 (23.1%)
+# Score: 178.5
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 ----------ETFKFELCDVILKGENITIRDVFQACLGDFQYQ-NPSTNT     39
+                               ...:||     :|..|.|.|::|....|...|: .|..:.
+I7M7X5_TETTS_      1 KQQSIFEKAQNVSEFE-----IKFPNATPREIFNILFGLKPYKPQPEGSQ     45
+
+Q22US2_TETTS_     40 VYDNFFYYYIENVMKCWNIQIEKWSPPPPQYFQQQNYPFSEENEKKKEKV     89
+                     .:.||.:|..:...|..:||.:.::||||:::  .|...|:     |:.|
+I7M7X5_TETTS_     46 EFPNFRFYIFQEFQKDTDIQFQTFNPPPPEWY--TNLDCSD-----KDTV     88
+
+Q22US2_TETTS_     90 QDWIEISQRQVTYDKTIPL-SGMPFLPKFCKVSEKQKIIFISPDELIFEL    138
+                     :...|||  .:.:....|: ..:||.||......|:|..:||.:|.|.|.
+I7M7X5_TETTS_     89 KSSPEIS--NLEFKVVHPVREKIPFGPKVSYCQNKEKYFWISAEEFIIER    136
+
+Q22US2_TETTS_    139 EAYSSGAPMTDTFYHFIRNTF-VQLTPDTVSYKVQMDVRFLKSNWFSGTI    187
+                     |.:.|..|..|  |..||..: :....|.....:::.|.|:||..|.|.|
+I7M7X5_TETTS_    137 EIFLSKIPYCD--YFTIRFQYNISQVQDQTRILIKLYVHFMKSTTFKGRI    184
+
+Q22US2_TETTS_    188 DSQSQKEGVKSTQEI-----------YKSFQERLTQFLQDKNEKRRN    223
+                     ::.|..|..:....:           |:.|                 
+I7M7X5_TETTS_    185 ENGSLSENTEVINTVFTPQAQIAIQNYQKF-----------------    214
+
+
+#---------------------------------------
+#---------------------------------------

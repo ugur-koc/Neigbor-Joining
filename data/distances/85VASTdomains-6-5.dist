@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:22
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-14.fasta
+#    [-bsequence] data/fastas/85VASTdomains-13.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9TQ08_PHYPA_235415
+# 2: C2GR1_ARATH_8441019
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 197
+# Identity:      37/197 (18.8%)
+# Similarity:    73/197 (37.1%)
+# Gaps:          37/197 (18.8%)
+# Score: 71.0
+# 
+#
+#=======================================
+
+A9TQ08_PHYPA_      1 EDFPPPLAGGVVLDQRYAVSSKFLSALILKAGSPFVQELL----TVQKTT     46
+                                |.|.|:  |..|  :|.|.....|..||.    ..:|..
+C2GR1_ARATH_8      1 -----------VDDVRF--SEVF--SLTLPVPVSFFMELFGGGEVDRKAM     35
+
+A9TQ08_PHYPA_     47 E------YIEGPWKSEQSGAIQRVVTYMKAATKMIKAVKATETQTCRRQ-     89
+                     |      |...||:||:....:|...|   ..|.|...:...|.|.::. 
+C2GR1_ARATH_8     36 ERAGCQSYSCSPWESEKDDVYERQTYY---RDKRISRYRGEVTSTQQKSL     82
+
+A9TQ08_PHYPA_     90 --DEKGFVVDVSCATPDVPYGGCFVVELQFCILAGPDQPSNEKSCRLQIS    137
+                       ::.|::|:.......||.|..|.:.|::.:   .:..|..|:..:::.
+C2GR1_ARATH_8     83 VPEKNGWLVEEVMTLHGVPLGDYFNLHLRYQM---EESTSKPKTTYVRVY    129
+
+A9TQ08_PHYPA_    138 WKLNFLQSTMMRSMIENGARAGIKETYEVYRQVLANHAKSVSEE---    181
+                     :.:.:|:||..:..:.......:::..::....|.....|..::   
+C2GR1_ARATH_8    130 FGIEWLKSTRHQKRVTKNILVNLQDRLKMTFGFLEKEYSSRQQQQQV    176
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-41.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: Q8W4D4_ARATH_391576
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 277
+# Identity:      43/277 (15.5%)
+# Similarity:    85/277 (30.7%)
+# Gaps:         120/277 (43.3%)
+# Score: 49.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 ----TSFLEMKEQDMTEL---MTATIPGSSVSEFLEMVTPRSTRLKCKME     43
+                         .:|:  ||:.:..:   :.|:.|...::..|               
+Q8W4D4_ARATH_      1 PVKFQAFI--KEEVLVNIYNDVFASTPEQVLNVLL---------------     33
+
+D0NHH4_PHYIT_     44 RAKLATSAPVGSASSSASTGE-----KDSDDVLRDWHSHPRF-GLVRALS     87
+                                 |..|..|.|     ||.:..:..||:...: |.||.:.
+Q8W4D4_ARATH_     34 ------------ADDSTYTNEYRSARKDKNLNIEPWHTAEEYDGQVREIK     71
+
+D0NHH4_PHYIT_     88 YH---------PDAATIPTMGSSRGTGKNVTLNSMKAV----TIEQYHSC    124
+                     :.         ||.|..        ..::|.|:..|.|    |::|    
+Q8W4D4_ARATH_     72 FRSICNSPMCPPDTAVT--------EWQHVVLSPDKKVLVFETVQQ----    109
+
+D0NHH4_PHYIT_    125 TIEDDSLEDELQGDQKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIP    174
+                                      ||           .:|:.:.|.:.....:|   
+Q8W4D4_ARATH_    110 -----------------PH-----------DVPFGSYFEVHCRWRLE---    128
+
+D0NHH4_PHYIT_    175 VREDSDMNTEDKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGA    224
+                             .:|::||.           |..|.||.|.:..:::::::.||
+Q8W4D4_ARATH_    129 --------AKDETSSV-----------IDIRVGVHFKKWCLMQSKIKAGA    159
+
+D0NHH4_PHYIT_    225 LEGVRSTCTTLLKLLRDANTRHQF---    248
+                     ::..:.....:|::.......|..   
+Q8W4D4_ARATH_    160 IDEYKKEVEVMLEVALSYLKSHSSSSS    186
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:34
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-58.fasta
+#    [-bsequence] data/fastas/85VASTdomains-66.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4P940_USTMA_8271016
+# 2: B8CDL4_THAPS_224415
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 272
+# Identity:      31/272 (11.4%)
+# Similarity:    49/272 (18.0%)
+# Gaps:         162/272 (59.6%)
+# Score: 12.5
+# 
+#
+#=======================================
+
+Q4P940_USTMA_      1 HRKTTCPCEEKKEHFSSVVLDTTYPAVPEKIYNLLFTSTFMKEFWTDDQK     50
+                                            .||.| |:..:....         .||
+B8CDL4_THAPS_      1 -----------------------MPAEP-KLQQMTIIG---------KQK     17
+
+Q4P940_USTMA_     51 LLDLQISE-----WSPNADNRNLLSRNISYIKPLAGGFGPKQTKCVLTDE     95
+                     :..:.|::     ||   :..|...:.|         :.|..|.|...|.
+B8CDL4_THAPS_     18 IKGISINDYYEVAWS---EGENCNKKQI---------YAPFLTSCGKNDV     55
+
+Q4P940_USTMA_     96 NLHVDFDNYVVTLTTTRTPDVPSGGSFSVKTKTCITWAGTGNVSHVYVTC    145
+                     .:               ||       :.:..:....|.|.......|||.
+B8CDL4_THAPS_     56 KV---------------TP-------WEMGGEIVGDWCGEKYTQQRYVTF     83
+
+Q4P940_USTMA_    146 QVEWSGRSMLKSIIDKASLDGQKQYYKELDEAVRKYLTDH-----TSEFK    190
+                            :.:|..|      ||.....:..:..|:...|.     |.|.|
+B8CDL4_THAPS_     84 -------NFMKQTI------GQTLVEVKHTQRCRRLGNDRCIVQMTLEMK    120
+
+Q4P940_USTMA_    190 --------------------------------------------------    190
+                                                                       
+B8CDL4_THAPS_    121 GFPYSDCFVVEVRHVASRVGESDIIVEIGMSVRFLKSCLFEGKIKTNTGA    170
+
+Q4P940_USTMA_    190 ----------------------    190
+                                           
+B8CDL4_THAPS_    171 ETTKAQLELLRQTVEACKPFVK    192
+
+
+#---------------------------------------
+#---------------------------------------

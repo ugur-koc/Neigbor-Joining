@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:21
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-5.fasta
+#    [-bsequence] data/fastas/85VASTdomains-77.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NKW7_PHYIT_491663
+# 2: Q5BB65_EMENI_8531030
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 213
+# Identity:      36/213 (16.9%)
+# Similarity:    64/213 (30.0%)
+# Gaps:          75/213 (35.2%)
+# Score: 73.5
+# 
+#
+#=======================================
+
+D0NKW7_PHYIT_      1 ------------------------------ASLTSAYDFFNNFLANGTSD     20
+                                                   ||::    |...||...   
+Q5BB65_EMENI_      1 DGPEGQYDRVIKDETIPAPLGKVYSYVFGPASVS----FVPKFLVEN---     43
+
+D0NKW7_PHYIT_     21 RLSEYYKERGDTEIEAGDWTPSKEFGGQTRTMSCRSPTNASIGPSHTMTT     70
+                           ::.|:.|........:.|  .:||..|...|.|.||||..|...
+Q5BB65_EMENI_     44 ------QKSGELEFNCDKTGLTNE--TRTRKYSYIKPLNGSIGPKQTKCI     85
+
+D0NKW7_PHYIT_     71 TTDHVPFDEGGIDDSAKLVMQSKVFMHDIPYGDCFSVEKVTIVERVPSND    120
+                     :|:.:.|    :|....:::.......|:|.|:.|:.:...:.....:|.
+Q5BB65_EMENI_     86 STEQLDF----LDLEKAVLVTLSTQTPDVPSGNVFTTKTKYLFTWAANNQ    131
+
+D0NKW7_PHYIT_    121 -----GSPGQLVAKIYLGVPFSKGCM-----FKSKIISATREAMASSSKL    160
+                          ....:...|.:|..|..||.:     |.:.:|:|.:.|:|..   
+Q5BB65_EMENI_    132 TRFLMTCTIEWSGKSWLKGPIEKGAIDGQGTFGTDLIAALKTAVAPR---    178
+
+D0NKW7_PHYIT_    161 YFHMVNRSMESLG    173
+                                  
+Q5BB65_EMENI_    178 -------------    178
+
+
+#---------------------------------------
+#---------------------------------------

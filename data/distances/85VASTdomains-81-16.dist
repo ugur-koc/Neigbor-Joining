@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-23.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: A9TQF1_PHYPA_8201003
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 271
+# Identity:      46/271 (17.0%)
+# Similarity:    89/271 (32.8%)
+# Gaps:         110/271 (40.6%)
+# Score: 47.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 ---TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKL     47
+                        .:|..|:|.:|..:....||       |.|.:..|...|.::|.   
+A9TQF1_PHYPA_      1 DDADTFTGMEEANMVNVCAFDIP-------LTMDSAMSLFEKGRLEE---     40
+
+D0NHH4_PHYIT_     48 ATSAPVGSASSSASTGEK--DSDDVLRDWHSHPRFGLVRALSYHPDAATI     95
+                     ..:..:|..:..::..|:  ..::|.|           |.:|||      
+A9TQF1_PHYPA_     41 VVAEKMGYINFVSTPWERLEGQNNVQR-----------RQVSYH------     73
+
+D0NHH4_PHYIT_     96 PTMGSSRGTGKNVTLNSMKAVTIEQYH---SCTIEDDSLEDELQGDQKLP    142
+                                   ||..    |.|:.   || |:..::.|.:       
+A9TQF1_PHYPA_     74 --------------LNRQ----ISQFGSKVSC-IQQKTMLDNM-------     97
+
+D0NHH4_PHYIT_    143 HRASLRSKIYTL-------SIPYSNCFSIEVIVDVEDIPVREDSDMNTED    185
+                            |:|.|       .:|:.:.|.::|..|:|...:       ...
+A9TQF1_PHYPA_     98 -------KLYILDEVLTLHDVPFGDHFQVQVRRDIETTSI-------NPP    133
+
+D0NHH4_PHYIT_    186 KSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGA----LEGVRST    231
+                     |||             ::...||::.::|..|.::.:..    .:.:|..
+A9TQF1_PHYPA_    134 KSS-------------VKAYVGVSWHKNTEFKKKITKNVQDHMAKEIREA    170
+
+D0NHH4_PHYIT_    232 CTTLLK----LLRDANTRHQF    248
+                     ....:|    |::|       
+A9TQF1_PHYPA_    171 MNVSVKEVKALVKD-------    184
+
+
+#---------------------------------------
+#---------------------------------------

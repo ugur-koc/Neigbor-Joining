@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:14
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-46.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q55FU7_DICDI_479662
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 257
+# Identity:      46/257 (17.9%)
+# Similarity:    80/257 (31.1%)
+# Gaps:          82/257 (31.9%)
+# Score: 59.5
+# 
+#
+#=======================================
+
+Q55FU7_DICDI_      1 KDQQPQSILESQSSDFQEILSDNFNVSVVNFYRALYSDR-----CNFVH-     44
+                          .|.||.:..|..|:::.....|.|:.:..:.:.|     |.... 
+D0NHH4_PHYIT_      1 -----TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERA     45
+
+Q55FU7_DICDI_     45 -----------SYHVKRGDMNVN--VKPWTFRERFGTIREVEY------V     75
+                                |.....|:.:.:  ::.|....|||.:|.:.|      :
+D0NHH4_PHYIT_     46 KLATSAPVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATI     95
+
+Q55FU7_DICDI_     76 APVSSPIG-----------------------PDKTRIQETQRYQLTRKKL    102
+                     ..:.|..|                       .|.:...|.|..|....:.
+D0NHH4_PHYIT_     96 PTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRA    145
+
+Q55FU7_DICDI_    103 IVETDTIMLDIPYGDHFRIEAKWEV-------------TETSQDTCRLSI    139
+                     .:.:....|.|||.:.|.||...:|             .:.|....:.|:
+D0NHH4_PHYIT_    146 SLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSM    195
+
+Q55FU7_DICDI_    140 SLT---------VRFVKKTWFKSKIETTT---VKETKTSFDKWVQLAKVE    177
+                     .||         |.|.:.|..|:::|...   |:.|.|:..|.::.|...
+D0NHH4_PHYIT_    196 KLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLLRDANTR    245
+
+Q55FU7_DICDI_    178 VQKMLQV    184
+                     .|.    
+D0NHH4_PHYIT_    246 HQF----    248
+
+
+#---------------------------------------
+#---------------------------------------

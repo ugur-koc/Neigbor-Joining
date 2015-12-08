@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:34
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-58.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4P940_USTMA_8271016
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 276
+# Identity:      45/276 (16.3%)
+# Similarity:    79/276 (28.6%)
+# Gaps:         114/276 (41.3%)
+# Score: 32.5
+# 
+#
+#=======================================
+
+Q4P940_USTMA_      1 ----------------------------------HRKTTCPCEEKKEHFS     16
+                                                       ..:..|..|..|...|
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+
+Q4P940_USTMA_     17 SVVLDTTYPAVPEKIYNLLFTSTFMKEFWTDDQKLLDLQISEWSPNADNR     66
+                     :.|...:..|           ||..|:  :||      .:.:|  ::..|
+D0NHH4_PHYIT_     51 APVGSASSSA-----------STGEKD--SDD------VLRDW--HSHPR     79
+
+Q4P940_USTMA_     67 NLLSRNISY-----IKPLAG---GFGPKQT-------------KCVLTDE     95
+                     ..|.|.:||     ..|..|   |.|...|             .|.:.|:
+D0NHH4_PHYIT_     80 FGLVRALSYHPDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDD    129
+
+Q4P940_USTMA_     96 NLHVDF--DNYVVTLTTTR----TPDVPSGGSFSVKT-------------    126
+                     :|..:.  |..:....:.|    |..:|....||::.             
+D0NHH4_PHYIT_    130 SLEDELQGDQKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDS    179
+
+Q4P940_USTMA_    127 ------------KTCITWAGTGNVSHVYVTCQVEWSGRSMLKSIIDKASL    164
+                                 |..:...|.    |:.....|.:|..::||:.:::.:|
+D0NHH4_PHYIT_    180 DMNTEDKSSSFDKNSMKLTGL----HIRWRAGVTFSRDTILKTQLERGAL    225
+
+Q4P940_USTMA_    165 DGQKQYYKELDEAVRKYLTDHTSEFK    190
+                     :|.:.....|.:.:|...|.|  :| 
+D0NHH4_PHYIT_    226 EGVRSTCTTLLKLLRDANTRH--QF-    248
+
+
+#---------------------------------------
+#---------------------------------------

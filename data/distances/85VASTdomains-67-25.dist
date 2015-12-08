@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:52
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-7.fasta
+#    [-bsequence] data/fastas/85VASTdomains-31.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_9321154
+# 2: YHO0_YEAST_751934
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 279
+# Identity:      42/279 (15.1%)
+# Similarity:    63/279 (22.6%)
+# Gaps:         151/279 (54.1%)
+# Score: 37.0
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTNTVYDNFFYYYIE     50
+                                                                       
+YHO0_YEAST_75      0 --------------------------------------------------      0
+
+Q22US2_TETTS_     51 NVMKCWNIQIEKWSPPPPQYFQQQNYPFSEENEKKKEKVQDWIEISQ---     97
+                               ..:.|.|              |||...:......:.:   
+YHO0_YEAST_75      1 ----------TVYKPAP--------------NEKLVNESTIHASLGRVVN     26
+
+Q22US2_TETTS_     98 ----RQVTY-------DKTIPLSGMPFLPKFCKVSEKQKIIFISPDELIF    136
+                         :.|:|       .|...:|.:|.|.....|||.:|..:        
+YHO0_YEAST_75     27 ILFGKDVSYIMAILKAQKNSDISPIPVLVDSPTVSEGKKRDY--------     68
+
+Q22US2_TETTS_    137 ELEAYSSGAP-----------MTDTFYHFIRNTFVQL-----TPDTVS--    168
+                        :|....|           :|:|..||....:||:     |||..|  
+YHO0_YEAST_75     69 ---SYVKTTPGAIGPGKTKCMITETIQHFNLEEYVQVLQTTKTPDVPSGN    115
+
+Q22US2_TETTS_    169 -------------------YKVQMDVRF-----LKSNWFSGTIDSQSQKE    194
+                                        .|:.:.|.:     :||....||.|      
+YHO0_YEAST_75    116 SFYVRTVYLLSWANNNETKLKLYVSVEWTGKSLIKSPIEKGTFD------    159
+
+Q22US2_TETTS_    195 GVKSTQEIYKSFQERLTQFLQDKNEKRRN    223
+                     ||....:|   ..|.|...|.....||: 
+YHO0_YEAST_75    160 GVTDATKI---LVEELGNILTRSATKRK-    184
+
+
+#---------------------------------------
+#---------------------------------------

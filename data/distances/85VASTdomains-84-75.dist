@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:17
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-85.fasta
+#    [-bsequence] data/fastas/85VASTdomains-77.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7M5W4_TETTS_346560
+# 2: Q5BB65_EMENI_8531030
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 282
+# Identity:      36/282 (12.8%)
+# Similarity:    50/282 (17.7%)
+# Gaps:         171/282 (60.6%)
+# Score: 24.0
+# 
+#
+#=======================================
+
+I7M5W4_TETTS_      1 ------------------------------------------------RK      2
+                                                                     .:
+Q5BB65_EMENI_      1 DGPEGQYDRVIKDETIPAPLGKVYSYVFGPASVSFVPKFLVENQKSGELE     50
+
+I7M5W4_TETTS_      3 INSDFNSATFSELVLKNITAREVFGIFFSNQI-FVSDRLQRKFTSFLEFF     51
+                     .|.|....|......|....:.:.|.....|. .:|       |..|:|.
+Q5BB65_EMENI_     51 FNCDKTGLTNETRTRKYSYIKPLNGSIGPKQTKCIS-------TEQLDFL     93
+
+I7M5W4_TETTS_     52 ILEYLHGTNVSVSEIQLPPPEIFNSIYSNNYLQLLEYPESSERHISFTHN    101
+                     .||......:|.....:|...:|.:  ...||              ||..
+Q5BB65_EMENI_     94 DLEKAVLVTLSTQTPDVPSGNVFTT--KTKYL--------------FTWA    127
+
+I7M5W4_TETTS_    102 IPNASAFLPKSLQCQMKETIYWQSPQSFTLVRLLSLKG------------    139
+                     ..|.:.||   :.|    ||.| |.:|:       |||            
+Q5BB65_EMENI_    128 ANNQTRFL---MTC----TIEW-SGKSW-------LKGPIEKGAIDGQGT    162
+
+I7M5W4_TETTS_    140 ------APIITCVEPRVVFYVDEVNGNTILRSGFYVHFKSNTMFKKIIEK    183
+                           |.:.|.|.||                                  
+Q5BB65_EMENI_    163 FGTDLIAALKTAVAPR----------------------------------    178
+
+I7M5W4_TETTS_    184 SSKEENEKTWNELKNVMSNVSEEYIKKRDQNK    215
+                                                     
+Q5BB65_EMENI_    178 --------------------------------    178
+
+
+#---------------------------------------
+#---------------------------------------

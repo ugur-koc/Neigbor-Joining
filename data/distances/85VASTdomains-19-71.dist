@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:40
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-26.fasta
+#    [-bsequence] data/fastas/85VASTdomains-73.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YSP2_YEAST_8411021
+# 2: Q8VZF8_ARATH_257370
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 272
+# Identity:       7/272 ( 2.6%)
+# Similarity:    11/272 ( 4.0%)
+# Gaps:         249/272 (91.5%)
+# Score: 30.0
+# 
+#
+#=======================================
+
+YSP2_YEAST_84      0 --------------------------------------------------      0
+                                                                       
+Q8VZF8_ARATH_      1 FNWKPEDTDAPKLSSDFTKVAEAKFSIPVEEFFRLFFSDGAVSFVESFHK     50
+
+YSP2_YEAST_84      1 -----------------------------------------PTTADFKPS      9
+                                                              ..:..|:..
+Q8VZF8_ARATH_     51 NCGDKEFRCTSWQPHEKLGHTRNVSFQHPIKIYFGAKFGGCQESQKFRMY    100
+
+YSP2_YEAST_84     10 NNDHLVIEANINAPLGKVVNLLYGEDVSYYERILKAQKNFEISPIPNNFL     59
+                     .|.|||||.:..:.                                    
+Q8VZF8_ARATH_    101 RNSHLVIETSHRSA------------------------------------    114
+
+YSP2_YEAST_84     60 TKKIRDYAYTKPLSGSIGPSKTKCLITDTLEHYDLEDYVKVLSITKNPDV    109
+                                                                       
+Q8VZF8_ARATH_    114 --------------------------------------------------    114
+
+YSP2_YEAST_84    110 PSGNIFSVKTVFLFSWDKNNSTKLTVYNSVDWTGKSWIKSMIEKGTFDGV    159
+                                                                       
+Q8VZF8_ARATH_    114 --------------------------------------------------    114
+
+YSP2_YEAST_84    160 ADTTKIMISEIKKILSDEDSNI    181
+                                           
+Q8VZF8_ARATH_    114 ----------------------    114
+
+
+#---------------------------------------
+#---------------------------------------

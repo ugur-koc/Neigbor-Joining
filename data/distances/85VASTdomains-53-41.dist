@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:32
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-57.fasta
+#    [-bsequence] data/fastas/85VASTdomains-46.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22XZ6_TETTS_144333
+# 2: Q55FU7_DICDI_479662
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 195
+# Identity:      53/195 (27.2%)
+# Similarity:    84/195 (43.1%)
+# Gaps:          16/195 ( 8.2%)
+# Score: 189.0
+# 
+#
+#=======================================
+
+Q22XZ6_TETTS_      1 -EQSDVEILNPETSEENKELLRCILPVSVDAFFEKFIGDNAIFSYGQHME     49
+                      :|....||..::| :.:|:|.....|||..|:.....|...|.:..|: 
+Q55FU7_DICDI_      1 KDQQPQSILESQSS-DFQEILSDNFNVSVVNFYRALYSDRCNFVHSYHV-     48
+
+Q22XZ6_TETTS_     50 KNGSTDIKISEWAENEELKCFTRECNLVIKVSGVPLRDTSRFQKIQTYKK     99
+                     |.|..::.:..|...|..... ||...|..||.....|.:|.|:.|.|:.
+Q55FU7_DICDI_     49 KRGDMNVNVKPWTFRERFGTI-REVEYVAPVSSPIGPDKTRIQETQRYQL     97
+
+Q22XZ6_TETTS_    100 EGENLIISSTSKVFDVPYSGYFTTEEKWEISPVEGSSDKCLLVCKGWVTF    149
+                     ..:.||:.:.:.:.|:||..:|..|.|||::  |.|.|.|.|.....|.|
+Q55FU7_DICDI_     98 TRKKLIVETDTIMLDIPYGDHFRIEAKWEVT--ETSQDTCRLSISLTVRF    145
+
+Q22XZ6_TETTS_    150 NKNTMMKKTITQRNEQGLKEDYEVWIG----RIRKILQPKKPEEN    190
+                     .|.|..|..|.....:..|..::.|:.    .::|:||.      
+Q55FU7_DICDI_    146 VKKTWFKSKIETTTVKETKTSFDKWVQLAKVEVQKMLQV------    184
+
+
+#---------------------------------------
+#---------------------------------------

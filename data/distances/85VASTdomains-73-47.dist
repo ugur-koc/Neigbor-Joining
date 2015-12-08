@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:01
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-75.fasta
+#    [-bsequence] data/fastas/85VASTdomains-51.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4LUM2_ENTHI_46249
+# 2: Q8MRR1_DROME_41220
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 242
+# Identity:      43/242 (17.8%)
+# Similarity:    71/242 (29.3%)
+# Gaps:         100/242 (41.3%)
+# Score: 46.0
+# 
+#
+#=======================================
+
+C4LUM2_ENTHI_      1 WRRSIIFSEKLKQITKRQKNETIDKNSNDEG-----------------IL     33
+                                       ...|.:..|..||                 :|
+Q8MRR1_DROME_      1 ------------------FVPTTECTSTHEGRQIVHTILPINVDTLFNLL     32
+
+C4LUM2_ENTHI_     34 KEEPKHVVTIHRFHKSANDLFMLVFSNNE------TVK---QLFDNIGQK     74
+                     ..:.|.:...|...|| .||.:..::.||      ||.   ||..::|.|
+Q8MRR1_DROME_     33 FSKSKFITDFHAMRKS-TDLVLGEWTKNEEGLQVRTVNVTVQLAASVGPK     81
+
+C4LUM2_ENTHI_     75 EVKTEGWQNE---ANGGKILYLSYKGVSSVIGMETRIEEKWEMRMNENGI    121
+                     ..|...:|.:   :..|::..:....|::                     
+Q8MRR1_DROME_     82 TSKVTEYQTQRECSKPGELYSIDVNSVNA---------------------    110
+
+C4LUM2_ENTHI_    122 MIAMVVSVFDIPYSSYFKI---ESLMKMKDEGEYCDIVVKLNVKFMKSTI    168
+                              .|||:..|.:   ..|.:..|  ::..:.:...:|:.|| |
+Q8MRR1_DROME_    111 ---------GIPYAESFSVLIHFCLARTVD--DHTMLSIHTQIKYKKS-I    148
+
+C4LUM2_ENTHI_    169 W---KNRIEQTTMKEYKNKYEEWMKL---IGKMIGDSQFEET    204
+                     |   |..||:.|          |..|   .|..:...|.|..
+Q8MRR1_DROME_    149 WGVVKGFIEKNT----------WAGLEDFFGAQLHALQSETC    180
+
+
+#---------------------------------------
+#---------------------------------------

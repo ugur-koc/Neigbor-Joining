@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:08
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-8.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_12111402
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 258
+# Identity:      46/258 (17.8%)
+# Similarity:    81/258 (31.4%)
+# Gaps:          76/258 (29.5%)
+# Score: 49.5
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 -------------KFSDPVNGLKVNEVFKSFSDVYEYLKIKKFNDKNYQA     37
+                                  ..:..:.|..|:|..:..:.....||.|.  ::...|
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKM--ERAKLA     48
+
+Q22US2_TETTS_     38 TKFLPPVPSFIHEVSSSE---EEILQKIINSPHYSEREIKFTHPLPPSNI     84
+                     |.  .||.|.....|:.|   :::|:...:.|.:........|| ..:.|
+D0NHH4_PHYIT_     49 TS--APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHP-DAATI     95
+
+Q22US2_TETTS_     85 PFMPK----------------------ECQVK-EVLKAYYVSDQML----    107
+                     |.|..                      .|.:: :.|:.....||.|    
+D0NHH4_PHYIT_     96 PTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRA    145
+
+Q22US2_TETTS_    108 ILNIEAFTSGIPKGDSFSVRVRYQFEQI---DPFTVQLQQKSY-------    147
+                     .|..:.:|..||..:.||:.|....|.|   :...:..:.||.       
+D0NHH4_PHYIT_    146 SLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSM    195
+
+Q22US2_TETTS_    148 ----LH--------FMQSTFLQGQIESNTIEQQRISAKVIIPFFEQIVSQ    185
+                         ||        |.:.|.|:.|:|...:|..|.:...::.....    
+D0NHH4_PHYIT_    196 KLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLLRD----    241
+
+Q22US2_TETTS_    186 YISNKQQ-    192
+                      .:.:.| 
+D0NHH4_PHYIT_    242 -ANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

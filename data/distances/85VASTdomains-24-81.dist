@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:47
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-30.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: F4HVW5_ARATH_257449
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 269
+# Identity:      47/269 (17.5%)
+# Similarity:    80/269 (29.7%)
+# Gaps:          97/269 (36.1%)
+# Score: 46.5
+# 
+#
+#=======================================
+
+F4HVW5_ARATH_      1 ---FNWKPEDTD-------------------APKLSSDFTKVAEAKF--S     26
+                        ...|.:|..                   .|:.:....|:..||.  |
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+
+F4HVW5_ARATH_     27 IPVEEFFRLFFSDGAVSFVESFHKNCGDKEFRCTSWQPHEKLGHTRNVSF     76
+                     .||          |:.|...|..:...|...|  .|..|.:.|..|.:|:
+D0NHH4_PHYIT_     51 APV----------GSASSSASTGEKDSDDVLR--DWHSHPRFGLVRALSY     88
+
+F4HVW5_ARATH_     77 QHP----------------------IKIYFGAKFGGC-----------QE     93
+                      ||                      :|.....::..|           |.
+D0NHH4_PHYIT_     89 -HPDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQG    137
+
+F4HVW5_ARATH_     94 SQKFRMYRNSHLVIETSQEISDVPYADYFTVEGVWDLK----RDCRD---    136
+                     .||.....:....|.|    ..:||::.|::|.:.|::    |:..|   
+D0NHH4_PHYIT_    138 DQKLPHRASLRSKIYT----LSIPYSNCFSIEVIVDVEDIPVREDSDMNT    183
+
+F4HVW5_ARATH_    137 ------------SVEGCILDVYVNVAFSKRTVWKGKIVQSTLEECREAYA    174
+                                 .:.|..:.....|.||:.|:.|.::.:..||..|....
+D0NHH4_PHYIT_    184 EDKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCT    233
+
+F4HVW5_ARATH_    175 HWIRMAHELLKQKKLENQE    193
+                     ..::    ||:.....:|.
+D0NHH4_PHYIT_    234 TLLK----LLRDANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

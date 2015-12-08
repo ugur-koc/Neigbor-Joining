@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:38
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-60.fasta
+#    [-bsequence] data/fastas/85VASTdomains-60.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8BQ30_THAPS_365549
+# 2: B8BQ30_THAPS_365549
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 185
+# Identity:     185/185 (100.0%)
+# Similarity:   185/185 (100.0%)
+# Gaps:           0/185 ( 0.0%)
+# Score: 1011.0
+# 
+#
+#=======================================
+
+B8BQ30_THAPS_      1 WEAFCSEKKQNKFSEVAIHGISLPLTVDEFHNLVLKDNAHHSIGKFMTMI     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+B8BQ30_THAPS_      1 WEAFCSEKKQNKFSEVAIHGISLPLTVDEFHNLVLKDNAHHSIGKFMTMI     50
+
+B8BQ30_THAPS_     51 GDFDVETTPWEPPAGAKGQPATRTIHYSHPVNVPMAPPTAKAFKKQYLNK    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+B8BQ30_THAPS_     51 GDFDVETTPWEPPAGAKGQPATRTIHYSHPVNVPMAPPTAKAFKKQYLNK    100
+
+B8BQ30_THAPS_    101 FGSTGLCLESCTIVEDVPMTDCFVVDDRLWVSKDPDNCGCIVGVSFQIRF    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+B8BQ30_THAPS_    101 FGSTGLCLESCTIVEDVPMTDCFVVDDRLWVSKDPDNCGCIVGVSFQIRF    150
+
+B8BQ30_THAPS_    151 VKGTMFRRIIENAARGEFQKWWGEFGNMVSSLEGS    185
+                     |||||||||||||||||||||||||||||||||||
+B8BQ30_THAPS_    151 VKGTMFRRIIENAARGEFQKWWGEFGNMVSSLEGS    185
+
+
+#---------------------------------------
+#---------------------------------------

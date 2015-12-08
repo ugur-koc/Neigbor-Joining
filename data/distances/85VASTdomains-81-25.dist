@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-31.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: YHO0_YEAST_751934
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 285
+# Identity:      50/285 (17.5%)
+# Similarity:    80/285 (28.1%)
+# Gaps:         138/285 (48.4%)
+# Score: 47.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                  .:...
+YHO0_YEAST_75      1 ---------------------------------------------TVYKP      5
+
+D0NHH4_PHYIT_     51 AP----VGSASSSASTG--------------------EKDSD----DVLR     72
+                     ||    |..::..||.|                    :|:||    .||.
+YHO0_YEAST_75      6 APNEKLVNESTIHASLGRVVNILFGKDVSYIMAILKAQKNSDISPIPVLV     55
+
+D0NHH4_PHYIT_     73 DWHSHPRF--GLVRALSYHPDAATIPTMGSSRGTGKNVTLNSMKAVTIEQ    120
+                     |   .|..  |..|..||      :.|...:.|.||.      |.:..| 
+YHO0_YEAST_75     56 D---SPTVSEGKKRDYSY------VKTTPGAIGPGKT------KCMITE-     89
+
+D0NHH4_PHYIT_    121 YHSCTIEDDSLEDELQGDQ--KLPHRASLRSKIYTLSIPYSNCFSIEVIV    168
+                         ||:..:||:.:|..|  |.|            .:|..|.|.:..:.
+YHO0_YEAST_75     90 ----TIQHFNLEEYVQVLQTTKTP------------DVPSGNSFYVRTVY    123
+
+D0NHH4_PHYIT_    169 DVEDIPVREDSDMNTEDKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKT    218
+                     .:                 |..:.|..||. |::    .|.::..:::|:
+YHO0_YEAST_75    124 LL-----------------SWANNNETKLK-LYV----SVEWTGKSLIKS    151
+
+D0NHH4_PHYIT_    219 QLERGALEGVRSTCTTLLK-----LLRDANTRHQF    248
+                     .:|:|..:||......|::     |.|.|..|.  
+YHO0_YEAST_75    152 PIEKGTFDGVTDATKILVEELGNILTRSATKRK--    184
+
+
+#---------------------------------------
+#---------------------------------------

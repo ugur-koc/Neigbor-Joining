@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:47
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-66.fasta
+#    [-bsequence] data/fastas/85VASTdomains-68.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8CDL4_THAPS_224415
+# 2: YL072_YEAST_390578
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 316
+# Identity:      17/316 ( 5.4%)
+# Similarity:    26/316 ( 8.2%)
+# Gaps:         251/316 (79.4%)
+# Score: 15.5
+# 
+#
+#=======================================
+
+B8CDL4_THAPS_      0 --------------------------------------------------      0
+                                                                       
+YL072_YEAST_3      1 QETMDFPYKPEANNEYVLLERQFSVPPGLLFIMMFNEDNPVFELSFLKTQ     50
+
+B8CDL4_THAPS_      0 --------------------------------------------------      0
+                                                                       
+YL072_YEAST_3     51 DSSNISHIGTFEKVNKDGQHYREFQYTKQLHFPVGPKSTNCEVAEILLHC    100
+
+B8CDL4_THAPS_      1 ----------MPAEPKLQQMTIIGKQKIKGISINDYYEVAW-SEGENC--     37
+                               :...|.:...|        ..|....|...| .:|:.|  
+YL072_YEAST_3    101 DWERYINVLSITRTPNVPSGT--------SFSTRTRYMFRWDDQGQGCIL    142
+
+B8CDL4_THAPS_     38 --------NKKQIYAPFLTS-CGKNDVKVTP--WEMGGEIVGDWCGEKYT     76
+                             |......|.:.| |....:..|.  .::..|.|     |||.
+YL072_YEAST_3    143 KISFWVDWNASSWIKPMVESNCKNGQISATKDLVKLVEEFV-----EKYV    187
+
+B8CDL4_THAPS_     77 QQRYVTFNFMKQTIGQTLVEVKHTQRCRRLGNDRCIVQMTLEMKGFPYSD    126
+                     :.                                                
+YL072_YEAST_3    188 EL------------------------------------------------    189
+
+B8CDL4_THAPS_    127 CFVVEVRHVASRVGESDIIVEIGMSVRFLKSCLFEGKIKTNTGAETTKAQ    176
+                                                                       
+YL072_YEAST_3    189 --------------------------------------------------    189
+
+B8CDL4_THAPS_    177 LELLRQTVEACKPFVK    192
+                                     
+YL072_YEAST_3    189 ----------------    189
+
+
+#---------------------------------------
+#---------------------------------------

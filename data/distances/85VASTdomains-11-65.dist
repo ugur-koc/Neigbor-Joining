@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:29
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-19.fasta
+#    [-bsequence] data/fastas/85VASTdomains-68.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B9F3V9_ORYSJ_8991075
+# 2: YL072_YEAST_390578
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 288
+# Identity:      24/288 ( 8.3%)
+# Similarity:    36/288 (12.5%)
+# Gaps:         210/288 (72.9%)
+# Score: 24.5
+# 
+#
+#=======================================
+
+B9F3V9_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+YL072_YEAST_3      1 QETMDFPYKPEANNEYVLLERQFSVPPGLLFIMMFNEDNPVFELSFLKTQ     50
+
+B9F3V9_ORYSJ_      1 -------------------------------------------GSLLANE      7
+                                                                ..:|.:.
+YL072_YEAST_3     51 DSSNISHIGTFEKVNKDGQHYREFQYTKQLHFPVGPKSTNCEVAEILLHC    100
+
+B9F3V9_ORYSJ_      8 DVKMSEVYSAVLSVDINSLMDMFSGGPLEHKVM-------QKAGC-----     45
+                     |   .|.|..|||  |....::.||.....:..       |..||     
+YL072_YEAST_3    101 D---WERYINVLS--ITRTPNVPSGTSFSTRTRYMFRWDDQGQGCILKIS    145
+
+B9F3V9_ORYSJ_     46 --VDYSPTEW--ELLNQNIYQRQISFKFD--KILSRFGEASTTQRKYNLA     89
+                       ||::.:.|  .::..|....|||...|  |::..|.|.....      
+YL072_YEAST_3    146 FWVDWNASSWIKPMVESNCKNGQISATKDLVKLVEEFVEKYVEL------    189
+
+B9F3V9_ORYSJ_     90 NRDGWVIEEVMTLQGVQHEDYSSIQLKYQMTSTSLKPSTCSIQVLLGIAW    139
+                                                                       
+YL072_YEAST_3    189 --------------------------------------------------    189
+
+B9F3V9_ORYSJ_    140 LKGAKQQKKVVKNVMSNSANRLREIFSEVEKELASKKG    177
+                                                           
+YL072_YEAST_3    189 --------------------------------------    189
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:59
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-74.fasta
+#    [-bsequence] data/fastas/85VASTdomains-47.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4Q507_LEIMA_35214
+# 2: GRM1A_MOUSE_365539
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 216
+# Identity:      32/216 (14.8%)
+# Similarity:    68/216 (31.5%)
+# Gaps:          77/216 (35.6%)
+# Score: 25.0
+# 
+#
+#=======================================
+
+Q4Q507_LEIMA_      1 ATRKDKKVMLPQTLLKG---------LTIQKLWDNVFQDNTNFFKKYHDK     41
+                              ||.  |.|         :..::|...:|.|:. |.:.:..:
+GRM1A_MOUSE_3      1 ---------LPD--LSGRLLINSVFHMGAERLQQMLFSDSP-FLQGFLQQ     38
+
+Q4Q507_LEIMA_     42 RNESKLEIGPWD--------------YAVDHGSGSRTVSLVAIVEVPRAG     77
+                     |..:.:.:.||.              ..:.:..|.::.|:|....:.|.|
+GRM1A_MOUSE_3     39 RKFTDVTLSPWSSDSKCHQRRVLTYTIPISNQLGPKSASVVETQTLFRRG     88
+
+Q4Q507_LEIMA_     78 TPTPLNQVQRFAYVNTPE-GKLMLVYQISSQTPEMPAGSSFRTEAYFEIT    126
+                                     |: |..::..::.:|      |..::...|    
+GRM1A_MOUSE_3     89 ----------------PQAGGCVVDSEVLTQ------GIPYQDYFY----    112
+
+Q4Q507_LEIMA_    127 ADSADSDCSIAIWGNCRKMSMSFSAIQYIATPRAI------KEMTSAYRQ    170
+                       :|...|.:.:..|..::.:| |.|:|...|.::      |...|....
+GRM1A_MOUSE_3    113 --TAHRYCILGLARNKARLRVS-SEIRYRKQPWSLVKSLIEKNSWSGIED    159
+
+Q4Q507_LEIMA_    171 MVNMISEEFC------    180
+                     ..:.:..|..      
+GRM1A_MOUSE_3    160 YFHHLDRELAKAEKLS    175
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:46
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-65.fasta
+#    [-bsequence] data/fastas/85VASTdomains-65.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q86AF6_DICDI_540708
+# 2: Q86AF6_DICDI_540708
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 169
+# Identity:     169/169 (100.0%)
+# Similarity:   169/169 (100.0%)
+# Gaps:           0/169 ( 0.0%)
+# Score: 896.0
+# 
+#
+#=======================================
+
+Q86AF6_DICDI_      1 PWSTEKYQISISEFYQLICRTDFWGSVNTTHSYTEQNLTEWKQTNNCCIH     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q86AF6_DICDI_      1 PWSTEKYQISISEFYQLICRTDFWGSVNTTHSYTEQNLTEWKQTNNCCIH     50
+
+Q86AF6_DICDI_     51 RNMDFRTAISFKIGPKSTRVYQTQRCKLKNKSEFILQSTSVSKDVPYGDA    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q86AF6_DICDI_     51 RNMDFRTAISFKIGPKSTRVYQTQRCKLKNKSEFILQSTSVSKDVPYGDA    100
+
+Q86AF6_DICDI_    101 FSVENLLVVQAIDNSSCLTKLSSKIKFTKSVWGLSSMIQKTALQGNKEFF    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q86AF6_DICDI_    101 FSVENLLVVQAIDNSSCLTKLSSKIKFTKSVWGLSSMIQKTALQGNKEFF    150
+
+Q86AF6_DICDI_    151 VLWNTMVRNQIETYVYNKM    169
+                     |||||||||||||||||||
+Q86AF6_DICDI_    151 VLWNTMVRNQIETYVYNKM    169
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:08
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-43.fasta
+#    [-bsequence] data/fastas/85VASTdomains-26.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7M7X5_TETTS_13071507
+# 2: YSP2_YEAST_8411021
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 224
+# Identity:      43/224 (19.2%)
+# Similarity:    82/224 (36.6%)
+# Gaps:          66/224 (29.5%)
+# Score: 75.5
+# 
+#
+#=======================================
+
+I7M7X5_TETTS_      1 --------------VPEAHPR----EIFNLIFFDSKYKPENSDKTYPHYL     32
+                                   |.||:..    ::.||::        ..|.:|    
+YSP2_YEAST_84      1 PTTADFKPSNNDHLVIEANINAPLGKVVNLLY--------GEDVSY----     38
+
+I7M7X5_TETTS_     33 YYFMEEFQKDVDMHFGKFSPPPPEWYANLESVDCNSVLNSEDYSLREYKY     82
+                     |..:.:.||:.::     ||.|            |:.|..:   :|:|.|
+YSP2_YEAST_84     39 YERILKAQKNFEI-----SPIP------------NNFLTKK---IRDYAY     68
+
+I7M7X5_TETTS_     83 VHPVREKIPFGPKVSHCQNKEKYYWISEDEFIMEKEVYLSK---IPYCDY    129
+                     ..|:...|  ||..:.|...:.......::::  |.:.::|   :|..:.
+YSP2_YEAST_84     69 TKPLSGSI--GPSKTKCLITDTLEHYDLEDYV--KVLSITKNPDVPSGNI    114
+
+I7M7X5_TETTS_    130 FTVRFQYSFTKNENQGTKIICRIYVNFMKSTTFKGRIESGSLSENTDVWK    179
+                     |:|:..:.|:.::|..||:.....|::...:..|..||.|:.....|..|
+YSP2_YEAST_84    115 FSVKTVFLFSWDKNNSTKLTVYNSVDWTGKSWIKSMIEKGTFDGVADTTK    164
+
+I7M7X5_TETTS_    180 NAFS--PQILQVMQQYIQKNGEKR    201
+                     ...|  .:||......|       
+YSP2_YEAST_84    165 IMISEIKKILSDEDSNI-------    181
+
+
+#---------------------------------------
+#---------------------------------------

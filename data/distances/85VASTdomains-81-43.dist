@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-48.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: C4M0I0_ENTHI_201371
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 258
+# Identity:      47/258 (18.2%)
+# Similarity:    76/258 (29.5%)
+# Gaps:          97/258 (37.6%)
+# Score: 63.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGS------SVSEFLEMVTPRSTRLKCKMER     44
+                                    |...||.      ||.||.|.......:.|.|...
+C4M0I0_ENTHI_      1 ---------------TEFQPGGETDLDCSVKEFYEKFVRNEAKEKFKEIL     35
+
+D0NHH4_PHYIT_     45 AKLATSAPVGSASSSASTGEKDSDDV-LRDWHSHPRFGLVRALSYHPDAA     93
+                     |                  ||:..:: :.||....:||.||:..:     
+C4M0I0_ENTHI_     36 A------------------EKELTNINVSDWEVSEQFGFVRSQDF-----     62
+
+D0NHH4_PHYIT_     94 TIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPH    143
+                     .:|..|...|.      :|..|:..|.|:            .:||..:  
+C4M0I0_ENTHI_     63 IVPLKGIPIGP------SSAHAIVNEIYY------------FEGDNLI--     92
+
+D0NHH4_PHYIT_    144 RASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKN    193
+                        :.|...|..:||.:.|.:|....:.  |..|......||.:..|.|.
+C4M0I0_ENTHI_     93 ---ICSTNQTPDVPYGDSFKLEFKTTIS--PKGEKQCHFVEDFAVVFLKK    137
+
+D0NHH4_PHYIT_    194 SMKLTGLHIRWRAGVTFSR---DTILKTQLERGALEGVRSTCTTLLKLLR    240
+                     .|....:..:   ||..::   |.::|..:|:  :.|..           
+C4M0I0_ENTHI_    138 VMLKGTIESQ---GVNNAKKDIDVMIKKYIEK--ISGKP-----------    171
+
+D0NHH4_PHYIT_    241 DANTRHQF    248
+                             
+C4M0I0_ENTHI_    171 --------    171
+
+
+#---------------------------------------
+#---------------------------------------

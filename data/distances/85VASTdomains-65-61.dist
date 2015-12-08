@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:50
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-68.fasta
+#    [-bsequence] data/fastas/85VASTdomains-64.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YL072_YEAST_390578
+# 2: F8WJ74_MOUSE_365496
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 198
+# Identity:      35/198 (17.7%)
+# Similarity:    60/198 (30.3%)
+# Gaps:          75/198 (37.9%)
+# Score: 32.5
+# 
+#
+#=======================================
+
+YL072_YEAST_3      1 QETMDFPYKPEANNEYVLLERQFSVPPGLLFIMMFNEDNPVFELSFLKTQ     50
+                             .|:.:.. :|:...|.:....|..|:|: |:| |...||:.:
+F8WJ74_MOUSE_      1 --------LPDLSGR-LLINSVFHMGAERLQQMLFS-DSP-FLQGFLQQR     39
+
+YL072_YEAST_3     51 DSSNISHIGTFEKVNKDGQ-HYRE-FQYTKQLHFPVGPKSTNCEVAEILL     98
+                     ..:::    |....:.|.: |.|. ..||..:...:||||.:....:.|.
+F8WJ74_MOUSE_     40 KFTDV----TLSPWSSDSKCHQRRVLTYTIPISNQLGPKSASVVETQTLF     85
+
+YL072_YEAST_3     99 H-------CDWERYINVLSITRTPNVPSGTSFSTRTRYMFRWDDQGQGCI    141
+                     .       |      .|.|...|..:|....|.|..||          ||
+F8WJ74_MOUSE_     86 RRGPQAGGC------VVDSEVLTQGIPYQDYFYTAHRY----------CI    119
+
+YL072_YEAST_3    142 LKISFWVDWNASSWIKPMVESNCKNGQISATKDLVKLVEEFVEKYVEL    189
+                     |.::             ..::..:|.                      
+F8WJ74_MOUSE_    120 LGLA-------------RNKARLRNR----------------------    132
+
+
+#---------------------------------------
+#---------------------------------------

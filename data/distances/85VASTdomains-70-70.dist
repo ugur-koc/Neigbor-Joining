@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:57
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-72.fasta
+#    [-bsequence] data/fastas/85VASTdomains-72.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4QEC6_LEIMA_54221
+# 2: Q4QEC6_LEIMA_54221
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 168
+# Identity:     168/168 (100.0%)
+# Similarity:   168/168 (100.0%)
+# Gaps:           0/168 ( 0.0%)
+# Score: 880.0
+# 
+#
+#=======================================
+
+Q4QEC6_LEIMA_      1 GKGVLDVFGVCFDDGTAVLEDYHTERKDTDQKWEPWRPTKDGGAFRGQRQ     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q4QEC6_LEIMA_      1 GKGVLDVFGVCFDDGTAVLEDYHTERKDTDQKWEPWRPTKDGGAFRGQRQ     50
+
+Q4QEC6_LEIMA_     51 FTCTTLVKAMMGKPYTYIEYQRYALFKLSGVPTLAVQFSSQVPGVMFGDA    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q4QEC6_LEIMA_     51 FTCTTLVKAMMGKPYTYIEYQRYALFKLSGVPTLAVQFSSQVPGVMFGDA    100
+
+Q4QEC6_LEIMA_    101 FRVEALVTFTQAGSGASAEVTMRAFGYVQFLKSVWVKGRILATAMNTELP    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q4QEC6_LEIMA_    101 FRVEALVTFTQAGSGASAEVTMRAFGYVQFLKSVWVKGRILATAMNTELP    150
+
+Q4QEC6_LEIMA_    151 DGCKKLAAMVAAKVAGRS    168
+                     ||||||||||||||||||
+Q4QEC6_LEIMA_    151 DGCKKLAAMVAAKVAGRS    168
+
+
+#---------------------------------------
+#---------------------------------------

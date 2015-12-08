@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:04
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-77.fasta
+#    [-bsequence] data/fastas/85VASTdomains-77.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q5BB65_EMENI_8531030
+# 2: Q5BB65_EMENI_8531030
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 178
+# Identity:     178/178 (100.0%)
+# Similarity:   178/178 (100.0%)
+# Gaps:           0/178 ( 0.0%)
+# Score: 938.0
+# 
+#
+#=======================================
+
+Q5BB65_EMENI_      1 DGPEGQYDRVIKDETIPAPLGKVYSYVFGPASVSFVPKFLVENQKSGELE     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q5BB65_EMENI_      1 DGPEGQYDRVIKDETIPAPLGKVYSYVFGPASVSFVPKFLVENQKSGELE     50
+
+Q5BB65_EMENI_     51 FNCDKTGLTNETRTRKYSYIKPLNGSIGPKQTKCISTEQLDFLDLEKAVL    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q5BB65_EMENI_     51 FNCDKTGLTNETRTRKYSYIKPLNGSIGPKQTKCISTEQLDFLDLEKAVL    100
+
+Q5BB65_EMENI_    101 VTLSTQTPDVPSGNVFTTKTKYLFTWAANNQTRFLMTCTIEWSGKSWLKG    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q5BB65_EMENI_    101 VTLSTQTPDVPSGNVFTTKTKYLFTWAANNQTRFLMTCTIEWSGKSWLKG    150
+
+Q5BB65_EMENI_    151 PIEKGAIDGQGTFGTDLIAALKTAVAPR    178
+                     ||||||||||||||||||||||||||||
+Q5BB65_EMENI_    151 PIEKGAIDGQGTFGTDLIAALKTAVAPR    178
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:01
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-75.fasta
+#    [-bsequence] data/fastas/85VASTdomains-74.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4LUM2_ENTHI_46249
+# 2: Q4Q507_LEIMA_35214
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 221
+# Identity:      34/221 (15.4%)
+# Similarity:    75/221 (33.9%)
+# Gaps:          58/221 (26.2%)
+# Score: 31.5
+# 
+#
+#=======================================
+
+C4LUM2_ENTHI_      1 WRRSIIFSEKLKQITKRQKNETIDKNSNDEGILKEEPKHVVTIHRFHKSA     50
+                                  .|::.|...:.:.     :||.     :||.:     
+Q4Q507_LEIMA_      1 -------------ATRKDKKVMLPQT-----LLKG-----LTIQK-----     22
+
+C4LUM2_ENTHI_     51 NDLFMLVFSNNET-VKQLFDNIGQKEVKTEGWQNEANGGKILYLSYKGVS     99
+                       |:..||.:|.. .|:..|...:.:::...|....:.|.    ..:.||
+Q4Q507_LEIMA_     23 --LWDNVFQDNTNFFKKYHDKRNESKLEIGPWDYAVDHGS----GSRTVS     66
+
+C4LUM2_ENTHI_    100 SVIGME----------TRIEEKWEMRMNENGIMIAMVVS--VFDIPYSSY    137
+                     .|..:|          .:::....:...|..:|:...:|  ..::|..|.
+Q4Q507_LEIMA_     67 LVAIVEVPRAGTPTPLNQVQRFAYVNTPEGKLMLVYQISSQTPEMPAGSS    116
+
+C4LUM2_ENTHI_    138 FKIESLMKMKDEG--EYCDIVVKLNVKFMKSTIWKNRIEQT--TMKEYKN    183
+                     |:.|:..::..:.  ..|.|.:..|.:.|..:....:...|  .:||..:
+Q4Q507_LEIMA_    117 FRTEAYFEITADSADSDCSIAIWGNCRKMSMSFSAIQYIATPRAIKEMTS    166
+
+C4LUM2_ENTHI_    184 KYEEWMKLIGKMIGDSQFEET    204
+                     .|.:.:.:|.:...       
+Q4Q507_LEIMA_    167 AYRQMVNMISEEFC-------    180
+
+
+#---------------------------------------
+#---------------------------------------

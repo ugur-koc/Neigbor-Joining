@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:11
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-10.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: B9G1J5_ORYSJ_289475
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 265
+# Identity:      49/265 (18.5%)
+# Similarity:    86/265 (32.5%)
+# Gaps:          95/265 (35.8%)
+# Score: 54.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPG-----------SSVSEFLEMVTPRSTRLK     39
+                       :.|.|.|::.  |...:.|           |.::.||  .:|.|...:
+B9G1J5_ORYSJ_      1 --YFESKHQEVE--MPVDLQGILVDKSYITSPSDLNNFL--FSPDSNFRQ     44
+
+D0NHH4_PHYIT_     40 CKMERAKLATSAPVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYH     89
+                     ..:|..        |.:.....:.:.|||..          .|.|.::| 
+B9G1J5_ORYSJ_     45 TVVELQ--------GCSDVKMESWKIDSDGE----------SLKRVITY-     75
+
+D0NHH4_PHYIT_     90 PDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQ    139
+                        .|.|:             ..:|||      ..|.|...|:.:..|  
+B9G1J5_ORYSJ_     76 ---TTAPS-------------KLVKAV------KATEEQSYLKADGNG--    101
+
+D0NHH4_PHYIT_    140 KLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSS    189
+                          .|:...:.|..:|....|..|::..:...|     ::::|..:|.
+B9G1J5_ORYSJ_    102 -----YSVLLSVSTPDVPCGTYFRTEILFRILPGP-----ELDSEQLTSH    141
+
+D0NHH4_PHYIT_    190 FDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLL    239
+                               |.|.||  :.|.:.|::|..:|.||.:|::........||
+B9G1J5_ORYSJ_    142 ----------LVISWR--INFLQSTMMKGMIENGAKQGLQQNYAQFSDLL    179
+
+D0NHH4_PHYIT_    240 R------DANTRHQF    248
+                     .      |       
+B9G1J5_ORYSJ_    180 SQKIKPID-------    187
+
+
+#---------------------------------------
+#---------------------------------------

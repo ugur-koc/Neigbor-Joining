@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:02
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-4.fasta
+#    [-bsequence] data/fastas/85VASTdomains-51.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q5Z6I4_ORYSJ_8571036
+# 2: Q8MRR1_DROME_41220
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 337
+# Identity:       7/337 ( 2.1%)
+# Similarity:    14/337 ( 4.2%)
+# Gaps:         314/337 (93.2%)
+# Score: 18.0
+# 
+#
+#=======================================
+
+Q5Z6I4_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+Q8MRR1_DROME_      1 FVPTTECTSTHEGRQIVHTILPINVDTLFNLLFSKSKFITDFHAMRKSTD     50
+
+Q5Z6I4_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+Q8MRR1_DROME_     51 LVLGEWTKNEEGLQVRTVNVTVQLAASVGPKTSKVTEYQTQRECSKPGEL    100
+
+Q5Z6I4_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+Q8MRR1_DROME_    101 YSIDVNSVNAGIPYAESFSVLIHFCLARTVDDHTMLSIHTQIKYKKSIWG    150
+
+Q5Z6I4_ORYSJ_      1 ----NNESDSFLGIED---AKMSEVFSSTKPFDVSTLMSIFEGGPLEHQV     43
+                         ..|.:::.|:||   |::..:.|.|.                    
+Q8MRR1_DROME_    151 VVKGFIEKNTWAGLEDFFGAQLHALQSETC--------------------    180
+
+Q5Z6I4_ORYSJ_     44 MEKIGCMEYSVSPWESVRADAYQRQIHYKFDKRLARHEGEVMSTQQKSPL     93
+                                                                       
+Q8MRR1_DROME_    180 --------------------------------------------------    180
+
+Q5Z6I4_ORYSJ_     94 PDKNGWLVEEVMTLEGIPVGEYFNLHMRYQLEQISSKPKACNVQVSIGIA    143
+                                                                       
+Q8MRR1_DROME_    180 --------------------------------------------------    180
+
+Q5Z6I4_ORYSJ_    144 WLKSCKNRKKIAQEVLSSASSRLKKMFGLLEKELLPA    180
+                                                          
+Q8MRR1_DROME_    180 -------------------------------------    180
+
+
+#---------------------------------------
+#---------------------------------------

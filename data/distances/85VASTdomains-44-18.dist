@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:18
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-49.fasta
+#    [-bsequence] data/fastas/85VASTdomains-25.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4M0I0_ENTHI_381531
+# 2: Q7XKT6_ORYSJ_8591033
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 297
+# Identity:       9/297 ( 3.0%)
+# Similarity:    14/297 ( 4.7%)
+# Gaps:         268/297 (90.2%)
+# Score: 11.5
+# 
+#
+#=======================================
+
+C4M0I0_ENTHI_      1 DDEVPEPKFFKQPKMKTIIETTIPITPLQFFNTFVENKTRSKQIKLREEL     50
+                                                                       
+Q7XKT6_ORYSJ_      0 --------------------------------------------------      0
+
+C4M0I0_ENTHI_     51 GQTNIEMTDWKSIQNGFTRNINTIEPVDTPNGKVTTRAQIQQFYQLKKSA    100
+                                                                       
+Q7XKT6_ORYSJ_      0 --------------------------------------------------      0
+
+C4M0I0_ENTHI_    101 LIIGSIRNYLDSQDYYSTETRLLLNLSKNNESILTIQANILLK--KKGDE    148
+                                           .:.|||.....|.|.|::|:.  ..|..
+Q7XKT6_ORYSJ_      1 ----------------------DVPLSKEYTLELPIDADLLMGVFDGGPL     28
+
+C4M0I0_ENTHI_    149 KEK-----------------------------------------------    151
+                     :.|                                               
+Q7XKT6_ORYSJ_     29 EAKAMSRAGCLDYAATPWQDARPGVLERHASYKFNRYMSIFGGEVVSTQL     78
+
+C4M0I0_ENTHI_    151 --------------------------------------------------    151
+                                                                       
+Q7XKT6_ORYSJ_     79 RLPSDDGDGWTVYDVITLRNVPFGDFFRLHLRHNIWSVEAASSEAAASSG    128
+
+C4M0I0_ENTHI_    151 -----------------------------------------------    151
+                                                                    
+Q7XKT6_ORYSJ_    129 SRCEILVGIEWVKRSKFQKRIARNICEKLAHRAKEVLEAAAREIAPA    175
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:07
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-8.fasta
+#    [-bsequence] data/fastas/85VASTdomains-21.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_12111402
+# 2: A9SDA2_PHYPA_8171004
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 310
+# Identity:      20/310 ( 6.5%)
+# Similarity:    32/310 (10.3%)
+# Gaps:         240/310 (77.4%)
+# Score: 26.0
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 KFSDPVNGLKVNEVFKSFSDVYEYLKIKKFNDKNYQATKFLPPVPSFIHE     50
+                                                                       
+A9SDA2_PHYPA_      0 --------------------------------------------------      0
+
+Q22US2_TETTS_     51 VSSSEEEILQKIINSPHYSEREIKFTHPLPPSNIPFMPKECQVKEVLKAY    100
+                                                                       
+A9SDA2_PHYPA_      0 --------------------------------------------------      0
+
+Q22US2_TETTS_    101 YVSDQMLILNIEAFTSGIPKGDSFSVRVRYQFEQIDPFTVQLQQKSYLHF    150
+                                ::.|      |||:........|:..|.:.|.....:  
+A9SDA2_PHYPA_      1 -----------QSCT------DSFAGMEEANMAQVCAFEIPLMSDCAM--     31
+
+Q22US2_TETTS_    151 MQSTFLQGQIESNTIEQQRISAKVIIPFFEQIVSQ---------YISNKQ    191
+                       |.|.||.:|....|:......|..| :|::..|         |..|:|
+A9SDA2_PHYPA_     32 --SLFEQGGLEEAMAEKMGYLNYVSTP-WERLEGQNGVQRRHTSYHLNRQ     78
+
+Q22US2_TETTS_    192 Q-------------------------------------------------    192
+                     .                                                 
+A9SDA2_PHYPA_     79 ISQFGSKVSCIQQRTMSDSMKSCVLDEVITLHDVPFGDHFQVQVRREIET    128
+
+Q22US2_TETTS_    192 --------------------------------------------------    192
+                                                                       
+A9SDA2_PHYPA_    129 TSTNPPQSFVKASVGVSWHKNTEFKKKITKNVHDHMAKEIREVMNVCVKE    178
+
+Q22US2_TETTS_    192 ----------    192
+                               
+A9SDA2_PHYPA_    179 VKARIKDKRI    188
+
+
+#---------------------------------------
+#---------------------------------------

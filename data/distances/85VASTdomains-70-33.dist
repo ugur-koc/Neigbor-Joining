@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:56
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-72.fasta
+#    [-bsequence] data/fastas/85VASTdomains-39.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4QEC6_LEIMA_54221
+# 2: B3KUR5_HUMAN_45223
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 196
+# Identity:      33/196 (16.8%)
+# Similarity:    66/196 (33.7%)
+# Gaps:          45/196 (23.0%)
+# Score: 11.5
+# 
+#
+#=======================================
+
+Q4QEC6_LEIMA_      1 -----------GKGVLD-VFGVCFD-------DGTAVLEDYHTERKDTDQ     31
+                                |:..:: :|.:..|       ..:..::.:.:.|...|.
+B3KUR5_HUMAN_      1 QIENVPEKDLHGRLFINRIFHISADRMFELLFTSSRFMQKFASSRNIIDV     50
+
+Q4QEC6_LEIMA_     32 KWEPWRPTKDGGAFRGQRQFTCTTLVKA-MMGK------PYTYIEYQRYA     74
+                     ...||.....|...   |..|.|.::.: :.||      ..|..:..|.|
+B3KUR5_HUMAN_     51 VSTPWTAELGGDQL---RTMTYTIVLNSPLTGKCTAATEKQTLYKESREA     97
+
+Q4QEC6_LEIMA_     75 LFKLSGVPTLAVQFSSQVPGVMFGDAFRVEALVTFTQAGSGASAEVTMRA    124
+                     .|.|.....|    :..||   :.|.|.........::   :..:..:|.
+B3KUR5_HUMAN_     98 RFYLVDSEVL----THDVP---YHDYFYTVNRYCIIRS---SKQKCRLRV    137
+
+Q4QEC6_LEIMA_    125 FGYVQFLKSVW--VKGRILATAMNTELPDGCKKLAAMVAAKVAGRS    168
+                     ...:::.|..|  ||..|...:.:: |.|..|:|.:.:..:.:   
+B3KUR5_HUMAN_    138 STDLKYRKQPWGLVKSLIEKNSWSS-LEDYFKQLESDLLIEES---    179
+
+
+#---------------------------------------
+#---------------------------------------

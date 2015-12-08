@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:36
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-23.fasta
+#    [-bsequence] data/fastas/85VASTdomains-8.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9TQF1_PHYPA_8201003
+# 2: Q22US2_TETTS_12111402
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 291
+# Identity:      18/291 ( 6.2%)
+# Similarity:    50/291 (17.2%)
+# Gaps:         206/291 (70.8%)
+# Score: 37.5
+# 
+#
+#=======================================
+
+A9TQF1_PHYPA_      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_      1 KFSDPVNGLKVNEVFKSFSDVYEYLKIKKFNDKNYQATKFLPPVPSFIHE     50
+
+A9TQF1_PHYPA_      1 --------------------------------------------DDADTF      6
+                                                                 :....:
+Q22US2_TETTS_     51 VSSSEEEILQKIINSPHYSEREIKFTHPLPPSNIPFMPKECQVKEVLKAY    100
+
+A9TQF1_PHYPA_      7 TGMEEANMVNVCAFDIPLTMDSAMSLFEKGRLEE-----VVAEKMGYINF     51
+                     ...::..::|:.||...:....:.|:..:.:.|:     |..::..|::|
+Q22US2_TETTS_    101 YVSDQMLILNIEAFTSGIPKGDSFSVRVRYQFEQIDPFTVQLQQKSYLHF    150
+
+A9TQF1_PHYPA_     52 VSTPWERLEGQ---NNVQRRQVSYHL-----NRQISQFGSKVSCIQQKTM     93
+                     :.:.:  |:||   |.::::::|..:     .:.:||:   :|..||   
+Q22US2_TETTS_    151 MQSTF--LQGQIESNTIEQQRISAKVIIPFFEQIVSQY---ISNKQQ---    192
+
+A9TQF1_PHYPA_     94 LDNMKLYILDEVLTLHDVPFGDHFQVQVRRDIETTSINPPKSSVKAYVGV    143
+                                                                       
+Q22US2_TETTS_    192 --------------------------------------------------    192
+
+A9TQF1_PHYPA_    144 SWHKNTEFKKKITKNVQDHMAKEIREAMNVSVKEVKALVKD    184
+                                                              
+Q22US2_TETTS_    192 -----------------------------------------    192
+
+
+#---------------------------------------
+#---------------------------------------

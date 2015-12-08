@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:55
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-35.fasta
+#    [-bsequence] data/fastas/85VASTdomains-73.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: GRM1B_HUMAN_321502
+# 2: Q8VZF8_ARATH_257370
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 212
+# Identity:      17/212 ( 8.0%)
+# Similarity:    38/212 (17.9%)
+# Gaps:         128/212 (60.4%)
+# Score: 18.5
+# 
+#
+#=======================================
+
+GRM1B_HUMAN_3      1 ------EGEVQAFYEDLSGRQYVNEVFNFSVDKLYDLLFTNSPFQRDFME     44
+                           :.:......|.:  :.....|:..|::.:.|.|::...  .|:|
+Q8VZF8_ARATH_      1 FNWKPEDTDAPKLSSDFT--KVAEAKFSIPVEEFFRLFFSDGAV--SFVE     46
+
+GRM1B_HUMAN_3     45 QRRFSDIIFH-----------PWKKEENGNQSRVILYTITLTNPL-----     78
+                     .       ||           .|:..|....:|    .::..:|:     
+Q8VZF8_ARATH_     47 S-------FHKNCGDKEFRCTSWQPHEKLGHTR----NVSFQHPIKIYFG     85
+
+GRM1B_HUMAN_3     79 --------APKTATVRETQTMYKASQESECYVIDAEVLTHDVPYHDYFYT    120
+                             :.|....|.:..:.:.|..|.                     
+Q8VZF8_ARATH_     86 AKFGGCQESQKFRMYRNSHLVIETSHRSA---------------------    114
+
+GRM1B_HUMAN_3    121 INRYTLTRVARNKSRLRVSTELRYRKQPWGLVKTFIEKNFWSGLEDYFRH    170
+                                                                       
+Q8VZF8_ARATH_    114 --------------------------------------------------    114
+
+GRM1B_HUMAN_3    171 LESELAKTESTY    182
+                                 
+Q8VZF8_ARATH_    114 ------------    114
+
+
+#---------------------------------------
+#---------------------------------------

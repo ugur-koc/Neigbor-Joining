@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:15
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-47.fasta
+#    [-bsequence] data/fastas/85VASTdomains-50.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: GRM1A_MOUSE_365539
+# 2: B3KQF7_HUMAN_127303
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 177
+# Identity:     169/177 (95.5%)
+# Similarity:   171/177 (96.6%)
+# Gaps:           2/177 ( 1.1%)
+# Score: 881.0
+# 
+#
+#=======================================
+
+GRM1A_MOUSE_3      1 --LPDLSGRLLINSVFHMGAERLQQMLFSDSPFLQGFLQQRKFTDVTLSP     48
+                       |||||||||||||||:||||||||||||||||||||||.|||||||||
+B3KQF7_HUMAN_      1 ALLPDLSGRLLINSVFHVGAERLQQMLFSDSPFLQGFLQQCKFTDVTLSP     50
+
+GRM1A_MOUSE_3     49 WSSDSKCHQRRVLTYTIPISNQLGPKSASVVETQTLFRRGPQAGGCVVDS     98
+                     ||.||||||||||||||||||.|||||||||||||.||||||||||||||
+B3KQF7_HUMAN_     51 WSGDSKCHQRRVLTYTIPISNPLGPKSASVVETQTPFRRGPQAGGCVVDS    100
+
+GRM1A_MOUSE_3     99 EVLTQGIPYQDYFYTAHRYCILGLARNKARLRVSSEIRYRKQPWSLVKSL    148
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+B3KQF7_HUMAN_    101 EVLTQGIPYQDYFYTAHRYCILGLARNKARLRVSSEIRYRKQPWSLVKSL    150
+
+GRM1A_MOUSE_3    149 IEKNSWSGIEDYFHHLDRELAKAEKLS    175
+                     ||||||||||||||||:||||||||||
+B3KQF7_HUMAN_    151 IEKNSWSGIEDYFHHLERELAKAEKLS    177
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-33.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: B9G4K6_ORYSJ_394582
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 262
+# Identity:      40/262 (15.3%)
+# Similarity:    85/262 (32.4%)
+# Gaps:          87/262 (33.2%)
+# Score: 61.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 --TSFLE--MKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAK     46
+                       |..|:  :||:.:..:...:.|.::...|..:::..|:.:        
+B9G4K6_ORYSJ_      1 DLTGQLQPFVKEEVLVTVFNGSFPCTAEEFFNTLLSDDSSYI--------     42
+
+D0NHH4_PHYIT_     47 LATSAPVGSASSSASTGEKDSDDVLRDWHSHPRF-GLVRALS-----YHP     90
+                                :...|..||.|..|..||....: |.||.|:     :.|
+B9G4K6_ORYSJ_     43 -----------TEFRTARKDKDINLGQWHHADEYDGQVRELNCKSICHSP     81
+
+D0NHH4_PHYIT_     91 DAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQK    140
+                     .......|...:....:.....:...|::|.|                  
+B9G4K6_ORYSJ_     82 MCPPYSAMTEWQHMVLSADKTDLVFETVQQVH------------------    113
+
+D0NHH4_PHYIT_    141 LPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSF    190
+                                   .:|:.:.|.:.....|               |::|.
+B9G4K6_ORYSJ_    114 --------------DVPFGSFFEVHCRWSV---------------KTTSS    134
+
+D0NHH4_PHYIT_    191 DKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKL--    238
+                     |..|:.::       ||..|.:..|::::::.||::..:.....:|:.  
+B9G4K6_ORYSJ_    135 DSCSLNIS-------AGAHFKKWCIMQSKIKSGAVDEYKKEVQEMLEFAE    177
+
+D0NHH4_PHYIT_    239 --LRDANTRHQF    248
+                       :|...|.:|.
+B9G4K6_ORYSJ_    178 SYMRKVRTSNQD    189
+
+
+#---------------------------------------
+#---------------------------------------

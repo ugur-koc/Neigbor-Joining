@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:13
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-77.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: Q5BB65_EMENI_8531030
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 260
+# Identity:      32/260 (12.3%)
+# Similarity:    68/260 (26.2%)
+# Gaps:          94/260 (36.2%)
+# Score: 31.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+Q5BB65_EMENI_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                               ...|...|.|::|.......|.|.:..:.|          
+Q5BB65_EMENI_      1 ----------DGPEGQYDRVIKDETIPAPLGKVYSYVFGP----------     30
+
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSK    150
+                            .:::.:....:|...|..:|.:..:..|..:.:....:.::..
+Q5BB65_EMENI_     31 -------ASVSFVPKFLVENQKSGELEFNCDKTGLTNETRTRKYSYIKPL     73
+
+D0NHH4_PHYIT_    151 IYTLSIPYSNCFSIEVI--VDVEDIPVREDSDMNTEDKSSSFDKNSMKLT    198
+                     ..::....:.|.|.|.:  :|:|...:...|....:..|.:......|..
+Q5BB65_EMENI_     74 NGSIGPKQTKCISTEQLDFLDLEKAVLVTLSTQTPDVPSGNVFTTKTKYL    123
+
+D0NHH4_PHYIT_    199 GLHIRWRAG----------VTFSRDTILKTQLERGALEGVRSTCTTLLKL    238
+                        ..|.|.          :.:|..:.||..:|:||::|..:..|.|:..
+Q5BB65_EMENI_    124 ---FTWAANNQTRFLMTCTIEWSGKSWLKGPIEKGAIDGQGTFGTDLIAA    170
+
+D0NHH4_PHYIT_    239 LRDANTRHQF    248
+                     |:.|....  
+Q5BB65_EMENI_    171 LKTAVAPR--    178
+
+
+#---------------------------------------
+#---------------------------------------

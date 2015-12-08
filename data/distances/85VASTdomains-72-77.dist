@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:00
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-74.fasta
+#    [-bsequence] data/fastas/85VASTdomains-79.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4Q507_LEIMA_35214
+# 2: B8BUE2_THAPS_254437
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 207
+# Identity:      40/207 (19.3%)
+# Similarity:    71/207 (34.3%)
+# Gaps:          50/207 (24.2%)
+# Score: 28.0
+# 
+#
+#=======================================
+
+Q4Q507_LEIMA_      1 ---ATRKDKKVMLPQTLLKGLTIQKLWDNVFQDNT-NFFKKYH-DKRNES     45
+                        ...||.:..:....|...|:...:|....:.. |....:| :...:.
+B8BUE2_THAPS_      1 KVKQQSKDWESAVANLKLPFPTVSSFFDTCLSNEARNPLSIFHGNVMGDK     50
+
+Q4Q507_LEIMA_     46 KLEIGPWD----YAVDHG--SGSRTV-----SLVAIVEVPRAGTPTPLNQ     84
+                     .:.|..|:    .|..|.  |.|||:     |.|...:|.|       ||
+B8BUE2_THAPS_     51 NISISGWERDEKAAAAHSDESSSRTIRFEHKSRVNTAQVTR-------NQ     93
+
+Q4Q507_LEIMA_     85 VQRFAYVNTPEGKLMLVYQISSQTPEMPAGSSFRTEAYFEITADSADSDC    134
+                     ..| .|     ||...:..::: ...:|:..:|..|..:.|  :..:...
+B8BUE2_THAPS_     94 TYR-CY-----GKNACLKNVTN-IKGVPSADAFFAEDMWLI--EPVEDGV    134
+
+Q4Q507_LEIMA_    135 SIAIWGNCRKMSMSFS---AIQYIATPRAIKEMTSAYRQMVNM-------    174
+                     .:.:     :..::||   .::.|...||..|....|||..:.       
+B8BUE2_THAPS_    135 VLNV-----RFRLTFSKSTMLKSIIESRARAETLEWYRQYTSFMVAANQR    179
+
+Q4Q507_LEIMA_    175 -ISEEFC    180
+                      ||.:  
+B8BUE2_THAPS_    180 KISTQ--    184
+
+
+#---------------------------------------
+#---------------------------------------

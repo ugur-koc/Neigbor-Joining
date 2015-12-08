@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:59
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-74.fasta
+#    [-bsequence] data/fastas/85VASTdomains-2.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4Q507_LEIMA_35214
+# 2: B9FU30_ORYSJ_8491024
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 320
+# Identity:       7/320 ( 2.2%)
+# Similarity:    18/320 ( 5.6%)
+# Gaps:         284/320 (88.8%)
+# Score: 22.0
+# 
+#
+#=======================================
+
+Q4Q507_LEIMA_      0 --------------------------------------------------      0
+                                                                       
+B9FU30_ORYSJ_      1 LFTHEDVKMSEIFSSALSVDVESLMEMFSGGPLEHRMMQKAGCIDYSPTE     50
+
+Q4Q507_LEIMA_      0 --------------------------------------------------      0
+                                                                       
+B9FU30_ORYSJ_     51 WELVSRNIYQRQISYKFDKNLSRYGGEATTTQQRYALVNQEGWAIEEVMS    100
+
+Q4Q507_LEIMA_      1 ----------------------------------------ATRKDKKVML     10
+                                                             :|::.||:..
+B9FU30_ORYSJ_    101 LQGVLLGDCFNVQMKYTVVNVPSKPNTCSVQVLLGIAWLKSTKQQKKITK    150
+
+Q4Q507_LEIMA_     11 PQTLLKGLTIQKLWDNVFQDNTNFFKKYHDKRNESKLEIGPWDYAVDHGS     60
+                     .......:.:::|:..|.:|.|:...                        
+B9FU30_ORYSJ_    151 SVISNSSIRLKELFAEVEKDLTSRSG------------------------    176
+
+Q4Q507_LEIMA_     61 GSRTVSLVAIVEVPRAGTPTPLNQVQRFAYVNTPEGKLMLVYQISSQTPE    110
+                                                                       
+B9FU30_ORYSJ_    176 --------------------------------------------------    176
+
+Q4Q507_LEIMA_    111 MPAGSSFRTEAYFEITADSADSDCSIAIWGNCRKMSMSFSAIQYIATPRA    160
+                                                                       
+B9FU30_ORYSJ_    176 --------------------------------------------------    176
+
+Q4Q507_LEIMA_    161 IKEMTSAYRQMVNMISEEFC    180
+                                         
+B9FU30_ORYSJ_    176 --------------------    176
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:25
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-52.fasta
+#    [-bsequence] data/fastas/85VASTdomains-66.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q86AF7_DICDI_286471
+# 2: B8CDL4_THAPS_224415
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 214
+# Identity:      45/214 (21.0%)
+# Similarity:    78/214 (36.4%)
+# Gaps:          50/214 (23.4%)
+# Score: 96.0
+# 
+#
+#=======================================
+
+Q86AF7_DICDI_      1 VECKDMSTTAKINQLQHY---------VNERFEI------SCIKFYTLMI     35
+                          |....|:.|:...         :|:.:|:      :|.|      
+B8CDL4_THAPS_      1 -----MPAEPKLQQMTIIGKQKIKGISINDYYEVAWSEGENCNK------     39
+
+Q86AF7_DICDI_     36 DSDFWAYVSKECGFLDMKESEW-----VTSESCCH---QER--TLNFKTP     75
+                      ...:|.....||..|:|.:.|     :..:.|..   |:|  |.||   
+B8CDL4_THAPS_     40 -KQIYAPFLTSCGKNDVKVTPWEMGGEIVGDWCGEKYTQQRYVTFNF---     85
+
+Q86AF7_DICDI_     76 ISFKIGPKVATVQQTQKIRRTPTNGYVMETSSLSKDVPYGDSFSVENYLT    125
+                     :...||..:..|:.||:.||...:..:::.:...|..||.|.|.||....
+B8CDL4_THAPS_     86 MKQTIGQTLVEVKHTQRCRRLGNDRCIVQMTLEMKGFPYSDCFVVEVRHV    135
+
+Q86AF7_DICDI_    126 LEPCPESPQDSCILKVSTAVKFIKSIWGLGGLIEKT---VTQSNKEFFAC    172
+                     .....||   ..|:::..:|:|:||....|.:...|   .|::..|....
+B8CDL4_THAPS_    136 ASRVGES---DIIVEIGMSVRFLKSCLFEGKIKTNTGAETTKAQLELLRQ    182
+
+Q86AF7_DICDI_    173 WINFAKKRISDQAS    186
+                     .:...|..:.    
+B8CDL4_THAPS_    183 TVEACKPFVK----    192
+
+
+#---------------------------------------
+#---------------------------------------

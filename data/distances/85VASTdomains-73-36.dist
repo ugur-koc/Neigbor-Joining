@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:01
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-75.fasta
+#    [-bsequence] data/fastas/85VASTdomains-41.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4LUM2_ENTHI_46249
+# 2: Q8W4D4_ARATH_391576
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 214
+# Identity:      31/214 (14.5%)
+# Similarity:    86/214 (40.2%)
+# Gaps:          38/214 (17.8%)
+# Score: 89.5
+# 
+#
+#=======================================
+
+C4LUM2_ENTHI_      1 WRRSIIFSEKLKQITKRQKNETIDKNSNDEGILKEEPKHVVTIHR--FHK     48
+                                              ....:..:|||.  :|.|:.  |..
+Q8W4D4_ARATH_      1 -------------------------PVKFQAFIKEEV--LVNIYNDVFAS     23
+
+C4LUM2_ENTHI_     49 SANDLFMLVFSNNETVKQLFDNIGQ-KEVKTEGWQN-EANGGKILYLSYK     96
+                     :...:..::.:::.|....:.:..: |.:..|.|.. |...|::..:.::
+Q8W4D4_ARATH_     24 TPEQVLNVLLADDSTYTNEYRSARKDKNLNIEPWHTAEEYDGQVREIKFR     73
+
+C4LUM2_ENTHI_     97 GV--SSVIGMETRIEEKWE---MRMNENGIMIAMVVSVFDIPYSSYFKIE    141
+                     .:  |.:...:|.:.| |:   :..::..::...|....|:|:.|||::.
+Q8W4D4_ARATH_     74 SICNSPMCPPDTAVTE-WQHVVLSPDKKVLVFETVQQPHDVPFGSYFEVH    122
+
+C4LUM2_ENTHI_    142 SLMKMKDEGEYCDIV-VKLNVKFMKSTIWKNRIEQTTMKEYKNKYEEWMK    190
+                     ...:::.:.|...:: :::.|.|.|..:.:::|:...:.|||.:.|..::
+Q8W4D4_ARATH_    123 CRWRLEAKDETSSVIDIRVGVHFKKWCLMQSKIKAGAIDEYKKEVEVMLE    172
+
+C4LUM2_ENTHI_    191 LIGKMIGDSQFEET    204
+                     :....:.......:
+Q8W4D4_ARATH_    173 VALSYLKSHSSSSS    186
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:18
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-9.fasta
+#    [-bsequence] data/fastas/85VASTdomains-75.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_14441649
+# 2: C4LUM2_ENTHI_46249
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 279
+# Identity:      39/279 (14.0%)
+# Similarity:    74/279 (26.5%)
+# Gaps:         148/279 (53.0%)
+# Score: 38.0
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 -----------------------------------EPNEKYKHKLIDYTF     15
+                                                        ||    ||.:..:.|
+C4LUM2_ENTHI_      1 WRRSIIFSEKLKQITKRQKNETIDKNSNDEGILKEEP----KHVVTIHRF     46
+
+Q22US2_TETTS_     16 NYQNQAINLQQVFNFFFSDSLKFKEYSD-----------FQEYIKRGKMG     54
+                     :.     :...:|...||::...|:..|           :|.....||: 
+C4LUM2_ENTHI_     47 HK-----SANDLFMLVFSNNETVKQLFDNIGQKEVKTEGWQNEANGGKI-     90
+
+Q22US2_TETTS_     55 DYDYQSTLFSPPIPKYFQFK--------SQRLDEDLIASPDYSEREVRLT     96
+                                   .|..:|        ..|::|         :.|:|: 
+C4LUM2_ENTHI_     91 --------------LYLSYKGVSSVIGMETRIEE---------KWEMRM-    116
+
+Q22US2_TETTS_     97 HPLPPSNIPFMPKTCQVREVTRVYWVSNDTIVVNLEAFTSGIPKGDSFTV    146
+                                               :.:.|::.:......||....|  
+C4LUM2_ENTHI_    117 --------------------------NENGIMIAMVVSVFDIPYSSYF--    138
+
+Q22US2_TETTS_    147 RVRSIFKQIDEENIHFSQYS------YVHFLESTFLQGKIENGTIEQSHI    190
+                     ::.|:.|..||     .:|.      .|.|::||..:.:||..|:::   
+C4LUM2_ENTHI_    139 KIESLMKMKDE-----GEYCDIVVKLNVKFMKSTIWKNRIEQTTMKE---    180
+
+Q22US2_TETTS_    191 AVKNCVLPAYQEAFQM-------------    206
+                      .||    .|:|..::             
+C4LUM2_ENTHI_    181 -YKN----KYEEWMKLIGKMIGDSQFEET    204
+
+
+#---------------------------------------
+#---------------------------------------

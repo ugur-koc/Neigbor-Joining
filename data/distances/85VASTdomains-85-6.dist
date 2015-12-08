@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:17
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-9.fasta
+#    [-bsequence] data/fastas/85VASTdomains-14.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_14441649
+# 2: A9TQ08_PHYPA_235415
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 264
+# Identity:      34/264 (12.9%)
+# Similarity:    63/264 (23.9%)
+# Gaps:         141/264 (53.4%)
+# Score: 48.0
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 EPNEKYKHKLIDYTFNYQNQAINLQQVFNFFFSDSLKFKEYSDFQEYIKR     50
+                                                                       
+A9TQ08_PHYPA_      0 --------------------------------------------------      0
+
+Q22US2_TETTS_     51 GKMGDYDYQSTLFSPPIPKYFQFKSQRLDEDLIASPDYSEREVRLTHPLP    100
+                               ..|.||           |...::....|:.....|:..:.
+A9TQ08_PHYPA_      1 ----------EDFPPP-----------LAGGVVLDQRYAVSSKFLSALIL     29
+
+Q22US2_TETTS_    101 PSNIPFMPKTCQVREVTRVY---WVSNDT---------------------    126
+                     .:..||:.:...|::.|...   |.|..:                     
+A9TQ08_PHYPA_     30 KAGSPFVQELLTVQKTTEYIEGPWKSEQSGAIQRVVTYMKAATKMIKAVK     79
+
+Q22US2_TETTS_    127 --------------IVVNLEAFTSGIPKGDSFTVRVR-SIFKQIDEENIH    161
+                                   .||::...|..:|.|..|.|.:: .|....|:.:..
+A9TQ08_PHYPA_     80 ATETQTCRRQDEKGFVVDVSCATPDVPYGGCFVVELQFCILAGPDQPSNE    129
+
+Q22US2_TETTS_    162 FS---QYSY-VHFLESTFLQGKIENGTIEQSHIAVKNCVLPAYQEAFQM-    206
+                     .|   |.|: ::||:||.::..||||    :...:|        |.::: 
+A9TQ08_PHYPA_    130 KSCRLQISWKLNFLQSTMMRSMIENG----ARAGIK--------ETYEVY    167
+
+Q22US2_TETTS_    206 --------------    206
+                                   
+A9TQ08_PHYPA_    168 RQVLANHAKSVSEE    181
+
+
+#---------------------------------------
+#---------------------------------------

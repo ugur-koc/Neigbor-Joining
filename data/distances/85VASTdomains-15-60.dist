@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:34
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-22.fasta
+#    [-bsequence] data/fastas/85VASTdomains-63.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9TQF1_PHYPA_224401
+# 2: Q55CZ7_DICDI_2179
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 205
+# Identity:      37/205 (18.0%)
+# Similarity:    74/205 (36.1%)
+# Gaps:          54/205 (26.3%)
+# Score: 38.5
+# 
+#
+#=======================================
+
+A9TQF1_PHYPA_      1 ------------VDDFPPPLASGVVLDQRYGTSAKSLSALICKAGSP---     35
+                                 |:.|...........|:| .|::..:.:..||.:|   
+Q55CZ7_DICDI_      1 KILNLEEEFRISVETFFTFFFENANFKQKY-HSSRGDNQIEVKAWTPTSD     49
+
+A9TQF1_PHYPA_     36 --FIQELLTCLKTTEYSEEPWKRANNGCIERVVSYMKAATKIIKAVKASE     83
+                       :.:|:..|...          :||..|.|:|. .||..|.::..|..|
+Q55CZ7_DICDI_     50 NRYTREVSFCSFI----------SNNPVINRLVG-DKAKVKEVQHYKYIE     88
+
+A9TQF1_PHYPA_     84 SHTCRRLDDRGFILDISCST--PDVPYGSNFMVKLQFCIL-AGQDLPSQE    130
+                     :.:          |.:|..|  .....|.:|....::.:. ....||.  
+Q55CZ7_DICDI_     89 NGS----------LYVSSETFFDGSSIGKSFSSVSEWTVSPISNPLPG--    126
+
+A9TQF1_PHYPA_    131 KTCRLQVSWTLHFLHSTMMKGMIENGARAGIKETYE----LYREVLSRYA    176
+                       |::.:....:: :.:|.||::||......:::::    |.|:.:..|.
+Q55CZ7_DICDI_    127 --CKVVIVVKNNY-NGSMFKGVLENWVHDTTEDSFKQWLTLVRQQVEEYE    173
+
+A9TQF1_PHYPA_    177 KP---    178
+                     |.   
+Q55CZ7_DICDI_    174 KNEQL    178
+
+
+#---------------------------------------
+#---------------------------------------

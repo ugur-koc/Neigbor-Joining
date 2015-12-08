@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:18
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-10.fasta
+#    [-bsequence] data/fastas/85VASTdomains-56.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B9G1J5_ORYSJ_289475
+# 2: B8C8I7_THAPS_81294
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 320
+# Identity:      26/320 ( 8.1%)
+# Similarity:    45/320 (14.1%)
+# Gaps:         239/320 (74.7%)
+# Score: 29.5
+# 
+#
+#=======================================
+
+B9G1J5_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+B8C8I7_THAPS_      1 HCVINQVQLQGLHTAEFFRVFFADDAIYSMRDFQKRRGDVDVVYGKWRSV     50
+
+B9G1J5_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+B8C8I7_THAPS_     51 ENSAGCCTSFKGGKSTLLPLPANLTKERTLHFNTLTHSYFGPAYAKATKV    100
+
+B9G1J5_ORYSJ_      1 -----------YFESKHQEVEMPVDLQGILVDKSYITS--------PSDL     31
+                                ..|::.|..|:|...:..:|::..:.:        .||.
+B8C8I7_THAPS_    101 QRATQLSNRLLVIENETQLAEIPFADRFRVVERWCVEAVRNEMSGGASDG    150
+
+B9G1J5_ORYSJ_     32 NNF-----LFSPDSNFRQTVVELQGCSDVKMESWKIDSDGESLKRVI-TY     75
+                     ..|     |::........|:.|:.|      :|    :.:..||.. |:
+B8C8I7_THAPS_    151 CAFSQDMALYTSKLTVHAEVIMLRSC------TW----ENQIRKRASETF    190
+
+B9G1J5_ORYSJ_     76 T--------TAPSKLVKAVKATEEQSYLKADGNGYSVLLSVSTPDVPCGT    117
+                     |        ||    |||::|||.|...                      
+B8C8I7_THAPS_    191 TEMNNDWVRTA----VKALRATEHQKQK----------------------    214
+
+B9G1J5_ORYSJ_    118 YFRTEILFRILPGPELDSEQLTSHLVISWRINFLQSTMMKGMIENGAKQG    167
+                                                                       
+B8C8I7_THAPS_    214 --------------------------------------------------    214
+
+B9G1J5_ORYSJ_    168 LQQNYAQFSDLLSQKIKPID    187
+                                         
+B8C8I7_THAPS_    214 --------------------    214
+
+
+#---------------------------------------
+#---------------------------------------

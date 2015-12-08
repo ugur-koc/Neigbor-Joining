@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:55
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-71.fasta
+#    [-bsequence] data/fastas/85VASTdomains-52.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8CDL2_THAPS_184373
+# 2: Q86AF7_DICDI_286471
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 277
+# Identity:      26/277 ( 9.4%)
+# Similarity:    47/277 (17.0%)
+# Gaps:         178/277 (64.3%)
+# Score: 22.5
+# 
+#
+#=======================================
+
+B8CDL2_THAPS_      1 SVVVNDNVNAMSSDMELILNDTVAGISVQEYFNIAWSEGDGTTTPSLYGS     50
+                                                                       
+Q86AF7_DICDI_      0 --------------------------------------------------      0
+
+B8CDL2_THAPS_     51 WLVSQEKHNVVVNPWEATVDTDTFTHRRIVTYDFEKTTLGIQSNVQVEHL    100
+                                                        .....:.:..::..|
+Q86AF7_DICDI_      1 -----------------------------------VECKDMSTTAKINQL     15
+
+B8CDL2_THAPS_    101 QQYKLSNEQ----CVVHMTISMK----GFPYSDCFVVEV-----------    131
+                     |.|  .||:    |:...|:.:.    .:...:|..:::           
+Q86AF7_DICDI_     16 QHY--VNERFEISCIKFYTLMIDSDFWAYVSKECGFLDMKESEWVTSESC     63
+
+B8CDL2_THAPS_    132 CH-VASLNANGELEVQIRMNVKFVKASMMEWKIR----NNTTAETKKAQL    176
+                     || ..:||....:..:|...|..|:.:.   |||    |....||.....
+Q86AF7_DICDI_     64 CHQERTLNFKTPISFKIGPKVATVQQTQ---KIRRTPTNGYVMETSSLSK    110
+
+B8CDL2_THAPS_    177 DL----------YETIKAACLEDV--------------------------    190
+                     |:          |.|:: .|.|..                          
+Q86AF7_DICDI_    111 DVPYGDSFSVENYLTLE-PCPESPQDSCILKVSTAVKFIKSIWGLGGLIE    159
+
+B8CDL2_THAPS_    190 ---------------------------    190
+                                                
+Q86AF7_DICDI_    160 KTVTQSNKEFFACWINFAKKRISDQAS    186
+
+
+#---------------------------------------
+#---------------------------------------

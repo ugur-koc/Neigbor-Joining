@@ -1,0 +1,70 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-63.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: Q55CZ7_DICDI_2179
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 417
+# Identity:       4/417 ( 1.0%)
+# Similarity:     6/417 ( 1.4%)
+# Gaps:         408/417 (97.8%)
+# Score: 13.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+Q55CZ7_DICDI_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                                                                       
+Q55CZ7_DICDI_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSK    150
+                                                                       
+Q55CZ7_DICDI_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    151 IYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSMKLTGL    200
+                                                                       
+Q55CZ7_DICDI_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    201 HIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLLRDANTRHQF--    248
+                                                         |:|   |...:|  
+Q55CZ7_DICDI_      1 ------------------------------------KIL---NLEEEFRI     11
+
+D0NHH4_PHYIT_    248 --------------------------------------------------    248
+                                                                       
+Q55CZ7_DICDI_     12 SVETFFTFFFENANFKQKYHSSRGDNQIEVKAWTPTSDNRYTREVSFCSF     61
+
+D0NHH4_PHYIT_    248 --------------------------------------------------    248
+                                                                       
+Q55CZ7_DICDI_     62 ISNNPVINRLVGDKAKVKEVQHYKYIENGSLYVSSETFFDGSSIGKSFSS    111
+
+D0NHH4_PHYIT_    248 --------------------------------------------------    248
+                                                                       
+Q55CZ7_DICDI_    112 VSEWTVSPISNPLPGCKVVIVVKNNYNGSMFKGVLENWVHDTTEDSFKQW    161
+
+D0NHH4_PHYIT_    248 -----------------    248
+                                      
+Q55CZ7_DICDI_    162 LTLVRQQVEEYEKNEQL    178
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:50
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-68.fasta
+#    [-bsequence] data/fastas/85VASTdomains-68.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YL072_YEAST_390578
+# 2: YL072_YEAST_390578
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 189
+# Identity:     189/189 (100.0%)
+# Similarity:   189/189 (100.0%)
+# Gaps:           0/189 ( 0.0%)
+# Score: 1022.0
+# 
+#
+#=======================================
+
+YL072_YEAST_3      1 QETMDFPYKPEANNEYVLLERQFSVPPGLLFIMMFNEDNPVFELSFLKTQ     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+YL072_YEAST_3      1 QETMDFPYKPEANNEYVLLERQFSVPPGLLFIMMFNEDNPVFELSFLKTQ     50
+
+YL072_YEAST_3     51 DSSNISHIGTFEKVNKDGQHYREFQYTKQLHFPVGPKSTNCEVAEILLHC    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+YL072_YEAST_3     51 DSSNISHIGTFEKVNKDGQHYREFQYTKQLHFPVGPKSTNCEVAEILLHC    100
+
+YL072_YEAST_3    101 DWERYINVLSITRTPNVPSGTSFSTRTRYMFRWDDQGQGCILKISFWVDW    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+YL072_YEAST_3    101 DWERYINVLSITRTPNVPSGTSFSTRTRYMFRWDDQGQGCILKISFWVDW    150
+
+YL072_YEAST_3    151 NASSWIKPMVESNCKNGQISATKDLVKLVEEFVEKYVEL    189
+                     |||||||||||||||||||||||||||||||||||||||
+YL072_YEAST_3    151 NASSWIKPMVESNCKNGQISATKDLVKLVEEFVEKYVEL    189
+
+
+#---------------------------------------
+#---------------------------------------

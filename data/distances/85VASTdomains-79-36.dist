@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:09
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-80.fasta
+#    [-bsequence] data/fastas/85VASTdomains-41.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q23QL2_TETTS_311513
+# 2: Q8W4D4_ARATH_391576
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 236
+# Identity:      47/236 (19.9%)
+# Similarity:    77/236 (32.6%)
+# Gaps:          83/236 (35.2%)
+# Score: 63.0
+# 
+#
+#=======================================
+
+Q23QL2_TETTS_      1 EVSTKAKWTSIDIKNVSAKEIYILFFGNNIFEDEKQVAYTNFGMYYNTTV     50
+                                                           ...|..:....|
+Q8W4D4_ARATH_      1 --------------------------------------PVKFQAFIKEEV     12
+
+Q23QL2_TETTS_     51 LNELNMVYSDI---VPEPPL--------YFTNLY-----DNNKLEIIDY-     83
+                     |  :| :|:|:   .||..|        .:||.|     |.| |.|..: 
+Q8W4D4_ARATH_     13 L--VN-IYNDVFASTPEQVLNVLLADDSTYTNEYRSARKDKN-LNIEPWH     58
+
+Q23QL2_TETTS_     84 --AEY--STRKCTFTHIIKEPFMPKSCDCFIEEKIYW----VSP-KEILI    124
+                       .||  ..|:..|..|...|..|.  |..:.|   |    :|| |::|:
+Q8W4D4_ARATH_     59 TAEEYDGQVREIKFRSICNSPMCPP--DTAVTE---WQHVVLSPDKKVLV    103
+
+Q23QL2_TETTS_    125 -ERELAFQGIPLSSHFNPRVIYQILETGESDQIKTQIRSGYYIHYVKDTW    173
+                      |.......:|..|:|.....:::....|:..: ..||.|  :|:.|...
+Q8W4D4_ARATH_    104 FETVQQPHDVPFGSYFEVHCRWRLEAKDETSSV-IDIRVG--VHFKKWCL    150
+
+Q23QL2_TETTS_    174 FKSKIDKTSDEENIKNWEKISKLYIKYSEI------    203
+                     .:|||...:.:|..|..|.:.::.:.|.:.      
+Q8W4D4_ARATH_    151 MQSKIKAGAIDEYKKEVEVMLEVALSYLKSHSSSSS    186
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-42.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: I7M7X5_TETTS_10131226
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 277
+# Identity:      50/277 (18.1%)
+# Similarity:    83/277 (30.0%)
+# Gaps:          92/277 (33.2%)
+# Score: 40.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                           |:|.:.|      ...:|||| |:..|.:|..:.......|...
+I7M7X5_TETTS_      1 ------KQQSIFE------KAQNVSEF-EIKFPNATPREIFNILFGLKPY     37
+
+D0NHH4_PHYIT_     51 APVGSASSS--------ASTGEKDSDDVLR-------DWH----------     75
+                     .|....|..        ....:||:|...:       :|:          
+I7M7X5_TETTS_     38 KPQPEGSQEFPNFRFYIFQEFQKDTDIQFQTFNPPPPEWYTNLDCSDKDT     87
+
+D0NHH4_PHYIT_     76 --SHPRFGLVRALSYHPDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHS    123
+                       |.|....:.....||....||       .|..|:....|    |:|..
+I7M7X5_TETTS_     88 VKSSPEISNLEFKVVHPVREKIP-------FGPKVSYCQNK----EKYFW    126
+
+D0NHH4_PHYIT_    124 CTIEDDSLEDELQGDQKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDI    173
+                     .:.|:..:|.|                |:...|||.:.|:|....::..:
+I7M7X5_TETTS_    127 ISAEEFIIERE----------------IFLSKIPYCDYFTIRFQYNISQV    160
+
+D0NHH4_PHYIT_    174 PVREDSDMNTEDKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERG    223
+                               :|::             .|..:..|.|.:.|..|.::|.|
+I7M7X5_TETTS_    161 ----------QDQT-------------RILIKLYVHFMKSTTFKGRIENG    187
+
+D0NHH4_PHYIT_    224 AL-EGVRSTCTTLLKLLRDANTRHQF-    248
+                     :| |......|......:.|...:|. 
+I7M7X5_TETTS_    188 SLSENTEVINTVFTPQAQIAIQNYQKF    214
+
+
+#---------------------------------------
+#---------------------------------------

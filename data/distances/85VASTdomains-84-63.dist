@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:17
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-85.fasta
+#    [-bsequence] data/fastas/85VASTdomains-66.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7M5W4_TETTS_346560
+# 2: B8CDL4_THAPS_224415
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 260
+# Identity:      44/260 (16.9%)
+# Similarity:    79/260 (30.4%)
+# Gaps:         113/260 (43.5%)
+# Score: 57.5
+# 
+#
+#=======================================
+
+I7M5W4_TETTS_      1 ---------------RKIN----SDFNSATFSELVLKNITAREVFGIFFS     31
+                                    :||.    :|:....:||  .:|...::::..|. 
+B8CDL4_THAPS_      1 MPAEPKLQQMTIIGKQKIKGISINDYYEVAWSE--GENCNKKQIYAPFL-     47
+
+I7M5W4_TETTS_     32 NQIFVSDRLQRKFTSFLEFFILEYLHGTNVSVSEIQLPPPEIFNSIYSN-     80
+                                                |:...:::::.|.|:...|..: 
+B8CDL4_THAPS_     48 ---------------------------TSCGKNDVKVTPWEMGGEIVGDW     70
+
+I7M5W4_TETTS_     81 ---NYLQLLEYPESSERHISFTHNIPNASAFLPKSLQCQMKETIYWQSPQ    127
+                        .|.|        :|:::|..                ||:||      
+B8CDL4_THAPS_     71 CGEKYTQ--------QRYVTFNF----------------MKQTI------     90
+
+I7M5W4_TETTS_    128 SFTLVRL-------------------LSLKGAPIITC--VEPR-VVFYVD    155
+                     ..|||.:                   |.:||.|...|  ||.| |...|.
+B8CDL4_THAPS_     91 GQTLVEVKHTQRCRRLGNDRCIVQMTLEMKGFPYSDCFVVEVRHVASRVG    140
+
+I7M5W4_TETTS_    156 EVNGNTILRSGFYVHFKSNTMFKKIIEKSSKEENEKTWNELKNVMSNVSE    205
+                     |  .:.|:..|..|.|..:.:|:..|:.::..|..|...||........:
+B8CDL4_THAPS_    141 E--SDIIVEIGMSVRFLKSCLFEGKIKTNTGAETTKAQLELLRQTVEACK    188
+
+I7M5W4_TETTS_    206 EYIKKRDQNK    215
+                     .::|      
+B8CDL4_THAPS_    189 PFVK------    192
+
+
+#---------------------------------------
+#---------------------------------------

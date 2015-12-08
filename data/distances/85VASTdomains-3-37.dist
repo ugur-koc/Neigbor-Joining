@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:19
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-11.fasta
+#    [-bsequence] data/fastas/85VASTdomains-42.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B9G1J5_ORYSJ_8981071
+# 2: I7M7X5_TETTS_10131226
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 263
+# Identity:      39/263 (14.8%)
+# Similarity:    68/263 (25.9%)
+# Gaps:         138/263 (52.5%)
+# Score: 82.5
+# 
+#
+#=======================================
+
+B9G1J5_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+I7M7X5_TETTS_      1 KQQSIFEKAQNVSEFEIKFPNATPREIFNILFGLKPYKPQPEGSQEFPNF     50
+
+B9G1J5_ORYSJ_      1 ------------------------EDAKNLQMNEVFSSSISANMASLMEV     26
+                                             |...||..::..:...|..:::|   
+I7M7X5_TETTS_     51 RFYIFQEFQKDTDIQFQTFNPPPPEWYTNLDCSDKDTVKSSPEISNL---     97
+
+B9G1J5_ORYSJ_     27 FGGGSFEMKIMNKVGCLNYSATQWESDKPDEYQRQIHYKFSRKLSPIGGE     76
+                           |.|:::.|                           |:..|.|.:
+I7M7X5_TETTS_     98 ------EFKVVHPV---------------------------REKIPFGPK    114
+
+B9G1J5_ORYSJ_     77 VTGTQQKSPMPNKAGW------IIEEVMELQGILFGDFFTIHIRYQIEDL    120
+                     |:..|.|    .|..|      |||..:.|..|.:.|:|||..:|.|..:
+I7M7X5_TETTS_    115 VSYCQNK----EKYFWISAEEFIIEREIFLSKIPYCDYFTIRFQYNISQV    160
+
+B9G1J5_ORYSJ_    121 APKQRACSVQVFLGIEWSKTTRHRKRIEKSVLSGSSARLKEMFILASKQL    170
+                     ..:.|   :.:.|.:.:.|:|..:.|||...||.::..:..:|      .
+I7M7X5_TETTS_    161 QDQTR---ILIKLYVHFMKSTTFKGRIENGSLSENTEVINTVF------T    201
+
+B9G1J5_ORYSJ_    171 PHAR---------    174
+                     |.|:         
+I7M7X5_TETTS_    202 PQAQIAIQNYQKF    214
+
+
+#---------------------------------------
+#---------------------------------------

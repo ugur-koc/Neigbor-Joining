@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:10
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-80.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q23QL2_TETTS_311513
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 346
+# Identity:      31/346 ( 9.0%)
+# Similarity:    54/346 (15.6%)
+# Gaps:         241/346 (69.7%)
+# Score: 11.5
+# 
+#
+#=======================================
+
+Q23QL2_TETTS_      0 --------------------------------------------------      0
+                                                                       
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+
+Q23QL2_TETTS_      0 --------------------------------------------------      0
+                                                                       
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+
+Q23QL2_TETTS_      1 EVSTKAKWTSIDIKNVSAKEIYILFFGNNIFEDEKQVAYTNFGMYYNTTV     50
+                     ...|....|...:|.|:.::.:.....::..|||                
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDE----------------    134
+
+Q23QL2_TETTS_     51 LNELNMVYSDIVPEPPLYFTNLYDNNKLEIIDYAEYSTRKCTFTHIIKEP    100
+                                          |..:.||                      
+D0NHH4_PHYIT_    135 ---------------------LQGDQKL----------------------    141
+
+Q23QL2_TETTS_    101 FMPKSCDCFIEEKIYWVSPKEILIERELAFQGIPLSSHFNPRVIYQI--L    148
+                       |....  :..|||.:|              ||.|:.|:..||..:  :
+D0NHH4_PHYIT_    142 --PHRAS--LRSKIYTLS--------------IPYSNCFSIEVIVDVEDI    173
+
+Q23QL2_TETTS_    149 ETGESDQIKTQIRSGYYIHYVKDTWFKSKIDKTSDEENIKNWEKISKLYI    198
+                     ...|...:.|:                   ||:|..:  ||..|::.|:|
+D0NHH4_PHYIT_    174 PVREDSDMNTE-------------------DKSSSFD--KNSMKLTGLHI    202
+
+Q23QL2_TETTS_    199 KYSEI-----------------------------------------    203
+                     ::...                                         
+D0NHH4_PHYIT_    203 RWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLLRDANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

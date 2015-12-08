@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:40
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-26.fasta
+#    [-bsequence] data/fastas/85VASTdomains-66.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YSP2_YEAST_8411021
+# 2: B8CDL4_THAPS_224415
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 276
+# Identity:      25/276 ( 9.1%)
+# Similarity:    48/276 (17.4%)
+# Gaps:         179/276 (64.9%)
+# Score: 20.5
+# 
+#
+#=======================================
+
+YSP2_YEAST_84      1 PTTADFKPSNNDHLVIEANINAPLGKVVNLLYGEDVSYYERILKAQKNFE     50
+                                                                       
+B8CDL4_THAPS_      0 --------------------------------------------------      0
+
+YSP2_YEAST_84     51 ISPIPNNFLTKKIRDYAYTKPLSGS------IGPSKTKCLITDTLEHYDL     94
+                                        .|....      ||..|.|.:        .:
+B8CDL4_THAPS_      1 -------------------MPAEPKLQQMTIIGKQKIKGI--------SI     23
+
+YSP2_YEAST_84     95 EDYVKVLSITKNPDVPSGNIFSVKTVFLFSWDKNNSTKLTVYNS-----V    139
+                     .||.:| :.::..:.....|::   .||.|..||: .|:|.:..     .
+B8CDL4_THAPS_     24 NDYYEV-AWSEGENCNKKQIYA---PFLTSCGKND-VKVTPWEMGGEIVG     68
+
+YSP2_YEAST_84    140 DWTGKSWIKSMIEKGTFDGVADTTKIMISEIK-----KILSDEDSNI---    181
+                     ||.|:.:.:....  ||:.:..|....:.|:|     :.|.::...:   
+B8CDL4_THAPS_     69 DWCGEKYTQQRYV--TFNFMKQTIGQTLVEVKHTQRCRRLGNDRCIVQMT    116
+
+YSP2_YEAST_84    181 --------------------------------------------------    181
+                                                                       
+B8CDL4_THAPS_    117 LEMKGFPYSDCFVVEVRHVASRVGESDIIVEIGMSVRFLKSCLFEGKIKT    166
+
+YSP2_YEAST_84    181 --------------------------    181
+                                               
+B8CDL4_THAPS_    167 NTGAETTKAQLELLRQTVEACKPFVK    192
+
+
+#---------------------------------------
+#---------------------------------------

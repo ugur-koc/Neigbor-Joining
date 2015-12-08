@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:48
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-67.fasta
+#    [-bsequence] data/fastas/85VASTdomains-61.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NJ57_PHYIT_385538
+# 2: V5IMN0_NEUCR_493676
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 221
+# Identity:      39/221 (17.6%)
+# Similarity:    67/221 (30.3%)
+# Gaps:         104/221 (47.1%)
+# Score: 69.0
+# 
+#
+#=======================================
+
+D0NJ57_PHYIT_      1 -----------------------SDVDTI---APKDISMTQIL---EEVF     21
+                                            ..|..:   ||....||:.|   ::.|
+V5IMN0_NEUCR_      1 TECGDAATHYDRVIGDDVVPAPLGKVYNLLFGAPSSAWMTKWLLNDQKCF     50
+
+D0NJ57_PHYIT_     22 PVSVDTFMKLFYLDKAPFGLDKFNEQTGSTEMTINPWTTPLEDEESFGMT     71
+                     .:::|        ||.  ||:  |||                      .|
+V5IMN0_NEUCR_     51 EINMD--------DKK--GLN--NEQ----------------------KT     66
+
+D0NJ57_PHYIT_     72 RSLQFRVPVDAPIGPKSSQVDVLQCLK--ENEHGVRVVESSTRLVDIPYG    119
+                     |:..:..|::|.||||.::..|.:.|.  :.|..|.|. .||:..|:|.|
+V5IMN0_NEUCR_     67 RTFNYIKPLNASIGPKQTKCMVTEQLDNLDFEKAVNVT-VSTQNPDVPNG    115
+
+D0NJ57_PHYIT_    120 DYFSVEDRWTIVPRSSDPNACKVFIELKVRLEQEL---------------    154
+                     :.|.|:.::.:  ..::.||.:|.|...:....:.               
+V5IMN0_NEUCR_    116 NIFVVKTKYCL--SWAENNATRVQINCTIEWSGKSWLKGAIERGANEGQA    163
+
+D0NJ57_PHYIT_    154 ---------------------    154
+                                          
+V5IMN0_NEUCR_    164 QYAKDLFVALKAAVSSRPRSN    184
+
+
+#---------------------------------------
+#---------------------------------------

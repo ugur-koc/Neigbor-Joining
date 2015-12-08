@@ -1,0 +1,66 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:13
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-72.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: Q4QEC6_LEIMA_54221
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 353
+# Identity:      22/353 ( 6.2%)
+# Similarity:    34/353 ( 9.6%)
+# Gaps:         290/353 (82.2%)
+# Score: 31.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+Q4QEC6_LEIMA_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                                                                       
+Q4QEC6_LEIMA_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSK    150
+                                                                       
+Q4QEC6_LEIMA_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    151 IYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSMKLTGL    200
+                                  .:.::||..:               .||..:..|...
+Q4QEC6_LEIMA_      1 -------------GKGVLDVFGV---------------CFDDGTAVLEDY     22
+
+D0NHH4_PHYIT_    201 HIRWRAGVTFSRDTILKTQLER-----GALEGVRS-TCTTLLK-LLRDAN    243
+                     |       |..:||..|.:..|     ||..|.|. |||||:| ::....
+Q4QEC6_LEIMA_     23 H-------TERKDTDQKWEPWRPTKDGGAFRGQRQFTCTTLVKAMMGKPY     65
+
+D0NHH4_PHYIT_    244 TRHQF---------------------------------------------    248
+                     |..::                                             
+Q4QEC6_LEIMA_     66 TYIEYQRYALFKLSGVPTLAVQFSSQVPGVMFGDAFRVEALVTFTQAGSG    115
+
+D0NHH4_PHYIT_    248 --------------------------------------------------    248
+                                                                       
+Q4QEC6_LEIMA_    116 ASAEVTMRAFGYVQFLKSVWVKGRILATAMNTELPDGCKKLAAMVAAKVA    165
+
+D0NHH4_PHYIT_    248 ---    248
+                        
+Q4QEC6_LEIMA_    166 GRS    168
+
+
+#---------------------------------------
+#---------------------------------------

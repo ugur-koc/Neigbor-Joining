@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:50
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-68.fasta
+#    [-bsequence] data/fastas/85VASTdomains-74.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YL072_YEAST_390578
+# 2: Q4Q507_LEIMA_35214
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 209
+# Identity:      42/209 (20.1%)
+# Similarity:    72/209 (34.4%)
+# Gaps:          49/209 (23.4%)
+# Score: 57.5
+# 
+#
+#=======================================
+
+YL072_YEAST_3      1 QETMDFPYKPEANNEYVLLERQFSVPPGLLFIMMFN---EDNPVFELSFL     47
+                              ....::.|:|.:  ::..||....:::   :||..|   |.
+Q4Q507_LEIMA_      1 ---------ATRKDKKVMLPQ--TLLKGLTIQKLWDNVFQDNTNF---FK     36
+
+YL072_YEAST_3     48 KTQDSSNIS--HIGTFEKVNKDGQHYREFQYTKQLHFP-VGPKSTNCEVA     94
+                     |..|..|.|  .||.::.....|...|.......:..| .|..:...:|.
+Q4Q507_LEIMA_     37 KYHDKRNESKLEIGPWDYAVDHGSGSRTVSLVAIVEVPRAGTPTPLNQVQ     86
+
+YL072_YEAST_3     95 EILLHCDWERYIN--------VLSI-TRTPNVPSGTSFSTRTRYMFRWDD    135
+                     ..       .|:|        |..| ::||.:|:|:||.|...:....|.
+Q4Q507_LEIMA_     87 RF-------AYVNTPEGKLMLVYQISSQTPEMPAGSSFRTEAYFEITADS    129
+
+YL072_YEAST_3    136 QGQGCILKISFWVDWNASSW----IKPMVESNCKNGQISATKDLVKLV-E    180
+                     ....|  .|:.|.:....|.    |:.:..........||.:.:|.:: |
+Q4Q507_LEIMA_    130 ADSDC--SIAIWGNCRKMSMSFSAIQYIATPRAIKEMTSAYRQMVNMISE    177
+
+YL072_YEAST_3    181 EFVEKYVEL    189
+                     ||.      
+Q4Q507_LEIMA_    178 EFC------    180
+
+
+#---------------------------------------
+#---------------------------------------

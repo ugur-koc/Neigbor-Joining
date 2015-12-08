@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:53
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-7.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_9321154
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 342
+# Identity:      33/342 ( 9.6%)
+# Similarity:    70/342 (20.5%)
+# Gaps:         213/342 (62.3%)
+# Score: 18.0
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      0 --------------------------------------------------      0
+                                                                       
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+
+Q22US2_TETTS_      0 --------------------------------------------------      0
+                                                                       
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+
+Q22US2_TETTS_      1 ----------------ETFKFELCDVILKGENITIRDVFQACLGDFQYQN     34
+                                     ...::..|.:    |:.::.|..|   ||.:..:
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTI----EDDSLEDELQ---GDQKLPH    143
+
+Q22US2_TETTS_     35 PST--NTVYDNFFYYYIENVMKCWNIQIEKWSPPPPQYFQQQNYPFSEEN     82
+                     .::  :.:|.....|     ..|::|::         ....::.|..|::
+D0NHH4_PHYIT_    144 RASLRSKIYTLSIPY-----SNCFSIEV---------IVDVEDIPVREDS    179
+
+Q22US2_TETTS_     83 EKKKEKVQDWIEISQRQVTYDK-TIPLSGMPFLPKFCKVSEKQKIIFISP    131
+                     :...|         .:..::|| ::.|:|:                    
+D0NHH4_PHYIT_    180 DMNTE---------DKSSSFDKNSMKLTGL--------------------    200
+
+Q22US2_TETTS_    132 DELIFELEAYSSGAPMTDTFYHFIRNTFVQLTPDTVSYKVQMDVRFLKSN    181
+                                          |......|..:.||:          ||:.
+D0NHH4_PHYIT_    201 ---------------------HIRWRAGVTFSRDTI----------LKTQ    219
+
+Q22US2_TETTS_    182 WFSGTIDSQSQKEGVKSTQEIYKSFQERLTQFLQDKNEKRRN    223
+                     ...|.:      |||:||       ...|.:.|:|.|.:.:.
+D0NHH4_PHYIT_    220 LERGAL------EGVRST-------CTTLLKLLRDANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

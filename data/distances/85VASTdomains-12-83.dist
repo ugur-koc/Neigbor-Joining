@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:31
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-2.fasta
+#    [-bsequence] data/fastas/85VASTdomains-84.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B9FU30_ORYSJ_8491024
+# 2: B8LDM5_THAPS_9291109
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 315
+# Identity:       9/315 ( 2.9%)
+# Similarity:    24/315 ( 7.6%)
+# Gaps:         273/315 (86.7%)
+# Score: 14.0
+# 
+#
+#=======================================
+
+B9FU30_ORYSJ_      1 LFTHEDVKMSEIFSSALSVDVESLMEMFSGGPLEHRMMQKAGCIDYSPTE     50
+                                                                       
+B8LDM5_THAPS_      0 --------------------------------------------------      0
+
+B9FU30_ORYSJ_     51 WELVSRNIYQRQISYKFDKNLSRYGGEATTTQQRYALVNQEGWAIEEVMS    100
+                                                                       
+B8LDM5_THAPS_      0 --------------------------------------------------      0
+
+B9FU30_ORYSJ_    101 LQGVLLGDCFNVQMKYTVVNVPSKPNTCSVQVLLGIAWLKSTKQQKKITK    150
+                                                ..::|.|.:.:       |::..
+B8LDM5_THAPS_      1 ---------------------------VGLEVDLPVGF-------KRLRW     16
+
+B9FU30_ORYSJ_    151 SVISNSSIRLKELF-------AEVEKDLTSRSG-----------------    176
+                     :::.:.|..||:.|       |::.....|::.                 
+B8LDM5_THAPS_     17 ALLHSDSKFLKDAFFGPVMNYADITMGSWSKNNNDIGLPTTPEAVNEEDF     66
+
+B9FU30_ORYSJ_    176 --------------------------------------------------    176
+                                                                       
+B8LDM5_THAPS_     67 LNATLEFSYLMPKSAFVKANMCYATHEIIYYDDYSLVIKEKTLTPEVPYG    116
+
+B9FU30_ORYSJ_    176 --------------------------------------------------    176
+                                                                       
+B8LDM5_THAPS_    117 NSFIAWTQYNLVSTGKNNCRMVCSVEAEFPNGPPMVARQIKSGMRSGTAE    166
+
+B9FU30_ORYSJ_    176 ---------------    176
+                                    
+B8LDM5_THAPS_    167 KFVLLGETICRYADA    181
+
+
+#---------------------------------------
+#---------------------------------------

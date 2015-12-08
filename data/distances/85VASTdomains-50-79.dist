@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:28
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-54.fasta
+#    [-bsequence] data/fastas/85VASTdomains-80.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q8MKJ8_DROME_144324
+# 2: Q23QL2_TETTS_311513
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 299
+# Identity:      24/299 ( 8.0%)
+# Similarity:    45/299 (15.1%)
+# Gaps:         214/299 (71.6%)
+# Score: 16.5
+# 
+#
+#=======================================
+
+Q8MKJ8_DROME_      1 EDLTARCSASHEGRKLLQERLMVRVDALFNMLFSASPFLQSFHERRKSTD     50
+                                                                       
+Q23QL2_TETTS_      0 --------------------------------------------------      0
+
+Q8MKJ8_DROME_     51 LNMGVWARNAGGQNQRTVSMTVALQANVGPKTAKITETQTMRECSQPGQL    100
+                                                               |.|...:.
+Q23QL2_TETTS_      1 ------------------------------------------EVSTKAKW      8
+
+Q8MKJ8_DROME_    101 YSIDVQSVNADIPYADTF----------VVLMHFCL--KATV--------    130
+                     .|||:::|:|...|...|          |...:|.:  ..||        
+Q23QL2_TETTS_      9 TSIDIKNVSAKEIYILFFGNNIFEDEKQVAYTNFGMYYNTTVLNELNMVY     58
+
+Q8MKJ8_DROME_    131 ----------------EEHTDVLVFAEIQFLKSVWA--VVKTFIERNAYA    162
+                                     ....:::.:||....|..:.  :.:.|:.::...
+Q23QL2_TETTS_     59 SDIVPEPPLYFTNLYDNNKLEIIDYAEYSTRKCTFTHIIKEPFMPKSCDC    108
+
+Q8MKJ8_DROME_    163 GLEEFCQSLY----SALLIEIRK---------------------------    181
+                     .:||   .:|    ..:||| |:                           
+Q23QL2_TETTS_    109 FIEE---KIYWVSPKEILIE-RELAFQGIPLSSHFNPRVIYQILETGESD    154
+
+Q8MKJ8_DROME_    181 -------------------------------------------------    181
+                                                                      
+Q23QL2_TETTS_    155 QIKTQIRSGYYIHYVKDTWFKSKIDKTSDEENIKNWEKISKLYIKYSEI    203
+
+
+#---------------------------------------
+#---------------------------------------

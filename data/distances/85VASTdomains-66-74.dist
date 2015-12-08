@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:51
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-69.fasta
+#    [-bsequence] data/fastas/85VASTdomains-76.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8C2T9_THAPS_86910
+# 2: I7MCY9_TETTS_788993
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 258
+# Identity:      43/258 (16.7%)
+# Similarity:    75/258 (29.1%)
+# Gaps:         114/258 (44.2%)
+# Score: 96.5
+# 
+#
+#=======================================
+
+B8C2T9_THAPS_      1 --------------------------DVPVDSVIKDMDPIFTRKLHNISI     24
+                                               ::..|...||..          |.
+I7MCY9_TETTS_      1 KHYLSNKDFETFELVLENTHTREVFIEIFSDKQYKDYQ----------SF     40
+
+B8C2T9_THAPS_     25 ESYYKTGWAEEDAPLYGPWLERKGSF--DVSVSQWEHSKEGFQHSWSGET     72
+                     ..:|:..:.::......||.....|.  |||.:.::...|..|       
+I7MCY9_TETTS_     41 SHFYQQTYIKDTNIDITPWQPAPSSIYTDVSSTNYQEFLESNQ-------     83
+
+B8C2T9_THAPS_     73 FHQKRIIRFKFKRTTHLYIGP-----PVAGVTQTQYCRRDGDDKCVTMMT    117
+                               |...|:.:|.|     |:...|    |:.:.::|...:.:
+I7MCY9_TETTS_     84 ----------FSTKTNQFIHPVREKVPMGPKT----CQVNSEEKIFWLSS    119
+
+B8C2T9_THAPS_    118 VE--------MDGIPYSDVFAVEVRWAARRTGCNDITIDAGVHVRFIKSS    159
+                     .|        :..:|.:|.|..:..:..::||...:.|..|..:.|:|||
+I7MCY9_TETTS_    120 EEILIQREFKVSKVPMADCFTTQNFYHIQQTGPTTVKITFGFFINFVKSS    169
+
+B8C2T9_THAPS_    160 MFASKIKSGTLAETKPIHLDLFEVIKVALSSGSDNKS-------------    196
+                     ||.|.|                  :|   ||||:|:.             
+I7MCY9_TETTS_    170 MFKSLI------------------VK---SSGSENRETWNGKFKGLITEQ    198
+
+B8C2T9_THAPS_    196 --------    196
+                             
+I7MCY9_TETTS_    199 IKFAQNQR    206
+
+
+#---------------------------------------
+#---------------------------------------

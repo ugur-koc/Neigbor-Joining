@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:14
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-84.fasta
+#    [-bsequence] data/fastas/85VASTdomains-11.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8LDM5_THAPS_9291109
+# 2: B9G1J5_ORYSJ_8981071
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 316
+# Identity:      10/316 ( 3.2%)
+# Similarity:    18/316 ( 5.7%)
+# Gaps:         277/316 (87.7%)
+# Score: 15.5
+# 
+#
+#=======================================
+
+B8LDM5_THAPS_      0 --------------------------------------------------      0
+                                                                       
+B9G1J5_ORYSJ_      1 EDAKNLQMNEVFSSSISANMASLMEVFGGGSFEMKIMNKVGCLNYSATQW     50
+
+B8LDM5_THAPS_      0 --------------------------------------------------      0
+                                                                       
+B9G1J5_ORYSJ_     51 ESDKPDEYQRQIHYKFSRKLSPIGGEVTGTQQKSPMPNKAGWIIEEVMEL    100
+
+B8LDM5_THAPS_      1 --------------------------------VGLEVDLPVGF-KRLRWA     17
+                                                     :|:|....... ||:..:
+B9G1J5_ORYSJ_    101 QGILFGDFFTIHIRYQIEDLAPKQRACSVQVFLGIEWSKTTRHRKRIEKS    150
+
+B8LDM5_THAPS_     18 LLHSDSKFLKDAFF--GPVMNYADITMGSWSKNNNDIGLPTTPEAVNEED     65
+                     :|...|..||:.|.  ...:.:|.                          
+B9G1J5_ORYSJ_    151 VLSGSSARLKEMFILASKQLPHAR--------------------------    174
+
+B8LDM5_THAPS_     66 FLNATLEFSYLMPKSAFVKANMCYATHEIIYYDDYSLVIKEKTLTPEVPY    115
+                                                                       
+B9G1J5_ORYSJ_    174 --------------------------------------------------    174
+
+B8LDM5_THAPS_    116 GNSFIAWTQYNLVSTGKNNCRMVCSVEAEFPNGPPMVARQIKSGMRSGTA    165
+                                                                       
+B9G1J5_ORYSJ_    174 --------------------------------------------------    174
+
+B8LDM5_THAPS_    166 EKFVLLGETICRYADA    181
+                                     
+B9G1J5_ORYSJ_    174 ----------------    174
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-21.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: A9SDA2_PHYPA_8171004
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 269
+# Identity:      48/269 (17.8%)
+# Similarity:    90/269 (33.5%)
+# Gaps:         102/269 (37.9%)
+# Score: 49.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 ----TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKM---E     43
+                         .||..|:|.:|.::....||..|               .|.|   |
+A9SDA2_PHYPA_      1 QSCTDSFAGMEEANMAQVCAFEIPLMS---------------DCAMSLFE     35
+
+D0NHH4_PHYIT_     44 RAKL--ATSAPVGSASSSASTGEK--DSDDVLRDWHSHPRFGLVRALSYH     89
+                     :..|  |.:..:|..:..::..|:  ..:.|.|           |..|||
+A9SDA2_PHYPA_     36 QGGLEEAMAEKMGYLNYVSTPWERLEGQNGVQR-----------RHTSYH     74
+
+D0NHH4_PHYIT_     90 PDAATIPTMGSSRGTGKNVTL-NSMKAVTIEQYHSCTIEDDSLEDELQGD    138
+                     .: ..|...||.....:..|: :|||        ||.:::          
+A9SDA2_PHYPA_     75 LN-RQISQFGSKVSCIQQRTMSDSMK--------SCVLDE----------    105
+
+D0NHH4_PHYIT_    139 QKLPHRASLRSKIYTL-SIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKS    187
+                                 :.|| .:|:.:.|.::         ||.:.:..:.:..
+A9SDA2_PHYPA_    106 ------------VITLHDVPFGDHFQVQ---------VRREIETTSTNPP    134
+
+D0NHH4_PHYIT_    188 SSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGA-------LEGVRS    230
+                     .||.|.|:           ||::.::|..|.::.:..       :..|.:
+A9SDA2_PHYPA_    135 QSFVKASV-----------GVSWHKNTEFKKKITKNVHDHMAKEIREVMN    173
+
+D0NHH4_PHYIT_    231 TCTTLLKL-LRDANTRHQF    248
+                     .|...:|. ::|...    
+A9SDA2_PHYPA_    174 VCVKEVKARIKDKRI----    188
+
+
+#---------------------------------------
+#---------------------------------------

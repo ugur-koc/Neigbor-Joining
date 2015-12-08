@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:32
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-57.fasta
+#    [-bsequence] data/fastas/85VASTdomains-37.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22XZ6_TETTS_144333
+# 2: GRM1C_HUMAN_107289
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 204
+# Identity:      46/204 (22.5%)
+# Similarity:    84/204 (41.2%)
+# Gaps:          35/204 (17.2%)
+# Score: 102.5
+# 
+#
+#=======================================
+
+Q22XZ6_TETTS_      1 ----EQSDVEILNPETSEENKELLRCILPVSVDAFFEKFIGDNAIFSYGQ     46
+                         ::.:|    ||.....:..:..|..:|.|..||      .:|:..:
+GRM1C_HUMAN_1      1 SDSVDEENV----PEKDLHGRLFINRIFHISADRMFE------LLFTSSR     40
+
+Q22XZ6_TETTS_     47 HMEKNGST----DIKISEW-AE--NEELKCFTRECNLVIKVSGVPLRDTS     89
+                     .|:|..|:    |:..:.| ||  .::|:..|....|...::|   :.|:
+GRM1C_HUMAN_1     41 FMQKFASSRNIIDVVSTPWTAELGGDQLRTMTYTIVLNSPLTG---KCTA     87
+
+Q22XZ6_TETTS_     90 RFQKIQTYK--KEGENLIISSTSKVFDVPYSGYFTTEEKWEISPVEGSSD    137
+                     ..:|...||  :|....::.|.....||||..||.|..::.|  :..|..
+GRM1C_HUMAN_1     88 ATEKQTLYKESREARFYLVDSEVLTHDVPYHDYFYTVNRYCI--IRSSKQ    135
+
+Q22XZ6_TETTS_    138 KCLLVCKGWVTFNKNTM-MKKTITQRNEQGLKEDYEVWIGRIRKILQPKK    186
+                     ||.|.....:.:.|... :.|::.::|.....|||      .:::.....
+GRM1C_HUMAN_1    136 KCRLRVSTDLKYRKQPWGLVKSLIEKNSWSSLEDY------FKQLESDLL    179
+
+Q22XZ6_TETTS_    187 PEEN    190
+                     .||:
+GRM1C_HUMAN_1    180 IEES    183
+
+
+#---------------------------------------
+#---------------------------------------

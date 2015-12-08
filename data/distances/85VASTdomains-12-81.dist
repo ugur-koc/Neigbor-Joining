@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:31
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-2.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B9FU30_ORYSJ_8491024
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 262
+# Identity:      45/262 (17.2%)
+# Similarity:    86/262 (32.8%)
+# Gaps:         100/262 (38.2%)
+# Score: 40.5
+# 
+#
+#=======================================
+
+B9FU30_ORYSJ_      1 --LFTHEDVKMSEIFSSAL-SVDVESLMEMFSGGPLEHRM---MQKAGCI     44
+                       ....::..|:|:.::.: ...|...:||.:  |...|:   |::|...
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVT--PRSTRLKCKMERAKLA     48
+
+B9FU30_ORYSJ_     45 DYSPT-------------------EWELVSRNIYQRQISYKFD-------     68
+                     ..:|.                   :|....|....|.:||..|       
+D0NHH4_PHYIT_     49 TSAPVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTM     98
+
+B9FU30_ORYSJ_     69 -------KNLSRYGGEATTTQQRYALVNQEGWAIEEVMSLQGVLLGD---    108
+                            ||::....:|.|.:|.::...::.       ||:..|.||   
+D0NHH4_PHYIT_     99 GSSRGTGKNVTLNSMKAVTIEQYHSCTIEDD-------SLEDELQGDQKL    141
+
+B9FU30_ORYSJ_    109 -------------------CFNVQMKYTVVNVP----SKPNT--------    127
+                                        ||::::...|.::|    |..||        
+D0NHH4_PHYIT_    142 PHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFD    191
+
+B9FU30_ORYSJ_    128 -CSVQVL-LGIAW----------LKSTKQQKKITKSVISNSSIRLKELFA    165
+                      .|:::. |.|.|          :..|:.::...:.|.|..:..||.|  
+D0NHH4_PHYIT_    192 KNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLL--    239
+
+B9FU30_ORYSJ_    166 EVEKDLTSRSG-    176
+                        :|..:|.. 
+D0NHH4_PHYIT_    240 ---RDANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

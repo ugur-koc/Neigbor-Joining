@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:11
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-81.fasta
+#    [-bsequence] data/fastas/85VASTdomains-7.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q7RWT3_NEUCR_9451126
+# 2: Q22US2_TETTS_9321154
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 319
+# Identity:      21/319 ( 6.6%)
+# Similarity:    44/319 (13.8%)
+# Gaps:         233/319 (73.0%)
+# Score: 13.5
+# 
+#
+#=======================================
+
+Q7RWT3_NEUCR_      1 HPVYFEPEDMGKPVAERNFEISAKACFHVLFGDKSFIFPKLYFERRAKEI     50
+                                                                       
+Q22US2_TETTS_      0 --------------------------------------------------      0
+
+Q7RWT3_NEUCR_     51 AQGPWELKDHGGKMARQFKFKVDKADMLGRKTDANIVDT----------Q     90
+                                    ..|||::  .|::.:..:..|.|.          |
+Q22US2_TETTS_      1 ---------------ETFKFEL--CDVILKGENITIRDVFQACLGDFQYQ     33
+
+Q7RWT3_NEUCR_     91 NID---IFNDHITYVVTHVKTPWHLPHSHAFKLITKVVITHVAKSKCKLA    137
+                     |..   ::::...|.:.:|...|::.       |.|              
+Q22US2_TETTS_     34 NPSTNTVYDNFFYYYIENVMKCWNIQ-------IEK--------------     62
+
+Q7RWT3_NEUCR_    138 IYTKADWSKAPA----------IAKNMVERQALDDAANDAEELAEVATDQ    177
+                           ||..|.          ..:|..:::.:.|....::.  :|..|:
+Q22US2_TETTS_     63 ------WSPPPPQYFQQQNYPFSEENEKKKEKVQDWIEISQR--QVTYDK    104
+
+Q7RWT3_NEUCR_    178 VRRLG---------------------------------------------    182
+                     ...|.                                             
+Q22US2_TETTS_    105 TIPLSGMPFLPKFCKVSEKQKIIFISPDELIFELEAYSSGAPMTDTFYHF    154
+
+Q7RWT3_NEUCR_    182 --------------------------------------------------    182
+                                                                       
+Q22US2_TETTS_    155 IRNTFVQLTPDTVSYKVQMDVRFLKSNWFSGTIDSQSQKEGVKSTQEIYK    204
+
+Q7RWT3_NEUCR_    182 -------------------    182
+                                        
+Q22US2_TETTS_    205 SFQERLTQFLQDKNEKRRN    223
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:03
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-4.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q5Z6I4_ORYSJ_8571036
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 269
+# Identity:      45/269 (16.7%)
+# Similarity:    82/269 (30.5%)
+# Gaps:         110/269 (40.9%)
+# Score: 44.5
+# 
+#
+#=======================================
+
+Q5Z6I4_ORYSJ_      1 NNESDSFLGIEDAKMSEVFSSTKP-FDVSTLMSIFEGGPLEHQV---MEK     46
+                         .|||.:::..|:|:.::|.| ..||..:.:..  |...::   ||:
+D0NHH4_PHYIT_      1 ----TSFLEMKEQDMTELMTATIPGSSVSEFLEMVT--PRSTRLKCKMER     44
+
+Q5Z6I4_ORYSJ_     47 --------IGCMEYSVS-----------PWES------VRADAYQ-----     66
+                             :|....|.|           .|.|      |||.:|.     
+D0NHH4_PHYIT_     45 AKLATSAPVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAAT     94
+
+Q5Z6I4_ORYSJ_     67 ------------------------RQIH------------YKFDKRLARH     80
+                                             .|.|            .:.|::|. |
+D0NHH4_PHYIT_     95 IPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLP-H    143
+
+Q5Z6I4_ORYSJ_     81 EGEVMSTQQKSPLPDKNGWLVEEVMTLEGIPVGE----------------    114
+                     ...:.|......:|..|.:.:|.::.:|.|||.|                
+D0NHH4_PHYIT_    144 RASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKN    193
+
+Q5Z6I4_ORYSJ_    115 ---YFNLHMRYQLEQISSKPKACNVQVSIGIAWLKSCKNRKKIAQEVLSS    161
+                        ...||:|::.....|:......|:..|.  |:..::......::|..
+D0NHH4_PHYIT_    194 SMKLTGLHIRWRAGVTFSRDTILKTQLERGA--LEGVRSTCTTLLKLLRD    241
+
+Q5Z6I4_ORYSJ_    162 ASSRLKKMFGLLEKELLPA    180
+                     |::|.:.            
+D0NHH4_PHYIT_    242 ANTRHQF------------    248
+
+
+#---------------------------------------
+#---------------------------------------

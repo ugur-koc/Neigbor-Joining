@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-34.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: GRM1B_HUMAN_55233
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 343
+# Identity:      19/343 ( 5.5%)
+# Similarity:    35/343 (10.2%)
+# Gaps:         259/343 (75.5%)
+# Score: 21.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      0 --------------------------------------------------      0
+                                                                       
+GRM1B_HUMAN_5      1 VQAFYEDLSGRQYVNEVFNFSVDKLYDLLFTNSPFQRDFMEQRRFSDIIF     50
+
+D0NHH4_PHYIT_      1 ------------------------------------TSFLEMKEQDM---     11
+                                                         |.:...:|.:.   
+GRM1B_HUMAN_5     51 HPWKKEENGNQSRVILYTITLTNPLAPKTATVRETQTMYKASQESECYVI    100
+
+D0NHH4_PHYIT_     12 -TELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLAT-----SAPVGS     55
+                      .|::|..:|.......:...|  .||:.....|.:::|     ..|.|.
+GRM1B_HUMAN_5    101 DAEVLTHDVPYHDYFYTINRYT--LTRVARNKSRLRVSTELRYRKQPWGL    148
+
+D0NHH4_PHYIT_     56 ASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGSSRGTG    105
+                     ..:..   ||:....|.|:..|....|.:..|.:                
+GRM1B_HUMAN_5    149 VKTFI---EKNFWSGLEDYFRHLESELAKTESTY----------------    179
+
+D0NHH4_PHYIT_    106 KNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSKIYTLS    155
+                                                                       
+GRM1B_HUMAN_5    179 --------------------------------------------------    179
+
+D0NHH4_PHYIT_    156 IPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSMKLTGLHIRWR    205
+                                                                       
+GRM1B_HUMAN_5    179 --------------------------------------------------    179
+
+D0NHH4_PHYIT_    206 AGVTFSRDTILKTQLERGALEGVRSTCTTLLKLLRDANTRHQF    248
+                                                                
+GRM1B_HUMAN_5    179 -------------------------------------------    179
+
+
+#---------------------------------------
+#---------------------------------------

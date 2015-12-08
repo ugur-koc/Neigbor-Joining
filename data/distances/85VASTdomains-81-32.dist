@@ -1,0 +1,66 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-38.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: GRM1C_HUMAN_312494
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 353
+# Identity:      23/353 ( 6.5%)
+# Similarity:    39/353 (11.0%)
+# Gaps:         275/353 (77.9%)
+# Score: 28.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      0 --------------------------------------------------      0
+                                                                       
+GRM1C_HUMAN_3      1 SDSVDEENVPEKDLHGRLFINRIFHISADRMFELLFTSSRFMQKFASSRN     50
+
+D0NHH4_PHYIT_      1 ------------------------------------------TSFLEMKE      8
+                                                               |.:.|.:|
+GRM1C_HUMAN_3     51 IIDVVSTPWTAELGGDQLRTMTYTIVLNSPLTGKCTAATEKQTLYKESRE    100
+
+D0NHH4_PHYIT_      9 QDM----TELMTATIPGSSVSEFLEMVTP----RSTRLKCKMERAKLAT-     49
+                     ...    :|::|..:|   ..::...|..    ||::.||   |.:::| 
+GRM1C_HUMAN_3    101 ARFYLVDSEVLTHDVP---YHDYFYTVNRYCIIRSSKQKC---RLRVSTD    144
+
+D0NHH4_PHYIT_     50 ----SAPVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATI     95
+                         ..|.|...|..   ||:|...|.|:.......|:...|        
+GRM1C_HUMAN_3    145 LKYRKQPWGLVKSLI---EKNSWSSLEDYFKQLESDLLIEES--------    183
+
+D0NHH4_PHYIT_     96 PTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRA    145
+                                                                       
+GRM1C_HUMAN_3    183 --------------------------------------------------    183
+
+D0NHH4_PHYIT_    146 SLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSM    195
+                                                                       
+GRM1C_HUMAN_3    183 --------------------------------------------------    183
+
+D0NHH4_PHYIT_    196 KLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLLRDANTR    245
+                                                                       
+GRM1C_HUMAN_3    183 --------------------------------------------------    183
+
+D0NHH4_PHYIT_    246 HQF    248
+                        
+GRM1C_HUMAN_3    183 ---    183
+
+
+#---------------------------------------
+#---------------------------------------

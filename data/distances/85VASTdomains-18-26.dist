@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:38
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-25.fasta
+#    [-bsequence] data/fastas/85VASTdomains-32.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q7XKT6_ORYSJ_8591033
+# 2: YHO0_YEAST_9571143
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 308
+# Identity:      16/308 ( 5.2%)
+# Similarity:    27/308 ( 8.8%)
+# Gaps:         254/308 (82.5%)
+# Score: 33.0
+# 
+#
+#=======================================
+
+Q7XKT6_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+YHO0_YEAST_95      1 PTEPDIQKDKDDSIIRENENIPAPLGTVVQLLFGSNTEYMQKVITRDKNN     50
+
+Q7XKT6_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+YHO0_YEAST_95     51 VNVETIPKFTPSLVEGGSRHYEYTKKLNNSIGPKQTKCLLTESIEHMDIN    100
+
+Q7XKT6_ORYSJ_      1 ------------DVPLSKEYTLELPI---------------------DAD     17
+                                 |||....:.:|..|                     ...
+YHO0_YEAST_95    101 NYVLVTQTTKTPDVPSGSNFAVESKIFLFWGQHDTTNMTVITKINWTSKS    150
+
+Q7XKT6_ORYSJ_     18 LLMGVFDGGPLEAKAMSRAGCLDYAATPWQDARPGVLERHASYKFNRYMS     67
+                     .|.|..:.|.:|.:.:|    :||..:..:|    ::.|..|.|.     
+YHO0_YEAST_95    151 FLKGAIEKGSVEGQKVS----VDYMLSELRD----IISRAKSKKP-----    187
+
+Q7XKT6_ORYSJ_     68 IFGGEVVSTQLRLPSDDGDGWTVYDVITLRNVPFGDFFRLHLRHNIWSVE    117
+                                                                       
+YHO0_YEAST_95    187 --------------------------------------------------    187
+
+Q7XKT6_ORYSJ_    118 AASSEAAASSGSRCEILVGIEWVKRSKFQKRIARNICEKLAHRAKEVLEA    167
+                                                                       
+YHO0_YEAST_95    187 --------------------------------------------------    187
+
+Q7XKT6_ORYSJ_    168 AAREIAPA    175
+                             
+YHO0_YEAST_95    187 --------    187
+
+
+#---------------------------------------
+#---------------------------------------

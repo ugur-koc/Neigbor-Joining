@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:09
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-80.fasta
+#    [-bsequence] data/fastas/85VASTdomains-55.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q23QL2_TETTS_311513
+# 2: D0NMG0_PHYIT_279489
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 269
+# Identity:      49/269 (18.2%)
+# Similarity:    83/269 (30.9%)
+# Gaps:         124/269 (46.1%)
+# Score: 79.0
+# 
+#
+#=======================================
+
+Q23QL2_TETTS_      1 -------------------------------------EVS----TKAKWT      9
+                                                          |.|    .||:..
+D0NMG0_PHYIT_      1 PLPPDPLLGKMTVLLDCELRADVKRVFDLLWNDGPGQEFSHSNMEKARNI     50
+
+Q23QL2_TETTS_     10 SIDIKN---------VSAKEIYILFFGNNIFEDEKQVAYTNFGMYYNTTV     50
+                     .|||::         |:|.|:      ...||..|:..||.:        
+D0NMG0_PHYIT_     51 DIDIESWKPLDKADAVTAAEV------RKGFEISKEDDYTLY--------     86
+
+Q23QL2_TETTS_     51 LNELNMVYSDIVPE------PPLYFTNLYDNNKLEIIDYAEYSTRKCTFT     94
+                         .||.|...|:      ||                ||     .||.|
+D0NMG0_PHYIT_     87 ----RMVRSQHPPKTSFPGLPP----------------YA-----GCTRT    111
+
+Q23QL2_TETTS_     95 HIIKEPFMPKSC------DCFIEEKIYWVSPKEILIERELAFQGIPLSSH    138
+                     ...:   :.||.      |.|:..::..:|.             ||.|.:
+D0NMG0_PHYIT_    112 QRFR---LDKSSNGGDKWDRFVITELNRMSK-------------IPFSDY    145
+
+Q23QL2_TETTS_    139 FNPRVIYQILETGESDQIKTQIRSGYYIHYVKDTWFKSKIDKTSDEENIK    188
+                     |...:.:.....|.:   ...:::|..::::|.|||||:|:.::..|:.:
+D0NMG0_PHYIT_    146 FEVEMRFVFSRDGNN---YCHVQAGLVVNFLKATWFKSQINSSTRSESKE    192
+
+Q23QL2_TETTS_    189 NWEKISKLYIKYSEI----    203
+                     ..|..:|..|::.|.    
+D0NMG0_PHYIT_    193 ALESWAKQAIEFLESQRNR    211
+
+
+#---------------------------------------
+#---------------------------------------

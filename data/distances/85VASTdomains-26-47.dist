@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:50
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-32.fasta
+#    [-bsequence] data/fastas/85VASTdomains-51.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YHO0_YEAST_9571143
+# 2: Q8MRR1_DROME_41220
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 213
+# Identity:      43/213 (20.2%)
+# Similarity:    80/213 (37.6%)
+# Gaps:          59/213 (27.7%)
+# Score: 71.5
+# 
+#
+#=======================================
+
+YHO0_YEAST_95      1 --PTEPDIQKDKDDSIIRENENIPAPLGTVVQLLFGSN---TEY--MQKV     43
+                       ||.......:...|:  :..:|..:.|:..|||..:   |::  |:|.
+Q8MRR1_DROME_      1 FVPTTECTSTHEGRQIV--HTILPINVDTLFNLLFSKSKFITDFHAMRKS     48
+
+YHO0_YEAST_95     44 I-------TRDKNNVNVETIPKFTPSLVEGGSRHYEYTKKLNNSIGPK--     84
+                     .       |:::..:.|.|:               ..|.:|..|:|||  
+Q8MRR1_DROME_     49 TDLVLGEWTKNEEGLQVRTV---------------NVTVQLAASVGPKTS     83
+
+YHO0_YEAST_95     85 -------QTKCLLTESIEHMDINNYVLVTQTTKTPDVPSGSNFAVESKIF    127
+                            |.:|.....:..:|:|:.        ...:|...:|:|.....
+Q8MRR1_DROME_     84 KVTEYQTQRECSKPGELYSIDVNSV--------NAGIPYAESFSVLIHFC    125
+
+YHO0_YEAST_95    128 LFWGQHDTTNMTVITKINWTSKSF---LKGAIEKGSVEGQKVSVDYMLSE    174
+                     |.....|.|.:::.|:|.: .||.   :||.|||.:..|.:   |:..::
+Q8MRR1_DROME_    126 LARTVDDHTMLSIHTQIKY-KKSIWGVVKGFIEKNTWAGLE---DFFGAQ    171
+
+YHO0_YEAST_95    175 LRDIISRAKSKKP    187
+                     |..:.|...    
+Q8MRR1_DROME_    172 LHALQSETC----    180
+
+
+#---------------------------------------
+#---------------------------------------

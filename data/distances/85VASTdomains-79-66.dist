@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:10
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-80.fasta
+#    [-bsequence] data/fastas/85VASTdomains-69.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q23QL2_TETTS_311513
+# 2: B8C2T9_THAPS_86910
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 260
+# Identity:      33/260 (12.7%)
+# Similarity:    64/260 (24.6%)
+# Gaps:         121/260 (46.5%)
+# Score: 43.5
+# 
+#
+#=======================================
+
+Q23QL2_TETTS_      1 EVSTKAKWTSIDIKNVSAKEIYILFFGNNIFEDEKQVAYTNFGMYYNTTV     50
+                                                                       
+B8C2T9_THAPS_      0 --------------------------------------------------      0
+
+Q23QL2_TETTS_     51 LNELNMVYSDIVPEPPLYFTNLYDNNKLEIID-----------YAEYSTR     89
+                         ::....::.:....||....|..:|...           |..:..|
+B8C2T9_THAPS_      1 ----DVPVDSVIKDMDPIFTRKLHNISIESYYKTGWAEEDAPLYGPWLER     46
+
+Q23QL2_TETTS_     90 KCTFTHII------KEPFMPK-SCDCFIEEKI----------YWVSP---    119
+                     |.:|...:      ||.|... |.:.|.:::|          .::.|   
+B8C2T9_THAPS_     47 KGSFDVSVSQWEHSKEGFQHSWSGETFHQKRIIRFKFKRTTHLYIGPPVA     96
+
+Q23QL2_TETTS_    120 -------------KEILIERELAFQGIPLSSHFNPRVIYQILETGESDQI    156
+                                  .:.:....:...|||.|..|...|.:....||.:|  
+B8C2T9_THAPS_     97 GVTQTQYCRRDGDDKCVTMMTVEMDGIPYSDVFAVEVRWAARRTGCND--    144
+
+Q23QL2_TETTS_    157 KTQIRSGYYIHYVKDTWFKSKIDKTSDEENIKNWEKISKLYIKYSEI---    203
+                      ..|.:|.::.::|.:.|.|||...:..|.       ..:::...|:   
+B8C2T9_THAPS_    145 -ITIDAGVHVRFIKSSMFASKIKSGTLAET-------KPIHLDLFEVIKV    186
+
+Q23QL2_TETTS_    203 ----------    203
+                               
+B8C2T9_THAPS_    187 ALSSGSDNKS    196
+
+
+#---------------------------------------
+#---------------------------------------

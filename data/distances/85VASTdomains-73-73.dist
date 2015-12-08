@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:01
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-75.fasta
+#    [-bsequence] data/fastas/85VASTdomains-75.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4LUM2_ENTHI_46249
+# 2: C4LUM2_ENTHI_46249
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 204
+# Identity:     204/204 (100.0%)
+# Similarity:   204/204 (100.0%)
+# Gaps:           0/204 ( 0.0%)
+# Score: 1064.0
+# 
+#
+#=======================================
+
+C4LUM2_ENTHI_      1 WRRSIIFSEKLKQITKRQKNETIDKNSNDEGILKEEPKHVVTIHRFHKSA     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+C4LUM2_ENTHI_      1 WRRSIIFSEKLKQITKRQKNETIDKNSNDEGILKEEPKHVVTIHRFHKSA     50
+
+C4LUM2_ENTHI_     51 NDLFMLVFSNNETVKQLFDNIGQKEVKTEGWQNEANGGKILYLSYKGVSS    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+C4LUM2_ENTHI_     51 NDLFMLVFSNNETVKQLFDNIGQKEVKTEGWQNEANGGKILYLSYKGVSS    100
+
+C4LUM2_ENTHI_    101 VIGMETRIEEKWEMRMNENGIMIAMVVSVFDIPYSSYFKIESLMKMKDEG    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+C4LUM2_ENTHI_    101 VIGMETRIEEKWEMRMNENGIMIAMVVSVFDIPYSSYFKIESLMKMKDEG    150
+
+C4LUM2_ENTHI_    151 EYCDIVVKLNVKFMKSTIWKNRIEQTTMKEYKNKYEEWMKLIGKMIGDSQ    200
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+C4LUM2_ENTHI_    151 EYCDIVVKLNVKFMKSTIWKNRIEQTTMKEYKNKYEEWMKLIGKMIGDSQ    200
+
+C4LUM2_ENTHI_    201 FEET    204
+                     ||||
+C4LUM2_ENTHI_    201 FEET    204
+
+
+#---------------------------------------
+#---------------------------------------

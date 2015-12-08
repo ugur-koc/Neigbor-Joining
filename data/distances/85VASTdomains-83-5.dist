@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:14
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-84.fasta
+#    [-bsequence] data/fastas/85VASTdomains-13.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8LDM5_THAPS_9291109
+# 2: C2GR1_ARATH_8441019
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 283
+# Identity:      22/283 ( 7.8%)
+# Similarity:    31/283 (11.0%)
+# Gaps:         209/283 (73.9%)
+# Score: 24.0
+# 
+#
+#=======================================
+
+B8LDM5_THAPS_      0 --------------------------------------------------      0
+                                                                       
+C2GR1_ARATH_8      1 VDDVRFSEVFSLTLPVPVSFFMELFGGGEVDRKAMERAGCQSYSCSPWES     50
+
+B8LDM5_THAPS_      1 -------------------------------------------VGLEVDL      7
+                                                                |.....:
+C2GR1_ARATH_8     51 EKDDVYERQTYYRDKRISRYRGEVTSTQQKSLVPEKNGWLVEEVMTLHGV    100
+
+B8LDM5_THAPS_      8 PVG--FK-RLRWALLHSDSKFLKDAFFGPVMNYADITMG-SWSKNNNDIG     53
+                     |:|  |. .||:.:..|.||        |...|..:..| .|.|:.....
+C2GR1_ARATH_8    101 PLGDYFNLHLRYQMEESTSK--------PKTTYVRVYFGIEWLKSTRHQK    142
+
+B8LDM5_THAPS_     54 LPTTPEAVNEEDFLNATL-----EFSYLMPKSAFVKANMCYATHEIIYYD     98
+                     ..|....||.:|.|..|.     |:|....:...                
+C2GR1_ARATH_8    143 RVTKNILVNLQDRLKMTFGFLEKEYSSRQQQQQV----------------    176
+
+B8LDM5_THAPS_     99 DYSLVIKEKTLTPEVPYGNSFIAWTQYNLVSTGKNNCRMVCSVEAEFPNG    148
+                                                                       
+C2GR1_ARATH_8    176 --------------------------------------------------    176
+
+B8LDM5_THAPS_    149 PPMVARQIKSGMRSGTAEKFVLLGETICRYADA    181
+                                                      
+C2GR1_ARATH_8    176 ---------------------------------    176
+
+
+#---------------------------------------
+#---------------------------------------

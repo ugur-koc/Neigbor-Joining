@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:17
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-85.fasta
+#    [-bsequence] data/fastas/85VASTdomains-81.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7M5W4_TETTS_346560
+# 2: Q7RWT3_NEUCR_9451126
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 331
+# Identity:      16/331 ( 4.8%)
+# Similarity:    33/331 (10.0%)
+# Gaps:         265/331 (80.1%)
+# Score: 37.0
+# 
+#
+#=======================================
+
+I7M5W4_TETTS_      1 RKINSDFNSATFSELVLKNITAREVFGIFFSNQIFVSDRLQRKFTSFLEF     50
+                                                                       
+Q7RWT3_NEUCR_      0 --------------------------------------------------      0
+
+I7M5W4_TETTS_     51 FILEYLHGTNVSVSEIQLPPPEIFNSIYSNNYLQLLEYPESSERHISFTH    100
+                                                                       
+Q7RWT3_NEUCR_      0 --------------------------------------------------      0
+
+I7M5W4_TETTS_    101 NIPNASAFLPKSLQCQMKETIYWQSPQSFTLVRLLSLKGAPIITCVEPRV    150
+                                                                     ..
+Q7RWT3_NEUCR_      1 ------------------------------------------------HP      2
+
+I7M5W4_TETTS_    151 VFYVDEVNGNTILRSGFYVHFKS---------NTMFKKI-IEKSSKEENE    190
+                     |::..|..|..:....|.:..|:         :.:|.|: .|:.:||..:
+Q7RWT3_NEUCR_      3 VYFEPEDMGKPVAERNFEISAKACFHVLFGDKSFIFPKLYFERRAKEIAQ     52
+
+I7M5W4_TETTS_    191 KTWNELKNVMSNVSEEYIKKRDQNK-------------------------    215
+                     ..| |||:....::.::..|.|:..                         
+Q7RWT3_NEUCR_     53 GPW-ELKDHGGKMARQFKFKVDKADMLGRKTDANIVDTQNIDIFNDHITY    101
+
+I7M5W4_TETTS_    215 --------------------------------------------------    215
+                                                                       
+Q7RWT3_NEUCR_    102 VVTHVKTPWHLPHSHAFKLITKVVITHVAKSKCKLAIYTKADWSKAPAIA    151
+
+I7M5W4_TETTS_    215 -------------------------------    215
+                                                    
+Q7RWT3_NEUCR_    152 KNMVERQALDDAANDAEELAEVATDQVRRLG    182
+
+
+#---------------------------------------
+#---------------------------------------

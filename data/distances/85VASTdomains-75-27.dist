@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:03
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-77.fasta
+#    [-bsequence] data/fastas/85VASTdomains-33.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q5BB65_EMENI_8531030
+# 2: B9G4K6_ORYSJ_394582
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 216
+# Identity:      37/216 (17.1%)
+# Similarity:    77/216 (35.6%)
+# Gaps:          65/216 (30.1%)
+# Score: 40.5
+# 
+#
+#=======================================
+
+Q5BB65_EMENI_      1 DGPEGQYDRVIKDETI--------PAPLGKVYSYVFGPASVSFVPKFLV-     41
+                      ...||....:|:|.:        |....:.::.:....| |::.:|.. 
+B9G4K6_ORYSJ_      1 -DLTGQLQPFVKEEVLVTVFNGSFPCTAEEFFNTLLSDDS-SYITEFRTA     48
+
+Q5BB65_EMENI_     42 -------------ENQKSGEL-EFNCDKTGLTNETRTRKYSYIKPLNGSI     77
+                                  .::..|:: |.||         ::..:|.:.|...::
+B9G4K6_ORYSJ_     49 RKDKDINLGQWHHADEYDGQVRELNC---------KSICHSPMCPPYSAM     89
+
+Q5BB65_EMENI_     78 GPKQTKCISTEQLDFLDLEKAVLVTLSTQTPDVPSGNVFTTKTKYLFTWA    127
+                     ...|...:|.::.|.      |..|:. |..|||.|:.|....:    |:
+B9G4K6_ORYSJ_     90 TEWQHMVLSADKTDL------VFETVQ-QVHDVPFGSFFEVHCR----WS    128
+
+Q5BB65_EMENI_    128 ANNQTRFLMTCTIEWSG----KSW--LKGPIEKGAIDGQGTFGTDLIAAL    171
+                     .  :|....:|::..|.    |.|  ::..|:.||:|   .:..::...|
+B9G4K6_ORYSJ_    129 V--KTTSSDSCSLNISAGAHFKKWCIMQSKIKSGAVD---EYKKEVQEML    173
+
+Q5BB65_EMENI_    172 KTAVAPR---------    178
+                     :.|.:..         
+B9G4K6_ORYSJ_    174 EFAESYMRKVRTSNQD    189
+
+
+#---------------------------------------
+#---------------------------------------

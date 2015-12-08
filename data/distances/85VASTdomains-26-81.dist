@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:50
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-32.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YHO0_YEAST_9571143
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 265
+# Identity:      46/265 (17.4%)
+# Similarity:    83/265 (31.3%)
+# Gaps:          95/265 (35.8%)
+# Score: 59.0
+# 
+#
+#=======================================
+
+YHO0_YEAST_95      0 --------------------------------------------------      0
+                                                                       
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+
+YHO0_YEAST_95      1 -------PTEPDIQKDKDDSIIRENENIPAPLGTVVQLLF----------     33
+                            .:....:||.|| ::|:..:.|. .|.|..|.:          
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDD-VLRDWHSHPR-FGLVRALSYHPDAATIPTM     98
+
+YHO0_YEAST_95     34 GSNTEYMQKVITRDKNNVNVETIPKFTPSLVEGGSRHYEY--TKKLNN--     79
+                     ||:....:.|..   |::...||.::....:|..|...|.  .:||.:  
+D0NHH4_PHYIT_     99 GSSRGTGKNVTL---NSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRA    145
+
+YHO0_YEAST_95     80 SIGPKQTKCLLTESIEHMDINNYVLVTQTTKTPDVPSGSNFAVESKIFLF    129
+                     |:..|    :.|.||.:.:..:..::......| |...|:...|.|...|
+D0NHH4_PHYIT_    146 SLRSK----IYTLSIPYSNCFSIEVIVDVEDIP-VREDSDMNTEDKSSSF    190
+
+YHO0_YEAST_95    130 WGQHDTTNMTVI-TKINW------TSKSFLKGAIEKGSVEGQKVSVDYML    172
+                         |..:|.:. ..|.|      :..:.||..:|:|::||.:.:...:|
+D0NHH4_PHYIT_    191 ----DKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLL    236
+
+YHO0_YEAST_95    173 SELRDIISRAKSKKP    187
+                     ..|||..:|.:.   
+D0NHH4_PHYIT_    237 KLLRDANTRHQF---    248
+
+
+#---------------------------------------
+#---------------------------------------

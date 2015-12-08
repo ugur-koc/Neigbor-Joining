@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-47.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: GRM1A_MOUSE_365539
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 287
+# Identity:      33/287 (11.5%)
+# Similarity:    61/287 (21.3%)
+# Gaps:         151/287 (52.6%)
+# Score: 26.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 ----------TSFLEMKEQDMTELMTATIPGSSVSEFLEM-------VTP     33
+                               .|...|..:.:.:::.:..|  .:..||:.       ::|
+GRM1A_MOUSE_3      1 LPDLSGRLLINSVFHMGAERLQQMLFSDSP--FLQGFLQQRKFTDVTLSP     48
+
+D0NHH4_PHYIT_     34 RSTRLKCKMERAKLATSAPVGSASSSASTGEKDSDDVLRDWHSHPRFG--     81
+                     .|:..||...|. |..:.|:.:.....|....::..:.|   ..|:.|  
+GRM1A_MOUSE_3     49 WSSDSKCHQRRV-LTYTIPISNQLGPKSASVVETQTLFR---RGPQAGGC     94
+
+D0NHH4_PHYIT_     82 ------LVRALSYHP---DAATIPTMGSSRGTGK-NVTLN--------SM    113
+                           |.:.:.|..   .|.....:|.:|...: .|:..        |:
+GRM1A_MOUSE_3     95 VVDSEVLTQGIPYQDYFYTAHRYCILGLARNKARLRVSSEIRYRKQPWSL    144
+
+D0NHH4_PHYIT_    114 KAVTIEQYHSCTIED--DSLEDELQGDQKLPHRASLRSKIYTLSIPYSNC    161
+                     ....||:.....|||  ..|:.||...:||.                   
+GRM1A_MOUSE_3    145 VKSLIEKNSWSGIEDYFHHLDRELAKAEKLS-------------------    175
+
+D0NHH4_PHYIT_    162 FSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSMKLTGLHIRWRAGVTFS    211
+                                                                       
+GRM1A_MOUSE_3    175 --------------------------------------------------    175
+
+D0NHH4_PHYIT_    212 RDTILKTQLERGALEGVRSTCTTLLKLLRDANTRHQF    248
+                                                          
+GRM1A_MOUSE_3    175 -------------------------------------    175
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:19
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-49.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4M0I0_ENTHI_381531
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 284
+# Identity:      31/284 (10.9%)
+# Similarity:    60/284 (21.1%)
+# Gaps:         169/284 (59.5%)
+# Score: 19.0
+# 
+#
+#=======================================
+
+C4M0I0_ENTHI_      1 DDEVPEPKF--FKQPKMKTIIETTIPITPLQFFNTFVENKT-RSKQIKLR     47
+                           ..|  .|:..|..::..|||.:.:   :.|:|..| ||.::|.:
+D0NHH4_PHYIT_      1 ------TSFLEMKEQDMTELMTATIPGSSV---SEFLEMVTPRSTRLKCK     41
+
+C4M0I0_ENTHI_     48 EELGQTNIEMTDWKSIQNGFTRNINTIEPVDTPNGKVTTRAQ-----IQQ     92
+                     .|..:                  :.|..||.:.:...:|..:     ::.
+D0NHH4_PHYIT_     42 MERAK------------------LATSAPVGSASSSASTGEKDSDDVLRD     73
+
+C4M0I0_ENTHI_     93 FYQLKKSALI--------------IGSIRNYLDSQDYYSTETRLLLNLSK    128
+                     ::...:..|:              :||.|         .|...:.||..|
+D0NHH4_PHYIT_     74 WHSHPRFGLVRALSYHPDAATIPTMGSSR---------GTGKNVTLNSMK    114
+
+C4M0I0_ENTHI_    129 ----NNESILTIQANILLKK-KGDEKEK----------------------    151
+                         ......||:.:.|..: :||:|..                      
+D0NHH4_PHYIT_    115 AVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSKIYTLSIPYSNCFSI    164
+
+C4M0I0_ENTHI_    151 --------------------------------------------------    151
+                                                                       
+D0NHH4_PHYIT_    165 EVIVDVEDIPVREDSDMNTEDKSSSFDKNSMKLTGLHIRWRAGVTFSRDT    214
+
+C4M0I0_ENTHI_    151 ----------------------------------    151
+                                                       
+D0NHH4_PHYIT_    215 ILKTQLERGALEGVRSTCTTLLKLLRDANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

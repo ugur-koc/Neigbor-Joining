@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:59
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-74.fasta
+#    [-bsequence] data/fastas/85VASTdomains-26.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4Q507_LEIMA_35214
+# 2: YSP2_YEAST_8411021
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 285
+# Identity:      24/285 ( 8.4%)
+# Similarity:    37/285 (13.0%)
+# Gaps:         209/285 (73.3%)
+# Score: 26.5
+# 
+#
+#=======================================
+
+Q4Q507_LEIMA_      0 --------------------------------------------------      0
+                                                                       
+YSP2_YEAST_84      1 PTTADFKPSNNDHLVIEANINAPLGKVVNLLYGEDVSYYERILKAQKNFE     50
+
+Q4Q507_LEIMA_      1 -------------------------ATRKDKKVMLPQTL--------LKG     17
+                                              ......|.::..||        :|.
+YSP2_YEAST_84     51 ISPIPNNFLTKKIRDYAYTKPLSGSIGPSKTKCLITDTLEHYDLEDYVKV    100
+
+Q4Q507_LEIMA_     18 LTIQKLWD----NVFQDNTNFFKKYHDKRNESKL----------------     47
+                     |:|.|..|    |:|...|.|...: ||.|.:||                
+YSP2_YEAST_84    101 LSITKNPDVPSGNIFSVKTVFLFSW-DKNNSTKLTVYNSVDWTGKSWIKS    149
+
+Q4Q507_LEIMA_     48 --EIGPWDYAVDHGSGSRTVSLVAIVEVPRAGTPTPLNQVQRFAYVNTPE     95
+                       |.|.:|...|       .:.:.|.|:.:..:....|.           
+YSP2_YEAST_84    150 MIEKGTFDGVAD-------TTKIMISEIKKILSDEDSNI-----------    181
+
+Q4Q507_LEIMA_     96 GKLMLVYQISSQTPEMPAGSSFRTEAYFEITADSADSDCSIAIWGNCRKM    145
+                                                                       
+YSP2_YEAST_84    181 --------------------------------------------------    181
+
+Q4Q507_LEIMA_    146 SMSFSAIQYIATPRAIKEMTSAYRQMVNMISEEFC    180
+                                                        
+YSP2_YEAST_84    181 -----------------------------------    181
+
+
+#---------------------------------------
+#---------------------------------------

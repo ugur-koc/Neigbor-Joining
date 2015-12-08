@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:00
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-75.fasta
+#    [-bsequence] data/fastas/85VASTdomains-21.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4LUM2_ENTHI_46249
+# 2: A9SDA2_PHYPA_8171004
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 263
+# Identity:      33/263 (12.5%)
+# Similarity:    67/263 (25.5%)
+# Gaps:         134/263 (51.0%)
+# Score: 58.5
+# 
+#
+#=======================================
+
+C4LUM2_ENTHI_      1 WRRSIIFSEKLKQITKRQKNETIDKNSNDEGILKEEPKHVVTIHRFHKSA     50
+                                                                    :|.
+A9SDA2_PHYPA_      1 -----------------------------------------------QSC      3
+
+C4LUM2_ENTHI_     51 NDLFMLVFSNN-------------ETVKQLFDNIGQKEVKTEGWQNEANG     87
+                     .|.|..:...|             :....||:..|.:|...|        
+A9SDA2_PHYPA_      4 TDSFAGMEEANMAQVCAFEIPLMSDCAMSLFEQGGLEEAMAE--------     45
+
+C4LUM2_ENTHI_     88 GKILYLSYKGVSSVIGMETRIEEKWEMRMNENGI----------------    121
+                      |:.||:|            :...||....:||:                
+A9SDA2_PHYPA_     46 -KMGYLNY------------VSTPWERLEGQNGVQRRHTSYHLNRQISQF     82
+
+C4LUM2_ENTHI_    122 -------------------MIAMVVSVFDIPYSSYFKIESLMKMKDEGEY    152
+                                        ::..|:::.|:|:..:|:::    ::.|.|.
+A9SDA2_PHYPA_     83 GSKVSCIQQRTMSDSMKSCVLDEVITLHDVPFGDHFQVQ----VRREIET    128
+
+C4LUM2_ENTHI_    153 CD-------IVVKLNVKFMKSTIWKNRIEQTT----MKEYKNKYEEWMKL    191
+                     ..       :...:.|.:.|:|.:|.:|.:..    .||.:......:|.
+A9SDA2_PHYPA_    129 TSTNPPQSFVKASVGVSWHKNTEFKKKITKNVHDHMAKEIREVMNVCVKE    178
+
+C4LUM2_ENTHI_    192 IGKMIGDSQFEET    204
+                     :...|.|.:.   
+A9SDA2_PHYPA_    179 VKARIKDKRI---    188
+
+
+#---------------------------------------
+#---------------------------------------

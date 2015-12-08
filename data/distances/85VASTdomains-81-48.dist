@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-52.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: Q86AF7_DICDI_286471
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 310
+# Identity:      41/310 (13.2%)
+# Similarity:    59/310 (19.0%)
+# Gaps:         186/310 (60.0%)
+# Score: 34.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 ----------------------------------------------TSFL      4
+                                                                   ..||
+Q86AF7_DICDI_      1 VECKDMSTTAKINQLQHYVNERFEISCIKFYTLMIDSDFWAYVSKECGFL     50
+
+D0NHH4_PHYIT_      5 EMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERA---KLATSA     51
+                     :|||.                   |.||..|.   |..||.   |...|.
+Q86AF7_DICDI_     51 DMKES-------------------EWVTSESC---CHQERTLNFKTPISF     78
+
+D0NHH4_PHYIT_     52 PVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGSS    101
+                     .:|                                   |..||:......
+Q86AF7_DICDI_     79 KIG-----------------------------------PKVATVQQTQKI     93
+
+D0NHH4_PHYIT_    102 RGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSKI    151
+                     |.|..|               ...:|..||..:                 
+Q86AF7_DICDI_     94 RRTPTN---------------GYVMETSSLSKD-----------------    111
+
+D0NHH4_PHYIT_    152 YTLSIPYSNCFSIEVIVDVEDIPVR-EDSDMNTEDKSSSFDKNSMKLTGL    200
+                         :||.:.||:|..:.:|..|.. :||.:.....:..|.|:...|.||
+Q86AF7_DICDI_    112 ----VPYGDSFSVENYLTLEPCPESPQDSCILKVSTAVKFIKSIWGLGGL    157
+
+D0NHH4_PHYIT_    201 HIR------------WRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKL    238
+                     ..:            |   :.|::..|.....                  
+Q86AF7_DICDI_    158 IEKTVTQSNKEFFACW---INFAKKRISDQAS------------------    186
+
+D0NHH4_PHYIT_    239 LRDANTRHQF    248
+                               
+Q86AF7_DICDI_    186 ----------    186
+
+
+#---------------------------------------
+#---------------------------------------
