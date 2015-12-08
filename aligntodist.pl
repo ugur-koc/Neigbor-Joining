@@ -5,12 +5,13 @@ use warnings;
 use Time::HiRes;
 use Math::BigFloat;
 
-my $workDir = "/Users/ugurmeryem/Dropbox/701CMSC/Neigbor-Joining/data/"; #$ARGV[0];
-my $data = "$workDir/85VASTdomains.aln";
-my $distmatOut = "$workDir/tmp.txt";
-my $outfile = '$workDir/$data.dm';
+my $workDir = "/Users/ugurmeryem/Dropbox/701CMSC/Neigbor-Joining/data"; #$ARGV[0];
+my $data = "$workDir/$ARGV[0]";
+my $distmatOut = "$workDir/$ARGV[1].txt";
+my $protMethod = $ARGV[2];
+my $gapScore = $ARGV[3];
 
-`distmat -sequence $data -protmethod 1 -outfile $distmatOut`;
+`distmat -sequence $data -protmethod $protMethod -gapweight $gapScore -outfile $distmatOut`;
 
 my %myMap = ();
 open FILE,"<$distmatOut" or die $!;

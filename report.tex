@@ -62,13 +62,13 @@ Neighbor-joining algorithm (NJ) is a widely used algorithm for reconstructing ph
   \label{fig:phytree}
 \end{figure}
 
-Phylogenetic trees are branching diagrams that show the evolutionary relationships between biological species. A weighted phylogenetic tree, with weights associated with its edges, captures the notion of genetic distances between species. By analyzing a weighted phygenetic tree, we understand not only \textit{how} but also \textit{how much} species are related to or different from one another. Figure \ref{fig:phytree} \footnote{Image taken from \url{http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny}} features an artificial phylogentic tree of 10 viruses. Each virus is represented by a leave in the tree. Each internal node marks a milestone when a genetic divergence occurs. Notice that the lengths of the horizontal lines represents time periods. For instance, we can see that the divergence between virus 1 and virus 2 occurs before the divergence between virus 3 and virus 4. Phylogentic trees can be constructed from various distance metrics. In this example, the number assigned to each edge is the proportion of substitutions occuring on a sequence (the number of substituions divided by the length of the sequence). 
+Phylogenetic trees are branching diagrams that show the evolutionary relationships between biological species. A weighted phylogenetic tree, with weights associated with its edges, captures the notion of genetic distances between species. By analyzing a weighted phygenetic tree, we understand not only \textit{how} but also \textit{how much} species are related to or different from one another. Figure \ref{fig:phytree} \footnote{Image taken from \url{http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny}} features an artificial phylogentic tree of 10 viruses. Each virus is represented by a leave in the tree. Each internal node marks a milestone when a genetic divergence occurs. Notice that the lengths of the horizontal lines represents time periods. For instance, we can see that the divergence between virus 1 and virus 2 occurs before the divergence between virus 3 and virus 4. Phylogenetic trees can be constructed from various distance metrics. In this example, the number assigned to each edge is the proportion of substitutions occuring on a sequence (the number of substitutions divided by the length of the sequence). 
 
 \subsection{Neighbor-joining algorithm}
 
-We consider the problem of constructing a phylogentic tree from a set of protein sequences given their distance data. There are many approaches to tackle this problem. For instance, it can be framed as a hierarchical clustering problem, which has been extensively studied in the fields of data mining or machine learning and has efficient solution using statistical models. Although statistical approaches such as maximum likelihood methods have been employed to build these complex evolution trees, classical approaches such as the NJ algorithm has the advantage of being easy to implement and scalable to large datasets. 
+We consider the problem of constructing a phylogenetic tree from a set of protein sequences given their distance data. There are many approaches to tackle this problem. For instance, it can be framed as a hierarchical clustering problem, which has been extensively studied in the fields of data mining or machine learning and has efficient solution using statistical models. Although statistical approaches such as maximum likelihood methods have been employed to build these complex evolution trees, classical approaches such as the NJ algorithm has the advantage of being easy to implement and scalable to large datasets. 
 
-Figure \ref{alg:nj} summarizes the NJ algorithm. The input for the NJ algorithm are a set $P$ of sequences (usually DNA or protein sequences) and a distance matrix $D$ where each entry is the distance between a pair of sequences. The NJ algorithm constructs the phylogentic tree from bottom up, going from leave to root. It starts with a forest of $N$ single-node trees, each of which represents a sequence. In each later step, the algorithm selects two trees in the forest, joins them into a single tree by connecting their roots to a newly formed root. This process repeats until there is only tree left in the forest.
+Figure \ref{alg:nj} summarizes the NJ algorithm. The input for the NJ algorithm are a set $P$ of sequences (usually DNA or protein sequences) and a distance matrix $D$ where each entry is the distance between a pair of sequences. The NJ algorithm constructs the phylogenetic tree from bottom up, going from leave to root. It starts with a forest of $N$ single-node trees, each of which represents a sequence. In each later step, the algorithm selects two trees in the forest, joins them into a single tree by connecting their roots to a newly formed root. This process repeats until there is only tree left in the forest.
 
 In an intermediate step, the algorithm decides which two trees to join by computing a \textit{branch length} matrix based on the distance matrix. This matrix has $T \times T$ entries, where $T$ is the number of trees in the forest at the current step. Each entry of the matrix is computed as follows:  
 \begin{equation}
@@ -113,14 +113,14 @@ The distances between the new root and other roots are:
 
 \subsection{Computing distance matrix}
 
-Neigbor-joining algorithm is deterministic, i,e, given a distance matrix it will always produce the same phylogenetic three. Therefore achieving accurate results highly depend on the model of evaluation, i,e, distance matrix.
+Neighbor-joining algorithm is deterministic, i,e, given a distance matrix it will always produce the same phylogenetic three. Therefore achieving accurate results highly depend on the model of evaluation, i,e, distance matrix.
 We have used two packages to compute distance matrix. For already aligned sequences, we used the package emboss\footnote{\url{http://emboss.sourceforge.net/apps/release/6.6/emboss/apps/distmat.html}} \cite{rice2000emboss}. Emboss has \textit{distmat} program, which computes distance matrix for already aligned sequences. We wrote a wrapper script in perl to call this program and then post process it's output in order to put it in the format of input distance matrix of our NJ implementation (see \textit{aligntodist.pl} script in source code).
 
 \textit{distmat} has tree different multiple substitution correction methods implemented for aligned proteins sequences. They are Uncorrected, Jukes-Cantor~\cite{jukes1969evolution}, and Kimura Protein~\cite{kimura1980simple}. 
 
 To compute distance matrix for a set of protein sequences we used \textit{protdist} program from phylib\footnote{\url{http://evolution.genetics.washington.edu/phylip.html}} package~\cite{plotree1989phylip}. We slightly modified the source code in order to have the output in required format and we removed the unnecessary functionality which does not matter for this project (see \textit{protdist.c} source file for details).
 
-\textit{protdist} has five method for amino-acid substitutions. They are Dayhoff PAM matrix~\cite{kosiol2005different}, Jones-Taylor-Thornton model~\cite{jones1992rapid}, PMB (Probability Matrix from Blocks) model~\cite{veerassamy2003transition}, Kimura's distance~\cite{kimura1983rare}, and Categories distance\footnote{See \url{http://evolution.genetics.washington.edu/phylip.html}}
+\textit{protdist} has five method for amino-acid substitutions. They are Dayhoff PAM matrix~\cite{kosiol2005different}, Jones-Taylor-Thornton model (JTT)~\cite{jones1992rapid}, PMB (Probability Matrix from Blocks) model~\cite{veerassamy2003transition}, Kimura's distance~\cite{kimura1983rare}, and Categories distance\footnote{See \url{http://evolution.genetics.washington.edu/phylip.html}}
 
 \section{Experiment}
 
@@ -142,7 +142,44 @@ TODO: do we have time to experiment on other data?.
 
 Here we compare effectiveness and efficiency of methods implemented in \textit{distmat} and \textit{protdist}. 
 
-\textbf{Performance of \textit{distmat} methods}. Figure~\ref{fig:phytree} and~\ref{fig:phytree} show time computation times and the phylogenetic tree accuracies for the methods implemented in \textit{distmat} respectively. TODO
+\begin{table}[!h]
+\centering
+	\begin{tabular}{l|lll|lll|lll}
+
+Gap Score	& \multicolumn{3}{c}{g=0} & \multicolumn{3}{c}{g=0.1} &  \multicolumn{3}{c}{g = 1} \\
+\hline
+&	$T_d$	& $T_{NJ}$	& accuracy &	$T_d$	& $T_{NJ}$	& accuracy &	$T_d$	& $T_{NJ}$	& accuracy \\
+\hline
+Uncorrected		&	0.085	&	-	&	-	&	0.08	&	-	&	-	&	0.079	&	-	&	-	\\
+Jukes-Cantor	&	0.079	&	-	&	-	&	0.079	&	-	&	-	&	0.082	&	-	&	-	\\
+Kimura Protein	&	0.104	&	-	&	-	&	0.109	&	-	&	-	&	0.108	&	-	&	-	\\
+\hline
+\end{tabular}
+\caption{Performance of evolution models implemented in \textit{distmat}. 
+$T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phylogenetic tree (both are in milliseconds)}\label{tab:dist1}
+\end{table}
+
+
+\textbf{Performance of \textit{distmat} methods}. Table~\ref{tab:dist1}  shows computation times and the phylogenetic tree accuracies for the methods implemented in \textit{distmat}. TODO
+
+\begin{table}[!h]
+\centering
+	\begin{tabular}{l|lll|lll|lll}
+
+Gap Score	& \multicolumn{3}{c}{g=0} & \multicolumn{3}{c}{g=0.1} &  \multicolumn{3}{c}{g = 1} \\
+\hline
+&	$T_d$	& $T_{NJ}$	& accuracy &	$T_d$	& $T_{NJ}$	& accuracy &	$T_d$	& $T_{NJ}$	& accuracy \\
+\hline
+Dayhoff PAM		&	0.085	&	-	&	-	&	0.08	&	-	&	-	&	0.079	&	-	&	-	\\
+JTT	&	0.079	&	-	&	-	&	0.079	&	-	&	-	&	0.082	&	-	&	-	\\
+PMB	&	0.104	&	-	&	-	&	0.109	&	-	&	-	&	0.108	&	-	&	-	\\
+Kimura	&	0.104	&	-	&	-	&	0.109	&	-	&	-	&	0.108	&	-	&	-	\\
+Categories distance	&	0.104	&	-	&	-	&	0.109	&	-	&	-	&	0.108	&	-	&	-	\\
+\hline
+\end{tabular}
+\caption{Performance of evolution models implemented in \textit{protdist}. 
+$T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phylogenetic tree (both are in milliseconds)}\label{tab:dist1}
+\end{table}
 
 \textbf{Performance of \textit{protdist} methods}. Figure~\ref{fig:phytree} and~\ref{fig:phytree} show time computation times and the phylogenetic tree accuracies for the methods implemented in \textit{protdist} respectively. TODO 
 
@@ -150,9 +187,11 @@ Here we compare effectiveness and efficiency of methods implemented in \textit{d
  
 TODO: Khanh 
 
-\subsubsection{Comparing distance matrix methods}
+\section{Concluding Remarks}
 
+In this project, we implemented Neighbor-Joining algorithm and conducted experiments on a dataset of 85 protein sequences. We evaluated the effectiveness of our implementation by comparing the phylogenetic tree with the one report by Khafif et.our  al.~\cite{khafif2014identification}. We then evaluated the efficiency of our implementation by comparing the tree construction times with some other packages which are popular in the domain.
 
+Our results suggest that for the dataset we worked on 1) our implementation was able to generate phylogenetic tree with high accuracy (TODO: verify and revise if necessary) and 2) our implementation did so at a fraction of time compared to the tools used in Study 2 (TODO: verify and revise if necessary).
 
 \bibliographystyle{plain}
 \bibliography{report}
