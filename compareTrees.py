@@ -1,6 +1,9 @@
+#!/opt/local/bin/python2.7
 
+from __future__ import division
 from ete2 import Tree
 import networkx as nx
+from zss import simple_distance, Node
 
 import matplotlib.pyplot as plot
 import sys
@@ -14,19 +17,27 @@ def dfs(g, u):
         g.add_edge(u.name, v.name, weight=v.dist)
         dfs(g, v)
 
-def newickToGraph(filename, format=3):
-    treeStr = ""
-    with open(filename, "r") as f:
-        for line in f:
-            treeStr += line.rstrip() 
-    print treeStr
-    t = Tree(treeStr)
-    print t
+def newickToGraph(tree, format=3):
     g = nx.Graph()
-    if (t.name == ""):
-        t.name = "New_0"
-    dfs(g, t)
+    dfs(g, tree)
     return g
+
+def parseFile(filename, format=3):
+   if (format == 2):
+      g = myOutputToGraph(filename)
+      treeStr = networkxToNewick(g)
+   else:
+      treeStr = ""
+      with open(filename, "r") as f:
+         for line in f:
+            treeStr += line.rstrip()
+   return treeStr
+
+def stringToNewick(treeStr):
+   t = Tree(treeStr)
+   if (t.name == ""):
+      t.name = "New_0"
+   return t
 
 def myOutputToGraph(filename):
     g = nx.Graph()
@@ -74,7 +85,19 @@ if __name__ == "__main__":
     count = 0
     file1 = sys.argv[1]
     file2 = sys.argv[2]
-    g1 = newickToGraph(file1)
-    g2 = myOutputToGraph(file2)
-    print networkxToNewick(g2)
-    print nx.is_isomorphic(g1, g2)
+
+    t1Str = parseFile(file1)
+    t1 = stringToNewick(t1Str)
+    g1 = newickToGraph(t1)
+    
+    t2Str = parseFile(file2, 2)
+    t2 = stringToNewick(t2Str)
+    g2 = newickToGraph(t2)
+
+    temp=t2.compare(t1,use_collateral=False, min_support_source=0.0,
+                    min_support_ref=0.0, has_duplications=False, expand_polytomies=False, unrooted=True,
+                    max_treeko_splits_to_be_artifact=1000)
+    print "norm_rf:%0.4f,treeko_dist:%0.4f,source_edges_in_ref:%0.4f" % (temp['norm_rf'], temp['treeko_dist'], temp['source_edges_in_ref'])
+    print t2Str
+    #print networkxToNewick(g2)
+    #print nx.is_isomorphic(g1, g2)

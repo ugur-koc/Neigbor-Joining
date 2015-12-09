@@ -18,3 +18,7 @@ main
 .texpadtmp/report.blg
 
 output.txt
+
+.RData
+
+.Rhistory
