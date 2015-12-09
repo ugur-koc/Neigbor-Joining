@@ -3,7 +3,7 @@ from ete2 import Tree
 import networkx as nx
 
 import matplotlib.pyplot as plot
-
+import sys
 
 def dfs(g, u):
     global count
@@ -15,9 +15,12 @@ def dfs(g, u):
         dfs(g, v)
 
 def newickToGraph(filename, format=3):
+    treeStr = ""
     with open(filename, "r") as f:
-        line = f.readline().rstrip()
-        t = Tree(line)
+        for line in f:
+            treeStr += line.rstrip() 
+    print treeStr
+    t = Tree(treeStr)
     g = nx.Graph()
     if (t.name == ""):
         t.name = "New_0"
@@ -65,12 +68,8 @@ def drawGraph(g, filename):
     plot.savefig(filename)
 
 if __name__ == "__main__":
-    count = 0
-    name = "85VASTdomains"
-    g1 = newickToGraph(name + ".tree")
-
-
-    g2 = myOutputToGraph("data/" + name + "_tree.txt")
-    print networkxToNewick(g2)
-
-    #print nx.is_isomorphic(g1, g2)
+    file1 = sys.argv[1]
+    file2 = sys.argv[2]
+    g1 = newickToGraph(file1)
+    g2 = myOutputToGraph(file2)
+    print nx.is_isomorphic(g1, g2)
