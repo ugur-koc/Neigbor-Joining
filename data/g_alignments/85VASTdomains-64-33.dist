@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:48
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-67.fasta
+#    [-bsequence] data/fastas/85VASTdomains-39.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NJ57_PHYIT_385538
+# 2: B3KUR5_HUMAN_45223
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 186
+# Identity:      35/186 (18.8%)
+# Similarity:    68/186 (36.6%)
+# Gaps:          39/186 (21.0%)
+# Score: 127.5
+# 
+#
+#=======================================
+
+D0NJ57_PHYIT_      1 SDVDTIAPKDISMTQILEEVFPVSVDTFMKLFYLDKAPFGLDKFNEQTGS     50
+                      .::.:..||:.....:..:|.:|.|...:|.:....  .:.||......
+B3KUR5_HUMAN_      1 -QIENVPEKDLHGRLFINRIFHISADRMFELLFTSSR--FMQKFASSRNI     47
+
+D0NJ57_PHYIT_     51 TEMTINPWTTPLEDEESFGMTRSLQFRVPVDAPIGPKSSQVDVLQCLKEN    100
+                     .::...|||..|..::    .|::.:.:.:::|:..|.:.....|.|.:.
+B3KUR5_HUMAN_     48 IDVVSTPWTAELGGDQ----LRTMTYTIVLNSPLTGKCTAATEKQTLYKE     93
+
+D0NJ57_PHYIT_    101 EHGVR--VVESSTRLVDIPYGDYFSVEDRWTIVPRSSDPNACKVFIELKV    148
+                     ....|  :|:|.....|:||.|||...:|:.|:..|......:|..:||.
+B3KUR5_HUMAN_     94 SREARFYLVDSEVLTHDVPYHDYFYTVNRYCIIRSSKQKCRLRVSTDLKY    143
+
+D0NJ57_PHYIT_    149 R-----LEQEL-------------------------    154
+                     |     |.:.|                         
+B3KUR5_HUMAN_    144 RKQPWGLVKSLIEKNSWSSLEDYFKQLESDLLIEES    179
+
+
+#---------------------------------------
+#---------------------------------------

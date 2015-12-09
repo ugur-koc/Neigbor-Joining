@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:06
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-78.fasta
+#    [-bsequence] data/fastas/85VASTdomains-78.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YFE2_YEAST_402586
+# 2: YFE2_YEAST_402586
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 185
+# Identity:     185/185 (100.0%)
+# Similarity:   185/185 (100.0%)
+# Gaps:           0/185 ( 0.0%)
+# Score: 983.0
+# 
+#
+#=======================================
+
+YFE2_YEAST_40      1 PAEPMANNEFVLKELPFDCAPGILFEIMFNSEQNEFLLDFLRGQEGSQIT     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+YFE2_YEAST_40      1 PAEPMANNEFVLKELPFDCAPGILFEIMFNSEQNEFLLDFLRGQEGSQIT     50
+
+YFE2_YEAST_40     51 TIPNFTSIDGSSMTLKREYSYEKALHFPAGPKSTTCYVAEVIKRKDPDTY    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+YFE2_YEAST_40     51 TIPNFTSIDGSSMTLKREYSYEKALHFPAGPKSTTCYVAEVIKRKDPDTY    100
+
+YFE2_YEAST_40    101 YEVISSIRTPNVPSGGSFSTKTRYLIRWNDEITCLLRVSFWVEWTGSSWI    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+YFE2_YEAST_40    101 YEVISSIRTPNVPSGGSFSTKTRYLIRWNDEITCLLRVSFWVEWTGSSWI    150
+
+YFE2_YEAST_40    151 KGMVENGCKNGQLEAAQLMERILSKFIKNNVEECQ    185
+                     |||||||||||||||||||||||||||||||||||
+YFE2_YEAST_40    151 KGMVENGCKNGQLEAAQLMERILSKFIKNNVEECQ    185
+
+
+#---------------------------------------
+#---------------------------------------

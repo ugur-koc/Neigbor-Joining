@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:19
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-49.fasta
+#    [-bsequence] data/fastas/85VASTdomains-47.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4M0I0_ENTHI_381531
+# 2: GRM1A_MOUSE_365539
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 261
+# Identity:      20/261 ( 7.7%)
+# Similarity:    32/261 (12.3%)
+# Gaps:         196/261 (75.1%)
+# Score: 32.0
+# 
+#
+#=======================================
+
+C4M0I0_ENTHI_      0 --------------------------------------------------      0
+                                                                       
+GRM1A_MOUSE_3      1 LPDLSGRLLINSVFHMGAERLQQMLFSDSPFLQGFLQQRKFTDVTLSPWS     50
+
+C4M0I0_ENTHI_      1 ----------------------------------------------DDEV      4
+                                                                   |.||
+GRM1A_MOUSE_3     51 SDSKCHQRRVLTYTIPISNQLGPKSASVVETQTLFRRGPQAGGCVVDSEV    100
+
+C4M0I0_ENTHI_      5 -----PEPKFFKQPKMKTIIETTIPITPLQFFNTFVENKTR---SKQIKL     46
+                          |...:|.......|:             ....||.|   |.:|:.
+GRM1A_MOUSE_3    101 LTQGIPYQDYFYTAHRYCIL-------------GLARNKARLRVSSEIRY    137
+
+C4M0I0_ENTHI_     47 REE---LGQTNIEMTDWKSIQNGF---TRNINTIEPVDTPNGKVTTRAQI     90
+                     |::   |.::.||...|..|::.|   .|.:...|.:.            
+GRM1A_MOUSE_3    138 RKQPWSLVKSLIEKNSWSGIEDYFHHLDRELAKAEKLS------------    175
+
+C4M0I0_ENTHI_     91 QQFYQLKKSALIIGSIRNYLDSQDYYSTETRLLLNLSKNNESILTIQANI    140
+                                                                       
+GRM1A_MOUSE_3    175 --------------------------------------------------    175
+
+C4M0I0_ENTHI_    141 LLKKKGDEKEK    151
+                                
+GRM1A_MOUSE_3    175 -----------    175
+
+
+#---------------------------------------
+#---------------------------------------

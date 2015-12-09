@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:09
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-43.fasta
+#    [-bsequence] data/fastas/85VASTdomains-40.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7M7X5_TETTS_13071507
+# 2: GRM1C_MOUSE_107289
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 230
+# Identity:      40/230 (17.4%)
+# Similarity:    71/230 (30.9%)
+# Gaps:          76/230 (33.0%)
+# Score: 68.5
+# 
+#
+#=======================================
+
+I7M7X5_TETTS_      1 ----------------------VPEAHPREIFNLIFFDSKYKPENSDKTY     28
+                                           |.......:|.|:|..|           
+GRM1C_MOUSE_1      1 SDSVDEENIPEKDLQGRLYINRVFHISAERMFELLFTSS-----------     39
+
+I7M7X5_TETTS_     29 PHYLYYFMEEFQKDVDMHFGKFSPPPPEWYANLESVDCNSVLNSEDYSLR     78
+                          :||:.|....::               ::.|.....:.|....||
+GRM1C_MOUSE_1     40 -----HFMQRFANSRNI---------------IDVVSTPWTVESGGNQLR     69
+
+I7M7X5_TETTS_     79 EYKYVHPVREKIPFGPKVSHCQNKEKYYWISEDE--FIMEKEVYLSKIPY    126
+                     ...|...:..  |...|.:....|:..|..|.:.  ::::.||....:||
+GRM1C_MOUSE_1     70 TMTYTIVLSN--PLTGKYTAATEKQTLYKESREAQFYLVDSEVLTHDVPY    117
+
+I7M7X5_TETTS_    127 CDYFTVRFQYSFTKNENQGTKIICRIYVNFMKSTTFKGRIESGSLSENTD    176
+                     .|||....:|...::..|.    ||:.|    ||..|.|.:...|.::. 
+GRM1C_MOUSE_1    118 HDYFYTLNRYCIVRSAKQR----CRLRV----STDLKYRKQPWGLIKSL-    158
+
+I7M7X5_TETTS_    177 VWKNAFSPQILQVMQQYIQKNGEKR-----    201
+                     :.||::|.     ::.|.:|.....     
+GRM1C_MOUSE_1    159 IEKNSWSS-----LESYFKKLESDLLMEES    183
+
+
+#---------------------------------------
+#---------------------------------------

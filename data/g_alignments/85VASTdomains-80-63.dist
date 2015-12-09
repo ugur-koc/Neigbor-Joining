@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:11
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-81.fasta
+#    [-bsequence] data/fastas/85VASTdomains-66.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q7RWT3_NEUCR_9451126
+# 2: B8CDL4_THAPS_224415
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 308
+# Identity:      21/308 ( 6.8%)
+# Similarity:    32/308 (10.4%)
+# Gaps:         242/308 (78.6%)
+# Score: 19.0
+# 
+#
+#=======================================
+
+Q7RWT3_NEUCR_      1 HPVYFEPEDMGKPVAERNFEISAKACFHVLFGDKSFIFPKLYFERRAKEI     50
+                                                                       
+B8CDL4_THAPS_      0 --------------------------------------------------      0
+
+Q7RWT3_NEUCR_     51 AQGPWELKDHGGKMARQFKFKVDKADMLGRKTDANIVDTQNIDIFNDHIT    100
+                                                                       
+B8CDL4_THAPS_      0 --------------------------------------------------      0
+
+Q7RWT3_NEUCR_    101 YVVTHVKTPWHLPHSHAFKLITKVVITHVAKSKCK-LAI--YTKADWSKA    147
+                                :|.....:     .:|.:.|.|.| ::|  |.:..||:.
+B8CDL4_THAPS_      1 -----------MPAEPKLQ-----QMTIIGKQKIKGISINDYYEVAWSEG     34
+
+Q7RWT3_NEUCR_    148 PAIAKNMVERQALDDAA-ND------------------------------    166
+                     ....|..:....|.... ||                              
+B8CDL4_THAPS_     35 ENCNKKQIYAPFLTSCGKNDVKVTPWEMGGEIVGDWCGEKYTQQRYVTFN     84
+
+Q7RWT3_NEUCR_    167 ------AEELAEVA-TDQVRRLG---------------------------    182
+                           .:.|.||. |.:.||||                           
+B8CDL4_THAPS_     85 FMKQTIGQTLVEVKHTQRCRRLGNDRCIVQMTLEMKGFPYSDCFVVEVRH    134
+
+Q7RWT3_NEUCR_    182 --------------------------------------------------    182
+                                                                       
+B8CDL4_THAPS_    135 VASRVGESDIIVEIGMSVRFLKSCLFEGKIKTNTGAETTKAQLELLRQTV    184
+
+Q7RWT3_NEUCR_    182 --------    182
+                             
+B8CDL4_THAPS_    185 EACKPFVK    192
+
+
+#---------------------------------------
+#---------------------------------------

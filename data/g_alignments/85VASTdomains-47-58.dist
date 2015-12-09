@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:23
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-51.fasta
+#    [-bsequence] data/fastas/85VASTdomains-61.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q8MRR1_DROME_41220
+# 2: V5IMN0_NEUCR_493676
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 207
+# Identity:      53/207 (25.6%)
+# Similarity:    85/207 (41.1%)
+# Gaps:          50/207 (24.2%)
+# Score: 141.5
+# 
+#
+#=======================================
+
+Q8MRR1_DROME_      1 FVPTTEC--TSTHEGRQIVHTILPINVDTLFNLLFS--KSKFITDFHAMR     46
+                         |||  .:||..|.|...::|..:..::||||.  .|.::|      
+V5IMN0_NEUCR_      1 ----TECGDAATHYDRVIGDDVVPAPLGKVYNLLFGAPSSAWMT------     40
+
+Q8MRR1_DROME_     47 KSTDLVLGEWTKNEE-----------GL----QVRTVNVTVQLAASVGPK     81
+                             :|..|::           ||    :.||.|....|.||:|||
+V5IMN0_NEUCR_     41 --------KWLLNDQKCFEINMDDKKGLNNEQKTRTFNYIKPLNASIGPK     82
+
+Q8MRR1_DROME_     82 TSK--VTEYQTQRECSKPGELYSIDVNSVNAGIPYAESFSVLIHFCLART    129
+                     .:|  |||.....:..|   ..::.|::.|..:|....|.|...:||:..
+V5IMN0_NEUCR_     83 QTKCMVTEQLDNLDFEK---AVNVTVSTQNPDVPNGNIFVVKTKYCLSWA    129
+
+Q8MRR1_DROME_    130 VDDHTMLSIHTQIKYKKSIWGVVKGFIEKNTWAG----LEDFFGAQLHAL    175
+                     .::.|.:.|:..|::....|  :||.||:....|    .:|.|.|...|:
+V5IMN0_NEUCR_    130 ENNATRVQINCTIEWSGKSW--LKGAIERGANEGQAQYAKDLFVALKAAV    177
+
+Q8MRR1_DROME_    176 QSETC--    180
+                     .|...  
+V5IMN0_NEUCR_    178 SSRPRSN    184
+
+
+#---------------------------------------
+#---------------------------------------

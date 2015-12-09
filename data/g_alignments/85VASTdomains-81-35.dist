@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-40.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: GRM1C_MOUSE_107289
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 345
+# Identity:      25/345 ( 7.2%)
+# Similarity:    45/345 (13.0%)
+# Gaps:         259/345 (75.1%)
+# Score: 24.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      0 --------------------------------------------------      0
+                                                                       
+GRM1C_MOUSE_1      1 SDSVDEENIPEKDLQGRLYINRVFHISAERMFELLFTSSHFMQRFANSRN     50
+
+D0NHH4_PHYIT_      1 ------------------------------------------TSFLEMKE      8
+                                                               |.:.|.:|
+GRM1C_MOUSE_1     51 IIDVVSTPWTVESGGNQLRTMTYTIVLSNPLTGKYTAATEKQTLYKESRE    100
+
+D0NHH4_PHYIT_      9 QDM----TELMTATIPGSSVSEFL-EMVTPRSTRLKCKMERAKLATSAPV     53
+                     ...    :|::|..:|.......| .....||.:.:|::.          
+GRM1C_MOUSE_1    101 AQFYLVDSEVLTHDVPYHDYFYTLNRYCIVRSAKQRCRLR----------    140
+
+D0NHH4_PHYIT_     54 GSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGSSRG    103
+                           .||..|        :...| :||:::|                 
+GRM1C_MOUSE_1    141 ------VSTDLK--------YRKQP-WGLIKSL-----------------    158
+
+D0NHH4_PHYIT_    104 TGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSKIYT    153
+                         :..||..  ::|.|.. .:|.|.|.:|.                  
+GRM1C_MOUSE_1    159 ----IEKNSWS--SLESYFK-KLESDLLMEES------------------    183
+
+D0NHH4_PHYIT_    154 LSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSMKLTGLHIR    203
+                                                                       
+GRM1C_MOUSE_1    183 --------------------------------------------------    183
+
+D0NHH4_PHYIT_    204 WRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLLRDANTRHQF    248
+                                                                  
+GRM1C_MOUSE_1    183 ---------------------------------------------    183
+
+
+#---------------------------------------
+#---------------------------------------

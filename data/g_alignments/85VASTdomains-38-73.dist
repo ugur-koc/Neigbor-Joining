@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:10
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-43.fasta
+#    [-bsequence] data/fastas/85VASTdomains-75.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7M7X5_TETTS_13071507
+# 2: C4LUM2_ENTHI_46249
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 259
+# Identity:      43/259 (16.6%)
+# Similarity:    84/259 (32.4%)
+# Gaps:         113/259 (43.6%)
+# Score: 76.5
+# 
+#
+#=======================================
+
+I7M7X5_TETTS_      1 ------------------------------------------VPEAH--P      6
+                                                               :...|  .
+C4LUM2_ENTHI_      1 WRRSIIFSEKLKQITKRQKNETIDKNSNDEGILKEEPKHVVTIHRFHKSA     50
+
+I7M7X5_TETTS_      7 REIFNLIFFDSKYKPENSDKTYPHYLYYFMEEFQKDV-------DMHFGK     49
+                     .::|.|:|.:::...:..|..           .||:|       :.:.||
+C4LUM2_ENTHI_     51 NDLFMLVFSNNETVKQLFDNI-----------GQKEVKTEGWQNEANGGK     89
+
+I7M7X5_TETTS_     50 FSPPPPEWYANLESVDCNSVLNSEDYSLREYKYVHPVREKIPFGPKVSHC     99
+                     .      .|.:.:.|  :||:..|.          .:.||          
+C4LUM2_ENTHI_     90 I------LYLSYKGV--SSVIGMET----------RIEEK----------    111
+
+I7M7X5_TETTS_    100 QNKEKYYW---ISEDEFIMEKEVYLSKIPYCDYFTVRFQYSFTKNENQGT    146
+                            |   ::|:..::...|.:..|||..||.:...... |:|.:..
+C4LUM2_ENTHI_    112 -------WEMRMNENGIMIAMVVSVFDIPYSSYFKIESLMKM-KDEGEYC    153
+
+I7M7X5_TETTS_    147 KIICRIYVNFMKSTTFKGRIESGSLSENTDVWKNAFSPQILQVMQQYIQK    196
+                     .|:.::.|.|||||.:|.|||..::.|    :||.:. :.::::.:.|  
+C4LUM2_ENTHI_    154 DIVVKLNVKFMKSTIWKNRIEQTTMKE----YKNKYE-EWMKLIGKMI--    196
+
+I7M7X5_TETTS_    197 NGEKR----    201
+                      |:.:    
+C4LUM2_ENTHI_    197 -GDSQFEET    204
+
+
+#---------------------------------------
+#---------------------------------------

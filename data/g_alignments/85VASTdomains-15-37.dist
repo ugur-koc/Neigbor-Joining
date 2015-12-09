@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:34
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-22.fasta
+#    [-bsequence] data/fastas/85VASTdomains-42.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9TQF1_PHYPA_224401
+# 2: I7M7X5_TETTS_10131226
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 261
+# Identity:      43/261 (16.5%)
+# Similarity:    62/261 (23.8%)
+# Gaps:         130/261 (49.8%)
+# Score: 78.0
+# 
+#
+#=======================================
+
+A9TQF1_PHYPA_      0 --------------------------------------------------      0
+                                                                       
+I7M7X5_TETTS_      1 KQQSIFEKAQNVSEFEIKFPNATPREIFNILFGLKPYKPQPEGSQEFPNF     50
+
+A9TQF1_PHYPA_      1 ---------------VDDF-PPPLASGVVLDQRYGTSAKS---LSALICK     31
+                                    ...| |||......||.....:.||   :|.|..|
+I7M7X5_TETTS_     51 RFYIFQEFQKDTDIQFQTFNPPPPEWYTNLDCSDKDTVKSSPEISNLEFK    100
+
+A9TQF1_PHYPA_     32 A------GSPFIQELLTCLKTTEYSEEPWKRANNGCIERVVSYMKAATKI     75
+                     .      ..||..::..|....:|.   |..|....|||.:...|     
+I7M7X5_TETTS_    101 VVHPVREKIPFGPKVSYCQNKEKYF---WISAEEFIIEREIFLSK-----    142
+
+A9TQF1_PHYPA_     76 IKAVKASESHTCRRLDDRGFILDISCSTPDVPYGSNFMVKLQFCILAGQD    125
+                                                   :||...|.::.|:.|...||
+I7M7X5_TETTS_    143 ------------------------------IPYCDYFTIRFQYNISQVQD    162
+
+A9TQF1_PHYPA_    126 LPSQEKTCRLQVSWTLHFLHSTMMKGMIENGARAGIKETYELYREVLSRY    175
+                           ..|:.:...:||:.||..||.||||:   :.|..|:...|.:..
+I7M7X5_TETTS_    163 ------QTRILIKLYVHFMKSTTFKGRIENGS---LSENTEVINTVFTPQ    203
+
+A9TQF1_PHYPA_    176 AKP--------    178
+                     |:.        
+I7M7X5_TETTS_    204 AQIAIQNYQKF    214
+
+
+#---------------------------------------
+#---------------------------------------

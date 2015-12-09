@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:13
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-84.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: B8LDM5_THAPS_9291109
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 264
+# Identity:      43/264 (16.3%)
+# Similarity:    74/264 (28.0%)
+# Gaps:          99/264 (37.5%)
+# Score: 23.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                 ..|...
+B8LDM5_THAPS_      1 --------------------------------------------VGLEVD      6
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                     .|||......:....|| ..|:|    ..||.|  ::|    |.| ||||
+B8LDM5_THAPS_      7 LPVGFKRLRWALLHSDS-KFLKD----AFFGPV--MNY----ADI-TMGS     44
+
+D0NHH4_PHYIT_    101 SRGTGKNVTL-NSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRS    149
+                     ......::.| .:.:||..|.:.:.|:|...|         :|..|.:::
+B8LDM5_THAPS_     45 WSKNNNDIGLPTTPEAVNEEDFLNATLEFSYL---------MPKSAFVKA     85
+
+D0NHH4_PHYIT_    150 KIYTLSIPYSNCFSIEVIVDVED-------------IPVREDSDMNTEDK    186
+                     .:         |::...|:..:|             :|........|:..
+B8LDM5_THAPS_     86 NM---------CYATHEIIYYDDYSLVIKEKTLTPEVPYGNSFIAWTQYN    126
+
+D0NHH4_PHYIT_    187 SSSFDKNSMKLT-GLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTL    235
+                     ..|..||:.::. .:...:..|         ...:.|....|:||.....
+B8LDM5_THAPS_    127 LVSTGKNNCRMVCSVEAEFPNG---------PPMVARQIKSGMRSGTAEK    167
+
+D0NHH4_PHYIT_    236 LKLLRDANTRHQF-    248
+                     ..||.:...|:.. 
+B8LDM5_THAPS_    168 FVLLGETICRYADA    181
+
+
+#---------------------------------------
+#---------------------------------------

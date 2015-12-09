@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:57
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-72.fasta
+#    [-bsequence] data/fastas/85VASTdomains-44.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4QEC6_LEIMA_54221
+# 2: Q2MGF5_CAEEL_57244
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 202
+# Identity:      38/202 (18.8%)
+# Similarity:    65/202 (32.2%)
+# Gaps:          48/202 (23.8%)
+# Score: 47.0
+# 
+#
+#=======================================
+
+Q4QEC6_LEIMA_      1 ---------------GKGVLD---------VFGVCFDDGTAVLEDYHTER     26
+                                    |:.::|         .:.:.|.| ...|...:.:.
+Q2MGF5_CAEEL_      1 DEIIEEVPCPCSEHFGRLIMDKEFKVSVEKFYELLFTD-NEFLTMLNQKT     49
+
+Q4QEC6_LEIMA_     27 KDTDQKWEPWRPTKDGGAFRGQRQFTCT---TLVKAMMGKPYTYIEYQRY     73
+                     |..:.....|  .:|   .:|....|||   :|..||..|.....|.|  
+Q2MGF5_CAEEL_     50 KTAEYVAATW--VRD---HQGDNTRTCTYTVSLAHAMAPKAIIVNEKQ--     92
+
+Q4QEC6_LEIMA_     74 ALFKLSGVPT----LAVQFSSQVPGVMFGDAFRVEALVTFTQAGSGASAE    119
+                        .|:..|.    :.:|..:|..||.:.|.|.|......::.|   ...
+Q2MGF5_CAEEL_     93 ---ILTHYPNPKQGIMMQKETQNSGVPYSDNFTVNCRYCISRTG---PTS    136
+
+Q4QEC6_LEIMA_    120 VTMRAFGYVQFLKSVW-VKGRILATAMNTELPDGCKKLAAMVAAKVAGRS    168
+                     ..::..|.|.:.||.| |....:....:..|.:..:.|:.:|....|...
+Q2MGF5_CAEEL_    137 CRIKVHGGVMYKKSTWAVVKTFIEKGTHQGLDEHYQLLSKLVDEYAANHP    186
+
+Q4QEC6_LEIMA_    168 --    168
+                       
+Q2MGF5_CAEEL_    187 DE    188
+
+
+#---------------------------------------
+#---------------------------------------

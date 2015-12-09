@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:26
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-17.fasta
+#    [-bsequence] data/fastas/85VASTdomains-79.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C2GR2_ARATH_8491023
+# 2: B8BUE2_THAPS_254437
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 262
+# Identity:      30/262 (11.5%)
+# Similarity:    53/262 (20.2%)
+# Gaps:         165/262 (63.0%)
+# Score: 26.0
+# 
+#
+#=======================================
+
+C2GR2_ARATH_8      1 SDADALMMSKVYTCDLPCDVELVMKIFGGGELERKIMEKSGCLSYASTTW     50
+                                                       |:.::       |..|
+B8BUE2_THAPS_      1 ----------------------------------KVKQQ-------SKDW      9
+
+C2GR2_ARATH_8     51 ES-----KKP-----GVYERRLSYKYNHYVSVFGGGVTCAQQKSPAPNDE     90
+                     ||     |.|     ..::..||.:..:.:|:|.|.|...:..|.:    
+B8BUE2_THAPS_     10 ESAVANLKLPFPTVSSFFDTCLSNEARNPLSIFHGNVMGDKNISIS----     55
+
+C2GR2_ARATH_8     91 GWILNEIVALHDVPFGDHFRVHIRYEVKKAGVDCKTSKCEVYLKIRWLKT    140
+                     ||..:|..|                   .|..|..:|           :|
+B8BUE2_THAPS_     56 GWERDEKAA-------------------AAHSDESSS-----------RT     75
+
+C2GR2_ARATH_8    141 IKFEQRISKSIMEKFRNRFKVIFDLFQK----ESVANSS-----------    175
+                     |:||.:...:..:..||:   .:..:.|    ::|.|..           
+B8BUE2_THAPS_     76 IRFEHKSRVNTAQVTRNQ---TYRCYGKNACLKNVTNIKGVPSADAFFAE    122
+
+C2GR2_ARATH_8    175 --------------------------------------------------    175
+                                                                       
+B8BUE2_THAPS_    123 DMWLIEPVEDGVVLNVRFRLTFSKSTMLKSIIESRARAETLEWYRQYTSF    172
+
+C2GR2_ARATH_8    175 ------------    175
+                                 
+B8BUE2_THAPS_    173 MVAANQRKISTQ    184
+
+
+#---------------------------------------
+#---------------------------------------

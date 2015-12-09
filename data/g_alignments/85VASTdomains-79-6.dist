@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:09
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-80.fasta
+#    [-bsequence] data/fastas/85VASTdomains-14.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q23QL2_TETTS_311513
+# 2: A9TQ08_PHYPA_235415
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 304
+# Identity:      16/304 ( 5.3%)
+# Similarity:    37/304 (12.2%)
+# Gaps:         224/304 (73.7%)
+# Score: 19.5
+# 
+#
+#=======================================
+
+Q23QL2_TETTS_      1 EVSTKAKWTSIDIKNVSAKEIYILFFGNNIFEDEKQVAYTNFGMYYNTTV     50
+                                                                       
+A9TQ08_PHYPA_      0 --------------------------------------------------      0
+
+Q23QL2_TETTS_     51 LNELNMVYSDIVPEPPLYFTNLYDNNKLEIIDYAEYSTRKCTFTHIIKEP    100
+                                                                     |.
+A9TQ08_PHYPA_      1 ------------------------------------------------ED      2
+
+Q23QL2_TETTS_    101 FMPKSCDCFIEEKIYWVSPKEILIERELAFQGIPLSSHFNPRVIYQILET    150
+                     |.|......:.::.|.||.|  .:...:...|.|.        :.::|..
+A9TQ08_PHYPA_      3 FPPPLAGGVVLDQRYAVSSK--FLSALILKAGSPF--------VQELLTV     42
+
+Q23QL2_TETTS_    151 GESDQIKTQIRSGYYIHYVKDTWFKSKIDKTSDEENIKNWEKISKLYIKY    200
+                     .::.:            |::..|   |.:::...:.:..:.|.:...||.
+A9TQ08_PHYPA_     43 QKTTE------------YIEGPW---KSEQSGAIQRVVTYMKAATKMIKA     77
+
+Q23QL2_TETTS_    201 SEI-----------------------------------------------    203
+                     .:.                                               
+A9TQ08_PHYPA_     78 VKATETQTCRRQDEKGFVVDVSCATPDVPYGGCFVVELQFCILAGPDQPS    127
+
+Q23QL2_TETTS_    203 --------------------------------------------------    203
+                                                                       
+A9TQ08_PHYPA_    128 NEKSCRLQISWKLNFLQSTMMRSMIENGARAGIKETYEVYRQVLANHAKS    177
+
+Q23QL2_TETTS_    203 ----    203
+                         
+A9TQ08_PHYPA_    178 VSEE    181
+
+
+#---------------------------------------
+#---------------------------------------

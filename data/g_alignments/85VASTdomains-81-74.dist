@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:13
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-76.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: I7MCY9_TETTS_788993
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 277
+# Identity:      40/277 (14.4%)
+# Similarity:    75/277 (27.1%)
+# Gaps:         100/277 (36.1%)
+# Score: 18.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                     ..:|..|:.:..||:........|  |:|:.                   
+I7MCY9_TETTS_      1 KHYLSNKDFETFELVLENTHTREV--FIEIF-------------------     29
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRF--------GLVRALSYHPDA     92
+                                     ||...:|:.|...|        ..:....:.|..
+I7MCY9_TETTS_     30 ----------------SDKQYKDYQSFSHFYQQTYIKDTNIDITPWQPAP     63
+
+D0NHH4_PHYIT_     93 ATIPTMGSSRGTGKNVTLNSMKAVTIEQYH-----------SCTIEDDSL    131
+                     ::|.|..||....:.:..|.....|.:..|           :|.:..:..
+I7MCY9_TETTS_     64 SSIYTDVSSTNYQEFLESNQFSTKTNQFIHPVREKVPMGPKTCQVNSEEK    113
+
+D0NHH4_PHYIT_    132 EDELQGDQKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVED-----IPVR    176
+                     ...|..::.|..|....||     :|.::||:.:....::.     :.:.
+I7MCY9_TETTS_    114 IFWLSSEEILIQREFKVSK-----VPMADCFTTQNFYHIQQTGPTTVKIT    158
+
+D0NHH4_PHYIT_    177 EDSDMNTEDKSSSFDKNSMKLTGLHIR--WRA---GVTFSRDTILKTQLE    221
+                     ....:|.. |||.|....:|.:|...|  |..   |:...:....:.|. 
+I7MCY9_TETTS_    159 FGFFINFV-KSSMFKSLIVKSSGSENRETWNGKFKGLITEQIKFAQNQR-    206
+
+D0NHH4_PHYIT_    222 RGALEGVRSTCTTLLKLLRDANTRHQF    248
+                                                
+I7MCY9_TETTS_    206 ---------------------------    206
+
+
+#---------------------------------------
+#---------------------------------------

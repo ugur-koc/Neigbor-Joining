@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:13
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-46.fasta
+#    [-bsequence] data/fastas/85VASTdomains-11.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q55FU7_DICDI_479662
+# 2: B9G1J5_ORYSJ_8981071
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 196
+# Identity:      37/196 (18.9%)
+# Similarity:    74/196 (37.8%)
+# Gaps:          34/196 (17.3%)
+# Score: 79.0
+# 
+#
+#=======================================
+
+Q55FU7_DICDI_      1 ---KDQQPQSILESQSS----DFQEIL-SDNFNVSVVNFYRALYSDRCNF     42
+                        |:.|...:..|..|    ...|:. ..:|.:.::|            
+B9G1J5_ORYSJ_      1 EDAKNLQMNEVFSSSISANMASLMEVFGGGSFEMKIMN------------     38
+
+Q55FU7_DICDI_     43 VHSYHVKRGDMNVNVKPWTFRERFGTIREVEY-VAPVSSPIGPDKTRIQE     91
+                           |.|.:|.:...|...:.....|::.| .:...||||.:.|..| 
+B9G1J5_ORYSJ_     39 ------KVGCLNYSATQWESDKPDEYQRQIHYKFSRKLSPIGGEVTGTQ-     81
+
+Q55FU7_DICDI_     92 TQRYQLTRKK-LIVETDTIMLDIPYGDHFRIEAKWEVTETS--QDTCRLS    138
+                      |:..:..|. .|:|....:..|.:||.|.|..::::.:.:  |..|.:.
+B9G1J5_ORYSJ_     82 -QKSPMPNKAGWIIEEVMELQGILFGDFFTIHIRYQIEDLAPKQRACSVQ    130
+
+Q55FU7_DICDI_    139 ISLTVRFVKKTWFKSKIETTTVKETKTSFDKWVQLAKVEVQKMLQV    184
+                     :.|.:.:.|.|..:.:||.:.:..:.....:...||..::....  
+B9G1J5_ORYSJ_    131 VFLGIEWSKTTRHRKRIEKSVLSGSSARLKEMFILASKQLPHAR--    174
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,66 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:16
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-84.fasta
+#    [-bsequence] data/fastas/85VASTdomains-85.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8LDM5_THAPS_9291109
+# 2: I7M5W4_TETTS_346560
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 374
+# Identity:       9/374 ( 2.4%)
+# Similarity:    11/374 ( 2.9%)
+# Gaps:         352/374 (94.1%)
+# Score: 20.5
+# 
+#
+#=======================================
+
+B8LDM5_THAPS_      1 VGLEVDLPVGFKRLRWALLHSDSKFLKDAFFGPVMNYADITMGSWSKNNN     50
+                                                                       
+I7M5W4_TETTS_      0 --------------------------------------------------      0
+
+B8LDM5_THAPS_     51 DIGLPTTPEAVNEEDFLNATLEFSYLMPKSAFVKANMCYATHEIIYYDDY    100
+                                                                       
+I7M5W4_TETTS_      0 --------------------------------------------------      0
+
+B8LDM5_THAPS_    101 SLVIKEKTLTPEVPYGNSFIAWTQYNLVSTGKNNCRMVCSVEAEFPNGPP    150
+                                                                       
+I7M5W4_TETTS_      0 --------------------------------------------------      0
+
+B8LDM5_THAPS_    151 MVARQIKSGMRSGTAEKFVLLGETICRYADA-------------------    181
+                        |:|.|...|.|..:.||...|      |                   
+I7M5W4_TETTS_      1 ---RKINSDFNSATFSELVLKNIT------AREVFGIFFSNQIFVSDRLQ     41
+
+B8LDM5_THAPS_    181 --------------------------------------------------    181
+                                                                       
+I7M5W4_TETTS_     42 RKFTSFLEFFILEYLHGTNVSVSEIQLPPPEIFNSIYSNNYLQLLEYPES     91
+
+B8LDM5_THAPS_    181 --------------------------------------------------    181
+                                                                       
+I7M5W4_TETTS_     92 SERHISFTHNIPNASAFLPKSLQCQMKETIYWQSPQSFTLVRLLSLKGAP    141
+
+B8LDM5_THAPS_    181 --------------------------------------------------    181
+                                                                       
+I7M5W4_TETTS_    142 IITCVEPRVVFYVDEVNGNTILRSGFYVHFKSNTMFKKIIEKSSKEENEK    191
+
+B8LDM5_THAPS_    181 ------------------------    181
+                                             
+I7M5W4_TETTS_    192 TWNELKNVMSNVSEEYIKKRDQNK    215
+
+
+#---------------------------------------
+#---------------------------------------

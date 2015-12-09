@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:14
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-84.fasta
+#    [-bsequence] data/fastas/85VASTdomains-17.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8LDM5_THAPS_9291109
+# 2: C2GR2_ARATH_8491023
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 308
+# Identity:      13/308 ( 4.2%)
+# Similarity:    21/308 ( 6.8%)
+# Gaps:         260/308 (84.4%)
+# Score: 13.5
+# 
+#
+#=======================================
+
+B8LDM5_THAPS_      1 VGLEVDLPVGFKRLRWALLHSDSKFLKDAFFGPVMNYADITMGSWSKNNN     50
+                                                                       
+C2GR2_ARATH_8      0 --------------------------------------------------      0
+
+B8LDM5_THAPS_     51 DIGLPTTPEAVNEEDFLNATLEFSYLMPKSAFVKANMCYATHEIIYYDDY    100
+                                                                    .|.
+C2GR2_ARATH_8      1 -----------------------------------------------SDA      3
+
+B8LDM5_THAPS_    101 SLVIKEKTLTPEVPYGNSFIAWTQYNLVSTGKNNCRMVCSVEAEFPNGPP    150
+                     ..::..|..|                        |.:.|.||        
+C2GR2_ARATH_8      4 DALMMSKVYT------------------------CDLPCDVE--------     21
+
+B8LDM5_THAPS_    151 MVARQIKSGMRSGTAEKFVLLGETICRYADA-------------------    181
+                      :..:|..|   |..|:.::.......||..                   
+C2GR2_ARATH_8     22 -LVMKIFGG---GELERKIMEKSGCLSYASTTWESKKPGVYERRLSYKYN     67
+
+B8LDM5_THAPS_    181 --------------------------------------------------    181
+                                                                       
+C2GR2_ARATH_8     68 HYVSVFGGGVTCAQQKSPAPNDEGWILNEIVALHDVPFGDHFRVHIRYEV    117
+
+B8LDM5_THAPS_    181 --------------------------------------------------    181
+                                                                       
+C2GR2_ARATH_8    118 KKAGVDCKTSKCEVYLKIRWLKTIKFEQRISKSIMEKFRNRFKVIFDLFQ    167
+
+B8LDM5_THAPS_    181 --------    181
+                             
+C2GR2_ARATH_8    168 KESVANSS    175
+
+
+#---------------------------------------
+#---------------------------------------

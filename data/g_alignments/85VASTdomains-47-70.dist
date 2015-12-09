@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:24
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-51.fasta
+#    [-bsequence] data/fastas/85VASTdomains-72.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q8MRR1_DROME_41220
+# 2: Q4QEC6_LEIMA_54221
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 203
+# Identity:      35/203 (17.2%)
+# Similarity:    64/203 (31.5%)
+# Gaps:          58/203 (28.6%)
+# Score: 59.0
+# 
+#
+#=======================================
+
+Q8MRR1_DROME_      1 FVPTTECTSTHEGRQIVHTILPINVDTLFNLLFSK-SKFITDFHAMRKST     49
+                                 |:.::         .:|.:.|.. :..:.|:|..||.|
+Q4QEC6_LEIMA_      1 ------------GKGVL---------DVFGVCFDDGTAVLEDYHTERKDT     29
+
+Q8MRR1_DROME_     50 DLVLGEWTKNEEG---LQVRTVNVTVQLAASVGPKTSKVTEYQTQRECSK     96
+                     |.....|...::|   ...|....|..:.|.:| |.....|||.......
+Q4QEC6_LEIMA_     30 DQKWEPWRPTKDGGAFRGQRQFTCTTLVKAMMG-KPYTYIEYQRYALFKL     78
+
+Q8MRR1_DROME_     97 PG-ELYSIDVNSVNAGIPYAESFSV--LIHFCLART-VDDHTMLSIHTQI    142
+                     .| ...::..:|...|:.:.::|.|  |:.|..|.: ......:.....:
+Q4QEC6_LEIMA_     79 SGVPTLAVQFSSQVPGVMFGDAFRVEALVTFTQAGSGASAEVTMRAFGYV    128
+
+Q8MRR1_DROME_    143 KYKKSIWGVVKGFIEKNTWAGLEDFFGAQLHALQSETC------------    180
+                     ::.||:|  |||.|           ....::....:.|            
+Q4QEC6_LEIMA_    129 QFLKSVW--VKGRI-----------LATAMNTELPDGCKKLAAMVAAKVA    165
+
+Q8MRR1_DROME_    180 ---    180
+                        
+Q4QEC6_LEIMA_    166 GRS    168
+
+
+#---------------------------------------
+#---------------------------------------

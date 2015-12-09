@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-29.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: A9RSX7_PHYPA_807992
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 275
+# Identity:      45/275 (16.4%)
+# Similarity:    75/275 (27.3%)
+# Gaps:         116/275 (42.2%)
+# Score: 54.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 -------TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKME     43
+                            ..||..::..|.|::...||          :|..|........
+A9RSX7_PHYPA_      1 ERQADDSQPFLGFEQTIMPEVLVIEIP----------ITAESVLAAVNNT     40
+
+D0NHH4_PHYIT_     44 RAKLATSAPVGSASSSASTGEKDSDDVLRDWHSHPR---FGLVRALSYHP     90
+                     :..|:.|..:|.|...|:..    |.|.....:|.|   :.|.|.:|.. 
+A9RSX7_PHYPA_     41 KVDLSISEKLGLAEYRATPW----DHVEETIGAHQRELSYKLNRQISQF-     85
+
+D0NHH4_PHYIT_     91 DAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQK    140
+                                   |..|:.|..:.||               |:|   :|
+A9RSX7_PHYPA_     86 --------------GSRVSCNQQQVVT---------------DDL---KK    103
+
+D0NHH4_PHYIT_    141 LPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTE------    184
+                     |..:..||..    .:|:.:.|.:.|..::|.:   ..:.:||:      
+A9RSX7_PHYPA_    104 LVIKEVLRYH----DMPFGDHFEVHVKRELETL---STNPVNTQVKAFVG    146
+
+D0NHH4_PHYIT_    185 ---DKSSSFDKNSMKLTGLHIRWR--------AGVTFSRDTILKTQLERG    223
+                        .||:...|...|....|:.|:        ....|.|.          
+A9RSX7_PHYPA_    147 VVWHKSTEAQKKITKNIYEHMAWQIQELIDITVAEVFERS----------    186
+
+D0NHH4_PHYIT_    224 ALEGVRSTCTTLLKLLRDANTRHQF    248
+                                              
+A9RSX7_PHYPA_    186 -------------------------    186
+
+
+#---------------------------------------
+#---------------------------------------

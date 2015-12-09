@@ -1,11 +1,21 @@
 #!/usr/bin/perl
 
+# This script creates distance matrixes using distmat program from emboss package
+# one may need to modify diroctries
+# input: .fasta file that contains the multible alignment
+#        output file name to pass to distmat
+#        0, 1, or 2 to select the model of evolution
+#        gap score
+# output: it will print out the ditance matrix that is ready to pass our NJ implementation
+# @auhtor Ugur Koc
+# @date Dec.8.2015
+
 use strict;
 use warnings;
 use Time::HiRes;
 use Math::BigFloat;
 
-my $workDir = "/Users/ugurmeryem/Dropbox/701CMSC/Neigbor-Joining/data"; #$ARGV[0];
+my $workDir = "/Users/ugurmeryem/Dropbox/701CMSC/Neigbor-Joining/data";
 my $data = "$workDir/$ARGV[0]";
 my $distmatOut = "$workDir/$ARGV[1].txt";
 my $protMethod = $ARGV[2];

@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:43
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-64.fasta
+#    [-bsequence] data/fastas/85VASTdomains-30.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: F8WJ74_MOUSE_365496
+# 2: F4HVW5_ARATH_257449
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 197
+# Identity:      31/197 (15.7%)
+# Similarity:    54/197 (27.4%)
+# Gaps:          69/197 (35.0%)
+# Score: 68.5
+# 
+#
+#=======================================
+
+F8WJ74_MOUSE_      1 ---------LPDLSGRL--LINSVFHMGAERLQQMLFSDS--PFLQGFLQ     37
+                              .|.||...  :..:.|.:..|...::.|||.  .|::.|.:
+F4HVW5_ARATH_      1 FNWKPEDTDAPKLSSDFTKVAEAKFSIPVEEFFRLFFSDGAVSFVESFHK     50
+
+F8WJ74_MOUSE_     38 QRKFTDVTLSPWSSDSKCHQRRVLTYTIPISNQLGPKSASVVETQ--TLF     85
+                     .....:...:.|....|....|.:::..||....|.|.....|:|  .::
+F4HVW5_ARATH_     51 NCGDKEFRCTSWQPHEKLGHTRNVSFQHPIKIYFGAKFGGCQESQKFRMY    100
+
+F8WJ74_MOUSE_     86 RRGPQAGGCVVDSEVLTQGIPYQDYFYTAHRY------------CILGLA    123
+                     |.    ...|:::......:||.|||.....:            |||.:.
+F4HVW5_ARATH_    101 RN----SHLVIETSQEISDVPYADYFTVEGVWDLKRDCRDSVEGCILDVY    146
+
+F8WJ74_MOUSE_    124 RNKARLRNR--------------------------------------    132
+                     .|.|..:..                                      
+F4HVW5_ARATH_    147 VNVAFSKRTVWKGKIVQSTLEECREAYAHWIRMAHELLKQKKLENQE    193
+
+
+#---------------------------------------
+#---------------------------------------

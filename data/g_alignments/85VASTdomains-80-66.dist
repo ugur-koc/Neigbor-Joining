@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:11
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-81.fasta
+#    [-bsequence] data/fastas/85VASTdomains-69.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q7RWT3_NEUCR_9451126
+# 2: B8C2T9_THAPS_86910
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 273
+# Identity:      35/273 (12.8%)
+# Similarity:    57/273 (20.9%)
+# Gaps:         168/273 (61.5%)
+# Score: 28.5
+# 
+#
+#=======================================
+
+Q7RWT3_NEUCR_      1 ------------------------------------HPVYFEPEDMGKPV     14
+                                                         .|:|       .|.
+B8C2T9_THAPS_      1 DVPVDSVIKDMDPIFTRKLHNISIESYYKTGWAEEDAPLY-------GPW     43
+
+Q7RWT3_NEUCR_     15 AER--NFEISAKACFHVLFGDKSFIFPKLYFERRAKEIAQGPWELKDHGG     62
+                     .||  :|::|.....|                  :||..|..|..:....
+B8C2T9_THAPS_     44 LERKGSFDVSVSQWEH------------------SKEGFQHSWSGETFHQ     75
+
+Q7RWT3_NEUCR_     63 KMARQFKFK-------------VDKADMLGRKTDANIVDTQNI-------     92
+                     |...:||||             |.:.....|..|...|....:       
+B8C2T9_THAPS_     76 KRIIRFKFKRTTHLYIGPPVAGVTQTQYCRRDGDDKCVTMMTVEMDGIPY    125
+
+Q7RWT3_NEUCR_     93 -DIF-------------ND-------HITYV-----VTHVKT-------P    109
+                      |:|             ||       |:.::     .:.:|:       |
+B8C2T9_THAPS_    126 SDVFAVEVRWAARRTGCNDITIDAGVHVRFIKSSMFASKIKSGTLAETKP    175
+
+Q7RWT3_NEUCR_    110 WHLPHSHAFKLITKVVITHVAKSKCKLAIYTKADWSKAPAIAKNMVERQA    159
+                     .||   ..|::| ||.::..:.:|.                         
+B8C2T9_THAPS_    176 IHL---DLFEVI-KVALSSGSDNKS-------------------------    196
+
+Q7RWT3_NEUCR_    160 LDDAANDAEELAEVATDQVRRLG    182
+                                            
+B8C2T9_THAPS_    196 -----------------------    196
+
+
+#---------------------------------------
+#---------------------------------------

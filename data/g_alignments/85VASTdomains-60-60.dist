@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:43
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-63.fasta
+#    [-bsequence] data/fastas/85VASTdomains-63.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q55CZ7_DICDI_2179
+# 2: Q55CZ7_DICDI_2179
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 178
+# Identity:     178/178 (100.0%)
+# Similarity:   178/178 (100.0%)
+# Gaps:           0/178 ( 0.0%)
+# Score: 939.0
+# 
+#
+#=======================================
+
+Q55CZ7_DICDI_      1 KILNLEEEFRISVETFFTFFFENANFKQKYHSSRGDNQIEVKAWTPTSDN     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q55CZ7_DICDI_      1 KILNLEEEFRISVETFFTFFFENANFKQKYHSSRGDNQIEVKAWTPTSDN     50
+
+Q55CZ7_DICDI_     51 RYTREVSFCSFISNNPVINRLVGDKAKVKEVQHYKYIENGSLYVSSETFF    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q55CZ7_DICDI_     51 RYTREVSFCSFISNNPVINRLVGDKAKVKEVQHYKYIENGSLYVSSETFF    100
+
+Q55CZ7_DICDI_    101 DGSSIGKSFSSVSEWTVSPISNPLPGCKVVIVVKNNYNGSMFKGVLENWV    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+Q55CZ7_DICDI_    101 DGSSIGKSFSSVSEWTVSPISNPLPGCKVVIVVKNNYNGSMFKGVLENWV    150
+
+Q55CZ7_DICDI_    151 HDTTEDSFKQWLTLVRQQVEEYEKNEQL    178
+                     ||||||||||||||||||||||||||||
+Q55CZ7_DICDI_    151 HDTTEDSFKQWLTLVRQQVEEYEKNEQL    178
+
+
+#---------------------------------------
+#---------------------------------------

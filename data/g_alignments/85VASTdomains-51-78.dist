@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:30
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-55.fasta
+#    [-bsequence] data/fastas/85VASTdomains-8.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NMG0_PHYIT_279489
+# 2: Q22US2_TETTS_12111402
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 261
+# Identity:      39/261 (14.9%)
+# Similarity:    72/261 (27.6%)
+# Gaps:         119/261 (45.6%)
+# Score: 76.0
+# 
+#
+#=======================================
+
+D0NMG0_PHYIT_      1 PLPPDPLLGKMTVLLDCELRADVKRVFDLLWNDGPGQEFSHSNMEKARNI     50
+                                                                       
+Q22US2_TETTS_      0 --------------------------------------------------      0
+
+D0NMG0_PHYIT_     51 DIDIESWKPLDKADAVTAAEVRKGF-------------------------     75
+                            |..|..:.:...||.|.|                         
+Q22US2_TETTS_      1 -------KFSDPVNGLKVNEVFKSFSDVYEYLKIKKFNDKNYQATKFLPP     43
+
+D0NMG0_PHYIT_     76 ------EISKEDDYTLYRMVRS----------QHP-PKTSFPGLPPYAGC    108
+                           |:|..::..|.:::.|          .|| |.::.|.:|  ..|
+Q22US2_TETTS_     44 VPSFIHEVSSSEEEILQKIINSPHYSEREIKFTHPLPPSNIPFMP--KEC     91
+
+D0NMG0_PHYIT_    109 TRTQRFRLDKSSNGGDKWDRFVITELNRM-SKIPFSDYFEVEMRFVFSRD    157
+                     ...:..:....|      |:.:|..:... |.||..|.|.|.:|:.|.:.
+Q22US2_TETTS_     92 QVKEVLKAYYVS------DQMLILNIEAFTSGIPKGDSFSVRVRYQFEQI    135
+
+D0NMG0_PHYIT_    158 GNNYCHVQAGLVVNFLKATWFKSQINSSTRSESKEALESWAKQAIEFLES    207
+                     ......:|....::|:::|:.:.||.|:|..:.:.:    ||..|.|.|.
+Q22US2_TETTS_    136 DPFTVQLQQKSYLHFMQSTFLQGQIESNTIEQQRIS----AKVIIPFFEQ    181
+
+D0NMG0_PHYIT_    208 QRNR-------    211
+                     ..::       
+Q22US2_TETTS_    182 IVSQYISNKQQ    192
+
+
+#---------------------------------------
+#---------------------------------------

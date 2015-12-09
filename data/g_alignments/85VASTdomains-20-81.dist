@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:41
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-27.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YSP2_YEAST_10461230
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 268
+# Identity:      41/268 (15.3%)
+# Similarity:    84/268 (31.3%)
+# Gaps:         103/268 (38.4%)
+# Score: 52.5
+# 
+#
+#=======================================
+
+YSP2_YEAST_10      0 --------------------------------------------------      0
+                                                                       
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+
+YSP2_YEAST_10      1 ----VHDPTEPDFQKGKDDTVIDEKINIPVP-LGTVFSLLYGDDTSYI--     43
+                         ....:....:|..||.:.|...:   | .|.|.:|.|..|.:.|  
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSH---PRFGLVRALSYHPDAATIPT     97
+
+YSP2_YEAST_10     44 --------KKIIENQ------NNFNVCDI-----PKFVNNAREITYTKKL     74
+                             |.:..|.      ..::.|.|     ...:...:::.:...|
+D0NHH4_PHYIT_     98 MGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASL    147
+
+YSP2_YEAST_10     75 NNSFGPKQTKCIVTETIEHMDLNSFFMVKQIVRSPDVPYGSSFSVHTRFF    124
+                     .:.        |.|.:|.:   ::.|.::.||...|:|......::|...
+D0NHH4_PHYIT_    148 RSK--------IYTLSIPY---SNCFSIEVIVDVEDIPVREDSDMNTEDK    186
+
+YSP2_YEAST_10    125 YSWGDHNTTNMKVV-------TNVVWTGKSMLKGTIEKGSIDGQRSSTKQ    167
+                     .|..|.|  :||:.       ..|.::..::||..:|:|:::|.||:...
+D0NHH4_PHYIT_    187 SSSFDKN--SMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTT    234
+
+YSP2_YEAST_10    168 LVDDLKKIISNASSTKKK    185
+                     |:    |::.:|::..:.
+D0NHH4_PHYIT_    235 LL----KLLRDANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

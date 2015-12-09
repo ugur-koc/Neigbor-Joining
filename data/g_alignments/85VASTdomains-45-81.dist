@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:21
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-5.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NKW7_PHYIT_491663
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 271
+# Identity:      38/271 (14.0%)
+# Similarity:    75/271 (27.7%)
+# Gaps:         121/271 (44.6%)
+# Score: 79.5
+# 
+#
+#=======================================
+
+D0NKW7_PHYIT_      1 --------------------------------------------ASLTSA      6
+                                                                 |.|.::
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+
+D0NKW7_PHYIT_      7 YDFFNNFLANGTSDRLSEYYKERGDTEIEAGDWTPSKEFG----------     46
+                     ....:...:..|.::         |::....||.....||          
+D0NHH4_PHYIT_     51 APVGSASSSASTGEK---------DSDDVLRDWHSHPRFGLVRALSYHPD     91
+
+D0NKW7_PHYIT_     47 -----------GQTRTMSCRSPTNASIGPSHTMTTTTDHVPFDEGGIDDS     85
+                                |..:.::..|....:|...|:.|...|.:   |..:...
+D0NHH4_PHYIT_     92 AATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSL---EDELQGD    138
+
+D0NKW7_PHYIT_     86 AKL----VMQSKVFMHDIPYGDCFSVEKVTIVERVPSNDGSP--------    123
+                     .||    .::||::...|||.:|||:|.:..||.:|..:.|.        
+D0NHH4_PHYIT_    139 QKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSS    188
+
+D0NKW7_PHYIT_    124 -----GQLVAKIYL----GVPFSKGCMFKSKIISATREAMAS--------    156
+                          ...:..:::    ||.||:..:.|:::.....|.:.|        
+D0NHH4_PHYIT_    189 SFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKL    238
+
+D0NKW7_PHYIT_    157 ----SSKLYFHMVNRSMESLG    173
+                         :::..|           
+D0NHH4_PHYIT_    239 LRDANTRHQF-----------    248
+
+
+#---------------------------------------
+#---------------------------------------

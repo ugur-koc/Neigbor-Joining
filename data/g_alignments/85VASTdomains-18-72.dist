@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:38
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-25.fasta
+#    [-bsequence] data/fastas/85VASTdomains-74.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q7XKT6_ORYSJ_8591033
+# 2: Q4Q507_LEIMA_35214
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 258
+# Identity:      27/258 (10.5%)
+# Similarity:    43/258 (16.7%)
+# Gaps:         161/258 (62.4%)
+# Score: 20.5
+# 
+#
+#=======================================
+
+Q7XKT6_ORYSJ_      1 DVPLSKEYTLELPIDADLLMGVFDGGPLEAKAMSRAGCLDYAATPWQDAR     50
+                                                                       
+Q4Q507_LEIMA_      0 --------------------------------------------------      0
+
+Q7XKT6_ORYSJ_     51 PGVLERHASYKFNRYMSIFGGEVVST----QLRLPSDDGDGWTV---YDV     93
+                                             :|    ::.||.....|.|:   :|.
+Q4Q507_LEIMA_      1 ------------------------ATRKDKKVMLPQTLLKGLTIQKLWDN     26
+
+Q7XKT6_ORYSJ_     94 ITLRNVPFGDFFRLHLRHNIWSVEAASSEAAA--SSGSRCEILVGIEWVK    141
+                     :...|..|  |.:.|.:.|...:|....:.|.  .||||...||.|..|.
+Q4Q507_LEIMA_     27 VFQDNTNF--FKKYHDKRNESKLEIGPWDYAVDHGSGSRTVSLVAIVEVP     74
+
+Q7XKT6_ORYSJ_    142 RSKFQKRIARNICEKLAH----RAKEVLEAAAREIAPA------------    175
+                     |:.....:  |..::.|:    ..|.:|........|.            
+Q4Q507_LEIMA_     75 RAGTPTPL--NQVQRFAYVNTPEGKLMLVYQISSQTPEMPAGSSFRTEAY    122
+
+Q7XKT6_ORYSJ_    175 --------------------------------------------------    175
+                                                                       
+Q4Q507_LEIMA_    123 FEITADSADSDCSIAIWGNCRKMSMSFSAIQYIATPRAIKEMTSAYRQMV    172
+
+Q7XKT6_ORYSJ_    175 --------    175
+                             
+Q4Q507_LEIMA_    173 NMISEEFC    180
+
+
+#---------------------------------------
+#---------------------------------------

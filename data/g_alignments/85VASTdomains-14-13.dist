@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:32
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-21.fasta
+#    [-bsequence] data/fastas/85VASTdomains-20.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9SDA2_PHYPA_8171004
+# 2: A9SDA2_PHYPA_232412
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 292
+# Identity:      18/292 ( 6.2%)
+# Similarity:    36/292 (12.3%)
+# Gaps:         215/292 (73.6%)
+# Score: 34.0
+# 
+#
+#=======================================
+
+A9SDA2_PHYPA_      1 QSCTDSFAGMEEANMAQVCAFEIPLMSDCAMSLFEQGGLEEAMAEKMGYL     50
+                                                                       
+A9SDA2_PHYPA_      0 --------------------------------------------------      0
+
+A9SDA2_PHYPA_     51 NYVSTPWERLEGQNGVQRRHTSYHLNRQISQFGSKVSCIQQRTMSDSMKS    100
+                                                                       
+A9SDA2_PHYPA_      0 --------------------------------------------------      0
+
+A9SDA2_PHYPA_    101 CVLDEVITLHDVP--------FGDHFQVQVRREIETTSTNPPQSFVKASV    142
+                             :.|.|        ....:.:.. :.:.:....|..||.:..:
+A9SDA2_PHYPA_      1 --------VDDFPSPLAGGVVLDQRYAISA-KALSSLICKPSSSFFQELL     41
+
+A9SDA2_PHYPA_    143 GVSWHKNTEFKKKITKNVHDHMAKEIREVMNVC---VKEVKA-------R    182
+                     .|  .|.||:.::..|:|.:...:.:...|...   :|.|||       |
+A9SDA2_PHYPA_     42 TV--QKTTEYSEEPWKSVKNDSIERVVSYMKAATKIIKSVKATETHTCRR     89
+
+A9SDA2_PHYPA_    183 IKDKRI--------------------------------------------    188
+                     :.|:..                                            
+A9SDA2_PHYPA_     90 LDDRGFVLDISCATPDVPCGTSFLVELQFCVMAERDLPVKEKTCRLLISW    139
+
+A9SDA2_PHYPA_    188 ------------------------------------------    188
+                                                               
+A9SDA2_PHYPA_    140 RIKFLHSTMIKGMIESGARAGIKETYEIFKEILSKYAKPISE    181
+
+
+#---------------------------------------
+#---------------------------------------

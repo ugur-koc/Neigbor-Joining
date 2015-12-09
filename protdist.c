@@ -1,6 +1,19 @@
 
 #include "phylip.h"
 
+
+/* version 3.6. (c) Copyright 1993-2004 by the University of Washington.
+ Written by Joseph Felsenstein, Akiko Fuseki, Sean Lamont, and Andrew Keeffe.
+ Permission is granted to copy and use this program provided no fee is
+ charged for it and provided that this copyright notice is not removed. */
+
+/*
+ This program is modified by to remove the parts that are redundant 
+ for our study and to change the output format
+ Modified by Ugur Koc
+ Date Dec.6.2015
+ */
+
 #define protepsilon .00001
 typedef long *steparray;
 typedef enum {

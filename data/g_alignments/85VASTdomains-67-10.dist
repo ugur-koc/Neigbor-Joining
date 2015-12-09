@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:52
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-7.fasta
+#    [-bsequence] data/fastas/85VASTdomains-18.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_9321154
+# 2: B9F3V9_ORYSJ_332515
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 285
+# Identity:      34/285 (11.9%)
+# Similarity:    60/285 (21.1%)
+# Gaps:         163/285 (57.2%)
+# Score: 26.0
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTNTVYDNFFYYYIE     50
+                                                                       
+B9F3V9_ORYSJ_      0 --------------------------------------------------      0
+
+Q22US2_TETTS_     51 NVMKCWNIQIEKWSPPPPQYFQQQNYPFSEENEKKKE-------------     87
+                                                  |..:|..|             
+B9F3V9_ORYSJ_      1 -----------------------------ESKDKGSEMPENLRGGILVDQ     21
+
+Q22US2_TETTS_     88 ---------------------------------KVQDWIEIS----QRQV    100
+                                                      :...|..:|    :|.:
+B9F3V9_ORYSJ_     22 SYVLQPTEMNSMLFSAHSDFWPAVAEVQGLSGFQTDPWKLVSNDCLKRTL     71
+
+Q22US2_TETTS_    101 TYDKTIPLSGMPFLPKFCKVSEKQKIIFISPDELIFELEAYSSGAPMTDT    150
+                     :|.|....     |.|..|::|:|..:..:.:.........|...|..:.
+B9F3V9_ORYSJ_     72 SYTKAASK-----LVKAVKITEEQTYLKAAGNSFAVLSSVSSPEVPCGNC    116
+
+Q22US2_TETTS_    151 FYHFIRNTFVQLTPD------------TVSYKVQMDVRFLKSNWFSGTID    188
+                     |...|   ...:||.            |:|::    :.|::|....|.|:
+B9F3V9_ORYSJ_    117 FKVEI---LYCITPGPQLPSKEQTSHLTISWR----LNFVQSTMLKGMIE    159
+
+Q22US2_TETTS_    189 SQSQKEGVKSTQEIYKSFQERLTQFLQDKNEKRRN    223
+                     | ..|:|::   |.|..|.|.|:|..:..      
+B9F3V9_ORYSJ_    160 S-GTKQGLR---EGYAQFTEVLSQKTKVI------    184
+
+
+#---------------------------------------
+#---------------------------------------

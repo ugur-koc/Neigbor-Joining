@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:39
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-25.fasta
+#    [-bsequence] data/fastas/85VASTdomains-9.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q7XKT6_ORYSJ_8591033
+# 2: Q22US2_TETTS_14441649
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 333
+# Identity:       9/333 ( 2.7%)
+# Similarity:    23/333 ( 6.9%)
+# Gaps:         285/333 (85.6%)
+# Score: 19.0
+# 
+#
+#=======================================
+
+Q7XKT6_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_      1 EPNEKYKHKLIDYTFNYQNQAINLQQVFNFFFSDSLKFKEYSDFQEYIKR     50
+
+Q7XKT6_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_     51 GKMGDYDYQSTLFSPPIPKYFQFKSQRLDEDLIASPDYSEREVRLTHPLP    100
+
+Q7XKT6_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_    101 PSNIPFMPKTCQVREVTRVYWVSNDTIVVNLEAFTSGIPKGDSFTVRVRS    150
+
+Q7XKT6_ORYSJ_      1 --------DVPLSKEYTLELPIDADLLMGVFDGGPLEAKAMSRAGCLDYA     42
+                             ::..| :|:....:::..|.|..:.|.:|...::...|:   
+Q22US2_TETTS_    151 IFKQIDEENIHFS-QYSYVHFLESTFLQGKIENGTIEQSHIAVKNCV---    196
+
+Q7XKT6_ORYSJ_     43 ATPWQDARPGVLERHASYKFNRYMSIFGGEVVSTQLRLPSDDGDGWTVYD     92
+                     ...:|:|...                                        
+Q22US2_TETTS_    197 LPAYQEAFQM----------------------------------------    206
+
+Q7XKT6_ORYSJ_     93 VITLRNVPFGDFFRLHLRHNIWSVEAASSEAAASSGSRCEILVGIEWVKR    142
+                                                                       
+Q22US2_TETTS_    206 --------------------------------------------------    206
+
+Q7XKT6_ORYSJ_    143 SKFQKRIARNICEKLAHRAKEVLEAAAREIAPA    175
+                                                      
+Q22US2_TETTS_    206 ---------------------------------    206
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:57
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-73.fasta
+#    [-bsequence] data/fastas/85VASTdomains-10.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q8VZF8_ARATH_257370
+# 2: B9G1J5_ORYSJ_289475
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 292
+# Identity:       2/292 ( 0.7%)
+# Similarity:     4/292 ( 1.4%)
+# Gaps:         283/292 (96.9%)
+# Score: 14.0
+# 
+#
+#=======================================
+
+Q8VZF8_ARATH_      1 FNWKPEDTDAPKLSSDFTKVAEAKFSIPVEEFFRLFFSDGAVSFVESFHK     50
+                                                                       
+B9G1J5_ORYSJ_      0 --------------------------------------------------      0
+
+Q8VZF8_ARATH_     51 NCGDKEFRCTSWQPHEKLGHTRNVSFQHPIKIYFGAKFGGCQESQKFRMY    100
+                                                                       
+B9G1J5_ORYSJ_      0 --------------------------------------------------      0
+
+Q8VZF8_ARATH_    101 RNSHLVIETSHRSA------------------------------------    114
+                          ..|:.|:..                                    
+B9G1J5_ORYSJ_      1 -----YFESKHQEVEMPVDLQGILVDKSYITSPSDLNNFLFSPDSNFRQT     45
+
+Q8VZF8_ARATH_    114 --------------------------------------------------    114
+                                                                       
+B9G1J5_ORYSJ_     46 VVELQGCSDVKMESWKIDSDGESLKRVITYTTAPSKLVKAVKATEEQSYL     95
+
+Q8VZF8_ARATH_    114 --------------------------------------------------    114
+                                                                       
+B9G1J5_ORYSJ_     96 KADGNGYSVLLSVSTPDVPCGTYFRTEILFRILPGPELDSEQLTSHLVIS    145
+
+Q8VZF8_ARATH_    114 ------------------------------------------    114
+                                                               
+B9G1J5_ORYSJ_    146 WRINFLQSTMMKGMIENGAKQGLQQNYAQFSDLLSQKIKPID    187
+
+
+#---------------------------------------
+#---------------------------------------

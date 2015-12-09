@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-20.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: A9SDA2_PHYPA_232412
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 263
+# Identity:      45/263 (17.1%)
+# Similarity:    82/263 (31.2%)
+# Gaps:          97/263 (36.9%)
+# Score: 80.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRS-TRLKCKMERAKLAT     49
+                                .:...:.:.|..|.:....::.:: :.|.||        
+A9SDA2_PHYPA_      1 -----------VDDFPSPLAGGVVLDQRYAISAKALSSLICK--------     31
+
+D0NHH4_PHYIT_     50 SAPVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMG     99
+                       |..|......|.:|.::.....|.|.....:.|.:||...|..|    
+A9SDA2_PHYPA_     32 --PSSSFFQELLTVQKTTEYSEEPWKSVKNDSIERVVSYMKAATKI----     75
+
+D0NHH4_PHYIT_    100 SSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRS    149
+                                  :|:|...:.|:|...||                  |.
+A9SDA2_PHYPA_     76 -------------IKSVKATETHTCRRLDD------------------RG     94
+
+D0NHH4_PHYIT_    150 KIYTLS-----IPYSNCFSIEV---IVDVEDIPVREDSDMNTEDKSSSFD    191
+                     .:..:|     :|....|.:|:   ::...|:||:|              
+A9SDA2_PHYPA_     95 FVLDISCATPDVPCGTSFLVELQFCVMAERDLPVKE--------------    130
+
+D0NHH4_PHYIT_    192 KNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLLRD    241
+                         |...|.|.||  :.|...|::|..:|.||..|::.|.....::|  
+A9SDA2_PHYPA_    131 ----KTCRLLISWR--IKFLHSTMIKGMIESGARAGIKETYEIFKEIL--    172
+
+D0NHH4_PHYIT_    242 ANTRHQF------    248
+                         .::      
+A9SDA2_PHYPA_    173 ----SKYAKPISE    181
+
+
+#---------------------------------------
+#---------------------------------------

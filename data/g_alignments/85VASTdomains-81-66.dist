@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-69.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: B8C2T9_THAPS_86910
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 284
+# Identity:      44/284 (15.5%)
+# Similarity:    76/284 (26.8%)
+# Gaps:         124/284 (43.7%)
+# Score: 41.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLAT-     49
+                                      .:|..||.:.::.:..|      |:....:.: 
+B8C2T9_THAPS_      1 -----------------DVPVDSVIKDMDPIFTR------KLHNISIESY     27
+
+D0NHH4_PHYIT_     50 --------SAPV--------GSASSSASTGEKDSDDVLRDWHSHP-----     78
+                             .||:        ||...|.|..|...:.....|....     
+B8C2T9_THAPS_     28 YKTGWAEEDAPLYGPWLERKGSFDVSVSQWEHSKEGFQHSWSGETFHQKR     77
+
+D0NHH4_PHYIT_     79 --RFGLVRALSYH---PDAATIPTMGSSR-GTGKNVTLNSMKAVTIEQYH    122
+                       ||...|....:   |.|....|....| |..|.||:            
+B8C2T9_THAPS_     78 IIRFKFKRTTHLYIGPPVAGVTQTQYCRRDGDDKCVTM------------    115
+
+D0NHH4_PHYIT_    123 SCTIEDDSLEDELQGDQKLPHRASLRSKIYTLSIPYSNCFSIEV-----I    167
+                      .|:|.|                         .||||:.|::||     .
+B8C2T9_THAPS_    116 -MTVEMD-------------------------GIPYSDVFAVEVRWAARR    139
+
+D0NHH4_PHYIT_    168 VDVEDIPVREDSDMNTEDKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILK    217
+                     ....||.:.                     .|:|:|      |.:.::..
+B8C2T9_THAPS_    140 TGCNDITID---------------------AGVHVR------FIKSSMFA    162
+
+D0NHH4_PHYIT_    218 TQLERGALEGVRSTCTTLLKLLRDANTRHQF---    248
+                     ::::.|.|...:.....|.::::.|.:....   
+B8C2T9_THAPS_    163 SKIKSGTLAETKPIHLDLFEVIKVALSSGSDNKS    196
+
+
+#---------------------------------------
+#---------------------------------------

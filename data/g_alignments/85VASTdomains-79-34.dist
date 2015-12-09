@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:09
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-80.fasta
+#    [-bsequence] data/fastas/85VASTdomains-4.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q23QL2_TETTS_311513
+# 2: Q5Z6I4_ORYSJ_8571036
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 263
+# Identity:      34/263 (12.9%)
+# Similarity:    65/263 (24.7%)
+# Gaps:         143/263 (54.4%)
+# Score: 53.5
+# 
+#
+#=======================================
+
+Q23QL2_TETTS_      1 EVSTKAKWTSIDIKNVSAKEIYILFFGNNIFEDEKQVAYTNFGMYYNTTV     50
+                                                                       
+Q5Z6I4_ORYSJ_      0 --------------------------------------------------      0
+
+Q23QL2_TETTS_     51 LNE-----------LNMVYSDIVPEPPLYFTNLYDNNKL-----EIIDYA     84
+                     .||           ::.|:|...|.......::::...|     |.|...
+Q5Z6I4_ORYSJ_      1 NNESDSFLGIEDAKMSEVFSSTKPFDVSTLMSIFEGGPLEHQVMEKIGCM     50
+
+Q23QL2_TETTS_     85 EYSTRKCTFTHIIKEPFMPKSCDCFIEEKIYWVSPKEI------------    122
+                     |||.          .|:.....|.: :.:|::...|.:            
+Q5Z6I4_ORYSJ_     51 EYSV----------SPWESVRADAY-QRQIHYKFDKRLARHEGEVMSTQQ     89
+
+Q23QL2_TETTS_    123 ----------LIERELAFQGIPLSSHFNPRVIYQILETGESDQIKTQIRS    162
+                               |:|..:..:|||:..:||..:.||:      :||.::.::
+Q5Z6I4_ORYSJ_     90 KSPLPDKNGWLVEEVMTLEGIPVGEYFNLHMRYQL------EQISSKPKA    133
+
+Q23QL2_TETTS_    163 GYYIHYVKDTWFKSKIDKTSDEENIKNWEKISKLYIKYSEI---------    203
+                     ......:...|.||          .||.:||::      |:         
+Q5Z6I4_ORYSJ_    134 CNVQVSIGIAWLKS----------CKNRKKIAQ------EVLSSASSRLK    167
+
+Q23QL2_TETTS_    203 -------------    203
+                                  
+Q5Z6I4_ORYSJ_    168 KMFGLLEKELLPA    180
+
+
+#---------------------------------------
+#---------------------------------------

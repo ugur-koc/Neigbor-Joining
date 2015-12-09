@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:13
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-46.fasta
+#    [-bsequence] data/fastas/85VASTdomains-25.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q55FU7_DICDI_479662
+# 2: Q7XKT6_ORYSJ_8591033
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 240
+# Identity:      36/240 (15.0%)
+# Similarity:    61/240 (25.4%)
+# Gaps:         121/240 (50.4%)
+# Score: 50.5
+# 
+#
+#=======================================
+
+Q55FU7_DICDI_      1 ----------------------------------------------KDQQ      4
+                                                                   :|.:
+Q7XKT6_ORYSJ_      1 DVPLSKEYTLELPIDADLLMGVFDGGPLEAKAMSRAGCLDYAATPWQDAR     50
+
+Q55FU7_DICDI_      5 PQSILESQSS-DFQEILSDNFNVSVVNFYRALYSDRCNFVHSYHVKRGDM     53
+                     | .:||..:| .|...:| .|...||:....|.||           .|| 
+Q7XKT6_ORYSJ_     51 P-GVLERHASYKFNRYMS-IFGGEVVSTQLRLPSD-----------DGD-     86
+
+Q55FU7_DICDI_     54 NVNVKPWTFRERFGTIREVEYVAPVSSPIGPDKTRIQETQRYQLTRKKLI    103
+                          .||.                                         
+Q7XKT6_ORYSJ_     87 -----GWTV-----------------------------------------     90
+
+Q55FU7_DICDI_    104 VETDTIML-DIPYGDHFRIEAK---WEVTETSQDTC-----RLSISLTVR    144
+                       .|.|.| ::|:||.||:..:   |.|...|.:..     |..|.:.:.
+Q7XKT6_ORYSJ_     91 --YDVITLRNVPFGDFFRLHLRHNIWSVEAASSEAAASSGSRCEILVGIE    138
+
+Q55FU7_DICDI_    145 FVKKTWFKSKIETTTVKETKTSFDKWVQLAKVEVQKMLQV    184
+                     :||::.|:.:|.....::......:.::.|..|:...   
+Q7XKT6_ORYSJ_    139 WVKRSKFQKRIARNICEKLAHRAKEVLEAAAREIAPA---    175
+
+
+#---------------------------------------
+#---------------------------------------

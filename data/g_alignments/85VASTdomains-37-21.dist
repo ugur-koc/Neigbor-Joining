@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:07
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-42.fasta
+#    [-bsequence] data/fastas/85VASTdomains-28.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7M7X5_TETTS_10131226
+# 2: A9RSX7_PHYPA_212394
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 277
+# Identity:      32/277 (11.6%)
+# Similarity:    51/277 (18.4%)
+# Gaps:         157/277 (56.7%)
+# Score: 33.0
+# 
+#
+#=======================================
+
+I7M7X5_TETTS_      1 KQQSIFEKAQNVSEFEIKFPNATPREIFNILFGLKPYKPQPEGSQEFPNF     50
+                                                                       
+A9RSX7_PHYPA_      0 --------------------------------------------------      0
+
+I7M7X5_TETTS_     51 RFYIFQEFQKDTDIQFQTFNPPPPEWYTNLDCSDKDTVKSSPEIS-----     95
+                                                           .||.||.     
+A9RSX7_PHYPA_      1 --------------------------------------PSSVEIPLPLSG     12
+
+I7M7X5_TETTS_     96 ----NLEFKVVHPVREKIPFGPKVSY------CQNKEKYF---WISAEEF    132
+                         :..:.|.......|.|.|..::      .|...:|.   |..|...
+A9RSX7_PHYPA_     13 GVLLDQTYGVSSKALNAILFKPGSTFVRDLVEAQKSTEYMEEPWRKAGNG     62
+
+I7M7X5_TETTS_    133 IIEREIFLSK-----------------------------------IPYCD    147
+                     :::|.....|                                   .||..
+A9RSX7_PHYPA_     63 LMKRVTSYIKAASKLVKALKATEVQTYTRADEMCYCVLSTCATPDAPYGG    112
+
+I7M7X5_TETTS_    148 YFTIRFQYNISQVQD------QTRILIKLYVHFMKSTTFKGRIENG---S    188
+                     .|.:..|..||...|      ...:.|...|:|::.:..||.||.|   .
+A9RSX7_PHYPA_    113 TFVVEVQITISSRPDFLGGMKCCHLQISYNVNFLQKSMMKGMIEGGVRTG    162
+
+I7M7X5_TETTS_    189 LSENTEVINTVFTPQAQ-IAIQNYQKF    214
+                     :.|...:...|.....| :::      
+A9RSX7_PHYPA_    163 IKETYAIYQDVLAKHVQRVSV------    183
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-43.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: I7M7X5_TETTS_13071507
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 290
+# Identity:      49/290 (16.9%)
+# Similarity:    77/290 (26.6%)
+# Gaps:         131/290 (45.2%)
+# Score: 38.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMV------TPRST------RL     38
+                                       :|.:...|...::      .|.::      .|
+I7M7X5_TETTS_      1 ------------------VPEAHPREIFNLIFFDSKYKPENSDKTYPHYL     32
+
+D0NHH4_PHYIT_     39 KCKMERAKLATSAPVGSASSS-----ASTGEKDSDDVL--RDWHSHPRFG     81
+                     ...||..:.......|..|..     |:....|.:.||  .|:.      
+I7M7X5_TETTS_     33 YYFMEEFQKDVDMHFGKFSPPPPEWYANLESVDCNSVLNSEDYS------     76
+
+D0NHH4_PHYIT_     82 LVRALSY-HPDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDS    130
+                      :|...| ||....||       .|..|:....|    |:|:..:     
+I7M7X5_TETTS_     77 -LREYKYVHPVREKIP-------FGPKVSHCQNK----EKYYWIS-----    109
+
+D0NHH4_PHYIT_    131 LEDELQGDQKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSD    180
+                      |||.          .:..::|...|||.:.|::..              
+I7M7X5_TETTS_    110 -EDEF----------IMEKEVYLSKIPYCDYFTVRF--------------    134
+
+D0NHH4_PHYIT_    181 MNTEDKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRS    230
+                           ..||.||..:  |..|..|..|.|.:.|..|.::|.|:|     
+I7M7X5_TETTS_    135 ------QYSFTKNENQ--GTKIICRIYVNFMKSTTFKGRIESGSL-----    171
+
+D0NHH4_PHYIT_    231 TCTTLLKLLRDANT---RHQF-------------------    248
+                               ..||   ::.|                   
+I7M7X5_TETTS_    172 ----------SENTDVWKNAFSPQILQVMQQYIQKNGEKR    201
+
+
+#---------------------------------------
+#---------------------------------------

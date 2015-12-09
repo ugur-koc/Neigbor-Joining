@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:05
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-78.fasta
+#    [-bsequence] data/fastas/85VASTdomains-23.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YFE2_YEAST_402586
+# 2: A9TQF1_PHYPA_8201003
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 232
+# Identity:      37/232 (15.9%)
+# Similarity:    64/232 (27.6%)
+# Gaps:          95/232 (40.9%)
+# Score: 27.0
+# 
+#
+#=======================================
+
+YFE2_YEAST_40      1 -----------------------------------------PAEPMANNE      9
+                                                              .||.|....
+A9TQF1_PHYPA_      1 DDADTFTGMEEANMVNVCAFDIPLTMDSAMSLFEKGRLEEVVAEKMGYIN     50
+
+YFE2_YEAST_40     10 FVLKELPFDCAPGILFEIMFNSEQNEFLLDFLRGQEGSQITTIPNFTSID     59
+                     ||  ..|::...|   :......|..:.|:....|.||:::.|...|.:|
+A9TQF1_PHYPA_     51 FV--STPWERLEG---QNNVQRRQVSYHLNRQISQFGSKVSCIQQKTMLD     95
+
+YFE2_YEAST_40     60 GSSMTLKREYSYEKALHFPAGPKSTTCYVAEVIKRKDPDTYYEVISSIRT    109
+                     ...:.:                      :.||:...|             
+A9TQF1_PHYPA_     96 NMKLYI----------------------LDEVLTLHD-------------    110
+
+YFE2_YEAST_40    110 PNVPSGGSFSTKTRYLIRWNDEITCLLRVSFWVE-WTGSSWIKG--MVEN    156
+                       ||.|..|..:    :|.:.|.|.:......|: :.|.||.|.  ..:.
+A9TQF1_PHYPA_    111 --VPFGDHFQVQ----VRRDIETTSINPPKSSVKAYVGVSWHKNTEFKKK    154
+
+YFE2_YEAST_40    157 GCKNGQLEAAQLMERILS---KFIKNNVEECQ    185
+                     ..||.|...|:.:...::   |.:|..|::  
+A9TQF1_PHYPA_    155 ITKNVQDHMAKEIREAMNVSVKEVKALVKD--    184
+
+
+#---------------------------------------
+#---------------------------------------

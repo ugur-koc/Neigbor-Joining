@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:04
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-77.fasta
+#    [-bsequence] data/fastas/85VASTdomains-7.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q5BB65_EMENI_8531030
+# 2: Q22US2_TETTS_9321154
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 261
+# Identity:      38/261 (14.6%)
+# Similarity:    61/261 (23.4%)
+# Gaps:         121/261 (46.4%)
+# Score: 31.5
+# 
+#
+#=======================================
+
+Q5BB65_EMENI_      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_      1 ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTNTVYDNFFYYYIE     50
+
+Q5BB65_EMENI_      1 -------------DGPEGQYDRVIKDETIPAPLGKVYSYVFGPASVSFVP     37
+                                  ..|..||   .:.:..|                    
+Q22US2_TETTS_     51 NVMKCWNIQIEKWSPPPPQY---FQQQNYP--------------------     77
+
+Q5BB65_EMENI_     38 KFLVENQKSGELEFNCDKTGLTNETRTRKYSYIK--PLNG-SIGPKQTKC     84
+                      |..||:|..|      |.....|...|:.:|.|  ||:| ...||..|.
+Q22US2_TETTS_     78 -FSEENEKKKE------KVQDWIEISQRQVTYDKTIPLSGMPFLPKFCKV    120
+
+Q5BB65_EMENI_     85 ISTEQLDFLDLEKAV--LVTLSTQTPDVPS-----GNVFTTKTKYLFTWA    127
+                     ...:::.|:..::.:  |...|:..|...:     .|.|...|....::.
+Q22US2_TETTS_    121 SEKQKIIFISPDELIFELEAYSSGAPMTDTFYHFIRNTFVQLTPDTVSYK    170
+
+Q5BB65_EMENI_    128 ANNQTRFLMTCTIEWSGKSWLKGPIE--------KGAIDGQGTFGTDLIA    169
+                     .....|||.:        :|..|.|:        |...:...:|...|..
+Q22US2_TETTS_    171 VQMDVRFLKS--------NWFSGTIDSQSQKEGVKSTQEIYKSFQERLTQ    212
+
+Q5BB65_EMENI_    170 ALKTAVAPR--    178
+                     .|:.....|  
+Q22US2_TETTS_    213 FLQDKNEKRRN    223
+
+
+#---------------------------------------
+#---------------------------------------

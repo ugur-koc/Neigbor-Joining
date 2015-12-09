@@ -1,0 +1,66 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-51.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: Q8MRR1_DROME_41220
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 360
+# Identity:      20/360 ( 5.6%)
+# Similarity:    36/360 (10.0%)
+# Gaps:         292/360 (81.1%)
+# Score: 20.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+Q8MRR1_DROME_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                                                                       
+Q8MRR1_DROME_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSK    150
+                                                                       
+Q8MRR1_DROME_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    151 IYTLSIPYSNCFSI----EVIVDVEDIPVREDSDMNTEDKSSSFDKNSMK    196
+                         .:|.:.|.|.    :::..:  :|:..|:..|.....|.|      
+Q8MRR1_DROME_      1 ----FVPTTECTSTHEGRQIVHTI--LPINVDTLFNLLFSKSKF------     38
+
+D0NHH4_PHYIT_    197 LTGLHIRWRAGVTFSRDTILK--TQLERGALEGVRSTCTTLLKLLRDANT    244
+                     :|..|     .:..|.|.:|.  |:.|    ||::         :|..|.
+Q8MRR1_DROME_     39 ITDFH-----AMRKSTDLVLGEWTKNE----EGLQ---------VRTVNV     70
+
+D0NHH4_PHYIT_    245 RHQF----------------------------------------------    248
+                     ..|.                                              
+Q8MRR1_DROME_     71 TVQLAASVGPKTSKVTEYQTQRECSKPGELYSIDVNSVNAGIPYAESFSV    120
+
+D0NHH4_PHYIT_    248 --------------------------------------------------    248
+                                                                       
+Q8MRR1_DROME_    121 LIHFCLARTVDDHTMLSIHTQIKYKKSIWGVVKGFIEKNTWAGLEDFFGA    170
+
+D0NHH4_PHYIT_    248 ----------    248
+                               
+Q8MRR1_DROME_    171 QLHALQSETC    180
+
+
+#---------------------------------------
+#---------------------------------------

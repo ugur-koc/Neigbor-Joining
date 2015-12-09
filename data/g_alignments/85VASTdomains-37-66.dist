@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:08
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-42.fasta
+#    [-bsequence] data/fastas/85VASTdomains-69.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7M7X5_TETTS_10131226
+# 2: B8C2T9_THAPS_86910
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 242
+# Identity:      40/242 (16.5%)
+# Similarity:    83/242 (34.3%)
+# Gaps:          74/242 (30.6%)
+# Score: 46.5
+# 
+#
+#=======================================
+
+I7M7X5_TETTS_      1 ---------KQQSIFEKAQNVSEFEIKFPNATPREIFNILFGLKPYKPQP     41
+                              ....||                 .|::.||  .::.|....
+B8C2T9_THAPS_      1 DVPVDSVIKDMDPIF-----------------TRKLHNI--SIESYYKTG     31
+
+I7M7X5_TETTS_     42 EGSQEFPNFRFYIFQEFQKDTDIQFQTFNPPPPEWYTNLDCSDKDTVKSS     91
+                     ...::.|.:..::.::...|..:.         :|.     ..|:..:.|
+B8C2T9_THAPS_     32 WAEEDAPLYGPWLERKGSFDVSVS---------QWE-----HSKEGFQHS     67
+
+I7M7X5_TETTS_     92 --------PEISNLEFK-VVHPVREKIPFGPKVS------YCQNKEKYFW    126
+                             ..|...:|| ..|     :..||.|:      ||:..     
+B8C2T9_THAPS_     68 WSGETFHQKRIIRFKFKRTTH-----LYIGPPVAGVTQTQYCRRD-----    107
+
+I7M7X5_TETTS_    127 ISAEEFIIEREIFLSKIPYCDYFTIRFQYNISQV--QDQTRILIKLYVHF    174
+                      ..::.:....:.:..|||.|.|.:..::...:.  .|.| |...::|.|
+B8C2T9_THAPS_    108 -GDDKCVTMMTVEMDGIPYSDVFAVEVRWAARRTGCNDIT-IDAGVHVRF    155
+
+I7M7X5_TETTS_    175 MKSTTFKGRIENGSLSENTEVINTVFTPQAQIAIQNYQKF--    214
+                     :||:.|..:|::|:|:| |:.|:.......::|:.:....  
+B8C2T9_THAPS_    156 IKSSMFASKIKSGTLAE-TKPIHLDLFEVIKVALSSGSDNKS    196
+
+
+#---------------------------------------
+#---------------------------------------

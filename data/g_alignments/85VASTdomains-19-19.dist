@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:39
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-26.fasta
+#    [-bsequence] data/fastas/85VASTdomains-26.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YSP2_YEAST_8411021
+# 2: YSP2_YEAST_8411021
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 181
+# Identity:     181/181 (100.0%)
+# Similarity:   181/181 (100.0%)
+# Gaps:           0/181 ( 0.0%)
+# Score: 944.0
+# 
+#
+#=======================================
+
+YSP2_YEAST_84      1 PTTADFKPSNNDHLVIEANINAPLGKVVNLLYGEDVSYYERILKAQKNFE     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+YSP2_YEAST_84      1 PTTADFKPSNNDHLVIEANINAPLGKVVNLLYGEDVSYYERILKAQKNFE     50
+
+YSP2_YEAST_84     51 ISPIPNNFLTKKIRDYAYTKPLSGSIGPSKTKCLITDTLEHYDLEDYVKV    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+YSP2_YEAST_84     51 ISPIPNNFLTKKIRDYAYTKPLSGSIGPSKTKCLITDTLEHYDLEDYVKV    100
+
+YSP2_YEAST_84    101 LSITKNPDVPSGNIFSVKTVFLFSWDKNNSTKLTVYNSVDWTGKSWIKSM    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+YSP2_YEAST_84    101 LSITKNPDVPSGNIFSVKTVFLFSWDKNNSTKLTVYNSVDWTGKSWIKSM    150
+
+YSP2_YEAST_84    151 IEKGTFDGVADTTKIMISEIKKILSDEDSNI    181
+                     |||||||||||||||||||||||||||||||
+YSP2_YEAST_84    151 IEKGTFDGVADTTKIMISEIKKILSDEDSNI    181
+
+
+#---------------------------------------
+#---------------------------------------

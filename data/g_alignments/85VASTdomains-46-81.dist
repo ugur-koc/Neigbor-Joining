@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:22
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-50.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B3KQF7_HUMAN_127303
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 282
+# Identity:      35/282 (12.4%)
+# Similarity:    67/282 (23.8%)
+# Gaps:         139/282 (49.3%)
+# Score: 35.0
+# 
+#
+#=======================================
+
+B3KQF7_HUMAN_      0 --------------------------------------------------      0
+                                                                       
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+
+B3KQF7_HUMAN_      1 ------------------------------------------ALLPDLSG      8
+                                                               |.:|.:..
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+
+B3KQF7_HUMAN_      9 ------RLLINSVFHVGAERLQQMLFSDSPFLQGFLQQCKFTDVTLSPWS     52
+                           .:.:||:..|..|:.......|.. |:..||             
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIEDDS-LEDELQ-------------    136
+
+B3KQF7_HUMAN_     53 GDSKCHQR-----RVLTYTIPISNPLGPKSASVVETQTPFRRGPQAGGCV     97
+                     ||.|...|     ::.|.:||.||....:....|| ..|.|.        
+D0NHH4_PHYIT_    137 GDQKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVE-DIPVRE--------    177
+
+B3KQF7_HUMAN_     98 VDSEVLTQGIPYQDYFYTAHRYCILGLARNKARLRVSSEIRYRKQPWSLV    147
+                      ||::.|:.   :...:..:...:.||     .:|..:.:.:.:.  :::
+D0NHH4_PHYIT_    178 -DSDMNTED---KSSSFDKNSMKLTGL-----HIRWRAGVTFSRD--TIL    216
+
+B3KQF7_HUMAN_    148 KSLIEKNSWSGIEDYFHHLERELAKAEKLS--    177
+                     |:.:|:.:..|:......|.:.|..|....  
+D0NHH4_PHYIT_    217 KTQLERGALEGVRSTCTTLLKLLRDANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

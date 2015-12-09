@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:11
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-44.fasta
+#    [-bsequence] data/fastas/85VASTdomains-63.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q2MGF5_CAEEL_57244
+# 2: Q55CZ7_DICDI_2179
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 201
+# Identity:      33/201 (16.4%)
+# Similarity:    74/201 (36.8%)
+# Gaps:          36/201 (17.9%)
+# Score: 87.0
+# 
+#
+#=======================================
+
+Q2MGF5_CAEEL_      1 DEIIEEVPCPCSEHFGRLIMDKEFKVSVEKFYELLFTDNEFLTMLNQKTK     50
+                                    ..|.:::||::|||.|:...|.:..|....:....
+Q55CZ7_DICDI_      1 ---------------KILNLEEEFRISVETFFTFFFENANFKQKYHSSRG     35
+
+Q2MGF5_CAEEL_     51 TAEYVAATWVRDHQGDNTRTCTYTVSLAHAMAPKAIIVNEKQI--LTHYP     98
+                     ..:.....|........||..::...:::......::.::.::  :.||.
+Q55CZ7_DICDI_     36 DNQIEVKAWTPTSDNRYTREVSFCSFISNNPVINRLVGDKAKVKEVQHYK     85
+
+Q2MGF5_CAEEL_     99 NPKQG-IMMQKETQNSGVPYSDNFTVNCRYCISRTGPTS-----CRIKV-    141
+                     ..:.| :.:..||...|.....:|:....:.:|   |.|     |::.: 
+Q55CZ7_DICDI_     86 YIENGSLYVSSETFFDGSSIGKSFSSVSEWTVS---PISNPLPGCKVVIV    132
+
+Q2MGF5_CAEEL_    142 ----HGGVMYKKSTWAVVKTFIEKGTHQGLDEHYQLLSKLVDEYAANHPD    187
+                         :.|.|:|    .|::.::...|.....:...|:.:.|:||..|...
+Q55CZ7_DICDI_    133 VKNNYNGSMFK----GVLENWVHDTTEDSFKQWLTLVRQQVEEYEKNEQL    178
+
+Q2MGF5_CAEEL_    188 E    188
+                      
+Q55CZ7_DICDI_    178 -    178
+
+
+#---------------------------------------
+#---------------------------------------

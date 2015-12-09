@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:11
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-81.fasta
+#    [-bsequence] data/fastas/85VASTdomains-36.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q7RWT3_NEUCR_9451126
+# 2: GRM1B_MOUSE_321502
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 195
+# Identity:      44/195 (22.6%)
+# Similarity:    79/195 (40.5%)
+# Gaps:          26/195 (13.3%)
+# Score: 108.5
+# 
+#
+#=======================================
+
+Q7RWT3_NEUCR_      1 ----HPVYFEPEDM-GKPVAERNFEISAKACFHVLFGDKSFI--FPKLYF     43
+                         ...|   ||: |:......|..|....:.:||.:..|:  |.:   
+GRM1B_MOUSE_3      1 EGEVQAFY---EDLSGRQYVNEVFNFSVDKLYDLLFTNSPFLRDFME---     44
+
+Q7RWT3_NEUCR_     44 ERRAKEIAQGPWELKDHGGKMARQFKFKVDKADMLGRKTDANIVDTQNI-     92
+                     :||..:|...||: |:..|..:|...:.:...:.|..|| |.:.:||.: 
+GRM1B_MOUSE_3     45 QRRFSDIIFHPWK-KEENGNQSRVILYTITLTNPLAPKT-ATVRETQTMY     92
+
+Q7RWT3_NEUCR_     93 DIFNDHITYVVTHVKTPWHLPHSHAFKLITKVVITHVAKSKCKLAIYTKA    142
+                     ....:...||:........:|:...|..|.:..:|.||::|.:|.:.|:.
+GRM1B_MOUSE_3     93 KASQESECYVIDAEVLTHDVPYHDYFYTINRYTLTRVARNKSRLRVSTEL    142
+
+Q7RWT3_NEUCR_    143 DWSKAP-AIAKNMVER---QALDDAANDAE-ELAEVATDQVRRLG    182
+                     .:.|.| ...|..:|:   ..|:|.....| ||.:..:..     
+GRM1B_MOUSE_3    143 RYRKQPWGFVKTFIEKNFWSGLEDYFRHLETELTKTESTY-----    182
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-6.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: D0NKW7_PHYIT_696864
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 263
+# Identity:      44/263 (16.7%)
+# Similarity:    78/263 (29.7%)
+# Gaps:         109/263 (41.4%)
+# Score: 73.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+D0NKW7_PHYIT_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVG-------SASSSASTGEK------DSDDVLRDWHSHPRF-GLVRAL     86
+                       .|       .|:::.|..:.      |::.|:..|.....: |.||.:
+D0NKW7_PHYIT_      1 --DGLHFFDLFYANNTLSRWQTIHQEAGDTEHVVGKWEESEEYGGQVREM     48
+
+D0NHH4_PHYIT_     87 SYHPDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQ    136
+                     .|.  |.:...:|.|          |..|..|........:.:||:.:  
+D0NKW7_PHYIT_     49 KYR--AKSTSPLGPS----------STMAEQIVHVPFSPQDRNSLDAD--     84
+
+D0NHH4_PHYIT_    137 GDQKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDK    186
+                            |..:..|:..|.|||.:||.:|.:..:|.   |.|:       
+D0NKW7_PHYIT_     85 -------RIVIEHKLTLLEIPYGDCFHVETVYVIEP---RTDA-------    117
+
+D0NHH4_PHYIT_    187 SSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEG-VRSTCTTL    235
+                          ..|..:..::|    |:.||:.|:.|:::.....|| |:||...:
+D0NKW7_PHYIT_    118 -----MGSALIAKVYI----GIPFSKSTMFKSKIMSATKEGVVKSTKMVV    158
+
+D0NHH4_PHYIT_    236 LKLLRDANTRHQF    248
+                     ..|.:...|..  
+D0NKW7_PHYIT_    159 DGLNKAVGTEV--    169
+
+
+#---------------------------------------
+#---------------------------------------

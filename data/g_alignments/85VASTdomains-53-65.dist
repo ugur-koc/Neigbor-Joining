@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:32
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-57.fasta
+#    [-bsequence] data/fastas/85VASTdomains-68.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22XZ6_TETTS_144333
+# 2: YL072_YEAST_390578
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 257
+# Identity:      30/257 (11.7%)
+# Similarity:    63/257 (24.5%)
+# Gaps:         135/257 (52.5%)
+# Score: 42.5
+# 
+#
+#=======================================
+
+Q22XZ6_TETTS_      1 EQSDVEILNPETSEENKELLRCILPVSVDAFFEKFIGDNAIFSYGQHMEK     50
+                                                                       
+YL072_YEAST_3      0 --------------------------------------------------      0
+
+Q22XZ6_TETTS_     51 NGSTDIKISEWAENEEL---KCFT-----------RECNLVIKVSGVPLR     86
+                     ..:.|......|.||.:   :.|:           .|.|.|.::|.:..:
+YL072_YEAST_3      1 QETMDFPYKPEANNEYVLLERQFSVPPGLLFIMMFNEDNPVFELSFLKTQ     50
+
+Q22XZ6_TETTS_     87 DTSRFQKIQTYK---KEGEN------------------------------    103
+                     |:|....|.|::   |:|::                              
+YL072_YEAST_3     51 DSSNISHIGTFEKVNKDGQHYREFQYTKQLHFPVGPKSTNCEVAEILLHC    100
+
+Q22XZ6_TETTS_    104 -----LIISSTSKVFDVPYSGYFTTEE----KWEISPVEGSSDKCLLVCK    144
+                          :.:.|.::..:||....|:|..    :|     :.....|:|...
+YL072_YEAST_3    101 DWERYINVLSITRTPNVPSGTSFSTRTRYMFRW-----DDQGQGCILKIS    145
+
+Q22XZ6_TETTS_    145 GWVTFNKNTMMKKTITQRNEQG-----------LKEDYEVWIGRIRKILQ    183
+                     .||.:|.::.:|..:....:.|           ::|..|.::..      
+YL072_YEAST_3    146 FWVDWNASSWIKPMVESNCKNGQISATKDLVKLVEEFVEKYVEL------    189
+
+Q22XZ6_TETTS_    184 PKKPEEN    190
+                            
+YL072_YEAST_3    189 -------    189
+
+
+#---------------------------------------
+#---------------------------------------

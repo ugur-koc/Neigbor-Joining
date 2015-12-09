@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:00
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-74.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4Q507_LEIMA_35214
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 318
+# Identity:      25/318 ( 7.9%)
+# Similarity:    42/318 (13.2%)
+# Gaps:         208/318 (65.4%)
+# Score: 19.0
+# 
+#
+#=======================================
+
+Q4Q507_LEIMA_      1 ATRKDKKVMLPQTLLKGLTIQKLWDNVFQDNTNFFKKYHDKRNESKLEIG     50
+                                                                       
+D0NHH4_PHYIT_      0 --------------------------------------------------      0
+
+Q4Q507_LEIMA_     51 PWDYAVDHGSGSRTVSLVAIVEVPRAGTPT---PLNQVQRFAYVNTPEG-     96
+                                   .|.:.:.|.......|   |.:.|..|..:.||.. 
+D0NHH4_PHYIT_      1 --------------TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRST     36
+
+Q4Q507_LEIMA_     97 KLMLVYQISSQTPEMPAGSSFRTEAYFEITADSADSDCSIAIWGNCRKMS    146
+                     :|....:.:......|.||     |....:....|||..:..|.:..:..
+D0NHH4_PHYIT_     37 RLKCKMERAKLATSAPVGS-----ASSSASTGEKDSDDVLRDWHSHPRFG     81
+
+Q4Q507_LEIMA_    147 MSFSAIQYIATPRAIKEMTSA--------YRQMVNMISEEF--C------    180
+                     : ..|:.|......|..|.|:        ...|..:..|::  |      
+D0NHH4_PHYIT_     82 L-VRALSYHPDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDS    130
+
+Q4Q507_LEIMA_    180 --------------------------------------------------    180
+                                                                       
+D0NHH4_PHYIT_    131 LEDELQGDQKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSD    180
+
+Q4Q507_LEIMA_    180 --------------------------------------------------    180
+                                                                       
+D0NHH4_PHYIT_    181 MNTEDKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRS    230
+
+Q4Q507_LEIMA_    180 ------------------    180
+                                       
+D0NHH4_PHYIT_    231 TCTTLLKLLRDANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

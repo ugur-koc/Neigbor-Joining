@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-68.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: YL072_YEAST_390578
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 338
+# Identity:      30/338 ( 8.9%)
+# Similarity:    51/338 (15.1%)
+# Gaps:         239/338 (70.7%)
+# Score: 36.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+YL072_YEAST_3      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                                                                       
+YL072_YEAST_3      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_    101 SRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKLPHRASLRSK    150
+                                                        |.....|::....::
+YL072_YEAST_3      1 -----------------------------------QETMDFPYKPEANNE     15
+
+D0NHH4_PHYIT_    151 IYTL----SIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSS-----SFD    191
+                     ...|    |:|....|   :::..||.||.|.|.:.|:|.|:     :|:
+YL072_YEAST_3     16 YVLLERQFSVPPGLLF---IMMFNEDNPVFELSFLKTQDSSNISHIGTFE     62
+
+D0NHH4_PHYIT_    192 KNSMKLTGLHIR---WRAGVTFS----------RDTILKTQLERGALEGV    228
+                     |  :...|.|.|   :...:.|.          .:.:|....||      
+YL072_YEAST_3     63 K--VNKDGQHYREFQYTKQLHFPVGPKSTNCEVAEILLHCDWER------    104
+
+D0NHH4_PHYIT_    229 RSTCTTLLKLLRDAN----------TRHQF--------------------    248
+                        ...:|.:.|..|          ||:.|                    
+YL072_YEAST_3    105 ---YINVLSITRTPNVPSGTSFSTRTRYMFRWDDQGQGCILKISFWVDWN    151
+
+D0NHH4_PHYIT_    248 --------------------------------------    248
+                                                           
+YL072_YEAST_3    152 ASSWIKPMVESNCKNGQISATKDLVKLVEEFVEKYVEL    189
+
+
+#---------------------------------------
+#---------------------------------------

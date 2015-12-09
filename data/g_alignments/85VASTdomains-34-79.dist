@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:03
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-4.fasta
+#    [-bsequence] data/fastas/85VASTdomains-80.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q5Z6I4_ORYSJ_8571036
+# 2: Q23QL2_TETTS_311513
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 258
+# Identity:      37/258 (14.3%)
+# Similarity:    68/258 (26.4%)
+# Gaps:         133/258 (51.6%)
+# Score: 53.5
+# 
+#
+#=======================================
+
+Q5Z6I4_ORYSJ_      1 ---------------------------NNESDSFLGIEDAK---------     14
+                                                ||.      .||.|         
+Q23QL2_TETTS_      1 EVSTKAKWTSIDIKNVSAKEIYILFFGNNI------FEDEKQVAYTNFGM     44
+
+Q5Z6I4_ORYSJ_     15 ---------MSEVFSSTKPFDVSTLMSIFEGGPLEHQVMEKIGCMEYSV-     54
+                              ::.|:|...|.......::::...|     |.|...|||. 
+Q23QL2_TETTS_     45 YYNTTVLNELNMVYSDIVPEPPLYFTNLYDNNKL-----EIIDYAEYSTR     89
+
+Q5Z6I4_ORYSJ_     55 ---------SPWESVRADAY-QRQIHYKFDKRLARHEGEVMSTQQKSPLP     94
+                              .|:.....|.: :.:|::...|.:                 
+Q23QL2_TETTS_     90 KCTFTHIIKEPFMPKSCDCFIEEKIYWVSPKEI-----------------    122
+
+Q5Z6I4_ORYSJ_     95 DKNGWLVEEVMTLEGIPVGEYFNLHMRYQL------EQISSKPKACNVQV    138
+                          |:|..:..:|||:..:||..:.||:      :||.::.::.....
+Q23QL2_TETTS_    123 -----LIERELAFQGIPLSSHFNPRVIYQILETGESDQIKTQIRSGYYIH    167
+
+Q5Z6I4_ORYSJ_    139 SIGIAWLKS----------CKNRKKIAQ------EVLSSASSRLKKMFGL    172
+                     .:...|.||          .||.:||::      |:              
+Q23QL2_TETTS_    168 YVKDTWFKSKIDKTSDEENIKNWEKISKLYIKYSEI--------------    203
+
+Q5Z6I4_ORYSJ_    173 LEKELLPA    180
+                             
+Q23QL2_TETTS_    203 --------    203
+
+
+#---------------------------------------
+#---------------------------------------

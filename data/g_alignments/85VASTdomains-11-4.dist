@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:28
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-19.fasta
+#    [-bsequence] data/fastas/85VASTdomains-12.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B9F3V9_ORYSJ_8991075
+# 2: C2GR1_ARATH_236423
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 274
+# Identity:      22/274 ( 8.0%)
+# Similarity:    42/274 (15.3%)
+# Gaps:         183/274 (66.8%)
+# Score: 20.5
+# 
+#
+#=======================================
+
+B9F3V9_ORYSJ_      1 GSLLANEDVKMSEVYSAVLSVDINSLMDMFSGGPLEHKVMQKAGCVDYSP     50
+                                                                       
+C2GR1_ARATH_2      0 --------------------------------------------------      0
+
+B9F3V9_ORYSJ_     51 TEWELLNQNIYQRQISFKFDKILSRFGEASTTQRKYNLANRDGWVIEEVM    100
+                                                 .|..|.....:|..|.|:.:.:
+C2GR1_ARATH_2      1 ----------------------------ESKDQGSEPPSNLSGGVVVDQL     22
+
+B9F3V9_ORYSJ_    101 TLQGVQHEDYSSI----QLKYQMTSTSLKPSTCSIQVLLG----------    136
+                     .:  :...|.:.:    ...:..:.|.|:.:|   :|.:|          
+C2GR1_ARATH_2     23 FM--ISPSDLNIVLFASDSSFYASLTELQGTT---EVQIGPWKAENDGES     67
+
+B9F3V9_ORYSJ_    137 ----IAWLKGAKQQKKVVKNVMSNSANRLREIFSEVEKELASKKG-----    177
+                         :::||.|   .|::|.|.........:...||...|||...     
+C2GR1_ARATH_2     68 VKRVVSYLKAA---TKLIKAVKGTEEQTYLKADGEVYAVLASVATPDVPF    114
+
+B9F3V9_ORYSJ_    177 --------------------------------------------------    177
+                                                                       
+C2GR1_ARATH_2    115 GGTFKVEVLYCISPGPELPSGEQCSRLVVSWRLNFLQSTMMRGMIENGAR    164
+
+B9F3V9_ORYSJ_    177 ------------------------    177
+                                             
+C2GR1_ARATH_2    165 QGLKDNFEQYANLLAQSVKPVDSK    188
+
+
+#---------------------------------------
+#---------------------------------------

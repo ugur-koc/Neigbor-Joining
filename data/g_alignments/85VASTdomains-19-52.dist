@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:39
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-26.fasta
+#    [-bsequence] data/fastas/85VASTdomains-56.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YSP2_YEAST_8411021
+# 2: B8C8I7_THAPS_81294
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 262
+# Identity:      37/262 (14.1%)
+# Similarity:    72/262 (27.5%)
+# Gaps:         129/262 (49.2%)
+# Score: 21.5
+# 
+#
+#=======================================
+
+YSP2_YEAST_84      1 ---------------------------PTTADFKPSNNDHLVIEANINAP     23
+                                                .:..||:....|           
+B8C8I7_THAPS_      1 HCVINQVQLQGLHTAEFFRVFFADDAIYSMRDFQKRRGD-----------     39
+
+YSP2_YEAST_84     24 LGKVVNLLYG-----EDVSYYERILKAQKNFEISPIPNNFLTKKIRDYAY     68
+                         |:::||     |:.:......|..|: .:.|:|.| |||:      
+B8C8I7_THAPS_     40 ----VDVVYGKWRSVENSAGCCTSFKGGKS-TLLPLPAN-LTKE------     77
+
+YSP2_YEAST_84     69 TKPLSGSIGPSKTKCLITDTLEH-YDLEDYVKVLSITKNPDVPSGNIFSV    117
+                                  :.|..:||.| |....|.|...:.:...: |..:..:
+B8C8I7_THAPS_     78 -------------RTLHFNTLTHSYFGPAYAKATKVQRATQL-SNRLLVI    113
+
+YSP2_YEAST_84    118 KTVFLFSWDKNNSTKLTVYNSVD-------WTGKSWIKSMIEKGTFDGVA    160
+                     :          |.|:|......|       |..:: :::.:..|..||.|
+B8C8I7_THAPS_    114 E----------NETQLAEIPFADRFRVVERWCVEA-VRNEMSGGASDGCA    152
+
+YSP2_YEAST_84    161 -------DTTKIMI-------------SEIKKILSDEDSNI---------    181
+                            .|:|:.:             ::|:|..|:..:.:         
+B8C8I7_THAPS_    153 FSQDMALYTSKLTVHAEVIMLRSCTWENQIRKRASETFTEMNNDWVRTAV    202
+
+YSP2_YEAST_84    181 ------------    181
+                                 
+B8C8I7_THAPS_    203 KALRATEHQKQK    214
+
+
+#---------------------------------------
+#---------------------------------------

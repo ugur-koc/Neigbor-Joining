@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:32
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-20.fasta
+#    [-bsequence] data/fastas/85VASTdomains-74.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9SDA2_PHYPA_232412
+# 2: Q4Q507_LEIMA_35214
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 200
+# Identity:      38/200 (19.0%)
+# Similarity:    77/200 (38.5%)
+# Gaps:          39/200 (19.5%)
+# Score: 67.0
+# 
+#
+#=======================================
+
+A9SDA2_PHYPA_      1 VDDFPSPLAGGVVLDQRYAISAKALSSL--------ICKPSSSFFQELLT     42
+                               ....|::..:....|..|        :.:.:::||::...
+Q4Q507_LEIMA_      1 ----------ATRKDKKVMLPQTLLKGLTIQKLWDNVFQDNTNFFKKYHD     40
+
+A9SDA2_PHYPA_     43 VQKTTEYSEEPWK-SVKNDSIERVVSYMKAATKIIKSVKATETHTCRRL-     90
+                     .:..::....||. :|.:.|..|.|| :.|..::.::...|..:..:|. 
+Q4Q507_LEIMA_     41 KRNESKLEIGPWDYAVDHGSGSRTVS-LVAIVEVPRAGTPTPLNQVQRFA     89
+
+A9SDA2_PHYPA_     91 ---DDRG---FVLDISCATPDVPCGTSFLVELQFCVMAERDLPVKEKTCR    134
+                        ...|   .|..||..||::|.|:||..|..|.:.|:.    .:..|.
+Q4Q507_LEIMA_     90 YVNTPEGKLMLVYQISSQTPEMPAGSSFRTEAYFEITADS----ADSDCS    135
+
+A9SDA2_PHYPA_    135 LLISWRIKFLHSTMIKGMIESGARAGIKETYEIFKEILSKYAKPISE---    181
+                     :.|....:.:..:.......:..|| |||....::::::.    |||   
+Q4Q507_LEIMA_    136 IAIWGNCRKMSMSFSAIQYIATPRA-IKEMTSAYRQMVNM----ISEEFC    180
+
+
+#---------------------------------------
+#---------------------------------------

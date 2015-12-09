@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:52
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-7.fasta
+#    [-bsequence] data/fastas/85VASTdomains-55.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_9321154
+# 2: D0NMG0_PHYIT_279489
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 263
+# Identity:      55/263 (20.9%)
+# Similarity:    90/263 (34.2%)
+# Gaps:          92/263 (35.0%)
+# Score: 94.0
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 ----------ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTNTV     40
+                               .|.   |.|..|:.:   ::.||.....|...|..|.:  
+D0NMG0_PHYIT_      1 PLPPDPLLGKMTV---LLDCELRAD---VKRVFDLLWNDGPGQEFSHS--     42
+
+Q22US2_TETTS_     41 YDNFFYYYIENVMKCWN--IQIEKWSPPPPQYFQQQNYPFSEENEKKKEK     88
+                               |:.|..|  |.||.|.            |..:.:.....:
+D0NMG0_PHYIT_     43 ----------NMEKARNIDIDIESWK------------PLDKADAVTAAE     70
+
+Q22US2_TETTS_     89 VQDWIEISQRQVTYDKTI---------PLSGMPFLPKFCKVSEKQKIIFI    129
+                     |:...|||:..   |.|:         |.:..|.||.:...:..|:    
+D0NMG0_PHYIT_     71 VRKGFEISKED---DYTLYRMVRSQHPPKTSFPGLPPYAGCTRTQR----    113
+
+Q22US2_TETTS_    130 SPDELIFELEAYSSGAPMTDTF---------------YHFIRNTFVQLTP    164
+                           |.|:..|:|....|.|               |..:...|| .:.
+D0NMG0_PHYIT_    114 ------FRLDKSSNGGDKWDRFVITELNRMSKIPFSDYFEVEMRFV-FSR    156
+
+Q22US2_TETTS_    165 DTVSY---KVQMDVRFLKSNWFSGTIDSQSQKEGVKSTQEIYKSFQERLT    211
+                     |..:|   :..:.|.|||:.||...|:|.::.|    ::|..:|:.::..
+D0NMG0_PHYIT_    157 DGNNYCHVQAGLVVNFLKATWFKSQINSSTRSE----SKEALESWAKQAI    202
+
+Q22US2_TETTS_    212 QFLQDKNEKRRN-    223
+                     :||    |.:|| 
+D0NMG0_PHYIT_    203 EFL----ESQRNR    211
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:15
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-84.fasta
+#    [-bsequence] data/fastas/85VASTdomains-75.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8LDM5_THAPS_9291109
+# 2: C4LUM2_ENTHI_46249
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 263
+# Identity:      31/263 (11.8%)
+# Similarity:    57/263 (21.7%)
+# Gaps:         141/263 (53.6%)
+# Score: 20.0
+# 
+#
+#=======================================
+
+B8LDM5_THAPS_      1 -----------------------------VGLEVDLP---VGFKRLR---     15
+                                                  .|:..:.|   |...|..   
+C4LUM2_ENTHI_      1 WRRSIIFSEKLKQITKRQKNETIDKNSNDEGILKEEPKHVVTIHRFHKSA     50
+
+B8LDM5_THAPS_     16 ---WALLHSDSKFLKDAFFGPVMNYADITMGSWSKNNND-----------     51
+                        :.|:.|:::.:|..|..  :...::....|....|.           
+C4LUM2_ENTHI_     51 NDLFMLVFSNNETVKQLFDN--IGQKEVKTEGWQNEANGGKILYLSYKGV     98
+
+B8LDM5_THAPS_     52 ---IGLPTTPE-----AVNEEDFLNATLEFSYLMPKSAFVKANMCYATHE     93
+                        ||:.|..|     .:||...:.|.:...:.:|.|::.|........:
+C4LUM2_ENTHI_     99 SSVIGMETRIEEKWEMRMNENGIMIAMVVSVFDIPYSSYFKIESLMKMKD    148
+
+B8LDM5_THAPS_     94 IIYYDDYSLVIK---------------EKTLTPEVPYGNSFIAW------    122
+                     ...|.|  :|:|               |:|...|  |.|.:..|      
+C4LUM2_ENTHI_    149 EGEYCD--IVVKLNVKFMKSTIWKNRIEQTTMKE--YKNKYEEWMKLIGK    194
+
+B8LDM5_THAPS_    123 ----TQYNLVSTGKNNCRMVCSVEAEFPNGPPMVARQIKSGMRSGTAEKF    168
+                         :|:...                                        
+C4LUM2_ENTHI_    195 MIGDSQFEET----------------------------------------    204
+
+B8LDM5_THAPS_    169 VLLGETICRYADA    181
+                                  
+C4LUM2_ENTHI_    204 -------------    204
+
+
+#---------------------------------------
+#---------------------------------------

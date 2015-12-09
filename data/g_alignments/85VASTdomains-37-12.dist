@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:07
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-42.fasta
+#    [-bsequence] data/fastas/85VASTdomains-2.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7M7X5_TETTS_10131226
+# 2: B9FU30_ORYSJ_8491024
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 260
+# Identity:      29/260 (11.2%)
+# Similarity:    68/260 (26.2%)
+# Gaps:         130/260 (50.0%)
+# Score: 44.5
+# 
+#
+#=======================================
+
+I7M7X5_TETTS_      1 KQQSIFEKAQNVSEFEIKFPNATPREIFNILFGLKPYKPQPEGSQEFPNF     50
+                                                                       
+B9FU30_ORYSJ_      0 --------------------------------------------------      0
+
+I7M7X5_TETTS_     51 RFYIFQEFQKDTDIQFQTFNPPPPEWYTNLDCSDKDTVKSSPEI---SNL     97
+                                              .:|:.|....:...|:..:   |.:
+B9FU30_ORYSJ_      1 -------------------------LFTHEDVKMSEIFSSALSVDVESLM     25
+
+I7M7X5_TETTS_     98 EF----KVVHPVREK---IPFGP-------------KVSYCQNK------    121
+                     |.    .:.|.:.:|   |.:.|             ::||..:|      
+B9FU30_ORYSJ_     26 EMFSGGPLEHRMMQKAGCIDYSPTEWELVSRNIYQRQISYKFDKNLSRYG     75
+
+I7M7X5_TETTS_    122 -------EKYFWISAEEFIIEREIFLSKIPYCDYFTIRFQYNISQVQDQT    164
+                            ::|..::.|.:.||..:.|..:...|.|.::.:|.:..|..:.
+B9FU30_ORYSJ_     76 GEATTTQQRYALVNQEGWAIEEVMSLQGVLLGDCFNVQMKYTVVNVPSKP    125
+
+I7M7X5_TETTS_    165 R---ILIKLYVHFMKSTTFKGRIENGSLSENTEVINTVF-------TPQA    204
+                     .   :.:.|.:.::|||..:.:|....:|.::..:..:|       |.::
+B9FU30_ORYSJ_    126 NTCSVQVLLGIAWLKSTKQQKKITKSVISNSSIRLKELFAEVEKDLTSRS    175
+
+I7M7X5_TETTS_    205 QIAIQNYQKF    214
+                     .         
+B9FU30_ORYSJ_    176 G---------    176
+
+
+#---------------------------------------
+#---------------------------------------

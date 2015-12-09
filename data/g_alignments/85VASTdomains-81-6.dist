@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:11
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-14.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: A9TQ08_PHYPA_235415
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 270
+# Identity:      48/270 (17.8%)
+# Similarity:    80/270 (29.6%)
+# Gaps:         111/270 (41.1%)
+# Score: 69.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSV--------SEFLEMVTPRSTRLKCKM     42
+                                 |.....:.|..|        |:||              
+A9TQ08_PHYPA_      1 ------------EDFPPPLAGGVVLDQRYAVSSKFL--------------     24
+
+D0NHH4_PHYIT_     43 ERAKLATSAPVGSASS----SASTGEKDSDDVLRDWHSHPRFGLVRALSY     88
+                            ||.:..|.|    ...|.:|.::.:...|.|.....:.|.::|
+A9TQ08_PHYPA_     25 -------SALILKAGSPFVQELLTVQKTTEYIEGPWKSEQSGAIQRVVTY     67
+
+D0NHH4_PHYIT_     89 HPDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDS--LEDELQ    136
+                      ..|||                ..:|||...:..:|..:|:.  :.|   
+A9TQ08_PHYPA_     68 -MKAAT----------------KMIKAVKATETQTCRRQDEKGFVVD---     97
+
+D0NHH4_PHYIT_    137 GDQKLPHRASLRSKIYTLSIPYSNCFSIEV---IVDVEDIPVREDSDMNT    183
+                                 ....|..:||..||.:|:   |:...|.|..|      
+A9TQ08_PHYPA_     98 ------------VSCATPDVPYGGCFVVELQFCILAGPDQPSNE------    129
+
+D0NHH4_PHYIT_    184 EDKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCT    233
+                                 |...|.|.|:  :.|.:.|::::.:|.||..|::.|  
+A9TQ08_PHYPA_    130 ------------KSCRLQISWK--LNFLQSTMMRSMIENGARAGIKET--    163
+
+D0NHH4_PHYIT_    234 TLLKLLRDANTRHQF-----    248
+                       .::.|.....|..     
+A9TQ08_PHYPA_    164 --YEVYRQVLANHAKSVSEE    181
+
+
+#---------------------------------------
+#---------------------------------------

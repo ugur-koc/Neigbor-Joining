@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:13
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-75.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: C4LUM2_ENTHI_46249
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 303
+# Identity:      35/303 (11.6%)
+# Similarity:    67/303 (22.1%)
+# Gaps:         154/303 (50.8%)
+# Score: 44.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+C4LUM2_ENTHI_      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFG-LVRALSYHPDAATIPTMG     99
+                                            |.....|. .::.::......||....
+C4LUM2_ENTHI_      1 -----------------------WRRSIIFSEKLKQITKRQKNETIDKNS     27
+
+D0NHH4_PHYIT_    100 SSRGTGKNVTLNSMKAVTIEQYHSCT------------------------    125
+                     :..|..|.   .....|||.::|...                        
+C4LUM2_ENTHI_     28 NDEGILKE---EPKHVVTIHRFHKSANDLFMLVFSNNETVKQLFDNIGQK     74
+
+D0NHH4_PHYIT_    126 -IEDDSLEDELQG-----------------DQKLPHRASLRSK-------    150
+                      ::.:..::|..|                 :.::..:..:|..       
+C4LUM2_ENTHI_     75 EVKTEGWQNEANGGKILYLSYKGVSSVIGMETRIEEKWEMRMNENGIMIA    124
+
+D0NHH4_PHYIT_    151 --IYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKSSSFDKNSMKLT    198
+                       :....||||:.|.||             |.|..:|:....|       
+C4LUM2_ENTHI_    125 MVVSVFDIPYSSYFKIE-------------SLMKMKDEGEYCD-------    154
+
+D0NHH4_PHYIT_    199 GLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLKLLRDANTRHQF    248
+                        |..:..|.|.:.||.|.::|:..::..::.....:||:.......||
+C4LUM2_ENTHI_    155 ---IVVKLNVKFMKSTIWKNRIEQTTMKEYKNKYEEWMKLIGKMIGDSQF    201
+
+D0NHH4_PHYIT_    248 ---    248
+                        
+C4LUM2_ENTHI_    202 EET    204
+
+
+#---------------------------------------
+#---------------------------------------

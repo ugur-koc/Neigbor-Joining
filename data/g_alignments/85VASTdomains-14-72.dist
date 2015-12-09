@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:33
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-21.fasta
+#    [-bsequence] data/fastas/85VASTdomains-74.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9SDA2_PHYPA_8171004
+# 2: Q4Q507_LEIMA_35214
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 296
+# Identity:      18/296 ( 6.1%)
+# Similarity:    36/296 (12.2%)
+# Gaps:         224/296 (75.7%)
+# Score: 29.0
+# 
+#
+#=======================================
+
+A9SDA2_PHYPA_      0 --------------------------------------------------      0
+                                                                       
+Q4Q507_LEIMA_      1 ATRKDKKVMLPQTLLKGLTIQKLWDNVFQDNTNFFKKYHDKRNESKLEIG     50
+
+A9SDA2_PHYPA_      0 --------------------------------------------------      0
+                                                                       
+Q4Q507_LEIMA_     51 PWDYAVDHGSGSRTVSLVAIVEVPRAGTPTPLNQVQRFAYVNTPEGKLML    100
+
+A9SDA2_PHYPA_      1 -----QSCTDSFAGMEEANMAQVCAFEI---PLMSDCAMSLFEQGGLEEA     42
+                          ....:..||   ::......|||   ...|||:::::   |....
+Q4Q507_LEIMA_    101 VYQISSQTPEMPAG---SSFRTEAYFEITADSADSDCSIAIW---GNCRK    144
+
+A9SDA2_PHYPA_     43 MAEKMGYLNYVSTPWERLEGQNGVQRRHTSYHLNRQISQFGSKVSCIQQR     92
+                     |:.....:.|::||       ..::...::|   ||:....|:..|    
+Q4Q507_LEIMA_    145 MSMSFSAIQYIATP-------RAIKEMTSAY---RQMVNMISEEFC----    180
+
+A9SDA2_PHYPA_     93 TMSDSMKSCVLDEVITLHDVPFGDHFQVQVRREIETTSTNPPQSFVKASV    142
+                                                                       
+Q4Q507_LEIMA_    180 --------------------------------------------------    180
+
+A9SDA2_PHYPA_    143 GVSWHKNTEFKKKITKNVHDHMAKEIREVMNVCVKEVKARIKDKRI    188
+                                                                   
+Q4Q507_LEIMA_    180 ----------------------------------------------    180
+
+
+#---------------------------------------
+#---------------------------------------

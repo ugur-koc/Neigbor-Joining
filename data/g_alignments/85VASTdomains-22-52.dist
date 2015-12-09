@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:44
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-29.fasta
+#    [-bsequence] data/fastas/85VASTdomains-56.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9RSX7_PHYPA_807992
+# 2: B8C8I7_THAPS_81294
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 260
+# Identity:      39/260 (15.0%)
+# Similarity:    60/260 (23.1%)
+# Gaps:         120/260 (46.2%)
+# Score: 41.0
+# 
+#
+#=======================================
+
+A9RSX7_PHYPA_      0 --------------------------------------------------      0
+                                                                       
+B8C8I7_THAPS_      1 HCVINQVQLQGLHTAEFFRVFFADDAIYSMRDFQKRRGDVDVVYGKWRSV     50
+
+A9RSX7_PHYPA_      1 ERQADDSQPFLGFEQTIMPEVLVIEIPITAESVL------------AAVN     38
+                     |..|.....|.|.:.|::|    :...:|.|..|            |...
+B8C8I7_THAPS_     51 ENSAGCCTSFKGGKSTLLP----LPANLTKERTLHFNTLTHSYFGPAYAK     96
+
+A9RSX7_PHYPA_     39 NTKVD---------LSISEKLGLAEYRATPWDHVEE--TIGAHQRELSYK     77
+                     .|||.         |.|..:..|||........|.|  .:.|.:.|:|  
+B8C8I7_THAPS_     97 ATKVQRATQLSNRLLVIENETQLAEIPFADRFRVVERWCVEAVRNEMS--    144
+
+A9RSX7_PHYPA_     78 LNRQISQFGSRVSCNQQQVVTDDLKKLVI-KEVLRYHDMPFGDHFEVHVK    126
+                            .|:...|...|.:.....||.: .||:......:.:.......
+B8C8I7_THAPS_    145 -------GGASDGCAFSQDMALYTSKLTVHAEVIMLRSCTWENQIRKRAS    187
+
+A9RSX7_PHYPA_    127 RELETLSTNPVNTQVKAFVGVVWHKSTEAQKKITKNIYEHMAWQIQELID    176
+                     .....::.:.|.|.|||.      ::||.||:.                 
+B8C8I7_THAPS_    188 ETFTEMNNDWVRTAVKAL------RATEHQKQK-----------------    214
+
+A9RSX7_PHYPA_    177 ITVAEVFERS    186
+                               
+B8C8I7_THAPS_    214 ----------    214
+
+
+#---------------------------------------
+#---------------------------------------

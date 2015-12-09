@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:33
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-21.fasta
+#    [-bsequence] data/fastas/85VASTdomains-9.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9SDA2_PHYPA_8171004
+# 2: Q22US2_TETTS_14441649
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 282
+# Identity:      29/282 (10.3%)
+# Similarity:    47/282 (16.7%)
+# Gaps:         170/282 (60.3%)
+# Score: 27.0
+# 
+#
+#=======================================
+
+A9SDA2_PHYPA_      1 QSCTDSFAGMEEANMAQVCAFEIPLMSDCAMSLFEQGGLEEAMAEKMGYL     50
+                                                                       
+Q22US2_TETTS_      0 --------------------------------------------------      0
+
+A9SDA2_PHYPA_     51 NYVSTPWERLEGQNGVQRRHTSYHLNRQ-------------------ISQ     81
+                               |.....:.:...|..|.|                   ..:
+Q22US2_TETTS_      1 ----------EPNEKYKHKLIDYTFNYQNQAINLQQVFNFFFSDSLKFKE     40
+
+A9SDA2_PHYPA_     82 FGSKVSCIQQRTMSDSMKSCVLDEVITLHDVPFGDHFQVQVR--------    123
+                     :......|::..|.|      .|...||...|...:||.:.:        
+Q22US2_TETTS_     41 YSDFQEYIKRGKMGD------YDYQSTLFSPPIPKYFQFKSQRLDEDLIA     84
+
+A9SDA2_PHYPA_    124 ------REIETTSTNPPQSF--------VKASVGVSWHKN-------TEF    152
+                           ||:..|...||.:.        |:....|.|..|       ..|
+Q22US2_TETTS_     85 SPDYSEREVRLTHPLPPSNIPFMPKTCQVREVTRVYWVSNDTIVVNLEAF    134
+
+A9SDA2_PHYPA_    153 KKKITKNVHDHMAKEIREVMNVCVKEVKARIKDKRI--------------    188
+                     ...|.|.          :...|.|:.:..:|.::.|              
+Q22US2_TETTS_    135 TSGIPKG----------DSFTVRVRSIFKQIDEENIHFSQYSYVHFLEST    174
+
+A9SDA2_PHYPA_    188 --------------------------------    188
+                                                     
+Q22US2_TETTS_    175 FLQGKIENGTIEQSHIAVKNCVLPAYQEAFQM    206
+
+
+#---------------------------------------
+#---------------------------------------

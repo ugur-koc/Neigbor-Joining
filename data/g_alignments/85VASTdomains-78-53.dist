@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:08
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-8.fasta
+#    [-bsequence] data/fastas/85VASTdomains-57.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_12111402
+# 2: Q22XZ6_TETTS_144333
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 273
+# Identity:      29/273 (10.6%)
+# Similarity:    60/273 (22.0%)
+# Gaps:         164/273 (60.1%)
+# Score: 26.5
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 KFSDPVNGLKVNEVFKSFSDVYEYLKIKKFNDKNYQATKFLPPVPSFIHE     50
+                                                                       
+Q22XZ6_TETTS_      0 --------------------------------------------------      0
+
+Q22US2_TETTS_     51 VSSSEEEILQKIINSPHYSEREIKFTHPLPPSNI-PFMPKECQVKEVLKA     99
+                      ..|:.|||     :|..||...:....:.|.:: .|..|          
+Q22XZ6_TETTS_      1 -EQSDVEIL-----NPETSEENKELLRCILPVSVDAFFEK----------     34
+
+Q22US2_TETTS_    100 YYVSDQMLILNIEAFTSGIPKGDSFSVRVR--YQFEQIDPFT--------    139
+                      ::.|..:.    ::...:.|..|..:::.  .:.|::..||        
+Q22XZ6_TETTS_     35 -FIGDNAIF----SYGQHMEKNGSTDIKISEWAENEELKCFTRECNLVIK     79
+
+Q22US2_TETTS_    140 ---VQLQQKSYLHFMQSTFLQGQ--IESNTIEQQRISAKVI-IPFFEQIV    183
+                        |.|:..|....:|:...:|:  |.|:|       :||. :|:     
+Q22XZ6_TETTS_     80 VSGVPLRDTSRFQKIQTYKKEGENLIISST-------SKVFDVPY-----    117
+
+Q22US2_TETTS_    184 SQYISNKQQ-----------------------------------------    192
+                     |.|.:.:::                                         
+Q22XZ6_TETTS_    118 SGYFTTEEKWEISPVEGSSDKCLLVCKGWVTFNKNTMMKKTITQRNEQGL    167
+
+Q22US2_TETTS_    192 -----------------------    192
+                                            
+Q22XZ6_TETTS_    168 KEDYEVWIGRIRKILQPKKPEEN    190
+
+
+#---------------------------------------
+#---------------------------------------

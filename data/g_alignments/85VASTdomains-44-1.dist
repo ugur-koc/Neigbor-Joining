@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:18
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-49.fasta
+#    [-bsequence] data/fastas/85VASTdomains-1.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4M0I0_ENTHI_381531
+# 2: B9FU30_ORYSJ_284472
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 271
+# Identity:      20/271 ( 7.4%)
+# Similarity:    30/271 (11.1%)
+# Gaps:         202/271 (74.5%)
+# Score: 16.5
+# 
+#
+#=======================================
+
+C4M0I0_ENTHI_      0 --------------------------------------------------      0
+                                                                       
+B9FU30_ORYSJ_      1 ESKDQGCEMPANLPGGVLIDESYVAAPTELNSLLFSKNSDFWPAVSELQG     50
+
+C4M0I0_ENTHI_      0 --------------------------------------------------      0
+                                                                       
+B9FU30_ORYSJ_     51 TSGFQIEPWKLDNNETCLQRTLTYTKAASKLVKAVKATEEQKYLKAAGNS    100
+
+C4M0I0_ENTHI_      1 --------DDEVPEPKFFKQPKMKTIIETTIPITPLQFFNTFVENKTRSK     42
+                             ..:||....||       ||....|||....::  |.:|...
+B9FU30_ORYSJ_    101 FAVHSVVSTPDVPCGGCFK-------IEILYCITPGPSLSS--EEQTSHL    141
+
+C4M0I0_ENTHI_     43 QIKLREELGQTN-----IEMTDWKSIQNGF-------TRNINTIEPVDTP     80
+                     .:..|....|:.     ||....:.:..||       ::.|...|..|  
+B9FU30_ORYSJ_    142 TVSWRVNFVQSTMMKGMIESGAKQGMAEGFAHFSEILSQKIKVAEADD--    189
+
+C4M0I0_ENTHI_     81 NGKVTTRAQIQQFYQLKKSALIIGSIRNYLDSQDYYSTETRLLLNLSKNN    130
+                                                                       
+B9FU30_ORYSJ_    189 --------------------------------------------------    189
+
+C4M0I0_ENTHI_    131 ESILTIQANILLKKKGDEKEK    151
+                                          
+B9FU30_ORYSJ_    189 ---------------------    189
+
+
+#---------------------------------------
+#---------------------------------------

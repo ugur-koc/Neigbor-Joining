@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:23
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-51.fasta
+#    [-bsequence] data/fastas/85VASTdomains-42.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q8MRR1_DROME_41220
+# 2: I7M7X5_TETTS_10131226
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 266
+# Identity:      42/266 (15.8%)
+# Similarity:    65/266 (24.4%)
+# Gaps:         138/266 (51.9%)
+# Score: 45.0
+# 
+#
+#=======================================
+
+Q8MRR1_DROME_      1 ------------------FVPTTECTSTHEGRQIVHTILPINVDTLFNLL     32
+                                       |...|.       |:|            ||:|
+I7M7X5_TETTS_      1 KQQSIFEKAQNVSEFEIKFPNATP-------REI------------FNIL     31
+
+Q8MRR1_DROME_     33 FSKSKFITD--------------FHAMRKSTDLVL-------GEWTKNEE     61
+                     |....:...              |...:|.||:..       .||..|.:
+I7M7X5_TETTS_     32 FGLKPYKPQPEGSQEFPNFRFYIFQEFQKDTDIQFQTFNPPPPEWYTNLD     81
+
+Q8MRR1_DROME_     62 GLQVRTVNVTVQLA-------------ASVGPKTS-----------KVTE     87
+                     .....||..:.:::             ...|||.|           ...|
+I7M7X5_TETTS_     82 CSDKDTVKSSPEISNLEFKVVHPVREKIPFGPKVSYCQNKEKYFWISAEE    131
+
+Q8MRR1_DROME_     88 YQTQRE--CSKPGELYSIDVNSVNAGIPYAESFSVLIHFCLARTVDDHTM    135
+                     :..:||  .||               |||.:.|::...:.::: |.|.|.
+I7M7X5_TETTS_    132 FIIEREIFLSK---------------IPYCDYFTIRFQYNISQ-VQDQTR    165
+
+Q8MRR1_DROME_    136 LSIHTQIKYKKSIWGVVKGFIEKNTWAGLEDFFGAQLHALQSETC-----    180
+                     :.|...:.:.||.  ..||.||..:               .||..     
+I7M7X5_TETTS_    166 ILIKLYVHFMKST--TFKGRIENGS---------------LSENTEVINT    198
+
+Q8MRR1_DROME_    180 ----------------    180
+                                     
+I7M7X5_TETTS_    199 VFTPQAQIAIQNYQKF    214
+
+
+#---------------------------------------
+#---------------------------------------

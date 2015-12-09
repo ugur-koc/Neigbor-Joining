@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:52
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-7.fasta
+#    [-bsequence] data/fastas/85VASTdomains-41.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_9321154
+# 2: Q8W4D4_ARATH_391576
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 267
+# Identity:      47/267 (17.6%)
+# Similarity:    75/267 (28.1%)
+# Gaps:         125/267 (46.8%)
+# Score: 42.5
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      1 ETFKFELCDVILKGE---NI-------TIRDVFQACLGDFQYQNPSTNTV     40
+                      ..||:   ..:|.|   ||       |...|....|.|        ::.
+Q8W4D4_ARATH_      1 -PVKFQ---AFIKEEVLVNIYNDVFASTPEQVLNVLLAD--------DST     38
+
+Q22US2_TETTS_     41 YDNFFYYYIENVMKCWNIQIEKWSPPPPQYFQQQNYPFSEENEKKKEKVQ     90
+                     |.|.:    .:..|..|:.||.|..             :||.:       
+Q8W4D4_ARATH_     39 YTNEY----RSARKDKNLNIEPWHT-------------AEEYD-------     64
+
+Q22US2_TETTS_     91 DWIEISQRQVTYDKTIPLSGMPFLPKFCKVSEKQKIIFISPDE--LIFE-    137
+                            .||...|...:...|..|....|:|.|.:: :|||:  |:|| 
+Q8W4D4_ARATH_     65 -------GQVREIKFRSICNSPMCPPDTAVTEWQHVV-LSPDKKVLVFET    106
+
+Q22US2_TETTS_    138 --------------------LEAYSSGAPMTD--TFYHFIRNTFVQ--LT    163
+                                         |||....:.:.|  ...||.:...:|  :.
+Q8W4D4_ARATH_    107 VQQPHDVPFGSYFEVHCRWRLEAKDETSSVIDIRVGVHFKKWCLMQSKIK    156
+
+Q22US2_TETTS_    164 PDTV-SYKVQMDV------RFLKSNWFSGTIDSQSQKEGVKSTQEIYKSF    206
+                     ...: .||.:::|      .:|||:..|.:                    
+Q8W4D4_ARATH_    157 AGAIDEYKKEVEVMLEVALSYLKSHSSSSS--------------------    186
+
+Q22US2_TETTS_    207 QERLTQFLQDKNEKRRN    223
+                                      
+Q8W4D4_ARATH_    186 -----------------    186
+
+
+#---------------------------------------
+#---------------------------------------

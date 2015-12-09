@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:33
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-21.fasta
+#    [-bsequence] data/fastas/85VASTdomains-63.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9SDA2_PHYPA_8171004
+# 2: Q55CZ7_DICDI_2179
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 303
+# Identity:      19/303 ( 6.3%)
+# Similarity:    34/303 (11.2%)
+# Gaps:         240/303 (79.2%)
+# Score: 24.0
+# 
+#
+#=======================================
+
+A9SDA2_PHYPA_      0 --------------------------------------------------      0
+                                                                       
+Q55CZ7_DICDI_      1 KILNLEEEFRISVETFFTFFFENANFKQKYHSSRGDNQIEVKAWTPTSDN     50
+
+A9SDA2_PHYPA_      0 --------------------------------------------------      0
+                                                                       
+Q55CZ7_DICDI_     51 RYTREVSFCSFISNNPVINRLVGDKAKVKEVQHYKYIENGSLYVSSETFF    100
+
+A9SDA2_PHYPA_      1 --QSCTDSFAGMEEANMAQV------CAFEIPLMSDCAMSLFEQGGLEEA     42
+                       .|...||:.:.|..::.:      |...|.:.::...|:| :|.||  
+Q55CZ7_DICDI_    101 DGSSIGKSFSSVSEWTVSPISNPLPGCKVVIVVKNNYNGSMF-KGVLE--    147
+
+A9SDA2_PHYPA_     43 MAEKMGYLNYVS-------TPWERLEGQNGVQRRHTSYHLNRQISQFGSK     85
+                             |:|.       ..|..|     |:::...|..|.|:      
+Q55CZ7_DICDI_    148 --------NWVHDTTEDSFKQWLTL-----VRQQVEEYEKNEQL------    178
+
+A9SDA2_PHYPA_     86 VSCIQQRTMSDSMKSCVLDEVITLHDVPFGDHFQVQVRREIETTSTNPPQ    135
+                                                                       
+Q55CZ7_DICDI_    178 --------------------------------------------------    178
+
+A9SDA2_PHYPA_    136 SFVKASVGVSWHKNTEFKKKITKNVHDHMAKEIREVMNVCVKEVKARIKD    185
+                                                                       
+Q55CZ7_DICDI_    178 --------------------------------------------------    178
+
+A9SDA2_PHYPA_    186 KRI    188
+                        
+Q55CZ7_DICDI_    178 ---    178
+
+
+#---------------------------------------
+#---------------------------------------

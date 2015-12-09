@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:11
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-81.fasta
+#    [-bsequence] data/fastas/85VASTdomains-76.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q7RWT3_NEUCR_9451126
+# 2: I7MCY9_TETTS_788993
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 316
+# Identity:      24/316 ( 7.6%)
+# Similarity:    36/316 (11.4%)
+# Gaps:         244/316 (77.2%)
+# Score: 24.0
+# 
+#
+#=======================================
+
+Q7RWT3_NEUCR_      0 --------------------------------------------------      0
+                                                                       
+I7MCY9_TETTS_      1 KHYLSNKDFETFELVLENTHTREVFIEIFSDKQYKDYQSFSHFYQQTYIK     50
+
+Q7RWT3_NEUCR_      1 ------------------------------------------HPVYFEPE      8
+                                                               |||. |..
+I7MCY9_TETTS_     51 DTNIDITPWQPAPSSIYTDVSSTNYQEFLESNQFSTKTNQFIHPVR-EKV     99
+
+Q7RWT3_NEUCR_      9 DMG------------------KPVAERNFEIS---AKACF----------     27
+                     .||                  :.:.:|.|::|   ...||          
+I7MCY9_TETTS_    100 PMGPKTCQVNSEEKIFWLSSEEILIQREFKVSKVPMADCFTTQNFYHIQQ    149
+
+Q7RWT3_NEUCR_     28 ------HVLFG-----DKSFIFPKLYFERRAKEIAQGPWELKDHGGKMAR     66
+                           .:.||     .||.:|..|..:....|..: .|..| ..|.:..
+I7MCY9_TETTS_    150 TGPTTVKITFGFFINFVKSSMFKSLIVKSSGSENRE-TWNGK-FKGLITE    197
+
+Q7RWT3_NEUCR_     67 QFKFKVDKADMLGRKTDANIVDTQNIDIFNDHITYVVTHVKTPWHLPHSH    116
+                     |.||..::.                                         
+I7MCY9_TETTS_    198 QIKFAQNQR-----------------------------------------    206
+
+Q7RWT3_NEUCR_    117 AFKLITKVVITHVAKSKCKLAIYTKADWSKAPAIAKNMVERQALDDAAND    166
+                                                                       
+I7MCY9_TETTS_    206 --------------------------------------------------    206
+
+Q7RWT3_NEUCR_    167 AEELAEVATDQVRRLG    182
+                                     
+I7MCY9_TETTS_    206 ----------------    206
+
+
+#---------------------------------------
+#---------------------------------------

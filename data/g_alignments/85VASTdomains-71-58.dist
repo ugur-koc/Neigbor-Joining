@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:58
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-73.fasta
+#    [-bsequence] data/fastas/85VASTdomains-61.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q8VZF8_ARATH_257370
+# 2: V5IMN0_NEUCR_493676
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 195
+# Identity:      16/195 ( 8.2%)
+# Similarity:    43/195 (22.1%)
+# Gaps:          92/195 (47.2%)
+# Score: 24.5
+# 
+#
+#=======================================
+
+Q8VZF8_ARATH_      1 FNWKPEDTDAPKLSSDFTKV-AEAKFSIPVEEFFRLFFSDGAVSFVESFH     49
+                            |:....::.:.:| .:.....|:.:.:.|.|...:.:::..:.
+V5IMN0_NEUCR_      1 -------TECGDAATHYDRVIGDDVVPAPLGKVYNLLFGAPSSAWMTKWL     43
+
+Q8VZF8_ARATH_     50 KNCGDKEFRCTSWQPHEKLG-----HTRNVSFQHPIKIYFGAKFGGC---     91
+                     .|    :.:|......:|.|     .||..::..|:....|.|...|   
+V5IMN0_NEUCR_     44 LN----DQKCFEINMDDKKGLNNEQKTRTFNYIKPLNASIGPKQTKCMVT     89
+
+Q8VZF8_ARATH_     92 QESQKFRMYRNSHLVIETSHRSA---------------------------    114
+                     ::.......:..::.:.|.:...                           
+V5IMN0_NEUCR_     90 EQLDNLDFEKAVNVTVSTQNPDVPNGNIFVVKTKYCLSWAENNATRVQIN    139
+
+Q8VZF8_ARATH_    114 ---------------------------------------------    114
+                                                                  
+V5IMN0_NEUCR_    140 CTIEWSGKSWLKGAIERGANEGQAQYAKDLFVALKAAVSSRPRSN    184
+
+
+#---------------------------------------
+#---------------------------------------

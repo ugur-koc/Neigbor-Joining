@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:03
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-76.fasta
+#    [-bsequence] data/fastas/85VASTdomains-78.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7MCY9_TETTS_788993
+# 2: YFE2_YEAST_402586
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 260
+# Identity:      38/260 (14.6%)
+# Similarity:    71/260 (27.3%)
+# Gaps:         129/260 (49.6%)
+# Score: 72.0
+# 
+#
+#=======================================
+
+I7MCY9_TETTS_      1 KHYLSNKDFETFELVLENTHTREVFIEIFSDKQYKDYQSFSHFYQQTYIK     50
+                                                                       
+YFE2_YEAST_40      0 --------------------------------------------------      0
+
+I7MCY9_TETTS_     51 DTNIDITPWQP---------------APSSIYTDVSSTNYQEFL------     79
+                            |.:|               ||..::..:.::...|||      
+YFE2_YEAST_40      1 -------PAEPMANNEFVLKELPFDCAPGILFEIMFNSEQNEFLLDFLRG     43
+
+I7MCY9_TETTS_     80 -ESNQFSTKTN-------------QFIHPVREKVPMGPK--TCQVNSEEK    113
+                      |.:|.:|..|             ::.:......|.|||  ||.|     
+YFE2_YEAST_40     44 QEGSQITTIPNFTSIDGSSMTLKREYSYEKALHFPAGPKSTTCYV-----     88
+
+I7MCY9_TETTS_    114 IFWLSSEEILIQRE----------FKVSKVPMADCFTTQNFYHIQQTGPT    153
+                           .|::.:::          .:...||....|:|:..|.|:.....
+YFE2_YEAST_40     89 ------AEVIKRKDPDTYYEVISSIRTPNVPSGGSFSTKTRYLIRWNDEI    132
+
+I7MCY9_TETTS_    154 TVKITFGFFINFVKSSMFKSLIVKSSGSENRETWNGKFKGL-ITEQI--K    200
+                     |..:...|::.:..||..|.::  .:|.:     ||:.:.. :.|:|  |
+YFE2_YEAST_40    133 TCLLRVSFWVEWTGSSWIKGMV--ENGCK-----NGQLEAAQLMERILSK    175
+
+I7MCY9_TETTS_    201 FAQNQR----    206
+                     |.:|..    
+YFE2_YEAST_40    176 FIKNNVEECQ    185
+
+
+#---------------------------------------
+#---------------------------------------

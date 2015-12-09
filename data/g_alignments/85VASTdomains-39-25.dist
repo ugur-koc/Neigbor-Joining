@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:10
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-44.fasta
+#    [-bsequence] data/fastas/85VASTdomains-31.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q2MGF5_CAEEL_57244
+# 2: YHO0_YEAST_751934
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 201
+# Identity:      36/201 (17.9%)
+# Similarity:    80/201 (39.8%)
+# Gaps:          30/201 (14.9%)
+# Score: 68.0
+# 
+#
+#=======================================
+
+Q2MGF5_CAEEL_      1 DEIIEEVPCPCSEHFGRLIMDKEFKVSVEKFYELLF-TDNEFLTMLNQKT     49
+                        ....|.|..    :|:.:.....|:.:...:|| .|..::..:.:..
+YHO0_YEAST_75      1 ---TVYKPAPNE----KLVNESTIHASLGRVVNILFGKDVSYIMAILKAQ     43
+
+Q2MGF5_CAEEL_     50 KTAEYVAATWVRD----HQGDNTRTCTYTVSLAHAMAP---KAIIVNEKQ     92
+                     |.::......:.|    .:| ..|..:|..:...|:.|   |.:|.   :
+YHO0_YEAST_75     44 KNSDISPIPVLVDSPTVSEG-KKRDYSYVKTTPGAIGPGKTKCMIT---E     89
+
+Q2MGF5_CAEEL_     93 ILTHYPNPKQGIMMQKETQNSGVPYSDNFTVNCRYCISRTGPTSCRIKVH    142
+                     .:.|: |.::.:.:.:.|:...||..::|.|...|.:|.......::|  
+YHO0_YEAST_75     90 TIQHF-NLEEYVQVLQTTKTPDVPSGNSFYVRTVYLLSWANNNETKLK--    136
+
+Q2MGF5_CAEEL_    143 GGVMYKKSTW---AVVKTFIEKGTHQGLDEHYQLLSKLVDEYAANHPDE-    188
+                        :|....|   :::|:.|||||..|:.:..::|.:.:.........: 
+YHO0_YEAST_75    137 ---LYVSVEWTGKSLIKSPIEKGTFDGVTDATKILVEELGNILTRSATKR    183
+
+Q2MGF5_CAEEL_    188 -    188
+                      
+YHO0_YEAST_75    184 K    184
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:13
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-78.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: YFE2_YEAST_402586
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 299
+# Identity:      38/299 (12.7%)
+# Similarity:    66/299 (22.1%)
+# Gaps:         165/299 (55.2%)
+# Score: 39.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+YFE2_YEAST_40      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPT--M     98
+                                                                  |.  |
+YFE2_YEAST_40      1 ---------------------------------------------PAEPM      5
+
+D0NHH4_PHYIT_     99 GSSRGTGKNVTLNSMKAVTIE-QYHSCTIEDDSLEDELQGDQ-----KLP    142
+                     .::....|.:..:....:..| .::|  .:::.|.|.|:|.:     .:|
+YFE2_YEAST_40      6 ANNEFVLKELPFDCAPGILFEIMFNS--EQNEFLLDFLRGQEGSQITTIP     53
+
+D0NHH4_PHYIT_    143 HRASLRSKIYTLSIPYS--------------NCFSIEVIVDVEDIPVRED    178
+                     :..|:.....||...||              .|:..|||       .|:|
+YFE2_YEAST_40     54 NFTSIDGSSMTLKREYSYEKALHFPAGPKSTTCYVAEVI-------KRKD     96
+
+D0NHH4_PHYIT_    179 SDMNTEDKSS----------SFDKNSMKLTGLHIRWRAGVT---------    209
+                     .|...|..||          ||...:..|    |||...:|         
+YFE2_YEAST_40     97 PDTYYEVISSIRTPNVPSGGSFSTKTRYL----IRWNDEITCLLRVSFWV    142
+
+D0NHH4_PHYIT_    210 -FSRDTILKTQLERGALEGVRSTCTTLLKLLRDANTRHQF---------    248
+                      ::..:.:|..:|.|...|.......:.::|      .:|         
+YFE2_YEAST_40    143 EWTGSSWIKGMVENGCKNGQLEAAQLMERIL------SKFIKNNVEECQ    185
+
+
+#---------------------------------------
+#---------------------------------------

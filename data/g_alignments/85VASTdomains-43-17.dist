@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:17
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-48.fasta
+#    [-bsequence] data/fastas/85VASTdomains-24.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: C4M0I0_ENTHI_201371
+# 2: Q7XKT6_ORYSJ_248436
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 231
+# Identity:      35/231 (15.2%)
+# Similarity:    63/231 (27.3%)
+# Gaps:         102/231 (44.2%)
+# Score: 63.5
+# 
+#
+#=======================================
+
+C4M0I0_ENTHI_      1 TEFQPGGETDLDCSVKEFYEKFVRNEAKEKFKEILAEKELTNINVSDWEV     50
+                                                      |:..|     ::.|...
+Q7XKT6_ORYSJ_      1 ---------------------------------IMKSK-----SIPDMPE     12
+
+C4M0I0_ENTHI_     51 SEQFGFVRSQDFIVP---LKGIPIGPSS----------------------     75
+                     ....|.:....::|.   |..:..||.|                      
+Q7XKT6_ORYSJ_     13 DLNGGVMFDHTYLVDSKNLNSLIFGPDSQFSKELRELQGTMDYEEQPWTW     62
+
+C4M0I0_ENTHI_     76 -----------------------AHAIVNEIYYF--EGDNLIICSTNQTP    100
+                                            |...:.|..|.  :|.:.:|.:..:||
+Q7XKT6_ORYSJ_     63 NNNNPPSLTRTCQYTKGATKFMKAVKTIEEQTYLKADGKSYVIMTRVRTP    112
+
+C4M0I0_ENTHI_    101 DVPYGDSFK--LEFKTTISPK---GEKQCHFVEDFAVVFLKKVMLKGTIE    145
+                     :||:|:.|:  :.:|....|:   .|...|....:.|.||:..|:|..||
+Q7XKT6_ORYSJ_    113 EVPFGNCFEVVMLYKIIHYPELSSSEGMSHLTVSYNVEFLQSTMMKSMIE    162
+
+C4M0I0_ENTHI_    146 SQGVNNAKKDIDVMIKKYIEKISGKP-----    171
+                     ....:..|::.:    .|.|.:|...     
+Q7XKT6_ORYSJ_    163 GSVRDGLKENFE----SYAEILSRHVKIADS    189
+
+
+#---------------------------------------
+#---------------------------------------

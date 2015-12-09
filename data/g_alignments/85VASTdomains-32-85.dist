@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:00
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-38.fasta
+#    [-bsequence] data/fastas/85VASTdomains-9.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: GRM1C_HUMAN_312494
+# 2: Q22US2_TETTS_14441649
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 259
+# Identity:      41/259 (15.8%)
+# Similarity:    64/259 (24.7%)
+# Gaps:         129/259 (49.8%)
+# Score: 50.0
+# 
+#
+#=======================================
+
+GRM1C_HUMAN_3      1 --------------------------------------------SDSVDE      6
+                                                                 .:.:..
+Q22US2_TETTS_      1 EPNEKYKHKLIDYTFNYQNQAINLQQVFNFFFSDSLKFKEYSDFQEYIKR     50
+
+GRM1C_HUMAN_3      7 ENVPEKDLHGRLF---INRIFHISADRMFELLFTSSRFMQKFASSRNIID     53
+                     ..:.:.|....||   |.:.|...:.|:.|                   |
+Q22US2_TETTS_     51 GKMGDYDYQSTLFSPPIPKYFQFKSQRLDE-------------------D     81
+
+GRM1C_HUMAN_3     54 VVSTPWTAELGGDQLRTMTYTIVL---NSPLTGKCTAATEKQTLYKESRE    100
+                     ::::|..:|      |.:..|..|   |.|...|.....|...:|..|.:
+Q22US2_TETTS_     82 LIASPDYSE------REVRLTHPLPPSNIPFMPKTCQVREVTRVYWVSND    125
+
+GRM1C_HUMAN_3    101 ARFYLVDSEVLTHDVPYHDYFYTVNRYCIIRSSKQKCRLRVSTDLKYRKQ    150
+                     .  .:|:.|..|..:|..|.| ||.    :||                  
+Q22US2_TETTS_    126 T--IVVNLEAFTSGIPKGDSF-TVR----VRS------------------    150
+
+GRM1C_HUMAN_3    151 PWGLVKSLIEKNSWSSLEDYFKQLESDLL--------IEES---------    183
+                        :.|.:.|:|...|...|...|||..|        ||:|         
+Q22US2_TETTS_    151 ---IFKQIDEENIHFSQYSYVHFLESTFLQGKIENGTIEQSHIAVKNCVL    197
+
+GRM1C_HUMAN_3    183 ---------    183
+                              
+Q22US2_TETTS_    198 PAYQEAFQM    206
+
+
+#---------------------------------------
+#---------------------------------------

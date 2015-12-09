@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:23
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-14.fasta
+#    [-bsequence] data/fastas/85VASTdomains-85.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9TQ08_PHYPA_235415
+# 2: I7M5W4_TETTS_346560
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 270
+# Identity:      39/270 (14.4%)
+# Similarity:    73/270 (27.0%)
+# Gaps:         144/270 (53.3%)
+# Score: 65.0
+# 
+#
+#=======================================
+
+A9TQ08_PHYPA_      0 --------------------------------------------------      0
+                                                                       
+I7M5W4_TETTS_      1 RKINSDFNSATFSELVLKNITAREVFGIFFSNQIFVSDRLQRKFTSFLEF     50
+
+A9TQ08_PHYPA_      1 ---------------EDFPPPLAGGVVLDQRYAVSSKFLSAL--------     27
+                                    ...|||    .:.:..|  |:.:|..|        
+I7M5W4_TETTS_     51 FILEYLHGTNVSVSEIQLPPP----EIFNSIY--SNNYLQLLEYPESSER     94
+
+A9TQ08_PHYPA_     28 ------ILKAGSPFVQELLTVQ-KTTEYIEGPWKSEQSGAIQRVVTYMKA     70
+                           .:...|.|:.:.|..| |.|.|    |:|.||..:.|:::.   
+I7M5W4_TETTS_     95 HISFTHNIPNASAFLPKSLQCQMKETIY----WQSPQSFTLVRLLSL---    137
+
+A9TQ08_PHYPA_     71 ATKMIKAVKATETQTCRRQDEKGFVVDVSCATPDVPYGGCFVVELQFCIL    120
+                                          ||..: ::|..|.|.:   :|.|:     
+I7M5W4_TETTS_    138 ---------------------KGAPI-ITCVEPRVVF---YVDEV-----    157
+
+A9TQ08_PHYPA_    121 AGPDQPSNEKSCRLQISWKLNFLQSTMMRSMIENGARAGIKETYEVYRQV    170
+                             ..:..|:..:.::|..:||.:.:||..::...::|:...:.|
+I7M5W4_TETTS_    158 --------NGNTILRSGFYVHFKSNTMFKKIIEKSSKEENEKTWNELKNV    199
+
+A9TQ08_PHYPA_    171 LANHAKSVSEE---------    181
+                     ::|    ||||         
+I7M5W4_TETTS_    200 MSN----VSEEYIKKRDQNK    215
+
+
+#---------------------------------------
+#---------------------------------------

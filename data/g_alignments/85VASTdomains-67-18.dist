@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:52
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-7.fasta
+#    [-bsequence] data/fastas/85VASTdomains-25.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q22US2_TETTS_9321154
+# 2: Q7XKT6_ORYSJ_8591033
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 306
+# Identity:      26/306 ( 8.5%)
+# Similarity:    51/306 (16.7%)
+# Gaps:         214/306 (69.9%)
+# Score: 22.5
+# 
+#
+#=======================================
+
+Q22US2_TETTS_      0 --------------------------------------------------      0
+                                                                       
+Q7XKT6_ORYSJ_      1 DVPLSKEYTLELPIDADLLMGVFDGGPLEAKAMSRAGCLDYAATPWQDAR     50
+
+Q22US2_TETTS_      1 -------ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTN----T     39
+                            .::||.....|..||.::.           |.:.||.:    |
+Q7XKT6_ORYSJ_     51 PGVLERHASYKFNRYMSIFGGEVVST-----------QLRLPSDDGDGWT     89
+
+Q22US2_TETTS_     40 VYD----------NFFYYYIENVMKCWNIQIEKWSPPPPQYFQQQNYPFS     79
+                     |||          :||..::.:  ..|:::...                |
+Q7XKT6_ORYSJ_     90 VYDVITLRNVPFGDFFRLHLRH--NIWSVEAAS----------------S    121
+
+Q22US2_TETTS_     80 EENEKKKEKVQ-----DWIEISQRQVTYDKTIPLSGMPFLPKFC-KVSEK    123
+                     |.......:.:     :|::.|:.|....:.|           | |::.:
+Q7XKT6_ORYSJ_    122 EAAASSGSRCEILVGIEWVKRSKFQKRIARNI-----------CEKLAHR    160
+
+Q22US2_TETTS_    124 QKIIF------ISPDELIFELEAYSSGAPMTDTFYHFIRNTFVQLTPDTV    167
+                     .|.:.      |:|.                                   
+Q7XKT6_ORYSJ_    161 AKEVLEAAAREIAPA-----------------------------------    175
+
+Q22US2_TETTS_    168 SYKVQMDVRFLKSNWFSGTIDSQSQKEGVKSTQEIYKSFQERLTQFLQDK    217
+                                                                       
+Q7XKT6_ORYSJ_    175 --------------------------------------------------    175
+
+Q22US2_TETTS_    218 NEKRRN    223
+                           
+Q7XKT6_ORYSJ_    175 ------    175
+
+
+#---------------------------------------
+#---------------------------------------

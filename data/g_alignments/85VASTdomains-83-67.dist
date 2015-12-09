@@ -1,0 +1,66 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:15
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-84.fasta
+#    [-bsequence] data/fastas/85VASTdomains-7.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8LDM5_THAPS_9291109
+# 2: Q22US2_TETTS_9321154
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 354
+# Identity:      13/354 ( 3.7%)
+# Similarity:    19/354 ( 5.4%)
+# Gaps:         304/354 (85.9%)
+# Score: 16.5
+# 
+#
+#=======================================
+
+B8LDM5_THAPS_      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_      1 ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTNTVYDNFFYYYIE     50
+
+B8LDM5_THAPS_      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_     51 NVMKCWNIQIEKWSPPPPQYFQQQNYPFSEENEKKKEKVQDWIEISQRQV    100
+
+B8LDM5_THAPS_      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_    101 TYDKTIPLSGMPFLPKFCKVSEKQKIIFISPDELIFELEAYSSGAPMTDT    150
+
+B8LDM5_THAPS_      1 ----------------VGLEVDLPVGFKRLRWALLHSDSKFLKDAFFGPV     34
+                                     |..:|.:.|.|.:..|.....||:..|:......
+Q22US2_TETTS_    151 FYHFIRNTFVQLTPDTVSYKVQMDVRFLKSNWFSGTIDSQSQKEGVKSTQ    200
+
+B8LDM5_THAPS_     35 MNYAD----ITMGSWSKN---NNDIGLPTTPEAVNEEDFLNATLEFSYLM     77
+                     ..|..    :|.....||   .|                           
+Q22US2_TETTS_    201 EIYKSFQERLTQFLQDKNEKRRN---------------------------    223
+
+B8LDM5_THAPS_     78 PKSAFVKANMCYATHEIIYYDDYSLVIKEKTLTPEVPYGNSFIAWTQYNL    127
+                                                                       
+Q22US2_TETTS_    223 --------------------------------------------------    223
+
+B8LDM5_THAPS_    128 VSTGKNNCRMVCSVEAEFPNGPPMVARQIKSGMRSGTAEKFVLLGETICR    177
+                                                                       
+Q22US2_TETTS_    223 --------------------------------------------------    223
+
+B8LDM5_THAPS_    178 YADA    181
+                         
+Q22US2_TETTS_    223 ----    223
+
+
+#---------------------------------------
+#---------------------------------------

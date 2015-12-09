@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:50
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-32.fasta
+#    [-bsequence] data/fastas/85VASTdomains-7.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: YHO0_YEAST_9571143
+# 2: Q22US2_TETTS_9321154
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 264
+# Identity:      40/264 (15.2%)
+# Similarity:    66/264 (25.0%)
+# Gaps:         118/264 (44.7%)
+# Score: 36.0
+# 
+#
+#=======================================
+
+YHO0_YEAST_95      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_      1 ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTNTVYDNFFYYYIE     50
+
+YHO0_YEAST_95      1 --------------PTEPDIQKDKDDSIIRENENIPAPLGTVVQLLFGSN     36
+                                   |..|...:.::.....|||.....:...:       
+Q22US2_TETTS_     51 NVMKCWNIQIEKWSPPPPQYFQQQNYPFSEENEKKKEKVQDWI-------     93
+
+YHO0_YEAST_95     37 TEYMQKVITRDKNNVNVETIP----KFTPSLVEGGSRH---YEYTKKLNN     79
+                      |..|:.:|.||      |||    .|.|...:...:.   :....:|..
+Q22US2_TETTS_     94 -EISQRQVTYDK------TIPLSGMPFLPKFCKVSEKQKIIFISPDELIF    136
+
+YHO0_YEAST_95     80 SIGPKQTKCLLTESIEHMDINNYVLVTQTTKTPDVPSGSNFAVESKI-FL    128
+                     .:....:...:|::..|...|.:|.:     |||..|   :.|:..: ||
+Q22US2_TETTS_    137 ELEAYSSGAPMTDTFYHFIRNTFVQL-----TPDTVS---YKVQMDVRFL    178
+
+YHO0_YEAST_95    129 FWGQHDTTNMTVITKINWTSKSFLKGAIEKGS-VEGQKVSVDYMLS---E    174
+                                   |.||.|     |.|:..| .||.|.:.:...|   .
+Q22US2_TETTS_    179 --------------KSNWFS-----GTIDSQSQKEGVKSTQEIYKSFQER    209
+
+YHO0_YEAST_95    175 LRDIISRAKSKKP-    187
+                     |...:.....|:. 
+Q22US2_TETTS_    210 LTQFLQDKNEKRRN    223
+
+
+#---------------------------------------
+#---------------------------------------

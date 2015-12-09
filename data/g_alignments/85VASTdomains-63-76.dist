@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:47
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-66.fasta
+#    [-bsequence] data/fastas/85VASTdomains-78.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8CDL4_THAPS_224415
+# 2: YFE2_YEAST_402586
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 301
+# Identity:      25/301 ( 8.3%)
+# Similarity:    39/301 (13.0%)
+# Gaps:         225/301 (74.8%)
+# Score: 29.0
+# 
+#
+#=======================================
+
+B8CDL4_THAPS_      0 --------------------------------------------------      0
+                                                                       
+YFE2_YEAST_40      1 PAEPMANNEFVLKELPFDCAPGILFEIMFNSEQNEFLLDFLRGQEGSQIT     50
+
+B8CDL4_THAPS_      1 --------------------------MPAEPKLQQMTIIGKQKIKGISIN     24
+                                               .||.||  ..|....:.||....:
+YFE2_YEAST_40     51 TIPNFTSIDGSSMTLKREYSYEKALHFPAGPK--STTCYVAEVIKRKDPD     98
+
+B8CDL4_THAPS_     25 DYYEVAWSEGENCNKKQIYAPFLTSCGK-----------ND-----VKVT     58
+                     .||||..|         |..|.:.|.|.           ||     ::|:
+YFE2_YEAST_40     99 TYYEVISS---------IRTPNVPSGGSFSTKTRYLIRWNDEITCLLRVS    139
+
+B8CDL4_THAPS_     59 PWEMGGEIVGDWCGEKYTQ-----------------QRYVTFNFMKQTIG     91
+                     .|.       :|.|..:.:                 ...:...|:|..: 
+YFE2_YEAST_40    140 FWV-------EWTGSSWIKGMVENGCKNGQLEAAQLMERILSKFIKNNV-    181
+
+B8CDL4_THAPS_     92 QTLVEVKHTQRCRRLGNDRCIVQMTLEMKGFPYSDCFVVEVRHVASRVGE    141
+                              :.|:                                     
+YFE2_YEAST_40    182 ---------EECQ-------------------------------------    185
+
+B8CDL4_THAPS_    142 SDIIVEIGMSVRFLKSCLFEGKIKTNTGAETTKAQLELLRQTVEACKPFV    191
+                                                                       
+YFE2_YEAST_40    185 --------------------------------------------------    185
+
+B8CDL4_THAPS_    192 K    192
+                      
+YFE2_YEAST_40    185 -    185
+
+
+#---------------------------------------
+#---------------------------------------

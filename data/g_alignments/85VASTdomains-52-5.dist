@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:30
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-56.fasta
+#    [-bsequence] data/fastas/85VASTdomains-13.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8C8I7_THAPS_81294
+# 2: C2GR1_ARATH_8441019
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 263
+# Identity:      34/263 (12.9%)
+# Similarity:    61/263 (23.2%)
+# Gaps:         136/263 (51.7%)
+# Score: 38.0
+# 
+#
+#=======================================
+
+B8C8I7_THAPS_      1 HCVINQVQLQGLHTAEFFRVFFADDAIYSMRDFQKRRGDVDVVYGKWRSV     50
+                             :..:..:|.|.:.......:.|..|  ..|:||      |..
+C2GR1_ARATH_8      1 --------VDDVRFSEVFSLTLPVPVSFFMELF--GGGEVD------RKA     34
+
+B8C8I7_THAPS_     51 ENSAGC----CTSFKGGKSTLLPLPANLTKERTLHFNTLTHSYFGPAYAK     96
+                     ...|||    |:.::..|..:                     |....|.:
+C2GR1_ARATH_8     35 MERAGCQSYSCSPWESEKDDV---------------------YERQTYYR     63
+
+B8C8I7_THAPS_     97 ATKVQR----ATQLSNRLLVIENETQLAE-------IPFADRFRVVERWC    135
+                     ..::.|    .|....:.||.|....|.|       :|..|.|.:     
+C2GR1_ARATH_8     64 DKRISRYRGEVTSTQQKSLVPEKNGWLVEEVMTLHGVPLGDYFNL-----    108
+
+B8C8I7_THAPS_    136 VEAVRNEMSGGASDGCAFSQDMALYTSKLTVHAEVIMLRSCTWENQIRKR    185
+                                                                  .:|.:
+C2GR1_ARATH_8    109 ---------------------------------------------HLRYQ    113
+
+B8C8I7_THAPS_    186 ASETFTEMNNDWVRT--AVKALRATEHQKQK-------------------    214
+                     ..|:.::....:||.  .::.|::|.|||:.                   
+C2GR1_ARATH_8    114 MEESTSKPKTTYVRVYFGIEWLKSTRHQKRVTKNILVNLQDRLKMTFGFL    163
+
+B8C8I7_THAPS_    214 -------------    214
+                                  
+C2GR1_ARATH_8    164 EKEYSSRQQQQQV    176
+
+
+#---------------------------------------
+#---------------------------------------

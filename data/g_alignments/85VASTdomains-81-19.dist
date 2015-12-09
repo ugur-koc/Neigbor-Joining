@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-26.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: YSP2_YEAST_8411021
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 279
+# Identity:      41/279 (14.7%)
+# Similarity:    81/279 (29.0%)
+# Gaps:         129/279 (46.2%)
+# Score: 60.5
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+                                                                       
+YSP2_YEAST_84      0 --------------------------------------------------      0
+
+D0NHH4_PHYIT_     51 APVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPDAATIPTMGS    100
+                           .::|.....::|.::.:.:.:...|.|..|.|..|.:....:..
+YSP2_YEAST_84      1 ------PTTADFKPSNNDHLVIEANINAPLGKVVNLLYGEDVSYYERILK     44
+
+D0NHH4_PHYIT_    101 SRGTGKNVTL----NSMKAVTIEQY--------------HSC----TIED    128
+                     ::   ||..:    |:.....|..|              ..|    |:|.
+YSP2_YEAST_84     45 AQ---KNFEISPIPNNFLTKKIRDYAYTKPLSGSIGPSKTKCLITDTLEH     91
+
+D0NHH4_PHYIT_    129 DSLEDELQGDQKLPHRASLRSKIYTLS----IPYSNCFSIEVIVDVEDIP    174
+                     ..|||.:              |:.:::    :|..|.||::.:.      
+YSP2_YEAST_84     92 YDLEDYV--------------KVLSITKNPDVPSGNIFSVKTVF------    121
+
+D0NHH4_PHYIT_    175 VREDSDMNTEDKSSSFDK-NSMKLTGLHIRWRAGVTFSRDTILKTQLERG    223
+                                 ..|:|| ||.|||..:     .|.::..:.:|:.:|:|
+YSP2_YEAST_84    122 ------------LFSWDKNNSTKLTVYN-----SVDWTGKSWIKSMIEKG    154
+
+D0NHH4_PHYIT_    224 ALEGVRSTCTTLL----KLLRDANTRHQF    248
+                     ..:||..|...::    |:|.|.::..  
+YSP2_YEAST_84    155 TFDGVADTTKIMISEIKKILSDEDSNI--    181
+
+
+#---------------------------------------
+#---------------------------------------

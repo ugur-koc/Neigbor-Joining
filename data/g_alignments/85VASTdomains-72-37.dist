@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:59
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-74.fasta
+#    [-bsequence] data/fastas/85VASTdomains-42.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4Q507_LEIMA_35214
+# 2: I7M7X5_TETTS_10131226
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 338
+# Identity:      13/338 ( 3.8%)
+# Similarity:    30/338 ( 8.9%)
+# Gaps:         282/338 (83.4%)
+# Score: 17.0
+# 
+#
+#=======================================
+
+Q4Q507_LEIMA_      0 --------------------------------------------------      0
+                                                                       
+I7M7X5_TETTS_      1 KQQSIFEKAQNVSEFEIKFPNATPREIFNILFGLKPYKPQPEGSQEFPNF     50
+
+Q4Q507_LEIMA_      0 --------------------------------------------------      0
+                                                                       
+I7M7X5_TETTS_     51 RFYIFQEFQKDTDIQFQTFNPPPPEWYTNLDCSDKDTVKSSPEISNLEFK    100
+
+Q4Q507_LEIMA_      0 --------------------------------------------------      0
+                                                                       
+I7M7X5_TETTS_    101 VVHPVREKIPFGPKVSYCQNKEKYFWISAEEFIIEREIFLSKIPYCDYFT    150
+
+Q4Q507_LEIMA_      1 --------ATRKDKKVMLPQTLLKGLTIQKLWDNVFQDNTNFFKKYHDKR     42
+                             ..:...::::           ||:.: |..:|.|..:     
+I7M7X5_TETTS_    151 IRFQYNISQVQDQTRILI-----------KLYVH-FMKSTTFKGR-----    183
+
+Q4Q507_LEIMA_     43 NESKLEIGPWDYAVDHGSGSRTVSLVAIVEVPRAGTPTPLNQVQRFAYVN     92
+                                  :::||.|....::..|..|:|  ...:...|:|    
+I7M7X5_TETTS_    184 -------------IENGSLSENTEVINTVFTPQA--QIAIQNYQKF----    214
+
+Q4Q507_LEIMA_     93 TPEGKLMLVYQISSQTPEMPAGSSFRTEAYFEITADSADSDCSIAIWGNC    142
+                                                                       
+I7M7X5_TETTS_    214 --------------------------------------------------    214
+
+Q4Q507_LEIMA_    143 RKMSMSFSAIQYIATPRAIKEMTSAYRQMVNMISEEFC    180
+                                                           
+I7M7X5_TETTS_    214 --------------------------------------    214
+
+
+#---------------------------------------
+#---------------------------------------

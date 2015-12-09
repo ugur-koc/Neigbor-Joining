@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:16
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-47.fasta
+#    [-bsequence] data/fastas/85VASTdomains-77.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: GRM1A_MOUSE_365539
+# 2: Q5BB65_EMENI_8531030
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 221
+# Identity:      37/221 (16.7%)
+# Similarity:    61/221 (27.6%)
+# Gaps:          89/221 (40.3%)
+# Score: 65.5
+# 
+#
+#=======================================
+
+GRM1A_MOUSE_3      1 -----------------------------------LPDL------SGRLL      9
+                                                        :|..      ||.|.
+Q5BB65_EMENI_      1 DGPEGQYDRVIKDETIPAPLGKVYSYVFGPASVSFVPKFLVENQKSGELE     50
+
+GRM1A_MOUSE_3     10 INSVFHMGAERLQQMLFSDSPFLQGFLQQRKFTDVTLSPWSSDSKCHQRR     59
+                     .|               .|...|....:.||:                  
+Q5BB65_EMENI_     51 FN---------------CDKTGLTNETRTRKY------------------     67
+
+GRM1A_MOUSE_3     60 VLTYTIPISNQLGPKSASVVETQTL-FRRGPQAGGCVVDSEVLTQGIPYQ    108
+                       :|..|::..:|||....:.|:.| |....:|  .:|.....|..:|..
+Q5BB65_EMENI_     68 --SYIKPLNGSIGPKQTKCISTEQLDFLDLEKA--VLVTLSTQTPDVPSG    113
+
+GRM1A_MOUSE_3    109 DYFYTAHRYCILGLARNKARLRVSSEIRYRKQPWSLVKSLIEKNSWSGIE    158
+                     :.|.|..:|.....|.|:.|..::..|.:..:.|  :|..|||.:..|..
+Q5BB65_EMENI_    114 NVFTTKTKYLFTWAANNQTRFLMTCTIEWSGKSW--LKGPIEKGAIDGQG    161
+
+GRM1A_MOUSE_3    159 DYFHHLDRELAKAEKLS----    175
+                     .:    ..:|..|.|.:    
+Q5BB65_EMENI_    162 TF----GTDLIAALKTAVAPR    178
+
+
+#---------------------------------------
+#---------------------------------------

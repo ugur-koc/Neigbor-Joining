@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:51
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-69.fasta
+#    [-bsequence] data/fastas/85VASTdomains-27.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8C2T9_THAPS_86910
+# 2: YSP2_YEAST_10461230
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 240
+# Identity:      35/240 (14.6%)
+# Similarity:    70/240 (29.2%)
+# Gaps:          99/240 (41.2%)
+# Score: 48.5
+# 
+#
+#=======================================
+
+B8C2T9_THAPS_      1 ----------------------DVPVD-----SVIKDMDPIFTRKLHNIS     23
+                                           ::||.     |::...|..:.:|:    
+YSP2_YEAST_10      1 VHDPTEPDFQKGKDDTVIDEKINIPVPLGTVFSLLYGDDTSYIKKI----     46
+
+B8C2T9_THAPS_     24 IESYYKTGWAEEDAPLYGPWLERKGSFDV-SVSQWEHSKEGFQHSWSGET     72
+                                         :|.:.:|:| .:.::.::....       |
+YSP2_YEAST_10     47 --------------------IENQNNFNVCDIPKFVNNAREI-------T     69
+
+B8C2T9_THAPS_     73 FHQKRIIRFKFKRTTHLYIGPPVAGVTQTQYCRRDGDDKCVTMMTVE-MD    121
+                     :.:|....|..|:|                        ||:...|:| ||
+YSP2_YEAST_10     70 YTKKLNNSFGPKQT------------------------KCIVTETIEHMD     95
+
+B8C2T9_THAPS_    122 --------------GIPYSDVFAVEVRWAARRTGCNDITIDAGVHVRFIK    157
+                                   .:||...|:|..|:.......|...:....:|.:..
+YSP2_YEAST_10     96 LNSFFMVKQIVRSPDVPYGSSFSVHTRFFYSWGDHNTTNMKVVTNVVWTG    145
+
+B8C2T9_THAPS_    158 SSMFASKIKSGTLAETKPIHLDLFEVIKVALSSGSDNKS-    196
+                     .||....|:.|::...:.....|.:.:|..:|:.|..|. 
+YSP2_YEAST_10    146 KSMLKGTIEKGSIDGQRSSTKQLVDDLKKIISNASSTKKK    185
+
+
+#---------------------------------------
+#---------------------------------------

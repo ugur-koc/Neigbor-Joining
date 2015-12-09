@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:09
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-43.fasta
+#    [-bsequence] data/fastas/85VASTdomains-68.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: I7M7X5_TETTS_13071507
+# 2: YL072_YEAST_390578
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 236
+# Identity:      43/236 (18.2%)
+# Similarity:    88/236 (37.3%)
+# Gaps:          82/236 (34.7%)
+# Score: 98.0
+# 
+#
+#=======================================
+
+I7M7X5_TETTS_      1 VPEAHPREIFNLIFFDSKYKPENSDKTYPHYLYYFMEEFQKDVDMHFGKF     50
+                                ....|..||||.:::      |..:|.          :|
+YL072_YEAST_3      1 -----------QETMDFPYKPEANNE------YVLLER----------QF     23
+
+I7M7X5_TETTS_     51 SPPPPEWY---------------------ANLESVDCNSVLNSEDYSLRE     79
+                     |.||...:                     :|:..:.....:|.:....||
+YL072_YEAST_3     24 SVPPGLLFIMMFNEDNPVFELSFLKTQDSSNISHIGTFEKVNKDGQHYRE     73
+
+I7M7X5_TETTS_     80 YKYVHPVREKIPFGPKVSHCQNKEKYYWISEDEFIMEKEVYLS-------    122
+                     ::|...:.  .|.|||.::|:       ::|.....:.|.|::       
+YL072_YEAST_3     74 FQYTKQLH--FPVGPKSTNCE-------VAEILLHCDWERYINVLSITRT    114
+
+I7M7X5_TETTS_    123 -KIPYCDYFTVRFQYSFTKNENQGTKIICRI--YVNFMKSTTFKGRIES-    168
+                      .:|....|:.|.:|.| :.::||...|.:|  :|::..|:..|..:|| 
+YL072_YEAST_3    115 PNVPSGTSFSTRTRYMF-RWDDQGQGCILKISFWVDWNASSWIKPMVESN    163
+
+I7M7X5_TETTS_    169 ---GSLSENTDVWKNAFSPQILQVMQQYIQKNGEKR    201
+                        |.:|...|         ::::::::::|..|. 
+YL072_YEAST_3    164 CKNGQISATKD---------LVKLVEEFVEKYVEL-    189
+
+
+#---------------------------------------
+#---------------------------------------

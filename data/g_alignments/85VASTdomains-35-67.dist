@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:05
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-40.fasta
+#    [-bsequence] data/fastas/85VASTdomains-7.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: GRM1C_MOUSE_107289
+# 2: Q22US2_TETTS_9321154
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 271
+# Identity:      38/271 (14.0%)
+# Similarity:    65/271 (24.0%)
+# Gaps:         136/271 (50.2%)
+# Score: 69.0
+# 
+#
+#=======================================
+
+GRM1C_MOUSE_1      0 --------------------------------------------------      0
+                                                                       
+Q22US2_TETTS_      1 ETFKFELCDVILKGENITIRDVFQACLGDFQYQNPSTNTVYDNFFYYYIE     50
+
+GRM1C_MOUSE_1      1 ------------------------SDSVDEENIPEKD-LQGRLYINRVFH     25
+                                             :....|||..:|: :|..:.|::   
+Q22US2_TETTS_     51 NVMKCWNIQIEKWSPPPPQYFQQQNYPFSEENEKKKEKVQDWIEISQ---     97
+
+GRM1C_MOUSE_1     26 ISAERMFELLFTSSHFMQRFANSRNIIDVVSTPWTVESGGNQLRTMTY--     73
+                                                                |.:||  
+Q22US2_TETTS_     98 -------------------------------------------RQVTYDK    104
+
+GRM1C_MOUSE_1     74 TIVLSN-PLTGKYTAATEKQTLYKESREAQFYLVDSEVLTHDVPYHDYFY    122
+                     ||.||. |...|:...:|||.:...|.:...:  :.|..:...|..|.||
+Q22US2_TETTS_    105 TIPLSGMPFLPKFCKVSEKQKIIFISPDELIF--ELEAYSSGAPMTDTFY    152
+
+GRM1C_MOUSE_1    123 TLNRYCIVRSAKQRCRLRVSTDLKYRKQPW--GLIKSLIEKNSWSSLESY    170
+                     ...|...|:........:|..|:::.|..|  |.|.|..:|....|.:..
+Q22US2_TETTS_    153 HFIRNTFVQLTPDTVSYKVQMDVRFLKSNWFSGTIDSQSQKEGVKSTQEI    202
+
+GRM1C_MOUSE_1    171 FKKLESDL---LMEES-----    183
+                     :|..:..|   |.:::     
+Q22US2_TETTS_    203 YKSFQERLTQFLQDKNEKRRN    223
+
+
+#---------------------------------------
+#---------------------------------------

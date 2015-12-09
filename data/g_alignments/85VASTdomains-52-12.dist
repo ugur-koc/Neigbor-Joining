@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:30
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-56.fasta
+#    [-bsequence] data/fastas/85VASTdomains-2.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B8C8I7_THAPS_81294
+# 2: B9FU30_ORYSJ_8491024
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 307
+# Identity:      31/307 (10.1%)
+# Similarity:    48/307 (15.6%)
+# Gaps:         224/307 (73.0%)
+# Score: 30.5
+# 
+#
+#=======================================
+
+B8C8I7_THAPS_      0 --------------------------------------------------      0
+                                                                       
+B9FU30_ORYSJ_      1 LFTHEDVKMSEIFSSALSVDVESLMEMFSGGPLEHRMMQKAGCIDYSPTE     50
+
+B8C8I7_THAPS_      1 ----------------------------------HCVINQ--------VQ      8
+                                                       :.::||        :.
+B9FU30_ORYSJ_     51 WELVSRNIYQRQISYKFDKNLSRYGGEATTTQQRYALVNQEGWAIEEVMS    100
+
+B8C8I7_THAPS_      9 LQGLHTAEFFRVFFADDAIYSMRDFQKRRGDVDVVYGKWRSVENSAGCCT     58
+                     |||:...:.|.|..                                    
+B9FU30_ORYSJ_    101 LQGVLLGDCFNVQM------------------------------------    114
+
+B8C8I7_THAPS_     59 SFKGGKSTLLPLPANLTKERTLHFNTLTHSYFGPAYAKATKVQRATQLSN    108
+                          |.|::.:|   :|..|.....|    .|.|:.|:||.|:....| 
+B9FU30_ORYSJ_    115 -----KYTVVNVP---SKPNTCSVQVL----LGIAWLKSTKQQKKITKS-    151
+
+B8C8I7_THAPS_    109 RLLVIENET-QLAEIPFADRFRVVERWCVEAVRNEMSGGASDGCAFSQDM    157
+                        ||.|.: :|.|: ||:         ||......||            
+B9FU30_ORYSJ_    152 ---VISNSSIRLKEL-FAE---------VEKDLTSRSG------------    176
+
+B8C8I7_THAPS_    158 ALYTSKLTVHAEVIMLRSCTWENQIRKRASETFTEMNNDWVRTAVKALRA    207
+                                                                       
+B9FU30_ORYSJ_    176 --------------------------------------------------    176
+
+B8C8I7_THAPS_    208 TEHQKQK    214
+                            
+B9FU30_ORYSJ_    176 -------    176
+
+
+#---------------------------------------
+#---------------------------------------

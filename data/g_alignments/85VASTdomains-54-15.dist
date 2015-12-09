@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:33
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-58.fasta
+#    [-bsequence] data/fastas/85VASTdomains-22.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4P940_USTMA_8271016
+# 2: A9TQF1_PHYPA_224401
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 209
+# Identity:      51/209 (24.4%)
+# Similarity:    85/209 (40.7%)
+# Gaps:          50/209 (23.9%)
+# Score: 117.0
+# 
+#
+#=======================================
+
+Q4P940_USTMA_      1 HRKTTCPCEEKKEHF-----SSVVLDTTYPAVPEKIYNLLFT--STFMKE     43
+                                .:.|     |.||||..|....:.:..|:..  |.|::|
+A9TQF1_PHYPA_      1 -----------VDDFPPPLASGVVLDQRYGTSAKSLSALICKAGSPFIQE     39
+
+Q4P940_USTMA_     44 FWTDDQKLLDLQISEWSP---NADNRNLLSRNISYIKPLAGGFGPKQTKC     90
+                     .      |..|:.:|:|.   ...|...:.|.:||:|.     ..|..|.
+A9TQF1_PHYPA_     40 L------LTCLKTTEYSEEPWKRANNGCIERVVSYMKA-----ATKIIKA     78
+
+Q4P940_USTMA_     91 VLTDEN---LHVDFDNYVVTLTTTRTPDVPSGGSFSVKTKTCITWAGTGN    137
+                     |...|:   ..:|...:::.::.: |||||.|.:|.||.:.||. ||. :
+A9TQF1_PHYPA_     79 VKASESHTCRRLDDRGFILDISCS-TPDVPYGSNFMVKLQFCIL-AGQ-D    125
+
+Q4P940_USTMA_    138 VSHVYVTC--QVEWS----GRSMLKSIIDKASLDGQKQYYKELDEAVRKY    181
+                     :.....||  ||.|:    ..:|:|.:|:..:..|.|:.|:...|.:.:|
+A9TQF1_PHYPA_    126 LPSQEKTCRLQVSWTLHFLHSTMMKGMIENGARAGIKETYELYREVLSRY    175
+
+Q4P940_USTMA_    182 LTDHTSEFK    190
+                     ...      
+A9TQF1_PHYPA_    176 AKP------    178
+
+
+#---------------------------------------
+#---------------------------------------

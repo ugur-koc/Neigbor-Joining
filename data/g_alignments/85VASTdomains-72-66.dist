@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:00
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-74.fasta
+#    [-bsequence] data/fastas/85VASTdomains-69.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q4Q507_LEIMA_35214
+# 2: B8C2T9_THAPS_86910
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 349
+# Identity:       6/349 ( 1.7%)
+# Similarity:    12/349 ( 3.4%)
+# Gaps:         322/349 (92.3%)
+# Score: 18.0
+# 
+#
+#=======================================
+
+Q4Q507_LEIMA_      1 ATRKDKKVMLPQTLLKGLTIQKLWDNVFQDNTNFFKKYHDKRNESKLEIG     50
+                                                                       
+B8C2T9_THAPS_      0 --------------------------------------------------      0
+
+Q4Q507_LEIMA_     51 PWDYAVDHGSGSRTVSLVAIVEVPRAGTPTPLNQVQRFAYVNTPEGKLML    100
+                                                                       
+B8C2T9_THAPS_      0 --------------------------------------------------      0
+
+Q4Q507_LEIMA_    101 VYQISSQTPEMPAGSSFRTEAYFEITADSADSDCSIAIWGNCRKMSMSFS    150
+                                                                       
+B8C2T9_THAPS_      0 --------------------------------------------------      0
+
+Q4Q507_LEIMA_    151 AIQYIATPRAIKEMTSAYRQMVNMISEEFC--------------------    180
+                        .:.....||:|...:.:.::.||.|..                    
+B8C2T9_THAPS_      1 ---DVPVDSVIKDMDPIFTRKLHNISIESYYKTGWAEEDAPLYGPWLERK     47
+
+Q4Q507_LEIMA_    180 --------------------------------------------------    180
+                                                                       
+B8C2T9_THAPS_     48 GSFDVSVSQWEHSKEGFQHSWSGETFHQKRIIRFKFKRTTHLYIGPPVAG     97
+
+Q4Q507_LEIMA_    180 --------------------------------------------------    180
+                                                                       
+B8C2T9_THAPS_     98 VTQTQYCRRDGDDKCVTMMTVEMDGIPYSDVFAVEVRWAARRTGCNDITI    147
+
+Q4Q507_LEIMA_    180 -------------------------------------------------    180
+                                                                      
+B8C2T9_THAPS_    148 DAGVHVRFIKSSMFASKIKSGTLAETKPIHLDLFEVIKVALSSGSDNKS    196
+
+
+#---------------------------------------
+#---------------------------------------

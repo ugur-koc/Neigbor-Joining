@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:17
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-1.fasta
+#    [-bsequence] data/fastas/85VASTdomains-56.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: B9FU30_ORYSJ_284472
+# 2: B8C8I7_THAPS_81294
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 270
+# Identity:      33/270 (12.2%)
+# Similarity:    63/270 (23.3%)
+# Gaps:         137/270 (50.7%)
+# Score: 39.5
+# 
+#
+#=======================================
+
+B9FU30_ORYSJ_      0 --------------------------------------------------      0
+                                                                       
+B8C8I7_THAPS_      1 HCVINQVQLQGLHTAEFFRVFFADDAIYSMRDFQKRRGDVDVVYGKWRSV     50
+
+B9FU30_ORYSJ_      1 -----------ESKDQGCEMPANLPGGVLIDESYVAAPTELNSLLFS--K     37
+                                ..|.....:||||              |:..:|.|:  .
+B8C8I7_THAPS_     51 ENSAGCCTSFKGGKSTLLPLPANL--------------TKERTLHFNTLT     86
+
+B9FU30_ORYSJ_     38 NSDFWPAVSELQGTSGFQIEPWKLDNNETCLQRTLTYTKAASKLVKAVKA     87
+                     :|.|.||.:                                       ||
+B8C8I7_THAPS_     87 HSYFGPAYA---------------------------------------KA     97
+
+B9FU30_ORYSJ_     88 TEEQKYLKAAGNSFAVHSVVSTPDVPCGGCFKIEILYCI-----------    126
+                     |:.|:..:.:.....:.:.....::|....|::...:|:           
+B8C8I7_THAPS_     98 TKVQRATQLSNRLLVIENETQLAEIPFADRFRVVERWCVEAVRNEMSGGA    147
+
+B9FU30_ORYSJ_    127 TPGPSLSSEE--QTSHLTVSWRVNFVQSTMMKGMIESGAKQGMAEGFAHF    174
+                     :.|.:.|.:.  .||.|||...|..::|...:..|...|.:...|   ..
+B8C8I7_THAPS_    148 SDGCAFSQDMALYTSKLTVHAEVIMLRSCTWENQIRKRASETFTE---MN    194
+
+B9FU30_ORYSJ_    175 SEILSQKIKVAEADD-----    189
+                     ::.:...:|...|.:     
+B8C8I7_THAPS_    195 NDWVRTAVKALRATEHQKQK    214
+
+
+#---------------------------------------
+#---------------------------------------

@@ -1,0 +1,54 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:20
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-5.fasta
+#    [-bsequence] data/fastas/85VASTdomains-34.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NKW7_PHYIT_491663
+# 2: GRM1B_HUMAN_55233
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 213
+# Identity:      38/213 (17.8%)
+# Similarity:    67/213 (31.5%)
+# Gaps:          74/213 (34.7%)
+# Score: 62.5
+# 
+#
+#=======================================
+
+D0NKW7_PHYIT_      1 -------------------ASLTSAYD-FFNNFLANGTSDRLSEYYKERG     30
+                                        .|:...|| .|.|      |....::.::|.
+GRM1B_HUMAN_5      1 VQAFYEDLSGRQYVNEVFNFSVDKLYDLLFTN------SPFQRDFMEQRR     44
+
+D0NKW7_PHYIT_     31 DTEIEAGDWTPSKEFGGQTRTM-------SCRSPTNASIGPSHTMTTTTD     73
+                     .::|....| ..:|.|.|:|.:       :..:|..|::..:.||...: 
+GRM1B_HUMAN_5     45 FSDIIFHPW-KKEENGNQSRVILYTITLTNPLAPKTATVRETQTMYKAS-     92
+
+D0NKW7_PHYIT_     74 HVPFDEGGIDDSAKLVMQSKVFMHDIPYGDCF-SVEKVTIVERVPSNDG-    121
+                              .:|...|:.::|..||:||.|.| ::.:.|:. ||..|.. 
+GRM1B_HUMAN_5     93 ---------QESECYVIDAEVLTHDVPYHDYFYTINRYTLT-RVARNKSR    132
+
+D0NKW7_PHYIT_    122 -----------SPGQLVAKIYLGVPFSKGCMFKSKIISATREAMASSSKL    160
+                                .|..|| |.::...|..|.   ..........:|.:...
+GRM1B_HUMAN_5    133 LRVSTELRYRKQPWGLV-KTFIEKNFWSGL---EDYFRHLESELAKTEST    178
+
+D0NKW7_PHYIT_    161 YFHMVNRSMESLG    173
+                     |            
+GRM1B_HUMAN_5    179 Y------------    179
+
+
+#---------------------------------------
+#---------------------------------------

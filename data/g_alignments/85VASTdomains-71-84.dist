@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:59
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-73.fasta
+#    [-bsequence] data/fastas/85VASTdomains-85.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q8VZF8_ARATH_257370
+# 2: I7M5W4_TETTS_346560
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 256
+# Identity:      32/256 (12.5%)
+# Similarity:    43/256 (16.8%)
+# Gaps:         183/256 (71.5%)
+# Score: 41.0
+# 
+#
+#=======================================
+
+Q8VZF8_ARATH_      1 FNWKPEDTDAPKLSSDFTKVAEAKFS------IPVEEFFRLFFSDGA---     41
+                               .|::|||.   .|.||      |...|.|.:|||:..   
+I7M5W4_TETTS_      1 ----------RKINSDFN---SATFSELVLKNITAREVFGIFFSNQIFVS     37
+
+Q8VZF8_ARATH_     42 -------VSFVESFHKNCGDKEFRCTSWQPHEKLGHTRNVS---FQHPIK     81
+                            .||:|.|..               |.| |..|||   .|.|..
+I7M5W4_TETTS_     38 DRLQRKFTSFLEFFIL---------------EYL-HGTNVSVSEIQLPPP     71
+
+Q8VZF8_ARATH_     82 IYFGAKFGGCQESQKFRMYRNSHLVI----ETSHRSA-------------    114
+                     ..|.:            :|.|::|.:    |:|.|..             
+I7M5W4_TETTS_     72 EIFNS------------IYSNNYLQLLEYPESSERHISFTHNIPNASAFL    109
+
+Q8VZF8_ARATH_    114 --------------------------------------------------    114
+                                                                       
+I7M5W4_TETTS_    110 PKSLQCQMKETIYWQSPQSFTLVRLLSLKGAPIITCVEPRVVFYVDEVNG    159
+
+Q8VZF8_ARATH_    114 --------------------------------------------------    114
+                                                                       
+I7M5W4_TETTS_    160 NTILRSGFYVHFKSNTMFKKIIEKSSKEENEKTWNELKNVMSNVSEEYIK    209
+
+Q8VZF8_ARATH_    114 ------    114
+                           
+I7M5W4_TETTS_    210 KRDQNK    215
+
+
+#---------------------------------------
+#---------------------------------------

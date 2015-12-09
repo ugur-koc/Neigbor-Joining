@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:59
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-73.fasta
+#    [-bsequence] data/fastas/85VASTdomains-82.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: Q8VZF8_ARATH_257370
+# 2: D0NHH4_PHYIT_394641
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 261
+# Identity:      24/261 ( 9.2%)
+# Similarity:    36/261 (13.8%)
+# Gaps:         160/261 (61.3%)
+# Score: 19.5
+# 
+#
+#=======================================
+
+Q8VZF8_ARATH_      1 ---FNWKPEDTD-------------------APKLSSDFTKVAEAKF--S     26
+                        ...|.:|..                   .|:.:....|:..||.  |
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSSVSEFLEMVTPRSTRLKCKMERAKLATS     50
+
+Q8VZF8_ARATH_     27 IPVEEFFRLFFSDGAVSFVESFHKNCGDKEFRCTSWQPHEKLGHTRNVSF     76
+                     .||          |:.|...|..:...|...|  .|..|.:.|..|.:|:
+D0NHH4_PHYIT_     51 APV----------GSASSSASTGEKDSDDVLR--DWHSHPRFGLVRALSY     88
+
+Q8VZF8_ARATH_     77 QHPIKIYFGAKFGGCQESQKFRMYRNSHLVIETSHRSA------------    114
+                      ||...............:...:.....:.||..|...            
+D0NHH4_PHYIT_     89 -HPDAATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQG    137
+
+Q8VZF8_ARATH_    114 --------------------------------------------------    114
+                                                                       
+D0NHH4_PHYIT_    138 DQKLPHRASLRSKIYTLSIPYSNCFSIEVIVDVEDIPVREDSDMNTEDKS    187
+
+Q8VZF8_ARATH_    114 --------------------------------------------------    114
+                                                                       
+D0NHH4_PHYIT_    188 SSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTTLLK    237
+
+Q8VZF8_ARATH_    114 -----------    114
+                                
+D0NHH4_PHYIT_    238 LLRDANTRHQF    248
+
+
+#---------------------------------------
+#---------------------------------------

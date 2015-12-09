@@ -1,0 +1,50 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:40:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-45.fasta
+#    [-bsequence] data/fastas/85VASTdomains-2.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: J3KR86_HUMAN_127303
+# 2: B9FU30_ORYSJ_8491024
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 184
+# Identity:      40/184 (21.7%)
+# Similarity:    72/184 (39.1%)
+# Gaps:          15/184 ( 8.2%)
+# Score: 75.5
+# 
+#
+#=======================================
+
+J3KR86_HUMAN_      1 -ALLPDLSGRLLINSVFHVGAERLQQMLFSDSPFLQGFLQQCKFTDVTLS     49
+                      ....|:....:.:|...|..|.|.:| ||..|.....:|:....|.:.:
+B9FU30_ORYSJ_      1 LFTHEDVKMSEIFSSALSVDVESLMEM-FSGGPLEHRMMQKAGCIDYSPT     49
+
+J3KR86_HUMAN_     50 PWSGDSKCHQRRVLTYTIPISNPLGPKSASVVETQTLFRRGPQAGGCVVD     99
+                     .|...|:...:|.::|  .....|.........||..:....|.|..:  
+B9FU30_ORYSJ_     50 EWELVSRNIYQRQISY--KFDKNLSRYGGEATTTQQRYALVNQEGWAI--     95
+
+J3KR86_HUMAN_    100 SEVLT-QGIPYQDYFYTAHRYCILGLAR--NKARLRVSSEIRY---RKQP    143
+                     .||:: ||:...|.|....:|.::.:..  |...::|...|.:   .||.
+B9FU30_ORYSJ_     96 EEVMSLQGVLLGDCFNVQMKYTVVNVPSKPNTCSVQVLLGIAWLKSTKQQ    145
+
+J3KR86_HUMAN_    144 WSLVKSLIEKNSWSGIEDYFHHLERELAKAEKLS    177
+                     ..:.||:| .||...:::.|..:|::|.....  
+B9FU30_ORYSJ_    146 KKITKSVI-SNSSIRLKELFAEVEKDLTSRSG--    176
+
+
+#---------------------------------------
+#---------------------------------------

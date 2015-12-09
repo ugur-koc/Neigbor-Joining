@@ -1,0 +1,58 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:41:12
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-82.fasta
+#    [-bsequence] data/fastas/85VASTdomains-54.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: D0NHH4_PHYIT_394641
+# 2: Q8MKJ8_DROME_144324
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 268
+# Identity:      42/268 (15.7%)
+# Similarity:    76/268 (28.4%)
+# Gaps:         107/268 (39.9%)
+# Score: 27.0
+# 
+#
+#=======================================
+
+D0NHH4_PHYIT_      1 TSFLEMKEQDMTELMTATIPGSS---------VSEFLEMVTPRSTRLKCK     41
+                             :|:|...:|:..|..         |.....|:...|..|:..
+Q8MKJ8_DROME_      1 --------EDLTARCSASHEGRKLLQERLMVRVDALFNMLFSASPFLQSF     42
+
+D0NHH4_PHYIT_     42 MERAKLATSAPVGSASSSASTGEKDSDDVLRDWHSHPRFGLVRALSYHPD     91
+                     .||.| :|...:|..:.:|. |:...                        
+Q8MKJ8_DROME_     43 HERRK-STDLNMGVWARNAG-GQNQR------------------------     66
+
+D0NHH4_PHYIT_     92 AATIPTMGSSRGTGKNVTLNSMKAVTIEQYHSCTIEDDSLEDELQGDQKL    141
+                          |:..:.....||...:.|....:....|                 
+Q8MKJ8_DROME_     67 -----TVSMTVALQANVGPKTAKITETQTMREC-----------------     94
+
+D0NHH4_PHYIT_    142 PHRASLRSKIYTL-------SIPYSNCFSIEVIVDVEDIPVREDSDMNTE    184
+                         |...::|::       .|||::.|.:.:...:: ..|.|.:|:   
+Q8MKJ8_DROME_     95 ----SQPGQLYSIDVQSVNADIPYADTFVVLMHFCLK-ATVEEHTDV---    136
+
+D0NHH4_PHYIT_    185 DKSSSFDKNSMKLTGLHIRWRAGVTFSRDTILKTQLERGALEGVRSTCTT    234
+                                 |....|::...|.    .::||.:||.|..|:...|.:
+Q8MKJ8_DROME_    137 ------------LVFAEIQFLKSVW----AVVKTFIERNAYAGLEEFCQS    170
+
+D0NHH4_PHYIT_    235 LLKLL----RDANTRHQF    248
+                     |...|    |.       
+Q8MKJ8_DROME_    171 LYSALLIEIRK-------    181
+
+
+#---------------------------------------
+#---------------------------------------

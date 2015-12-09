@@ -1,0 +1,62 @@
+########################################
+# Program: needle
+# Rundate: Tue  8 Dec 2015 15:39:33
+# Commandline: needle
+#    [-asequence] data/fastas/85VASTdomains-21.fasta
+#    [-bsequence] data/fastas/85VASTdomains-70.fasta
+#    [-outfile] stdout
+#    -gapopen 10.0
+#    -gapextend 0.5
+# Align_format: srspair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: A9SDA2_PHYPA_8171004
+# 2: Q4QEC5_LEIMA_378547
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 334
+# Identity:       6/334 ( 1.8%)
+# Similarity:    11/334 ( 3.3%)
+# Gaps:         310/334 (92.8%)
+# Score: 26.0
+# 
+#
+#=======================================
+
+A9SDA2_PHYPA_      1 QSCTDSFAGMEEANMAQVCAFEIPLMSDCAMSLFEQGGLEEAMAEKMGYL     50
+                                                                       
+Q4QEC5_LEIMA_      0 --------------------------------------------------      0
+
+A9SDA2_PHYPA_     51 NYVSTPWERLEGQNGVQRRHTSYHLNRQISQFGSKVSCIQQRTMSDSMKS    100
+                                                                       
+Q4QEC5_LEIMA_      0 --------------------------------------------------      0
+
+A9SDA2_PHYPA_    101 CVLDEVITLHDVPFGDHFQVQVRREIETTSTNPPQSFVKASVGVSWHKNT    150
+                                                                       
+Q4QEC5_LEIMA_      0 --------------------------------------------------      0
+
+A9SDA2_PHYPA_    151 EFKKKITKNVHDHMAKEIREVMNVCVKEVKARIKDKRI------------    188
+                                   .|.:.:|..||..:..|.::|...            
+Q4QEC5_LEIMA_      1 --------------GKGVLDVFGVCFDDGTAVLEDYHTERKDTDQKWEPW     36
+
+A9SDA2_PHYPA_    188 --------------------------------------------------    188
+                                                                       
+Q4QEC5_LEIMA_     37 RPTKDGGAFRGQRQFTCTTLVKAMMGKPYTYIEYQRYALFKLSGVPTLAV     86
+
+A9SDA2_PHYPA_    188 --------------------------------------------------    188
+                                                                       
+Q4QEC5_LEIMA_     87 QFSSQVPGVMFGDAFRVEALVTFTQAGSGASAEVTMRAFGYVQFLKSVWV    136
+
+A9SDA2_PHYPA_    188 ----------------------------------    188
+                                                       
+Q4QEC5_LEIMA_    137 KGRILATVMNTELPDGSKTLANMICERLENHQSG    170
+
+
+#---------------------------------------
+#---------------------------------------
