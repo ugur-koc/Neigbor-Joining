@@ -194,8 +194,16 @@ $T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phyloge
 \textbf{Performance of \textit{protdist} methods}. Figure~\ref{fig:phytree} and~\ref{fig:phytree} show time computation times and the phylogenetic tree accuracies for the methods implemented in \textit{protdist} respectively. TODO 
 
 \subsubsection{Study 2; Comparing with other neighbor-joining implementations}
- 
-TODO: Khanh 
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.9\textwidth]{runningtime.png}
+  \caption{Comparison on the running times of our NJ implementation and PHYLIP's.}
+  \label{fig:runningtime}
+\end{figure}
+
+
+We present both qualitative and quantitative comparisions between our NJ implementation and that of the PHYLIP package version 3.6 ~\cite{felsenstein2005phylip}. In terms of accuracy, our implementation produces the same phylogenetic tree on the 85VASTdomains dataset. To compare the performances of the two implementations, we measure their running times on 10 synthesized datasets, whose size vary from 100 to 1000. As seen from Figure \ref{fig:runningtime}, our implementation outperforms the PHYLIB's implemenation by a factor of approximately 2. This is a surprsing result since we do not employ any advanced optimizing techniques in our implementation. We suspect the performance gain stems from optimizing features of the new C++11 compiler (we use g++ 4.9.2 with O2 optimizer whereas the PHYLIB package uses gcc 4.9.2 with no optimizing option).  
 
 \section{Concluding Remarks}
 
