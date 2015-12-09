@@ -21,6 +21,7 @@ def newickToGraph(filename, format=3):
             treeStr += line.rstrip() 
     print treeStr
     t = Tree(treeStr)
+    print t
     g = nx.Graph()
     if (t.name == ""):
         t.name = "New_0"
@@ -53,6 +54,8 @@ def traverse(g, u, p):
     ans = "(" + ",".join(childStr) + ")"
     if (p == "?"):
         ans += ";"
+    else:
+        ans += ":" + str(g[u][p]['weight'])
     return ans
 
 def networkxToNewick(g):
@@ -68,8 +71,10 @@ def drawGraph(g, filename):
     plot.savefig(filename)
 
 if __name__ == "__main__":
+    count = 0
     file1 = sys.argv[1]
     file2 = sys.argv[2]
     g1 = newickToGraph(file1)
     g2 = myOutputToGraph(file2)
+    print networkxToNewick(g2)
     print nx.is_isomorphic(g1, g2)
