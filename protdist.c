@@ -29,9 +29,9 @@ typedef double matrix[20][20];
 /* function prototypes */
 void   protdist_uppercase(Char *);
 void   protdist_inputnumbers(void);
-void   getoptions(void);
+void   getoptions(int);
 void   transition(void);
-void   doinit(void);
+void   doinit(int);
 void   printcategories(void);
 void   inputoptions(void);
 void   protdist_inputdata(void);
@@ -446,7 +446,7 @@ void protdist_inputnumbers()
 }  /* protdist_inputnumbers */
 
 
-void getoptions()
+void getoptions(int em)
 {
   /* interactively set options */
   long loopcount, loopcount2;
@@ -454,13 +454,11 @@ void getoptions()
   Char in[100];
   boolean done;
 
-  if (printdata)
-    fprintf(outfile, "\nProtein distance algorithm, version %s\n\n",VERSION);
   putchar('\n');
   weights = false;
   printdata = false;
-  progress = true;
-  interleaved = true;
+  progress = false;
+  interleaved = false;
   similarity = false;
   ttratio = 2.0;
   whichcode = universal;
@@ -470,7 +468,7 @@ void getoptions()
   freqc = 0.25;
   freqg = 0.25;
   freqt = 0.25;
-  usejtt = true;
+  usejtt = false;
   usepmb = false;
   usepam = false;
   kimura = false;
@@ -479,341 +477,14 @@ void getoptions()
   invarfrac = 0.0;
   ease = 0.457;
   loopcount = 0;
-  do {
-    cleerhome();
-    printf("\nProtein distance algorithm, version %s\n\n",VERSION);
-    printf("Settings for this run:\n");
-    printf("  P  Use JTT, PMB, PAM, Kimura, categories model?  %s\n",
-           usejtt ? "Jones-Taylor-Thornton matrix" :
-           usepmb ? "Henikoff/Tillier PMB matrix" :
-           usepam ? "Dayhoff PAM matrix" :
-           kimura ? "Kimura formula" :
-           similarity ? "Similarity table" : "Categories model");
-    if (!kimura && !similarity) {
-      printf("  G  Gamma distribution of rates among positions?");
-      if (gama)
-        printf("  Yes\n");
-      else {
-        if (invar)
-          printf("  Gamma+Invariant\n");
-        else
-          printf("  No\n");
-      }
-    }
-    printf("  C           One category of substitution rates?");
-    if (!ctgry || categs == 1)
-      printf("  Yes\n");
-    else
-      printf("  %ld categories\n", categs);
-    printf("  W                    Use weights for positions?");
-    if (weights)
-      printf("  Yes\n");
-    else
-      printf("  No\n");
-    if (!(usejtt || usepmb || usepam || kimura || similarity)) {
-      printf("  U                       Use which genetic code?  %s\n",
-             (whichcode == universal) ? "Universal"                  :
-             (whichcode == ciliate)   ? "Ciliate"                    :
-             (whichcode == mito)      ? "Universal mitochondrial"    :
-             (whichcode == vertmito)  ? "Vertebrate mitochondrial"   :
-             (whichcode == flymito)   ? "Fly mitochondrial"        :
-             (whichcode == yeastmito) ? "Yeast mitochondrial"        : "");
-      printf("  A          Which categorization of amino acids?  %s\n",
-             (whichcat == chemical) ? "Chemical"              :
-             (whichcat == george)   ? "George/Hunt/Barker"    : "Hall");
-        
-      printf("  E              Prob change category (1.0=easy):%8.4f\n",ease);
-      printf("  T                Transition/transversion ratio:%7.3f\n",ttratio);
-      printf("  F                             Base Frequencies:");
-      if (basesequal)
-        printf("  Equal\n");
-      else
-        printf("%7.3f%6.3f%6.3f%6.3f\n", freqa, freqc, freqg, freqt);
-    }
-    printf("  M                   Analyze multiple data sets?");
-    if (mulsets)
-      printf("  Yes, %2ld %s\n", datasets,
-               (justwts ? "sets of weights" : "data sets"));
-    else
-      printf("  No\n");
-    printf("  I                  Input sequences interleaved?  %s\n",
-           (interleaved ? "Yes" : "No, sequential"));
-    printf("  0                 Terminal type (IBM PC, ANSI)?  %s\n",
-           ibmpc ? "IBM PC" :
-           ansi  ? "ANSI"   : "(none)");
-    printf("  1            Print out the data at start of run  %s\n",
-           (printdata ? "Yes" : "No"));
-    printf("  2          Print indications of progress of run  %s\n",
-           progress ? "Yes" : "No");
-    printf("\nAre these settings correct? (type Y or the letter for one to change)\n");
-    in[0] = '\0';
-    getstryng(in);
-    ch=in[0];
-    if (ch == '\n')
-      ch = ' ';
-    protdist_uppercase(&ch);
-    done = (ch == 'Y');
-    if (!done) {
-      if (((strchr("CPGMWI120",ch) != NULL) && (usejtt || usepmb || usepam)) ||
-          ((strchr("CPMWI120",ch) != NULL) && (kimura || similarity)) ||
-          ((strchr("CUAPGETFMWI120",ch) != NULL) && 
-            (! (usejtt || usepmb || usepam || kimura || similarity)))) {
-        switch (ch) {
-
-        case 'U':
-          printf("Which genetic code?\n");
-          printf(" type         for\n\n");
-          printf("   U           Universal\n");
-          printf("   M           Mitochondrial\n");
-          printf("   V           Vertebrate mitochondrial\n");
-          printf("   F           Fly mitochondrial\n");
-          printf("   Y           Yeast mitochondrial\n\n");
-          loopcount2 = 0;
-          do {
-            printf("type U, M, V, F, or Y\n");
-            fflush(stdout);
-            scanf("%c%*[^\n]", &ch);
-            getchar();
-            if (ch == '\n')
-              ch = ' ';
-            protdist_uppercase(&ch);
-            countup(&loopcount2, 10);
-          } while (ch != 'U' && ch != 'M' && ch != 'V' && ch != 'F' && ch != 'Y');
-          switch (ch) {
-
-          case 'U':
-            whichcode = universal;
-            break;
-
-          case 'M':
-            whichcode = mito;
-            break;
-
-          case 'V':
-            whichcode = vertmito;
-            break;
-
-          case 'F':
-            whichcode = flymito;
-            break;
-
-          case 'Y':
-            whichcode = yeastmito;
-            break;
-          }
-          break;
-
-        case 'A':
-          printf(
-            "Which of these categorizations of amino acids do you want to use:\n\n");
-          printf(
-            " all have groups: (Glu Gln Asp Asn), (Lys Arg His), (Phe Tyr Trp)\n");
-          printf(" plus:\n");
-          printf("George/Hunt/Barker:");
-          printf(" (Cys), (Met   Val  Leu  Ileu), (Gly  Ala  Ser  Thr    Pro)\n");
-          printf("Chemical:          ");
-          printf(" (Cys   Met), (Val  Leu  Ileu    Gly  Ala  Ser  Thr), (Pro)\n");
-          printf("Hall:              ");
-          printf(" (Cys), (Met   Val  Leu  Ileu), (Gly  Ala  Ser  Thr), (Pro)\n\n");
-          printf("Which do you want to use (type C, H, or G)\n");
-          loopcount2 = 0;
-          do {
-            fflush(stdout);
-            scanf("%c%*[^\n]", &ch);
-            getchar();
-            if (ch == '\n')
-              ch = ' ';
-            protdist_uppercase(&ch);
-            countup(&loopcount2, 10);
-          } while (ch != 'C' && ch != 'H' && ch != 'G');
-          switch (ch) {
-
-          case 'C':
-            whichcat = chemical;
-            break;
-
-          case 'H':
-            whichcat = hall;
-            break;
-
-          case 'G':
-            whichcat = george;
-            break;
-          }
-          break;
-
-        case 'C':
-          ctgry = !ctgry;
-          if (ctgry) {
-            initcatn(&categs);
-            initcategs(categs, rate);
-          }
-          break;
-
-        case 'W':
-          weights = !weights;
-          break;
-
-        case 'P':
-          if (usejtt) {
-            usejtt = false;
-            usepmb = true;
-          } else {
-            if (usepmb) {
-              usepmb = false;
-              usepam = true;
-            } else {
-              if (usepam) {
-                usepam = false;
-                kimura = true;
-              } else {
-                if (kimura) {
-                  kimura = false;
-                  similarity = true;
-                } else {
-                  if (similarity)
-                    similarity = false;
-                  else
-                    usejtt = true;
-                }
-              }
-            }
-          }
-          break;
-
-        case 'G':
-          if (!(gama || invar))
-            gama = true;
-          else {
-            if (gama) {
-              gama = false;
-              invar = true;
-            } else {
-              if (invar)
-                invar = false;
-            }
-          }
-          break;
-
-
-        case 'E':
-          printf("Ease of changing category of amino acid?\n");
-          loopcount2 = 0;
-          do {
-            printf(" (1.0 if no difficulty of changing,\n");
-            printf(" less if less easy. Can't be negative\n");
-            fflush(stdout);
-            scanf("%lf%*[^\n]", &ease);
-            getchar();
-            countup(&loopcount2, 10);
-          } while (ease > 1.0 || ease < 0.0);
-          break;
-
-        case 'T':
-          loopcount2 = 0;
-          do {
-            printf("Transition/transversion ratio?\n");
-            fflush(stdout);
-            scanf("%lf%*[^\n]", &ttratio);
-            getchar();
-            countup(&loopcount2, 10);
-          } while (ttratio < 0.0);
-          break;
-
-        case 'F':
-          loopcount2 = 0;
-          do {
-            basesequal = false;
-            printf("Frequencies of bases A,C,G,T ?\n");
-            fflush(stdout);
-            scanf("%lf%lf%lf%lf%*[^\n]", &freqa, &freqc, &freqg, &freqt);
-            getchar();
-            if (fabs(freqa + freqc + freqg + freqt - 1.0) >= 1.0e-3)
-              printf("FREQUENCIES MUST SUM TO 1\n");
-            countup(&loopcount2, 10);
-          } while (fabs(freqa + freqc + freqg + freqt - 1.0) >= 1.0e-3);
-          break;
-
-        case 'M':
-          mulsets = !mulsets;
-          if (mulsets) {
-            printf("Multiple data sets or multiple weights?");
-            loopcount2 = 0;
-            do {
-              printf(" (type D or W)\n");
-              fflush(stdout);
-              scanf("%c%*[^\n]", &ch2);
-              getchar();
-              if (ch2 == '\n')
-                  ch2 = ' ';
-              uppercase(&ch2);
-              countup(&loopcount2, 10);
-            } while ((ch2 != 'W') && (ch2 != 'D'));
-            justwts = (ch2 == 'W');
-            if (justwts)
-              justweights(&datasets);
-            else
-              initdatasets(&datasets);
-          }
-          break;
-
-        case 'I':
-          interleaved = !interleaved;
-          break;
-
-        case '0':
-          if (ibmpc) {
-            ibmpc = false;
-            ansi = true;
-            } else if (ansi)
-              ansi = false;
-            else
-              ibmpc = true;
-          break;
-
-        case '1':
-          printdata = !printdata;
-          break;
-
-        case '2':
-          progress = !progress;
-          break;
-        }
-      } else {
-        if (strchr("CUAPGETFMWI120",ch) == NULL)
-          printf("Not a possible option!\n");
-        else
-          printf("That option not allowed with these settings\n");
-        printf("\nPress Enter or Return key to continue\n");
-        fflush(stdout);
-        getchar();
-      }
-    }
-    countup(&loopcount, 100);
-  } while (!done);
-  if (gama || invar) {
-    loopcount = 0;
-    do {
-      printf(
-"\nCoefficient of variation of substitution rate among positions (must be positive)\n");
-      printf(
-  " In gamma distribution parameters, this is 1/(square root of alpha)\n");
-      fflush(stdout);
-      scanf("%lf%*[^\n]", &cvi);
-      getchar();
-      countup(&loopcount, 10);
-    } while (cvi <= 0.0);
-    cvi = 1.0 / (cvi * cvi);
-  }
-  if (invar) {
-    loopcount = 0;
-    do {
-      printf("Fraction of invariant positions?\n");
-      fflush(stdout);
-      scanf("%lf%*[^\n]", &invarfrac);
-      getchar();
-      countup (&loopcount, 10);
-    } while ((invarfrac <= 0.0) || (invarfrac >= 1.0));
+  if (em == 1){
+	  usejtt = true;
+  }else if (em == 2){
+	  usepmb = true;
+  }else if (em == 3){
+  	usepam = true;
+  }else if (em == 4){
+	  kimura = true;
   }
 }  /* getoptions */
 
@@ -840,11 +511,11 @@ void transition()
 }  /* transition */
 
 
-void doinit()
+void doinit(int em)
 {
   /* initializes variables */
   protdist_inputnumbers();
-  getoptions();
+  getoptions(em);
   transition();
 }  /* doinit*/
 
@@ -1701,19 +1372,7 @@ void makedists()
 
   if (!(printdata || similarity))
     fprintf(outfile, "%5ld\n", spp);
-  if (progress)
-    printf("Computing distances:\n");
   for (i = 1; i <= spp; i++) {
-    if (progress)
-      printf("  ");
-    if (progress) {
-      for (j = 0; j < nmlngth; j++)
-        putchar(nayme[i - 1][j]);
-    }
-    if (progress) {
-      printf("   ");
-      fflush(stdout);
-    }
     if (similarity)
       d[i-1][i-1] = 1.0;
     else
@@ -1880,6 +1539,9 @@ void makedists()
     for (i = 0; i < spp; i++) {
       for (j = 0; j < nmlngth; j++)
         putc(nayme[i][j], outfile);
+    }
+    putc('\n', outfile);
+    for (i = 0; i < spp; i++) {
       k = spp;
       for (j = 1; j <= k; j++) {
         if (d[i][j-1] < 100.0)
@@ -1888,8 +1550,6 @@ void makedists()
           fprintf(outfile, " %10.6f", d[i][j-1]);
           else 
             fprintf(outfile, " %11.6f", d[i][j-1]);
-        if ((j + 1) % 7 == 0 && j < k)
-          putc('\n', outfile);
       }
       putc('\n', outfile);
     }
@@ -1938,14 +1598,15 @@ int main(int argc, Char *argv[])
    argv[0] = "Protdist";
 #endif
   init(argc, argv);
-  openfile(&infile,INFILE,"input file","r",argv[0],infilename);
-  openfile(&outfile,OUTFILE,"output file","w",argv[0],outfilename);
+  openfile(&infile,INFILE,"input file","r",argv[0], infilename);
+  openfile(&outfile,OUTFILE,"output file","w",argv[0], outfilename);
+  
   ibmpc = IBMCRT;
   ansi = ANSICRT;
   mulsets = false;
   datasets = 1;
   firstset = true;
-  doinit();
+  doinit(atoi(argv[1]));
   if (!(kimura || similarity))
     code();
   if (!(usejtt || usepmb || usepam ||  kimura || similarity)) {
@@ -1980,15 +1641,6 @@ int main(int argc, Char *argv[])
   }
   FClose(outfile);
   FClose(infile);
-#ifdef MAC
-  fixmacfile(outfilename);
-#endif
-  printf("Done.\n\n");
-
-#ifdef WIN32
-  phyRestoreConsoleAttributes();
-#endif
-
   return 0;
 }  /* Protein distances */
 
