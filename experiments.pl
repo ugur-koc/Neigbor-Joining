@@ -15,26 +15,67 @@ use warnings;
 use Time::HiRes;
 use Math::BigFloat;
 
-my @protMethods = ("0", "1", "2");
-my @gapScores = ("0", "0.1", "1");
+my $data="85VAST";
+my $groundTruth="data/$data-groundtruth.tree";
 
-my $data="85VASTdomains_clean";
-my $groundTruth="85VASTdomains.newick";
-for(my $i=0; $i < 3; $i++){
-   for(my $j=0; $j < 3; $j++){
-      my $start = Time::HiRes::time();
-      my $distanceFile="data/$data-dist-$i-$j.txt";
-      
-      #Following like produces distance matrix ready to feed into our NJ implementation
-      `./aligntodist.pl $data.aln tmp $protMethods[$i] $gapScores[$j] > $distanceFile`;
-      my $time = Time::HiRes::time() - $start;
-      print "DM computation time for method:$i, and gap score:$j --> $time\n"
-      my $nj_out="$data-tree-$i-$j.txt";
-      
-      #Following produces the tree given the distance matrix; tree is in $nj_out file
-      `./main $distanceFile $nj_out`;
-      
-      #Following line should help me compare trees; visualize them produce some score accuracy etc.
-      `python2.7 compareTrees.py $groundTruth $nj_out`;
-   }
+my $exp=$ARGV[0];
+if (not defined $exp) {
+   $exp=1;
 }
+if($exp==1){
+   my @protMethods = ("Uncorrected", "Jukes-Cantor", "KimuraProtein");
+   my @gapScores = ("1", "25", "75");
+   my $size=scalar @gapScores;
+   for(my $i=0; $i < 3; $i++){
+      if($i==3){ $size=1;}
+      for(my $j=0; $j < $size; $j++){
+         
+         print "method:$protMethods[$i],gapScore:$gapScores[$j],";
+         #Following like produces distance matrix ready to feed into our NJ implementation
+         my $distanceFile="data/$data-$i-$j.dist";
+         my $start = sprintf("%.3f", Time::HiRes::time());
+         `./aligntodist.pl $data.aln tmp $i $gapScores[$j] > $distanceFile`;
+         my $time = sprintf("%.3f", Time::HiRes::time() - $start);
+         print "Tdist:$time,";
+         
+         #Following produces the tree given the distance matrix; tree is in $nj_out file
+         my $nj_out="data/$data-tree-$i-$j.tmp";
+         $start = sprintf("%.3f", Time::HiRes::time());
+         `./main $distanceFile $nj_out`;
+         $time = sprintf("%.3f", Time::HiRes::time() - $start);
+         print "Ttree:$time,";
+         
+         #Following line should help me compare trees; visualize them produce some score accuracy etc.
+         my $ct_out="data/$data-$i-$j.tree";
+         `./compareTrees.py $groundTruth $nj_out > $ct_out`;
+         
+         open F_TREE,"<$ct_out" or die $!;
+         my $line = <F_TREE>;
+         print "$line";
+         close F_TREE;
+      }
+   }
+}elsif($exp==2){
+   my $distanceFile="data/$data-pw.dist";
+   my $start = sprintf("%.5f", Time::HiRes::time());
+   `./aligntodist_pw.pl > $distanceFile 2>&1`;
+   my $time = sprintf("%.3f", Time::HiRes::time() - $start);
+   print "method:pairwise,gapScore:10,Tdist:$time,";
+   
+   my $nj_out="data/$data-tree-pw.tmp";
+   $start = sprintf("%.3f", Time::HiRes::time());
+   `./main $distanceFile $nj_out`;
+   $time = sprintf("%.3f", Time::HiRes::time() - $start);
+   print "Ttree:$time,";
+   
+   my $ct_out="data/$data-pw.tree";
+   `./compareTrees.py $groundTruth $nj_out > $ct_out`;
+   
+   open F_TREE,"<$ct_out" or die $!;
+   my $line = <F_TREE>;
+   print "$line";
+   close F_TREE;
+}elsif($exp==3){
+   
+}
+`rm -rf data/*.tmp`;

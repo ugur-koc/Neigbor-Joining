@@ -17,11 +17,12 @@ use Math::BigFloat;
 
 my $workDir = "/Users/ugurmeryem/Dropbox/701CMSC/Neigbor-Joining/data";
 my $data = "$workDir/$ARGV[0]";
-my $distmatOut = "$workDir/$ARGV[1].txt";
+my $distmatOut = "$workDir/$ARGV[1].tmp";
 my $protMethod = $ARGV[2];
 my $gapScore = $ARGV[3];
 
-`distmat -sequence $data -protmethod $protMethod -gapweight $gapScore -outfile $distmatOut`;
+`touch $distmatOut`;
+`distmat -sequence $data -protmethod $protMethod -gapweight $gapScore -outfile $distmatOut > data/z.tmp 2>&1`;
 
 my %myMap = ();
 open FILE,"<$distmatOut" or die $!;
@@ -40,6 +41,7 @@ while (my $line = <FILE>){
    }
 }
 
+print "   85\n";
 my $size = keys %seqIDMap;
 for(my $i=1; $i <= $size; $i++){
    print $seqIDMap{$i}."\t";

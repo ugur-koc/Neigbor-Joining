@@ -14,7 +14,7 @@ use Math::BigFloat;
 my $workDir = "/Users/ugurmeryem/Dropbox/701CMSC/Neigbor-Joining/data";
 
 my @seqnames;
-open F_NAMES,"<$workDir/85VASTdomains_names.txt" or die $!;
+open F_NAMES,"<$workDir/85VAST-seq_names.txt" or die $!;
 my $line = <F_NAMES>;
 @seqnames = split(",", $line);
 close F_NAMES;
@@ -22,7 +22,7 @@ close F_NAMES;
 my @alignmentFiles = ();
 opendir(DIR, "$workDir/g_alignments") or die $!;
 while (my $file = readdir(DIR)) {
-      push(@alignmentFiles, $file);
+   push(@alignmentFiles, $file);
 }
 
 my %score;
@@ -50,7 +50,7 @@ foreach my $file (@alignmentFiles){
       }
    }
 }
-#exit;
+
 print "   85\n";
 print "@seqnames\t";
 print "\n";

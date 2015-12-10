@@ -3,7 +3,6 @@
 from __future__ import division
 from ete2 import Tree
 import networkx as nx
-from zss import simple_distance, Node
 
 import matplotlib.pyplot as plot
 import sys
@@ -97,7 +96,6 @@ if __name__ == "__main__":
     temp=t2.compare(t1,use_collateral=False, min_support_source=0.0,
                     min_support_ref=0.0, has_duplications=False, expand_polytomies=False, unrooted=True,
                     max_treeko_splits_to_be_artifact=1000)
-    print "norm_rf:%0.4f,treeko_dist:%0.4f,source_edges_in_ref:%0.4f" % (temp['norm_rf'], temp['treeko_dist'], temp['source_edges_in_ref'])
+    print "source_edges_in_ref:%0.3f,norm_rf:%0.3f" % (temp['source_edges_in_ref'], temp['norm_rf'])
     print t2Str
-    #print networkxToNewick(g2)
-    #print nx.is_isomorphic(g1, g2)
+    #Do not change output format of this file, Ugur is parsing it in the experiments

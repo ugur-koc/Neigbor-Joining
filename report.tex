@@ -156,17 +156,17 @@ Here we compare effectiveness and efficiency of methods implemented in \textit{d
 \centering
 	\begin{tabular}{l|lll|lll|lll}
 
-Gap Score	& \multicolumn{3}{c}{g=0} & \multicolumn{3}{c}{g=0.1} &  \multicolumn{3}{c}{g = 1} \\
+Gap Score	& \multicolumn{3}{c}{g=1} & \multicolumn{3}{c}{g=25} &  \multicolumn{3}{c}{g = 75} \\
 \hline
 &	$T_d$	& $T_{NJ}$	& accuracy &	$T_d$	& $T_{NJ}$	& accuracy &	$T_d$	& $T_{NJ}$	& accuracy \\
 \hline
-Uncorrected		&	0.085	&	-	&	-	&	0.08	&	-	&	-	&	0.079	&	-	&	-	\\
-Jukes-Cantor	&	0.079	&	-	&	-	&	0.079	&	-	&	-	&	0.082	&	-	&	-	\\
-Kimura Protein	&	0.104	&	-	&	-	&	0.109	&	-	&	-	&	0.108	&	-	&	-	\\
+Uncorrected		&	0.091	&	0.008	&	0.390	&	0.088	&	0.009	&	0.524	&	0.090	&	0.008	&	0.622	\\
+Jukes-Cantor	&	0.089	&	0.008	&	0.463	&	0.089	&	0.010	&	0.549	&	0.090	&	0.009	&	0.829	\\
+Kimura Protein	&	-	&	-	&	-	&	-	&	-	&	-	&	0.115	&	0.009	&	0.915	\\
 \hline
 \end{tabular}
 \caption{Performance of evolution models implemented in \textit{distmat}. 
-$T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phylogenetic tree (both are in milliseconds), and accuracy is comptued using robinson foulds symmetric difference}\label{tab:dist1}
+$T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phylogenetic tree (both are in milliseconds), and accuracy is computed using robinson foulds symmetric difference (norm\_rf)}\label{tab:dist1}
 \end{table}
 
 
