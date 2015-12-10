@@ -138,11 +138,11 @@ To evaluate the effectiveness and the efficiency of our implementations, we cond
 
 We first aimed at generating accurate phylogenetic tree trying out different evaluation models when generating the distance matrix. We then compared our results with some other popular implementations of neighbor-joining algorithm. 
 
-In these experiments, effectiveness refers to the accuracy of the phylogenetic tree produced at the end, i.e. how close/similar the tree to the ground truth (we take the results in \cite{khafif2014identification} as the ground truth), and the efficiency refers to the computation time. 
+In these experiments, effectiveness refers to the accuracy of the phylogenetic tree produced at the end, i.e. how close/similar the tree to the ground truth by comparing them using robinson foulds symmetric difference \cite{robinson1981comparison} (we take the results in \cite{khafif2014identification} as the ground truth), and the efficiency refers to the computation time. 
 
 \subsection{Data}
 
-In all experiments, we used the data and results given by Khafif et. al~\cite{khafif2014identification}. 
+In all experiments, we used the data and results given by Khafif et. al~\cite{khafif2014identification}.
 
 TODO: do we have time to experiment on other data?. 
 
@@ -150,7 +150,7 @@ TODO: do we have time to experiment on other data?.
 
 \subsubsection{Study 1; Generating accurate phylogenetic tree}
 
-Here we compare effectiveness and efficiency of methods implemented in \textit{distmat} and \textit{protdist}. 
+Here, we compare effectiveness and efficiency of methods implemented in \textit{distmat} and \textit{protdist}.
 
 \begin{table}[!h]
 \centering
@@ -166,7 +166,7 @@ Kimura Protein	&	-	&	-	&	-	&	-	&	-	&	-	&	0.115	&	0.009	&	0.915	\\
 \hline
 \end{tabular}
 \caption{Performance of evolution models implemented in \textit{distmat}. 
-$T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phylogenetic tree (both are in milliseconds), and accuracy is computed using robinson foulds symmetric difference (norm\_rf)}\label{tab:dist1}
+$T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phylogenetic tree (both are in seconds), and accuracy is computed using robinson foulds symmetric difference \cite{robinson1981comparison} (norm\_rf)}\label{tab:dist1}
 \end{table}
 
 
@@ -188,10 +188,17 @@ Categories distance	&	0.104	&	-	&	-	&	0.109	&	-	&	-	&	0.108	&	-	&	-	\\
 \hline
 \end{tabular}
 \caption{Performance of evolution models implemented in \textit{protdist}. 
-$T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phylogenetic tree (both are in milliseconds)}\label{tab:dist1}
+$T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phylogenetic tree (both are in milliseconds)}\label{tab:dist2}
 \end{table}
 
 \textbf{Performance of \textit{protdist} methods}. Figure~\ref{fig:phytree} and~\ref{fig:phytree} show time computation times and the phylogenetic tree accuracies for the methods implemented in \textit{protdist} respectively. TODO 
+
+In addition to the methods evaluated in above, we also generated a phylogenetic tree by using a distance matrix generated with computing pairwise global alignments. Scoring system we used in global alignment gave higher scores to better alignments. We therefore took geometric inverse of of these alignment scores and then multiplied them by 1000. 
+
+Computing global alignment was very time consuming (it took 30mins roughly). However, other distance matrix generation approaches took multiple sequence alignments as input. That sequence alignment was done in~\cite{khafif2014identification}, and we don't know how much time it took to compute it. We therefore do not include cost of pairwise global alignment it our evaluation. Given global alignments (scores) computing the distance matrix took 0.221 seconds, our NJ implementation took 0.011 second to generate the phylogenetic tree and the accuracy (robinson foulds metric) of that tree was 0.634.
+
+Based on the results given in Table \ref{tab:dist1}, \ref{tab:dist2}, and previous paragraph, we can say that our NJ implementation is very efficient, i.e. computation of the tree is very fast (for the dataset we worked on) and does not depend on distance matrix generation approach. Effectiveness however depends on the approach and the gap score. We achieved our the best phylogenetic tree with Kimura Protein evolution model. And for Uncorrected and Jukes-Cantor models accuracy of the tree increased as the gap score increased.
+
 
 \subsubsection{Study 2; Comparing with other neighbor-joining implementations}
 

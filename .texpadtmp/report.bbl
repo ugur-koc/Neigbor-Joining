@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{jones1992rapid}
 David~T Jones, William~R Taylor, and Janet~M Thornton.
@@ -43,6 +43,11 @@ DOTREE Plotree and DOTGRAM Plotgram.
 Peter Rice, Ian Longden, Alan Bleasby, et~al.
 \newblock Emboss: the european molecular biology open software suite.
 \newblock {\em Trends in genetics}, 16(6):276--277, 2000.
+
+\bibitem{robinson1981comparison}
+DavidF Robinson and Leslie~R Foulds.
+\newblock Comparison of phylogenetic trees.
+\newblock {\em Mathematical Biosciences}, 53(1):131--147, 1981.
 
 \bibitem{veerassamy2003transition}
 Shalini Veerassamy, Andrew Smith, and Elisabeth~RM Tillier.
