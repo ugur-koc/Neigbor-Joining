@@ -123,8 +123,9 @@ We also update the distances between $u$ and other roots:
 
 \subsection{Computing distance matrix}
 
-Neighbor-joining algorithm is deterministic, i,e, given a distance matrix it will always produce the same phylogenetic three. Therefore achieving accurate results highly depend on the model of evaluation, i,e, distance matrix.
-We have used two packages to compute distance matrix. For already aligned sequences, we used the package emboss\footnote{\url{http://emboss.sourceforge.net/apps/release/6.6/emboss/apps/distmat.html}} \cite{rice2000emboss}. Emboss has \textit{distmat} program, which computes distance matrix for already aligned sequences. We wrote a wrapper script in perl to call this program and then post process it's output in order to put it in the format of input distance matrix of our NJ implementation (see \textit{aligntodist.pl} script in source code).
+Neighbor-joining algorithm is deterministic, i,e, given a distance matrix it will always produce the same phylogenetic tree. Therefore computing accurate phylogenetic trees highly depend on the model of evaluation, i,e, distance matrix.
+
+In this project we tried three different ways to generate the distance matrix; 1) we used the \textit{distmat} -which computes distance matrix for already aligned sequences- program from emboss package\footnote{\url{http://emboss.sourceforge.net/apps/release/6.6/emboss/apps/distmat.html}} \cite{rice2000emboss}. Emboss has \textit{distmat} program, . We wrote a wrapper script in perl to call this program and then post process it's output in order to put it in the format of input distance matrix of our NJ implementation (see \textit{aligntodist.pl} script in source code).
 
 \textit{distmat} has tree different multiple substitution correction methods implemented for aligned proteins sequences. They are Uncorrected, Jukes-Cantor~\cite{jukes1969evolution}, and Kimura Protein~\cite{kimura1980simple}. 
 
