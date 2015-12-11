@@ -22,3 +22,7 @@ output.txt
 .RData
 
 .Rhistory
+
+report/.texpadtmp/report.blg
+
+report/.texpadtmp/report.synctex.gz
