@@ -1,5 +1,13 @@
 #!/opt/local/bin/python2.7
 
+# This converts output tree of our NJ implementation into newick format
+# and also generates the accuracy score for given two phylogenetic trees
+# input: tree 1 in newick format (.newick file) (this tree will be treaded as groung truh)
+#        tree 2 in our putput format (.txt file contains our NJ implementation putput)
+# output: it will print accuracy score for tree 2 and also tree 2  in newik format
+# @auhtor Khanh, Ugur Koc
+# @date Dec.8.2015
+
 from __future__ import division
 from ete2 import Tree
 import networkx as nx

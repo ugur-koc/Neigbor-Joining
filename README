@@ -1,0 +1,65 @@
+Code
+---------------------aligntodist_pw.pl--------------------
+This script creates distance matrixes using pairwise global alignment scores
+
+---------------------pairwisealignment.sh---------------------
+This script creates pair alignments
+
+---------------------aligntodist.pl--------------------
+This script creates distance matrixes using distmat program from emboss package
+
+---------------------fasta_parser.sh---------------
+This is a helper script used to create .fasta files for each protein sequence 
+
+---------------------experiments.pl--------------------
+This script runs the experiment conducted in this project. It takes one argument; 1, 2, or 3
+# input: 1,2,3; 1 to run distmat expriment,
+#               2 to run pairwise global score experiment,
+#               and 3 to run protdist experiment
+
+Run this script in the same directory with main file
+
+---------------------compareTrees.py--------------------
+This converts output tree of our NJ implementation into newick format
+# and also generates the accuracy score for given two phylogenetic trees
+
+---------------------makefile---------------------
+To create executables
+
+---------------------joiner.cpp---------------------
+---------------------joiner.h---------------------
+---------------------main.cpp---------------------
+---------------------main---------------------
+Executable
+
+---------------------protdist.c---------------------
+This is the modified version of phylib's protdist program. 
+It is only used in experiment.pl script.
+
+---------------------phylip.c---------------------
+A library from phylib
+
+---------------------phylip.h---------------------
+A header from phylib
+
+---------------------protdist---------------------
+Executable
+
+---------------------run_85VASTdomains.sh---------------------
+
+
+Other files
+infile --it is the same as 85VAST.aln but only in a different format. it is used in protdist experiment.
+README --this file
+
+Directories
+data --contains all data used in and produced by this project
+report --Contains the source of final report
+
+
+Dependicies
+Inorder to run the experiment of this project following software should be installed:
+emboss
+python libraries:
+ete2
+networkx

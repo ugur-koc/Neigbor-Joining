@@ -2,7 +2,9 @@
 
 # This script runs the experiment conducted in this project
 # Run this script in the same directory with main file
-# input: none (one should modify the directory variables accordingly)
+# input: 1,2,3; 1 to run distmat expriment,
+#               2 to run pairwise global score experiment,
+#               and 3 to run protdist experiment
 # output: it will print out following for each construction approach;
 #           time to compute distance matrix,
 #           time to compute phylogenetic tree,
