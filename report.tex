@@ -121,35 +121,36 @@ We also update the distances between $u$ and other roots:
 
 
 
-\subsection{Computing distance matrix}
+\subsection{Computing distance matrix}\label{distance}
 
-Neighbor-joining algorithm is deterministic, i,e, given a distance matrix it will always produce the same phylogenetic tree. Therefore computing accurate phylogenetic trees highly depend on the model of evaluation, i,e, distance matrix.
+Neighbor-joining algorithm is deterministic, i,e, given a distance matrix it will always produce the same phylogenetic tree. Therefore, computing accurate phylogenetic trees highly depend on the model of evaluation, i,e, distance matrix.
 
-In this project we tried three different ways to generate the distance matrix; 1) we used the \textit{distmat} -which computes distance matrix for already aligned sequences- program from emboss package\footnote{\url{http://emboss.sourceforge.net/apps/release/6.6/emboss/apps/distmat.html}} \cite{rice2000emboss}. Emboss has \textit{distmat} program, . We wrote a wrapper script in perl to call this program and then post process it's output in order to put it in the format of input distance matrix of our NJ implementation (see \textit{aligntodist.pl} script in source code).
+In this project we tried three different ways to generate the distance matrix.
+\begin{itemize}
+	\item Using \textit{distmat} program from emboss package\footnote{\url{http://emboss.sourceforge.net/apps/release/6.6/emboss/apps/distmat.html}} which computes distance matrix for already aligned sequences~\cite{rice2000emboss}. We wrote a wrapper script in perl to call this program and then post process it's output in order to put it in the format of input distance matrix of our NJ implementation (see \textit{aligntodist.pl} script in source code).
+	\item Using \textit{protdist} program from phylibpackage\footnote{\url{http://evolution.genetics.washington.edu/phylip.html}} which again computes  distance matrix for already aligned sequences~\cite{plotree1989phylip}. We slightly modified the source code in order to have the output in required format and we also removed some unnecessary functionality which does not matter for this project (see \textit{protdist.c} source file for details).
+	\item Lastly, computing global alignment scores for each pair of sequences and using geometric inverse of that score as distance. To do this we wrote two scripts; \textit{pairwisealignment.sh} and \textit{aligntodist\_pw.pl}. First script creates the global alignment scores for each pair and the second one computes the distance matrix from them.
+\end{itemize}
 
-\textit{distmat} has tree different multiple substitution correction methods implemented for aligned proteins sequences. They are Uncorrected, Jukes-Cantor~\cite{jukes1969evolution}, and Kimura Protein~\cite{kimura1980simple}. 
-
-To compute distance matrix for a set of protein sequences we used \textit{protdist} program from phylib\footnote{\url{http://evolution.genetics.washington.edu/phylip.html}} package~\cite{plotree1989phylip}. We slightly modified the source code in order to have the output in required format and we removed the unnecessary functionality which does not matter for this project (see \textit{protdist.c} source file for details).
-
-\textit{protdist} has five method for amino-acid substitutions. They are Dayhoff PAM matrix~\cite{kosiol2005different}, Jones-Taylor-Thornton model (JTT)~\cite{jones1992rapid}, PMB (Probability Matrix from Blocks) model~\cite{veerassamy2003transition}, Kimura's distance~\cite{kimura1983rare}, and Categories distance\footnote{See \url{http://evolution.genetics.washington.edu/phylip.html}}
-
-\section{Experiment}
+\section{Experiments}
 
 To evaluate the effectiveness and the efficiency of our implementations, we conducted a set of experiments. 
 
-We first aimed at generating accurate phylogenetic tree trying out different evaluation models when generating the distance matrix. We then compared our results with some other popular implementations of neighbor-joining algorithm. 
+We first aimed at generating accurate phylogenetic tree trying out different approaches (evaluation models) when generating the distance matrix. We then compared our results with some other popular implementations of neighbor-joining algorithm. 
 
-In these experiments, effectiveness refers to the accuracy of the phylogenetic tree produced at the end, i.e. how close/similar the tree to the ground truth by comparing them using robinson foulds symmetric difference \cite{robinson1981comparison} (we take the results in \cite{khafif2014identification} as the ground truth), and the efficiency refers to the computation time. 
+In these experiments, effectiveness refers to the accuracy of the phylogenetic tree produced at the end, i.e. how close/similar the tree to the ground truth by comparing them using robinson foulds symmetric difference \cite{robinson1981comparison}, and the efficiency refers to 1) the computation time of distance matrix and 2) computation of phylogenetic tree.
 
 \subsection{Data}
 
-In all experiments, we used a dataset which is consist of 85 protein sequences of fully sequenced species representing all major Eukaryotic lineages. We took this dataset and the corresponding phylogenetic tree from ~\cite{khafif2014identification}\footnote{See Additional File 5 and 6 \url{http://www.biomedcentral.com/1471-2105/15/222}}. The longest sequence in this set has 125 amino acids and the phylogenetic tree.
+In all experiments, we used a dataset which is consist of 85 protein sequences of fully sequenced species representing all major Eukaryotic lineages. We took this dataset and the corresponding phylogenetic tree from\footnote{See Additional File 5 and 6 \url{http://www.biomedcentral.com/1471-2105/15/222}} \cite{khafif2014identification}. The longest sequence in this set has 125 amino acids. The phylogenetic tree has nine major branches which groups families of Eukaryotic lineages together. We considered this tree as the ground truth when comparing different distance matrix generation approaches.
 
 \subsection{Results}
 
+As results of our experiments we produced; 1) global alignment files, 2) distance matrix files, and 3) phylogenetic tree files in \textit{newick} format. These files can be found under data directory. 
+
 \subsubsection{Study 1; Generating accurate phylogenetic tree}
 
-Here, we compare effectiveness and efficiency of methods implemented in \textit{distmat} and \textit{protdist}.
+Here, we compare effectiveness and efficiency of three different approaches mentioned in Section~\ref{distance}. Time values in the following tables and measured in seconds and the accuracy is computed as the norm of robinson foulds symmetric difference~\cite{robinson1981comparison}. 
 
 \begin{table}[!h]
 \centering
@@ -168,34 +169,31 @@ Kimura Protein	&	-	&	-	&	-	&	-	&	-	&	-	&	0.115	&	0.009	&	0.915	\\
 $T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phylogenetic tree (both are in seconds), and accuracy is computed using robinson foulds symmetric difference \cite{robinson1981comparison} (norm\_rf)}\label{tab:dist1}
 \end{table}
 
-\textbf{Performance of \textit{distmat} methods}. Table~\ref{tab:dist1}  shows computation times and the phylogenetic tree accuracies for the methods implemented in \textit{distmat}. Kimura Protein evolution model does not make use a gap score, thus it only has one set of results.
+\textbf{Performance of \textit{distmat} methods}. \textit{distmat} has tree different multiple substitution correction methods implemented for aligned proteins sequences. They are Uncorrected, Jukes-Cantor~\cite{jukes1969evolution}, and Kimura Protein~\cite{kimura1980simple}. Table~\ref{tab:dist1}  presents computation times and the phylogenetic tree accuracy scores for these methods (Kimura Protein evolution model does not make use a gap score, thus it only has one set of results).
 
 \begin{table}[!h]
 \centering
 	\begin{tabular}{l|lll}
-
-
-\hline
-&	$T_d$	& $T_{NJ}$	& accuracy  \\
-\hline
-Dayhoff PAM	&	3.867	&	0.010	&	0.390	\\
-JTT			&	3.809	&	0.009	&	0.378	\\
-PMB			&	3.934	&	0.012	&	0.341	\\
-Kimura		&	0.013	&	0.012	&	0.963	\\
-\hline
-\end{tabular}
+	\hline
+	&	$T_d$	& $T_{NJ}$	& accuracy  \\
+	\hline
+	Dayhoff PAM	&	3.867	&	0.010	&	0.390	\\
+	JTT			&	3.809	&	0.009	&	0.378	\\
+	PMB			&	3.934	&	0.012	&	0.341	\\
+	Kimura		&	0.013	&	0.012	&	0.963	\\
+	\hline
+	\end{tabular}
 \caption{Performance of evolution models implemented in \textit{protdist}. 
 $T_d$; time to compute distance matrix and $T_{NJ}$; time to compute the phylogenetic tree (both are in seconds)}\label{tab:dist2}
 \end{table}
 
-\textbf{Performance of \textit{protdist} methods}. Figure~\ref{fig:phytree} and~\ref{fig:phytree} show time computation times and the phylogenetic tree accuracies for the methods implemented in \textit{protdist} respectively. TODO 
+\textbf{Performance of \textit{protdist} methods}. \textit{protdist} has five method for amino-acid substitutions, but we have only experimented with four of them. They are namely, Dayhoff PAM matrix~\cite{kosiol2005different}, Jones-Taylor-Thornton model (JTT)~\cite{jones1992rapid}, PMB (Probability Matrix from Blocks) model~\cite{veerassamy2003transition}, and the Kimura's distance~\cite{kimura1983rare}. Table~\ref{tab:dist2} presents computation times and the phylogenetic tree accuracies for these methods.
 
-In addition to the methods evaluated in above, we also generated a phylogenetic tree by using a distance matrix generated with computing pairwise global alignments. Scoring system we used in global alignment gave higher scores to better alignments. We therefore took geometric inverse of of these alignment scores and then multiplied them by 1000. 
+The dataset we used was already aligned, i.e. multiple sequence alignment. As a last part of this study we revert this alignment to a set of sequences and then compute a global alignment score of each pair of sequences in this set. Our motivation was to see if global alignment scores can be effective in generating a distance matrix. Scoring system we used in global alignment gave higher scores to better alignments (substitution matrix: EBLOSUM62, gap penalty: 10.0, and gap extend penalty: 0.5). We therefore took geometric inverse of of these alignment scores and then multiplied them by 1000. Result is the used as the distance between those sequences.
 
 Computing global alignment was very time consuming (it took 30mins roughly). However, other distance matrix generation approaches took multiple sequence alignments as input. That sequence alignment was done in~\cite{khafif2014identification}, and we don't know how much time it took to compute it. We therefore do not include cost of pairwise global alignment it our evaluation. Given global alignments (scores) computing the distance matrix took 0.221 seconds, our NJ implementation took 0.011 second to generate the phylogenetic tree and the accuracy (robinson foulds metric) of that tree was 0.634.
 
 Based on the results given in Table \ref{tab:dist1}, \ref{tab:dist2}, and previous paragraph, we can say that our NJ implementation is very efficient, i.e. computation of the tree is very fast (for the dataset we worked on) and does not depend on distance matrix generation approach. Effectiveness however depends on the approach and the gap score. We achieved our the best phylogenetic tree with Kimura Protein evolution model. And for Uncorrected and Jukes-Cantor models accuracy of the tree increased as the gap score increased.
-
 
 \subsubsection{Study 2; Comparing with other neighbor-joining implementations}
 
@@ -213,7 +211,8 @@ We present both qualitative and quantitative comparisions between our NJ impleme
 
 In this project, we implemented Neighbor-Joining algorithm and conducted experiments on a dataset of 85 protein sequences. We evaluated the effectiveness of our implementation by comparing our phylogenetic trees with the one report by Khafif et. al.~\cite{khafif2014identification}. We then evaluated the efficiency of our implementation by comparing the tree construction times with some other packages which are popular in the domain.
 
-Our results suggest that for the dataset we worked on 1) our implementation was able to generate phylogenetic tree with high accuracy (TODO: verify and revise if necessary) and 2) our implementation did so at a fraction of time compared to the tools used in Study 2 (TODO: verify and revise if necessary).
+Our results suggest that, for the dataset we worked on, 1) our implementation was able to generate phylogenetic tree with high accuracy when it is combined with Kimura evolution model, and 2) our implementation on average two times faster than Neighbor-Joining implementation of phylib package.
+
 
 \bibliographystyle{plain}
 \bibliography{report}
