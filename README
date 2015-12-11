@@ -63,3 +63,7 @@ emboss
 python libraries:
 ete2
 networkx
+
+
+NOTE: there are some hard codes directory path in the code. 
+They are generally mentioned in the comments on top of each file
