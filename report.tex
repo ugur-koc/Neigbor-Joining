@@ -49,7 +49,7 @@ Protein sequence classification using neighbor-joining\\
 
 \section{Introduction}
 
-Neighbor-joining algorithm (NJ) is a widely used algorithm for reconstructing phylogenetic trees from evolutionary distance data. The method takes a greedy bottom-up approach, iteratively joining pairs of taxonomic units that minimizes pre-computed distances. In this work, we present our C++ implementation of the algorithm. We compare the running time of the implementation with other popular packages. In addition, we also provide a benchmark on our implementation for computing the distance matrix between sequences. We found that BLAH BLAH.
+Neighbor-joining algorithm (NJ) is a widely used algorithm for reconstructing phylogenetic trees from evolutionary distance data. The method takes a greedy bottom-up approach, iteratively joining pairs of taxonomic units that minimizes pre-computed distances. In this work, we present our C++ implementation of the algorithm. We compare the running time of the implementation with other popular packages. In addition, we also provide a benchmark on our implementation for computing the distance matrix between sequences. We found our implementation is able to produce phylogenetic trees with high accuracy, and it does so faster than some highly-used molecular biology (i.e. phylogenetic) programs. TODO rephrase
 
 \section{Background}
 
@@ -123,7 +123,7 @@ We also update the distances between $u$ and other roots:
 
 \subsection{Computing distance matrix}\label{distance}
 
-Neighbor-joining algorithm is deterministic, i,e, given a distance matrix it will always produce the same phylogenetic tree. Therefore, computing accurate phylogenetic trees highly depend on the model of evaluation, i,e, distance matrix.
+Neighbor-joining algorithm is deterministic, i,e, given a distance matrix it will always produce the same phylogenetic tree. Therefore, computing accurate phylogenetic trees highly depends on the model of evaluation, i,e, distance matrix.
 
 In this project we tried three different ways to generate the distance matrix.
 \begin{itemize}
@@ -211,7 +211,7 @@ We present both qualitative and quantitative comparisions between our NJ impleme
 
 In this project, we implemented Neighbor-Joining algorithm and conducted experiments on a dataset of 85 protein sequences. We evaluated the effectiveness of our implementation by comparing our phylogenetic trees with the one report by Khafif et. al.~\cite{khafif2014identification}. We then evaluated the efficiency of our implementation by comparing the tree construction times with some other packages which are popular in the domain.
 
-Our results suggest that, for the dataset we worked on, 1) our implementation was able to generate phylogenetic tree with high accuracy when it is combined with Kimura evolution model, and 2) our implementation on average two times faster than Neighbor-Joining implementation of phylib package.
+Our results suggest that, for the dataset we worked on, 1) our implementation was able to generate phylogenetic tree with high accuracy when it is combined with Kimura evolution model, and 2) our implementation on average two times faster than Neighbor-Joining implementation of phylib package. TODO rephrase
 
 
 \bibliographystyle{plain}
