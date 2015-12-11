@@ -195,7 +195,7 @@ Computing global alignment was very time consuming (it took 30mins roughly). How
 
 Based on the results given in Table \ref{tab:dist1}, \ref{tab:dist2}, and previous paragraph, we can say that our NJ implementation is very efficient, i.e. computation of the tree is very fast (for the dataset we worked on) and does not depend on distance matrix generation approach. Effectiveness however depends on the approach and the gap score. We achieved our the best phylogenetic tree with Kimura Protein evolution model. And for Uncorrected and Jukes-Cantor models accuracy of the tree increased as the gap score increased.
 
-Figure \ref{fig:gt-kimura} show both tte ground truth and and our best result (with Kimura method of \textit{protdist}) side-by-side. In these trees the only difference is TODO...
+Figure \ref{fig:gt-kimura} shows both the ground truth and and our best result (with Kimura method of \textit{protdist}) side-by-side. These trees are identical. However, robinson foulds metric leads to a result which is very close to 1 (not exact 1), because these is a very little difference in the distances.
 
 \begin{figure}[h!]
   \centering
