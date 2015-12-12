@@ -9,8 +9,11 @@ class Joiner {
  public:
   Joiner(int _numSeq, double** _score, const vector<string> & _proteinNames);
   ~Joiner();
+  // Neighbor joining algorithm's main function
   void join();
+  // Use to decide whether to print debugging strings or not
   void setVerbose(bool value);
+  // Save phylogenetic tree to file
   void saveTree(ofstream &stream);
  private:
   bool verbose;
@@ -28,9 +31,11 @@ class Joiner {
   double *sumDist;
   // Has the node been merged?
   bool* isMerged;
-  // Make new node name
+  // Edges of the phylogenetic tree
   vector<pair<pair<string, string>, double>> edges;
+  // Make new node name
   string makeNewName();
+  // Add an edge (x, y) with weight "cost" to the phylogenetic tree
   void addEdge(string x, string y, double cost);
 };
 

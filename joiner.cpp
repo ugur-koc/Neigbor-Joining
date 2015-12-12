@@ -10,6 +10,7 @@
 
 using namespace std;
 
+// Constructor
 Joiner::Joiner(int _numSeq, double** _score, const vector<string> & _proteinNames) {
   verbose = false;
   numSeq = _numSeq;
@@ -57,21 +58,26 @@ Joiner::~Joiner() {
   delete[] sumDist;
 }
 
+// Neighbor-joining algorithm's main function
 void Joiner::join() {
   if (verbose) {
     cout << endl;
     cout << "Start joining...\n" << endl;
   } 
+  // Set all nodes to be unmerged
   for (int i = 0; i < numSeq; i++) {
     isMerged[i] = false;
   }
   int newNodeIndex = -1;
+  // Loop through numSeq - 2 times
   for (int t = 0; t < numSeq - 2; t++) {
+    // Reset the distance matrix 
     for (int i = 0; i < numSeq; i++) {
       for (int j = 0; j < numSeq; j++) {
         dist[i][j] = score[i][j];
       }
     }
+    // Compute sum_k (dist[i][k]) for all i
     for (int i = 0; i < numSeq; i++) {
       sumDist[i] = 0;
       for (int k = 0; k < numSeq; k++) {
@@ -101,6 +107,7 @@ void Joiner::join() {
     if (verbose) {
       cout << "Join score matrix:" << endl;
     }
+    // Compute the branch length matrix and find the maximum entry (bestI, bestJ)
     for (int i = 0; i < numSeq; i++) {
       if (!isMerged[i]) {
         for (int j = i + 1; j < numSeq; j++) {
@@ -121,6 +128,7 @@ void Joiner::join() {
         }
       }
     }
+    // Make a new tree node
     string newNode = makeNewName();
     newNodeIndex = bestI;
     if (verbose) {
@@ -128,6 +136,7 @@ void Joiner::join() {
       cout << "Merge " << proteinNames[bestI] << " and " << proteinNames[bestJ] << " into " << newNode << endl;
       cout << endl;
     }
+    // Re-compute the distance matrix
     for (int k = 0; k < numSeq; k++) {
       if (isMerged[k]) {
         continue;
@@ -140,16 +149,16 @@ void Joiner::join() {
         score[bestI][k] = score[k][bestI] = (dist[bestI][k] + dist[bestJ][k] - dist[bestI][bestJ]) / 2;
       }
     }
-    // add edges (bestI, newNode) and (bestJ, newNode) 
+    // Add edges (bestI, newNode) and (bestJ, newNode) 
     addEdge(proteinNames[bestI], newNode, score[bestI][bestI]);
     addEdge(proteinNames[bestJ], newNode, score[bestI][bestJ]);
     proteinNames[bestI] = newNode;
-    // mark bestJ as having been merged
+    // Mark bestJ as having been merged
     isMerged[bestJ] = true;
-    // set distance from the new node to itself to be 0
+    // Set distance from the new node to itself to be 0
     score[bestI][bestI] = 0;
   }
-  // merge the last node with new node
+  // Merge the last sequence with last new node
   for (int i = 0; i < numSeq; i++) {
     if (!isMerged[i] && proteinNames[i] != proteinNames[newNodeIndex]) {
       addEdge(proteinNames[i], proteinNames[newNodeIndex], score[newNodeIndex][i]);

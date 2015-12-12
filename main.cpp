@@ -27,21 +27,13 @@ void loadData(ifstream &stream) {
   }
 }
 
-void experiment1() {
-  ifstream file("data2.txt");
-  loadData(file);
-  Joiner joiner(numSeq, score, proteinNames);
-  joiner.join();
-  file.close();
-}
-
 int main(int argc, char* argv[]) {
   if (argc < 3) {
     cout << endl;
     cout << "USAGE: ./main <INPUT> <OUTPUT> <VERBOSE>"  << endl;
-    cout << "    Input: file containing protein names and a distance matrix" << endl;
-    cout << "    Output: file to store the computed phylogenetic tree" << endl;
-    cout << "    Verbose: \"verbose\" to print debugging logs" << endl;
+    cout << "    INPUT: file containing protein names and a distance matrix" << endl;
+    cout << "    OUTPUT: file to store the computed phylogenetic tree" << endl;
+    cout << "    VERBOSE: \"verbose\" to print debugging logs" << endl;
     cout << endl;
     return 1;
   }
