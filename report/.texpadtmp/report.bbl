@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{felsenstein2005phylip}
+J~Felsenstein.
+\newblock Phylip (phylogeny inference package) version 3.6. distributed by the
+  author. dep genome sci univ washington, seattle, 2005.
+
 \bibitem{jones1992rapid}
 David~T Jones, William~R Taylor, and Janet~M Thornton.
 \newblock The rapid generation of mutation data matrices from protein
@@ -34,11 +39,6 @@ Carolin Kosiol and Nick Goldman.
 \newblock Different versions of the dayhoff rate matrix.
 \newblock {\em Molecular biology and evolution}, 22(2):193--199, 2005.
 
-\bibitem{plotree1989phylip}
-DOTREE Plotree and DOTGRAM Plotgram.
-\newblock Phylip-phylogeny inference package (version 3.2).
-\newblock {\em cladistics}, 5:163--166, 1989.
-
 \bibitem{rice2000emboss}
 Peter Rice, Ian Longden, Alan Bleasby, et~al.
 \newblock Emboss: the european molecular biology open software suite.
@@ -48,6 +48,12 @@ Peter Rice, Ian Longden, Alan Bleasby, et~al.
 DavidF Robinson and Leslie~R Foulds.
 \newblock Comparison of phylogenetic trees.
 \newblock {\em Mathematical Biosciences}, 53(1):131--147, 1981.
+
+\bibitem{saitou1987neighbor}
+Naruya Saitou and Masatoshi Nei.
+\newblock The neighbor-joining method: a new method for reconstructing
+  phylogenetic trees.
+\newblock {\em Molecular biology and evolution}, 4(4):406--425, 1987.
 
 \bibitem{veerassamy2003transition}
 Shalini Veerassamy, Andrew Smith, and Elisabeth~RM Tillier.

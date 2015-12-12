@@ -26,7 +26,7 @@ if (not defined $exp) {
 }
 if($exp==1){
    my @protMethods = ("Uncorrected", "Jukes-Cantor", "KimuraProtein");
-   my @gapScores = ("1", "25", "75");
+   my @gapScores = ("0", "0.1", "1");
    my $size=scalar @gapScores;
    for(my $i=0; $i < 3; $i++){
       if($i==3){ $size=1;}
