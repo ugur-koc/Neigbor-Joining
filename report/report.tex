@@ -151,7 +151,7 @@ The distance matrices and phylogenetic trees computed from these experiments are
 
 \subsection{Data}
 
-We use the \textit{85VASTdomains} dataset, which consists of 85 protein sequences of fully sequenced species representing all major Eukaryotic lineages \cite{khafif2014identification}. The longest sequence in this set consists of 125 amino acids. The ground-truth phylogenetic tree of these sequences has 9 major family branches. In addition to this dataset, we also create a synthesized dataset consisting of 10 randomized distance matrices whose sizes vary from 100 to 1000. Each entry of each matrix is drawn from a uniform distribution over $[0, 1)$. The diagonals of the matrices are all zeros.   
+We use the \textit{85VASTdomains} dataset, which consists of 85 protein sequences of fully sequenced species representing all major Eukaryotic lineages \cite{khafif2014identification}. The longest sequence in this set consists of 125 amino acids. The ground-truth phylogenetic tree of these sequences has 9 major family branches. The sequences in this data have been aligned using multiple alignment techniques. In addition to this dataset, we also create a synthesized dataset consisting of 10 randomized distance matrices whose sizes vary from 100 to 1000. Each entry of each matrix is drawn from a uniform distribution over $[0, 1)$. The diagonals of the matrices are all zeros.   
 
 \subsection{Results}
 
@@ -171,7 +171,8 @@ We present comparisons between our NJ implementation and that of the PHYLIP pack
 
 \subsubsection{Compare approaches for generating distance matrices}
 
-Here, we compare efficiency and accuracy of three different approaches mentioned in Section~\ref{distance}. We use the norm of Robinson-Foulds symmetric difference (norm-rf) as the accuracy metric. This metric has been shown to be useful for comparing two phylogenetic trees \cite{robinson1981comparison}. It takes into account partitions that appear in only one of the trees. Therefore, the smaller the Robinson-Foulds symmetric difference metric, the similar trees are.
+Here, we compare efficiency and accuracy of three different approaches mentioned in Section~\ref{distance} on the \textit{85VASTdomains} dataset. We do not compare sequence-aligning times in these experiments since we do not know how the dataset is aligned.
+We use the norm of Robinson-Foulds symmetric difference (norm-rf) as the accuracy metric. This metric has been shown to be useful for comparing two phylogenetic trees \cite{robinson1981comparison}. It takes into account partitions that appear in only one of the trees. Therefore, the smaller the Robinson-Foulds symmetric difference metric, the similar trees are.
 
 \begin{table}[h]
 \centering
@@ -189,9 +190,7 @@ Kimura 	&	-	&	-	&	-	&	-	&	-	&	-	&	0.115	&	0.009	&	0.915	\\
 }\label{tab:dist1}
 \end{table}
 
-\textbf{Performance of \textit{distmat} methods}. \textit{distmat} offers 3 different multiple substitution correction methods for aligned proteins sequences. They are \textit{uncorrected}, \text{Jukes-Cantor} \cite{jukes1969evolution}, and \textit{Kimura Protein} \cite{kimura1980simple}. Table~\ref{tab:dist1} presents computation times and norm-rf scores for these methods (Kimura protein evolution model does not make use of a gap score, thus it only has one set of results).
-
-\kcomment{I still don't understand the columns of table 1. What do those values represent? what are the ``set of results'' you are mentioning here? how are they different from one another?}
+\textbf{Performances of \textit{distmat} methods}. \textit{distmat} offers 3 different multiple substitution correction methods for aligned proteins sequences. They are \textit{uncorrected}, \text{Jukes-Cantor} \cite{jukes1969evolution}, and \textit{Kimura Protein} \cite{kimura1980simple}. We experiment with 3 gap score values (0, 0.1 and 1). Table~\ref{tab:dist1} presents computation times and norm-rf scores for these methods (Kimura protein evolution model does not make use of a gap score, thus we only give results in the last column).
 
 \begin{table}[h]
 \centering
@@ -205,28 +204,28 @@ Kimura 	&	-	&	-	&	-	&	-	&	-	&	-	&	0.115	&	0.009	&	0.915	\\
 	Kimura		&	0.013	&	0.012	&	0.963	\\
 	\hline
 	\end{tabular}
-\caption{Performance of evolution models implemented in \textit{protdist}.}\label{tab:dist2}
+\caption{Performances of evolution models implemented in \textit{protdist}.}\label{tab:dist2}
 \end{table}
 
-\textbf{Performance of \textit{protdist} methods}. \textit{protdist} provides 5 methods for computing a distance matrix, but we only experiment with 4 of them \kcomment{Is there any reason for not experimenting with all 5?}. They are namely, \textit{Dayhoff PAM} \cite{kosiol2005different}, \textit{Jones-Taylor-Thornton} (JTT) \cite{jones1992rapid}, \textit{probability matrix from blocks} (PMB) \cite{veerassamy2003transition}, and \textit{Kimura's distance} \cite{kimura1983rare}. Table~\ref{tab:dist2} presents computation times and norm-rf scores for these methods.
+\textbf{Performances of \textit{protdist} methods}. \textit{protdist} provides 5 methods for computing a distance matrix, but we only experiment with 4 of them \kcomment{Is there any reason for not experimenting with all 5?}. They are namely, \textit{Dayhoff PAM} \cite{kosiol2005different}, \textit{Jones-Taylor-Thornton} (JTT) \cite{jones1992rapid}, \textit{probability matrix from blocks} (PMB) \cite{veerassamy2003transition}, and \textit{Kimura's distance} \cite{kimura1983rare}. Table~\ref{tab:dist2} presents computation times and norm-rf scores for these methods.
 
 \begin{figure}[t]
-  \centering
+  s\centering
   \includegraphics[width=0.9\textwidth]{gt-PMB.jpg}
-  \caption{Ground truth phylogenetic tree is on the left and the tree generated with our implementation is on the right.}
+  \caption{Ground truth phylogenetic tree (left) and phylogenetic tree generated from our implementation using PMB model (right).}
   \label{fig:gt-PMB}
 \end{figure}
 
+% I move this sentence to the DATA section
+%For the tables above, the dataset we use was already aligned, i.e. multiple sequence alignment. 
 
-For the tables above, the dataset we use was already aligned, i.e. multiple sequence alignment. For the last part of this study we revert this alignment to a set of sequences and then compute a global alignment score of each pair of sequences in this set. Our motivation was to see if global alignment scores can be effective in generating a distance matrix. Scoring system we used in global alignment gave higher scores to better alignments (substitution matrix: EBLOSUM62, gap penalty: 10.0, and gap extend penalty: 0.5). We therefore took geometric inverse of  alignment score and then multiplied it by 1000. Result is the used as the distance between those sequences.
-
-Computing global alignment was very time consuming (it took 30mins roughly). However, other distance matrix generation approaches took multiple sequence alignments as input. That sequence alignment was done in \cite{khafif2014identification}, and we don't know how much time it took to compute it. We therefore do not include cost of pairwise global alignment it our evaluation. Given global alignments (scores) computing the distance matrix took 0.221 seconds, our NJ implementation took 0.011 second to generate the phylogenetic tree and the norm-rf score (Robinson-Foulds metric) of that tree was 0.634.
-
-Based on the results given in Table \ref{tab:dist1}, \ref{tab:dist2}, and previous paragraph, we can say that our NJ implementation is very efficient, i.e. computation of the tree is very fast (for the dataset we worked on) and does not depend on distance matrix generation approach. Effectiveness however depends on the approach and the gap score. We achieved our the best phylogenetic tree with PMB evolution model. And for Uncorrected and Jukes-Cantor models we achieved best norm-rf with gap score $0.1$.
-
-Figure \ref{fig:gt-PMB} show both the ground truth and and our best result (with PMB model of \textit{protdist}) side-by-side. The norm-rf score for these trees is $0.341$
+\kcomment{Is the BLOSUM62 or EBLOSUM62?}
+For the last part of this study we compute a global alignment score between each pair of sequences in this set. We use the EBLOSUM62 substitution matrix with gap penalty and gap extend penality set to 10.0 and 0.5, respectively. Since we want to assign higher scores to better alignments, we take the geometric inverse of the global alignment scores and then multiply them by 1000 to obtain the final distance scores.
 
 
+Given the global alignment scores, computing the distance matrix takes 0.221 seconds ($T_d$), generating the phylogenetic tree takes using our NJ implementation takes 0.011 seconds ($T_{NJ}$). The norm-rf score of this tree is 0.634. 
+
+Our results indicate that our NJ implementation is consistently efficient. Its performance does not depend on distance matrix generation approach. Accuracy however vary depending on the approach and the gap score. We obtain the best phylogenetic tree with PMB model (norm-rf=0.341). Figure \ref{fig:gt-PMB} shows the ground truth and our best tree side by side. 
 
 \section{Concluding Remarks}
 
