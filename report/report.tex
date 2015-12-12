@@ -79,7 +79,7 @@ Figure \ref{alg:nj} summarizes the NJ algorithm. The input for the algorithm are
 
 At an intermediate step, the algorithm decides which two trees to join by computing a \textit{branch length} matrix $L$ based on the distance matrix $D$. The branch length matrix contains $T \times T$ entries, where $T$ is the number of trees in the forest at the current step. Each entry of the matrix is computed as follows:  
 \begin{equation}
-  L_{i, j} = (T - 2) D_{i, j} - \sum_{k \in R}^n (D_{i, k} + D_{j, k})
+  L_{i, j} = (T - 2) D_{i, j} - \sum_{k \in R} (D_{i, k} + D_{j, k})
   \label{eqn:branch}
 \end{equation} where $R$ is the set of tree roots in the current forest.
 
