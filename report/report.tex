@@ -51,7 +51,7 @@ Protein sequence classification using neighbor-joining\\
 
 \section{Introduction}
 
-Neighbor-joining algorithm \cite{saitou1987neighbor} is a widely used algorithm for reconstructing phylogenetic trees from evolutionary distance data. The method takes a greedy bottom-up approach, iteratively joining pairs of taxonomic units that minimizes pre-computed distances. In this work, we present our C++ implementation of the algorithm and compare its running time with that of the PHYLIP package \cite{felsenstein2005phylip}, a popular open-source toolkit for inferring phylogenies. Experiments on synthesized data show that our implementation produces exactly same phylogenetic trees but runs twice as fast as the PHYLIP's implementation.  In addition, we test our implementation on a real phylogenetic dataset and provide a detailed benchmark on the accuracy of neighbor-joining algorithm under different distance metrics. We find that the algorithm yields highest accuracy (91.5\%) when using the Kimura Protein multiple substituion correction method. 
+Neighbor-joining algorithm \cite{saitou1987neighbor} is a widely used algorithm for reconstructing phylogenetic trees from evolutionary distance data. The method takes a greedy bottom-up approach, iteratively joining pairs of taxonomic units that minimizes pre-computed distances. In this work, we present our C++ implementation of the algorithm and compare its running time with that of the PHYLIP package \cite{felsenstein2005phylip}, a popular open-source toolkit for inferring phylogenies. Experiments on synthesized data show that our implementation produces exactly same phylogenetic trees but runs twice as fast as the PHYLIP's implementation.  In addition, we test our implementation on a real phylogenetic dataset and provide a detailed benchmark on the accuracy of neighbor-joining algorithm under different distance metrics. We find that the algorithm yields better trees when using the PMB (Probability Matrix from Blocks) evolution model. TODO; Ugur updated here; rephrase if necessary
 
 Our implementataion is available at \url{https://github.com/ugur-koc/Neigbor-Joining} (this repository will be made private in a month).
 
@@ -68,13 +68,13 @@ Our implementataion is available at \url{https://github.com/ugur-koc/Neigbor-Joi
   \label{fig:phytree}
 \end{figure}
 
-Phylogenetic trees are branching diagrams that show the evolutionary relationships between biological species. A weighted phylogenetic tree, with weights associated with its edges, captures the notion of genetic distances between species. By analyzing a weighted phygenetic tree, we understand not only \textit{how} but also \textit{how much} species are related to or different from one another. Figure \ref{fig:phytree} \footnote{Image taken from \url{http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny}} features an artificial phylogentic tree of 10 viruses. Each virus is represented by a leave in the tree. Each internal node marks a milestone when a genetic divergence occurs. The lengths of the horizontal lines represent time periods. For instance, we can see that the divergence between virus 1 and virus 2 occurs before the divergence between virus 3 and virus 4. Phylogentic trees can be constructed from various distance metrics. In this example, the metric assigned to the edges is the proportion of substitutions occuring on a sequence (the number of substituions divided by the length of the sequence). 
+Phylogenetic trees are branching diagrams that show the evolutionary relationships between biological species. A weighted phylogenetic tree, with weights associated with its edges, captures the notion of genetic distances between species. By analyzing a weighted phygenetic tree, we understand not only \textit{how} but also \textit{how much} species are related to or different from one another. Figure \ref{fig:phytree} \footnote{Image taken from \url{http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny}} features an artificial phylogentic tree of 10 viruses. Each virus is represented by a leave in the tree. Each internal node marks a milestone when a genetic divergence occurs. The lengths of the horizontal lines represent time periods. For instance, we can see that the divergence between virus 1 and virus 2 occurs before the divergence between virus 3 and virus 4. Phylogentic trees can be constructed from various distance metrics. In this example, the metric assigned to the edges is the proportion of substitutions occurring on a sequence (the number of substitutions divided by the length of the sequence). 
 
 \subsection{Neighbor-joining algorithm}
 
-We consider the problem of constructing a phylogentic tree from a set of protein sequences given their distance data. There are many approaches to tackle this problem. One approach frames the problem as as a hierarchical clustering problem, which has been extensively studied in the fields of data mining or machine learning and has efficient solutions using statistical models. Although statistical approaches methods have been employed to build these complex evolution trees, classical approaches such as the NJ algorithm has the advantage of being easy to implement and scalable to large datasets. 
+We consider the problem of constructing a phylogenetic tree from a set of protein sequences given their distance data. There are many approaches to tackle this problem. One approach frames the problem as as a hierarchical clustering problem, which has been extensively studied in the fields of data mining or machine learning and has efficient solutions using statistical models. Although statistical approaches methods have been employed to build these complex evolution trees, classical approaches such as the NJ algorithm has the advantage of being easy to implement and scalable to large datasets. 
 
-Figure \ref{alg:nj} summarizes the NJ algorithm. The input for the NJ algorithm are a set $P$ of sequences (usually DNA or protein sequences) and a distance matrix $D$ where each entry is the distance between a pair of sequences. The NJ algorithm constructs the phylogentic tree from bottom up, going from leaves to root. It starts with a forest of $N$ single-node trees, each of which represents a sequence. In each later step, the algorithm selects two trees in the forest, joins them into a single tree by connecting their roots to a newly formed root. This process repeats until there is only tree left in the forest.
+Figure \ref{alg:nj} summarizes the NJ algorithm. The input for the NJ algorithm are a set $P$ of sequences (usually DNA or protein sequences) and a distance matrix $D$ where each entry is the distance between a pair of sequences. The NJ algorithm constructs the phylogenetic tree from bottom up, going from leaves to root. It starts with a forest of $N$ single-node trees, each of which represents a sequence. In each later step, the algorithm selects two trees in the forest, joins them into a single tree by connecting their roots to a newly formed root. This process repeats until there is only tree left in the forest.
 
 In an intermediate step, the algorithm decides which two trees to join by computing a \textit{branch length} matrix $L$ based on the distance matrix $D$. The branch length matrix contains $T \times T$ entries, where $T$ is the number of trees in the forest at the current step. Each entry of the matrix is computed as follows:  
 \begin{equation}
@@ -138,7 +138,7 @@ We experiment with 3 programs to generate the distance matrix:
 
 \section{Experiments}
 
-We conduct two sets of experiments. For the first set, we compare our NJ implementation with that of another open-source NJ package interms of both accuracy and running time. For the second set, we use various approaches for generating a distance matrix and compute phylogenetic trees from the matrices obtained. We then summarize and compare the running time and accuracy of each approach. 
+We conduct two sets of experiments. For the first set, we compare our NJ implementation with that of another open-source NJ package in terms of both accuracy and running time. For the second set, we use various approaches for generating a distance matrix and compute phylogenetic trees from the matrices obtained. We then summarize and compare the running time and accuracy of each approach. 
 
 %To evaluate the effectiveness and the efficiency of our implementations, we conducted a set of experiments. 
 
@@ -164,33 +164,30 @@ We use the \textit{85VASTdomains} dataset, which is consist of 85 protein sequen
 \end{figure}
 
 
-We present comparisions between our NJ implementation and that of the PHYLIP package v3.6 \cite{felsenstein2005phylip}. PHYLIB provide a comprehensive set of implementations of various methods for inferring phylogentic trees, including neighbor-joiningand likelihood methods. We first run both NJ implementation on the \textit{85VASTdomains} dataset. Our implementation produces the same phylogenetic tree on the dataset. Next, we measure running times of the two implementations on the 10 synthesized datasets. As seen from Figure \ref{fig:runningtime}, our implementation outperforms the PHYLIB's implemenation by a factor of approximately 2. This is a surprsing result since we do not employ any advanced optimizing techniques in our implementation. We suspect the performance gain stems from optimizing features of the new C++11 compiler (we use g++ 4.9.2 with O2 optimizer whereas the PHYLIB package uses gcc 4.9.2 with no optimizing option).  
+We present comparisons between our NJ implementation and that of the PHYLIP package v3.6 \cite{felsenstein2005phylip}. PHYLIB provide a comprehensive set of implementations of various methods for inferring phylogenetic trees, including neighbor-joining and likelihood methods. We first run both NJ implementation on the \textit{85VASTdomains} dataset. Our implementation produces the same phylogenetic tree on the dataset. Next, we measure running times of the two implementations on the 10 synthesized datasets. As seen from Figure \ref{fig:runningtime}, our implementation outperforms the PHYLIB's implementation by a factor of approximately 2. This is a surprising result since we do not employ any advanced optimizing techniques in our implementation. We suspect the performance gain stems from optimizing features of the new C++11 compiler (we use g++ 4.9.2 with O2 optimizer whereas the PHYLIB package uses gcc 4.9.2 with no optimizing option).  
 
 \subsubsection{Compare approaches for generating distance matrices}
 
-\kcomment{Can you say more about how the accuracy is computed?}
-
-\kcomment{What is g in table 1?}
-
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.9\textwidth]{gt-kimura.jpg}
-  \caption{Ground truht phylogenetic tree on the left and the tree generated with our implementation is on the right.}
+  \includegraphics[width=0.9\textwidth]{gt-PMB.jpg}
+  \caption{Ground truth phylogenetic tree on the left and the tree generated with our implementation is on the right.}
   \label{fig:gt-kimura}
 \end{figure}
 
-Here, we compare effectiveness and efficiency of three different approaches mentioned in Section~\ref{distance}. Time values in the following tables and measured in seconds and the accuracy is computed as the norm of robinson foulds symmetric difference~\cite{robinson1981comparison}. 
+Here, we compare effectiveness and efficiency of three different approaches mentioned in Section~\ref{distance}. Time values in the following tables and measured in seconds and the accuracy is computed as the norm of robinson-foulds symmetric difference~\cite{robinson1981comparison}. 
+This metric is useful to compare two phylogenetic trees. It takes into account number of the partitions that appear only in on of the trees. Therefore, the smaller the robinson-foulds symmetric difference metric, the similar trees are.
 
 \begin{table}[t]
 \centering
 	\begin{tabular}{l|lll|lll|lll}
 
-Gap Score	& \multicolumn{3}{c}{g=1} & \multicolumn{3}{c}{g=25} &  \multicolumn{3}{c}{g = 75} \\
+Gap Score	& \multicolumn{3}{c}{0} & \multicolumn{3}{c}{0.1} &  \multicolumn{3}{c}{1} \\
 \hline
 &	$T_d$	& $T_{NJ}$	& accuracy &	$T_d$	& $T_{NJ}$	& accuracy &	$T_d$	& $T_{NJ}$	& accuracy \\
 \hline
-Uncorrected		&	0.091	&	0.008	&	0.390	&	0.088	&	0.009	&	0.524	&	0.090	&	0.008	&	0.622	\\
-Jukes-Cantor	&	0.089	&	0.008	&	0.463	&	0.089	&	0.010	&	0.549	&	0.090	&	0.009	&	0.829	\\
+Uncorrected		&	0.085	&	0.008	&	0.378	&	0.090	&	0.009	&	0.390	&	0.090	&	0.008	&	0.390	\\
+Jukes-Cantor	&	0.091	&	0.008	&	0.366	&	0.090	&	0.010	&	0.354	&	0.096	&	0.009	&	0.463	\\
 Kimura Protein	&	-	&	-	&	-	&	-	&	-	&	-	&	0.115	&	0.009	&	0.915	\\
 \hline
 \end{tabular}
@@ -222,13 +219,13 @@ The dataset we used was already aligned, i.e. multiple sequence alignment. As a 
 
 Computing global alignment was very time consuming (it took 30mins roughly). However, other distance matrix generation approaches took multiple sequence alignments as input. That sequence alignment was done in \cite{khafif2014identification}, and we don't know how much time it took to compute it. We therefore do not include cost of pairwise global alignment it our evaluation. Given global alignments (scores) computing the distance matrix took 0.221 seconds, our NJ implementation took 0.011 second to generate the phylogenetic tree and the accuracy (robinson foulds metric) of that tree was 0.634.
 
-Based on the results given in Table \ref{tab:dist1}, \ref{tab:dist2}, and previous paragraph, we can say that our NJ implementation is very efficient, i.e. computation of the tree is very fast (for the dataset we worked on) and does not depend on distance matrix generation approach. Effectiveness however depends on the approach and the gap score. We achieved our the best phylogenetic tree with Kimura Protein evolution model. And for Uncorrected and Jukes-Cantor models accuracy of the tree increased as the gap score increased.
+Based on the results given in Table \ref{tab:dist1}, \ref{tab:dist2}, and previous paragraph, we can say that our NJ implementation is very efficient, i.e. computation of the tree is very fast (for the dataset we worked on) and does not depend on distance matrix generation approach. Effectiveness however depends on the approach and the gap score. We achieved our the best phylogenetic tree with PMB evolution model. And for Uncorrected and Jukes-Cantor models we achieved best accuracies with gap score $0.1$.
 
-Figure \ref{fig:gt-kimura} show both tte ground truth and and our best result (with Kimura method of \textit{protdist}) side-by-side. In these trees the only difference is TODO...
+Figure \ref{fig:gt-PMB} show both the ground truth and and our best result (with PMB model of \textit{protdist}) side-by-side. The robinson-foulds symmetric difference metric for these trees is $0.341$
 
 \section{Concluding Remarks}
 
-In this work, we provide a C++ implementation of the neighbor-joining algorithm. We compare our implementation with another well-known implementation on both real and synthesize data to demonstrate the correctness and efficiency of our implementation. Furthermore, we also evaluate the effectiveness of various distance metrics. Our results suggest that, for the dataset we work on, our implementation generates a highly accurate phylogenetic tree when it is combined with the Kimura evolution model.
+In this work, we provide a C++ implementation of the neighbor-joining algorithm. We compare our implementation with another well-known implementation on both real and synthesize data to demonstrate the correctness and efficiency of our implementation. Furthermore, we also evaluate the effectiveness of various distance metrics. Our results suggest that, for the dataset we work on, our implementation generates a highly accurate phylogenetic tree when it is combined with the PMB evolution model.
 %and conducted experiments on a dataset of 85 protein sequences. We evaluated the effectiveness of our implementation by comparing our phylogenetic trees with the one report by Khafif et. al.~\cite{khafif2014identification}. We then evaluated the efficiency of our implementation by comparing the tree construction times with some other packages which are popular in the domain.
 
 
