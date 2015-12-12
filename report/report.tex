@@ -51,7 +51,7 @@ Protein sequence classification using neighbor-joining\\
 
 \section{Introduction}
 
-Neighbor-joining algorithm \cite{saitou1987neighbor} is a widely used algorithm for reconstructing phylogenetic trees from evolutionary distance data. The method takes a greedy bottom-up approach, iteratively joining pairs of taxonomic units that minimizes pre-computed distances. In this work, we present our C++ implementation of the algorithm and compare its running time with that of the PHYLIP package \cite{felsenstein2005phylip}, a popular open-source toolkit for inferring phylogenies. Experiments on synthesized data show that our implementation produces exactly same phylogenetic trees but runs twice as fast as the PHYLIP's implementation.  In addition, we test our implementation on a real phylogenetic dataset and provide a detailed benchmark on the accuracy of neighbor-joining algorithm under different distance metrics. We find that the algorithm produces the best trees when using the probability matrix from blocks (PMB) evolution model.
+Neighbor-joining algorithm \cite{saitou1987neighbor} is a widely used algorithm for reconstructing phylogenetic trees from evolutionary distance data. The method takes a bottom-up greedy approach, iteratively joining pairs of taxonomic units that minimizes pre-computed distance scores. In this work, we present a C++ implementation of the algorithm and compare it with that of the PHYLIP package \cite{felsenstein2005phylip}, an open-source toolkit for inferring phylogenies. Experiments on synthesized data show that our implementation produces identical phylogenetic trees but runs twice as fast as the PHYLIP package does. Moreover, we test our implementation on a real phylogenetic dataset and provide a detailed comparison on the accuracy of neighbor-joining algorithm under various distance metrics. We find that the algorithm produces the best tree when combined with the probability matrix from blocks (PMB) evolution model.
 
 Our implementation is available at \url{https://github.com/ugur-koc/Neigbor-Joining}.
 
@@ -68,21 +68,21 @@ Our implementation is available at \url{https://github.com/ugur-koc/Neigbor-Join
   \label{fig:phytree}
 \end{figure}
 
-Phylogenetic trees are branching diagrams that show the evolutionary relationships between biological species. A weighted phylogenetic tree, with weights associated with its edges, captures the notion of genetic distances between species. By analyzing a weighted phylogenetic tree, we understand not only \textit{how} but also \textit{how much} species are related to or different from one another. Figure \ref{fig:phytree} \footnote{Image taken from \url{http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny}} features an artificial phylogenetic tree of 10 viruses. Each virus is represented by a leave in the tree. Each internal node marks a milestone when a genetic divergence occurs. The lengths of the horizontal lines represent time periods. For instance, we can see that the divergence between virus 1 and virus 2 occurs before the divergence between virus 3 and virus 4. Phylogenetic trees can be constructed from various distance metrics. In this example, the metric assigned to the edges is the proportion of substitutions occurring on a sequence (the number of substitutions divided by the length of the sequence). 
+Phylogenetic trees are branching diagrams that show the evolutionary relationships between biological species. A weighted phylogenetic tree, with weights associated with its edges, captures the notion of genetic distances between species. By analyzing a weighted phylogenetic tree, we understand not only \textit{how} but also \textit{how much} species are related to or different from one another. Figure \ref{fig:phytree} \footnote{Image taken from \url{http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny}} features an artificial phylogenetic tree of 10 viruses. Each virus is represented by a leave in the tree. Each internal node marks a milestone when a genetic divergence occurs. The lengths of the horizontal lines in the figure represent time periods. For instance, we can see that the divergence between virus 1 and virus 2 occurs before the divergence between virus 3 and virus 4. Phylogenetic trees can be constructed from different distance metrics. In this example, the metric used is the proportion of substitutions occurring on a sequence (number of substitutions divided by length of the sequence). 
 
 \subsection{Neighbor-joining algorithm}
 
-We consider the problem of constructing a phylogenetic tree from a set of protein sequences given their distance data. There are many approaches to tackle this problem. One approach frames the problem as a hierarchical clustering problem, which has been extensively studied in the fields of data mining or machine learning and has efficient solutions using statistical models. Although statistical approaches methods have been employed to build these complex evolution trees, classical approaches such as the NJ algorithm has the advantage of being easy to implement and scalable to large datasets. 
+We consider the problem of constructing a phylogenetic tree from a set of protein sequences given their distance data. There are many approaches to tackle this problem. Although statistical approaches methods have been successfully employed to build complex evolution models \cite{felsenstein1981evolutionary}, classical distance-based approaches such as neighbor-joining (NJ) has the advantage of being easy to implement and scalable to large datasets. 
 
-Figure \ref{alg:nj} summarizes the NJ algorithm. The input for the NJ algorithm are a set $P$ of sequences (usually DNA or protein sequences) and a distance matrix $D$ where each entry is the distance between a pair of sequences. The NJ algorithm constructs the phylogenetic tree from bottom up, going from leaves to root. It starts with a forest of $N$ single-node trees, each of which represents a sequence. In each later step, the algorithm selects two trees in the forest, joins them into a single tree by connecting their roots to a newly formed root. This process repeats until there is only tree left in the forest.
+Figure \ref{alg:nj} summarizes the NJ algorithm. The input for the algorithm are a set $P$ of sequences (usually DNA or protein sequences) and a distance matrix $D$ where entry $(i, j)$ is the distance between sequence $i$ and sequence $j$. The NJ algorithm constructs the phylogenetic tree from bottom up, going from leaves to root. It starts with a forest of $N$ single-node trees, each of which represents a sequence. During each later step, the algorithm selects two trees in the forest and joins them into a single tree by connecting their roots to a new root. This process repeats until there is only tree left in the forest, which is the phylogentic tree of the sequence set.
 
-In an intermediate step, the algorithm decides which two trees to join by computing a \textit{branch length} matrix $L$ based on the distance matrix $D$. The branch length matrix contains $T \times T$ entries, where $T$ is the number of trees in the forest at the current step. Each entry of the matrix is computed as follows:  
+At an intermediate step, the algorithm decides which two trees to join by computing a \textit{branch length} matrix $L$ based on the distance matrix $D$. The branch length matrix contains $T \times T$ entries, where $T$ is the number of trees in the forest at the current step. Each entry of the matrix is computed as follows:  
 \begin{equation}
   L_{i, j} = (T - 2) D_{i, j} - \sum_{k \in R}^n (D_{i, k} + D_{j, k})
   \label{eqn:branch}
 \end{equation} where $R$ is the set of tree roots in the current forest.
 
-Next, the algorithm selects the pair ($x$, $y$) with the highest branching length and connects each node to a new root, say $u$. The distances between u and x, y are:  
+Next, the algorithm selects two nodes $x$ and $y$ to maximize the branching length $L_{x, y}$, then connects each node to a new root, say $u$. The distances from $u$ to $x$ and $y$ are:  
 \begin{equation}
 \begin{split}
   & D_{u, x}^{'} = \frac{1}{2} D_{x, y} + \frac{1}{2(T - 2)} \left[ \sum_{k \in R} (D_{x, k} - D_{y, k}) \right] 
@@ -92,7 +92,7 @@ Next, the algorithm selects the pair ($x$, $y$) with the highest branching lengt
 \label{eqn:distance_joined}
 \end{equation}
 
-We also update the distances between $u$ and other roots:
+The distances from $u$ and other roots are also re-computed as:
 \begin{equation}
   D_{u, z}^{'} = \frac{1}{2} \left[ D_{x, z} + D_{y, z} - D_{x, y} \right], \ \ \ \text{for} \ z \neq x, y
 \label{eqn:distance_nonjoined}
@@ -123,7 +123,7 @@ We also update the distances between $u$ and other roots:
   \caption{\label{alg:nj}The neighbor-joining algorithm.}
 \end{figure}
 
-The accuracy of the NJ algorithm largely depends on the accuracy of the distance metric used. Given an additive distance matrix, the NJ algorithm is guaranteed to construct a tree whose distances between species agree with it. 
+The accuracy of the NJ algorithm largely depends on the accuracy of the distance metric used. Given an \textit{additive} distance matrix, the NJ algorithm is guaranteed to construct a tree whose distances between species agree with it. 
 
 \subsection{Computing distance matrix}\label{distance}
 
