@@ -29,6 +29,7 @@
 \let\oldReturn\Return
 \renewcommand{\Return}{\State\oldReturn}
 \newcommand\kcomment[1]{\textcolor{blue}{#1 - Khanh}}
+\newcommand\ugur[1]{\textcolor{red}{#1 - Ugur}}
 
 
 \theoremstyle{definition}
@@ -51,7 +52,7 @@ Protein sequence classification using neighbor-joining\\
 
 \section{Introduction}
 
-Neighbor-joining algorithm \cite{saitou1987neighbor} is a widely used algorithm for reconstructing phylogenetic trees from evolutionary distance data. The method takes a greedy bottom-up approach, iteratively joining pairs of taxonomic units that minimizes pre-computed distances. In this work, we present our C++ implementation of the algorithm and compare its running time with that of the PHYLIP package \cite{felsenstein2005phylip}, a popular open-source toolkit for inferring phylogenies. Experiments on synthesized data show that our implementation produces exactly same phylogenetic trees but runs twice as fast as the PHYLIP's implementation.  In addition, we test our implementation on a real phylogenetic dataset and provide a detailed benchmark on the accuracy of neighbor-joining algorithm under different distance metrics. We find that the algorithm produces the best trees when using the probability matrix from blocks (PMB) evolution model.
+Neighbor-joining algorithm \cite{saitou1987neighbor} is a widely used algorithm for reconstructing phylogenetic trees from evolutionary distance data. The method takes a greedy bottom-up approach, iteratively joining pairs of taxonomic units that minimize pre-computed distances. In this work, we present our C++ implementation of the algorithm and compare its running time with that of the PHYLIP package \cite{felsenstein2005phylip}, a popular open-source toolkit for inferring phylogenies. Experiments on synthesized data show that our implementation produces exactly same phylogenetic trees but runs twice as fast as the PHYLIP's implementation. In addition, we test our implementation on a real phylogenetic dataset and provide a detailed benchmark on the accuracy of neighbor-joining algorithm under different distance metrics. We find that the algorithm produces the best trees when using the probability matrix from blocks (PMB) evolution model.
 
 Our implementation is available at \url{https://github.com/ugur-koc/Neigbor-Joining}.
 
@@ -129,13 +130,15 @@ The accuracy of the NJ algorithm largely depends on the accuracy of the distance
 
 %Neighbor-joining algorithm is deterministic, i.e. given a distance matrix it will always produce the same phylogenetic tree. Therefore, computing accurate phylogenetic trees highly depends on the model of evaluation, i,e, distance matrix.
 
-We experiment with two programs to generate the distance matrix:
+Computing distance matrix for phylogenetic tree requires using a model for amino acid substitutions. These substitutions models implicitly explain how species evolve and therefore they are also useful when measure distances between species. There are many such models but in this project we focus following models; on \textit{Dayhoff PAM} \cite{kosiol2005different}, \textit{Jones-Taylor-Thornton} (JTT) \cite{jones1992rapid}, \textit{probability matrix from blocks} (PMB) \cite{veerassamy2003transition}, \textit{Kimura's distance} \cite{kimura1983rare}, and \text{Jukes-Cantor} \cite{jukes1969evolution}. 
+
+These approaches are implemented in some highly used biogenetic programs. We experiment with two of such programs to generate the distance matrix:
 \begin{enumerate}
-	\item \textit{distmat} from the EMBOSS package \cite{rice2000emboss}  \footnote{\url{http://emboss.sourceforge.net/apps/release/6.6/emboss/apps/distmat.html}}: computes distance matrix for already aligned sequences based on various models (Junkes-Cantor, Tajima-Nei, etc.). We implement a wrapper script in Perl and then post-process the output distance matrix in order to feed it to our NJ implementation (see \textit{aligntodist.pl} in the code repository).
-        \item \textit{protdist} from the PHYLIP package \footnote{\url{http://evolution.genetics.washington.edu/phylip.html}}: also computes distance matrix for aligned sequences We modify the tool's output format and remove unnecessary functionalities (see \textit{protdist.c} in the code repository).
+	\item \textit{distmat} from the EMBOSS package \cite{rice2000emboss}  \footnote{\url{http://emboss.sourceforge.net/apps/release/6.6/emboss/apps/distmat.html}}: computes distance matrix for already aligned sequences based on various models. We implement a wrapper script in Perl and then post-process the output distance matrix in order to feed it to our NJ implementation (see \textit{aligntodist.pl} source file).
+    \item \textit{protdist} from the PHYLIP package \footnote{\url{http://evolution.genetics.washington.edu/phylip/doc/protdist.html}}: also computes distance matrix for aligned sequences We modify the tool's output format and remove unnecessary functionalities (see \textit{protdist.c} source file).
 \end{enumerate}
 
-In addition to these programs, also computed distance matrix using global alignment scores for each pair of sequences. We write two scripts \textit{pairwisealignment.sh} and \textit{aligntodist\_pw.pl}. The former computes global alignment scores; the latter computes the distance matrix from those scores.
+In addition to these programs, also computed distance matrix using global alignment scores for each pair of sequences. Our motivation here is to see if global alignment scores can be effective in generating a distance matrix. We write two scripts \textit{pairwisealignment.sh} and \textit{aligntodist\_pw.pl}. The former computes global alignment scores; the latter computes the distance matrix from those scores.
 
 \section{Experiments}
 
@@ -165,9 +168,8 @@ We use the \textit{85VASTdomains} dataset, which consists of 85 protein sequence
 \end{figure}
 
 
-We present comparisons between our NJ implementation and that of the PHYLIP package v3.6 \cite{felsenstein2005phylip}. PHYLIP provides a comprehensive set of implementations of various methods for inferring phylogenetic trees, including neighbor-joining and likelihood methods. We first run both NJ implementations on the \textit{85VASTdomains} dataset. We observe that they produces identical phylogenetic trees on this dataset. Next, we measure running times of the two implementations on the 10 synthesized datasets. As seen from Figure \ref{fig:runningtime}, our implementation outperforms the PHYLIP's implementation by a factor of approximately 2. This is a surprising result since we do not employ any advanced optimizing techniques in our implementation. We suspect the performance gain stems from optimizing features of the new C++11 compiler (we use g++ 4.9.2 with O2 optimizer whereas the PHYLIP package uses gcc 4.9.2 with no optimizing option).  
+We present comparisons between our NJ implementation and that of the PHYLIP package v3.6 \cite{felsenstein2005phylip}. PHYLIP provides a comprehensive set of implementations of various methods for inferring phylogenetic trees, including neighbor-joining and likelihood methods. We first run both NJ implementations on the \textit{85VASTdomains} dataset. We observe that they produce identical phylogenetic trees on this dataset \ugur{Why dont we give Robinson-Foulds metric for this tree? and also what was the substitution model used in this part}. Next, we measure running times of the two implementations on the 10 synthesized datasets. As seen from Figure \ref{fig:runningtime}, our implementation outperforms the PHYLIP's implementation by a factor of approximately 2. This is a surprising result since we do not employ any advanced optimizing techniques in our implementation. We suspect the performance gain stems from optimizing features of the new C++11 compiler (we use g++ 4.9.2 with O2 optimizer whereas the PHYLIP package uses gcc 4.9.2 with no optimizing option).  
 
-%TODO: What do you mean with "Our implementation produces the same phylogenetic tree on the dataset." it not clear!
 
 \subsubsection{Compare approaches for generating distance matrices}
 
@@ -177,20 +179,20 @@ We use the norm of Robinson-Foulds symmetric difference (norm-rf) as the accurac
 \begin{table}[h]
 \centering
 	\begin{tabular}{l|lll|lll|lll}
-Gap Score	& \multicolumn{3}{c}{0} & \multicolumn{3}{c}{0.1} &  \multicolumn{3}{c}{1} \\
+\multicolumn{1}{c}{} & \multicolumn{3}{c}{Gap Score = 0} & \multicolumn{3}{c}{Gap Score = 0.1} &  \multicolumn{3}{c}{Gap Score = 1} \\
 \hline
 &	$T_d$	& $T_{NJ}$	& norm-rf &	$T_d$	& $T_{NJ}$	& norm-rf &	$T_d$	& $T_{NJ}$	& norm-rf \\
 \hline
 uncorrected		&	0.085	&	0.008	&	0.378	&	0.090	&	0.009	&	0.390	&	0.090	&	0.008	&	0.390	\\
 Jukes-Cantor	&	0.091	&	0.008	&	0.366	&	0.090	&	0.010	&	0.354	&	0.096	&	0.009	&	0.463	\\
-Kimura 	&	-	&	-	&	-	&	-	&	-	&	-	&	0.115	&	0.009	&	0.915	\\
+Kimura 	&	0.115	&	0.009	&	0.915	&	-	&	-	&	-	&	-	&	-	&		\\
 \hline
 \end{tabular}
 \caption{Performance of evolution models implemented in \textit{distmat}. $T_d$: computation time of distance matrix (seconds); $T_{NJ}$: computation time of phylogenetic tree (seconds); norm-rf: Robinson-Foulds symmetric difference metric (smaller score is better).
 }\label{tab:dist1}
 \end{table}
 
-\textbf{Performances of \textit{distmat} methods}. \textit{distmat} offers 3 different multiple substitution correction methods for aligned proteins sequences. They are \textit{uncorrected}, \text{Jukes-Cantor} \cite{jukes1969evolution}, and \textit{Kimura Protein} \cite{kimura1980simple}. We experiment with 3 gap score values (0, 0.1 and 1). Table~\ref{tab:dist1} presents computation times and norm-rf scores for these methods (Kimura protein evolution model does not make use of a gap score, thus we only give results in the last column).
+\textbf{Performances of \textit{distmat} methods}. \textit{distmat} offers 3 different multiple substitution correction methods for aligned proteins sequences. They are \textit{uncorrected}, \text{Jukes-Cantor} \cite{jukes1969evolution}, and \textit{Kimura} \cite{kimura1980simple}. We experiment with 3 gap score values (0, 0.1 and 1). Table~\ref{tab:dist1} presents computation times and norm-rf scores for these methods (Kimura does not make use of gap score, thus we only give one set of results).
 
 \begin{table}[h]
 \centering
@@ -207,25 +209,26 @@ Kimura 	&	-	&	-	&	-	&	-	&	-	&	-	&	0.115	&	0.009	&	0.915	\\
 \caption{Performances of evolution models implemented in \textit{protdist}.}\label{tab:dist2}
 \end{table}
 
-\textbf{Performances of \textit{protdist} methods}. \textit{protdist} provides 5 methods for computing a distance matrix, but we only experiment with 4 of them \kcomment{Is there any reason for not experimenting with all 5?}. They are namely, \textit{Dayhoff PAM} \cite{kosiol2005different}, \textit{Jones-Taylor-Thornton} (JTT) \cite{jones1992rapid}, \textit{probability matrix from blocks} (PMB) \cite{veerassamy2003transition}, and \textit{Kimura's distance} \cite{kimura1983rare}. Table~\ref{tab:dist2} presents computation times and norm-rf scores for these methods.
+\textbf{Performances of \textit{protdist} methods}. \textit{protdist} provides 5 methods for computing a distance matrix, In this study, we excluded one of them (the categories distance) because it asks for additional input during the execution which keeps us from automating the experiments. Table~\ref{tab:dist2} presents computation times and norm-rf scores for these methods.
 
-\begin{figure}[t]
-  s\centering
-  \includegraphics[width=0.9\textwidth]{gt-PMB.jpg}
-  \caption{Ground truth phylogenetic tree (left) and phylogenetic tree generated from our implementation using PMB model (right).}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{gt-PMB.jpg}
+  \caption{Ground truth phylogenetic tree (left) and phylogenetic tree generated using our tool with PMB model (right).}
   \label{fig:gt-PMB}
 \end{figure}
 
 % I move this sentence to the DATA section
 %For the tables above, the dataset we use was already aligned, i.e. multiple sequence alignment. 
 
-\kcomment{Is the BLOSUM62 or EBLOSUM62?}
-For the last part of this study we compute a global alignment score between each pair of sequences in this set. We use the EBLOSUM62 substitution matrix with gap penalty and gap extend penality set to 10.0 and 0.5, respectively. Since we want to assign higher scores to better alignments, we take the geometric inverse of the global alignment scores and then multiply them by 1000 to obtain the final distance scores.
+%\kcomment{Is the BLOSUM62 or EBLOSUM62?}
+% it is EBLOSUM62
 
+For the last part of this study we compute a global alignment score between each pair of sequences in this set. We use the EBLOSUM62 substitution matrix with gap penalty and gap extend penalty set to 10.0 and 0.5, respectively. This scoring scheme assigns higher score to better alignments. We therefore, take the geometric inverse of the global alignment scores and then multiply them by 1000 to obtain the final distance scores.
 
-Given the global alignment scores, computing the distance matrix takes 0.221 seconds ($T_d$), generating the phylogenetic tree takes using our NJ implementation takes 0.011 seconds ($T_{NJ}$). The norm-rf score of this tree is 0.634. 
+Given the global alignment scores, computing the distance matrix takes $T_d=0.221$ seconds, generating the phylogenetic tree takes using our NJ implementation takes $T_{NJ} = 0.011$ seconds. The norm-rf score of this tree is $0.634$.
 
-Our results indicate that our NJ implementation is consistently efficient. Its performance does not depend on distance matrix generation approach. Accuracy however vary depending on the approach and the gap score. We obtain the best phylogenetic tree with PMB model (norm-rf=0.341). Figure \ref{fig:gt-PMB} shows the ground truth and our best tree side by side. 
+Our results indicate that our NJ implementation is consistently efficient. Its performance (time) does not depend on distance matrix generation approach. Accuracy however varies depending on the approach and the gap score. We obtain the best phylogenetic tree with PMB model (norm-rf = 0.341). Figure \ref{fig:gt-PMB} shows the ground truth phylogenetic tree and our best phylogenetic tree side by side. 
 
 \section{Concluding Remarks}
 
