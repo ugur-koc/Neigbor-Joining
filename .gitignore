@@ -26,3 +26,7 @@ output.txt
 report/.texpadtmp/report.blg
 
 report/.texpadtmp/report.synctex.gz
+
+*.gz
+
+*.blg
