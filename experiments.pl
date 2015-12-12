@@ -24,7 +24,7 @@ my $exp=$ARGV[0];
 if (not defined $exp) {
    $exp=1;
 }
-if($exp==1){
+if($exp==1){ #distmat branch
    my @protMethods = ("Uncorrected", "Jukes-Cantor", "KimuraProtein");
    my @gapScores = ("0", "0.1", "1");
    my $size=scalar @gapScores;
@@ -56,7 +56,7 @@ if($exp==1){
          close F_TREE;
       }
    }
-}elsif($exp==2){
+}elsif($exp==2){ #global pairwise alignment branch
    my $distanceFile="data/$data-pw.dist";
    my $start = Time::HiRes::time();
    `./aligntodist_pw.pl > $distanceFile 2>&1`;
@@ -76,7 +76,7 @@ if($exp==1){
    my $line = <F_TREE>;
    print "$line";
    close F_TREE;
-}elsif($exp==3){
+}elsif($exp==3){ #protdist branch
    my @protMethods = ("DUMMY", "JTT", "PMB", "PAM", "Kimura");
    open F_NAMES,"<data/proteinnames.txt" or die $!;
    my $seqnames = <F_NAMES>;
@@ -117,4 +117,5 @@ if($exp==1){
       `rm outfile`;
    }
 }
+#Cleaning all tmp files
 `rm -rf data/*.tmp`;
