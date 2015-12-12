@@ -72,7 +72,7 @@ Phylogenetic trees are branching diagrams that show the evolutionary relationshi
 
 \subsection{Neighbor-joining algorithm}
 
-We consider the problem of constructing a phylogenetic tree from a set of protein sequences given their distance data. There are many approaches to tackle this problem. One approach frames the problem as as a hierarchical clustering problem, which has been extensively studied in the fields of data mining or machine learning and has efficient solutions using statistical models. Although statistical approaches methods have been employed to build these complex evolution trees, classical approaches such as the NJ algorithm has the advantage of being easy to implement and scalable to large datasets. 
+We consider the problem of constructing a phylogenetic tree from a set of protein sequences given their distance data. There are many approaches to tackle this problem. One approach frames the problem as a hierarchical clustering problem, which has been extensively studied in the fields of data mining or machine learning and has efficient solutions using statistical models. Although statistical approaches methods have been employed to build these complex evolution trees, classical approaches such as the NJ algorithm has the advantage of being easy to implement and scalable to large datasets. 
 
 Figure \ref{alg:nj} summarizes the NJ algorithm. The input for the NJ algorithm are a set $P$ of sequences (usually DNA or protein sequences) and a distance matrix $D$ where each entry is the distance between a pair of sequences. The NJ algorithm constructs the phylogenetic tree from bottom up, going from leaves to root. It starts with a forest of $N$ single-node trees, each of which represents a sequence. In each later step, the algorithm selects two trees in the forest, joins them into a single tree by connecting their roots to a newly formed root. This process repeats until there is only tree left in the forest.
 
@@ -151,7 +151,7 @@ The distance matrices and phylogenetic trees computed from these experiments are
 
 \subsection{Data}
 
-We use the \textit{85VASTdomains} dataset, which is consist of 85 protein sequences of fully sequenced species representing all major Eukaryotic lineages \cite{khafif2014identification}. The longest sequence in this set consists of 125 amino acids. The ground-truth phylogenetic tree of these sequences has 9 major family branches.
+We use the \textit{85VASTdomains} dataset, which consists of 85 protein sequences of fully sequenced species representing all major Eukaryotic lineages \cite{khafif2014identification}. The longest sequence in this set consists of 125 amino acids. The ground-truth phylogenetic tree of these sequences has 9 major family branches.
 
 \subsection{Results}
 
@@ -165,7 +165,7 @@ We use the \textit{85VASTdomains} dataset, which is consist of 85 protein sequen
 \end{figure}
 
 
-We present comparisons between our NJ implementation and that of the PHYLIP package v3.6 \cite{felsenstein2005phylip}. PHYLIB provide a comprehensive set of implementations of various methods for inferring phylogenetic trees, including neighbor-joining and likelihood methods. We first run both NJ implementation on the \textit{85VASTdomains} dataset. Our implementation produces the same phylogenetic tree on the dataset. Next, we measure running times of the two implementations on the 10 synthesized datasets. As seen from Figure \ref{fig:runningtime}, our implementation outperforms the PHYLIB's implementation by a factor of approximately 2. This is a surprising result since we do not employ any advanced optimizing techniques in our implementation. We suspect the performance gain stems from optimizing features of the new C++11 compiler (we use g++ 4.9.2 with O2 optimizer whereas the PHYLIB package uses gcc 4.9.2 with no optimizing option).  
+We present comparisons between our NJ implementation and that of the PHYLIP package v3.6 \cite{felsenstein2005phylip}. PHYLIB provide a comprehensive set of implementations of various methods for inferring phylogenetic trees, including neighbor-joining and likelihood methods. We first run both NJ implementations on the \textit{85VASTdomains} dataset. Our implementation produces the same phylogenetic tree on the dataset. Next, we measure running times of the two implementations on the 10 synthesized datasets. As seen from Figure \ref{fig:runningtime}, our implementation outperforms the PHYLIB's implementation by a factor of approximately 2. This is a surprising result since we do not employ any advanced optimizing techniques in our implementation. We suspect the performance gain stems from optimizing features of the new C++11 compiler (we use g++ 4.9.2 with O2 optimizer whereas the PHYLIB package uses gcc 4.9.2 with no optimizing option).  
 
 TODO: What do you mean with "Our implementation produces the same phylogenetic tree on the dataset." it not clear!
 
@@ -212,7 +212,7 @@ Kimura Protein	&	-	&	-	&	-	&	-	&	-	&	-	&	0.115	&	0.009	&	0.915	\\
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.9\textwidth]{gt-PMB.jpg}
-  \caption{Ground truth phylogenetic tree on the left and the tree generated with our implementation is on the right.}
+  \caption{Ground truth phylogenetic tree is on the left and the tree generated with our implementation is on the right.}
   \label{fig:gt-PMB}
 \end{figure}
 
